@@ -1,0 +1,53 @@
+<messages>
+	<level>Level</level>
+	<experience>Experience</experience>
+	<energy>Energy</energy>
+	<attack>Attack</attack>
+	<defence>Defence</defence>
+	<accuracy>Accuracy</accuracy>
+	<mobility>Mobility</mobility>
+	<useCount>Usage quantity</useCount>
+	<lifeTime>Usage time (days)</lifeTime>
+	<expDate>Expires on</expDate>
+	<daysLeft>Days left</daysLeft>
+	<remains>Remains</remains>
+	
+	<baseItems>Basic Items</baseItems>
+	<specialItems>Special Items</specialItems>
+	<artifacts>Upgrades</artifacts>
+	
+	<challenge>Challenge!</challenge>
+	
+	<active>Active</active>
+	<inactive>Inactive</inactive>
+	<activate>Activate a robot</activate>
+	<repair>Repair</repair>
+	<haveNotRobot>You don't have a robot</haveNotRobot>
+	<timeLeft>Remaining time</timeLeft>
+	<waitingForOpponent>Waiting for opponent...</waitingForOpponent>
+	<opponentDisconnect>Opponent disconnected</opponentDisconnect>
+	<combatRequest>Send a combat request?</combatRequest>
+	<combatRequestMessage>{0} challenges you for a robot combat</combatRequestMessage>
+	<combatRespondMessage>{0} accepts a combat. Start now?</combatRespondMessage>
+	<mustBeSameServer>Combat is impossible. User locates in the other city</mustBeSameServer>
+	<noEnergy>Robot has no energy</noEnergy>
+	
+	<attackBottom>Attack legs</attackBottom>
+	<attackMiddle>Attack body</attackMiddle>
+	<attackTop>Attack head</attackTop>
+	<resultBlock>Blocked!</resultBlock>
+	<resultMiss>Missed!</resultMiss>
+	
+	<youWon>You won!</youWon>
+	<youLose>You lost!</youLose>
+	<reachedLevel>You have gained {0} level!</reachedLevel>
+	<repairMessage>Reparation price:{0} bugs. Continue?</repairMessage>
+	<onBuyRobotMessage>Check the workshop at home!</onBuyRobotMessage>
+	<payedRobotItemBought>You have bought new robot item. Check the workshop.</payedRobotItemBought>
+	
+	<rate>Rate</rate>
+	<name>Name</name>
+	<total>Battles</total>
+	<win>Wins</win>
+
+</messages>

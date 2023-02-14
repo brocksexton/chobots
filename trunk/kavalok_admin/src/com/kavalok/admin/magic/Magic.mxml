@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MagicBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	>
+		
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+			import com.kavalok.admin.main.PermissionLevels;
+		]]>
+	</mx:Script>
+	
+	<mx:VBox
+		width="100%"
+		height="100%"
+		>
+		
+		<mx:HBox
+			height="90"
+			>
+			
+			<mx:VBox >
+				<mx:Label text="Server: "/>
+				<mx:ComboBox
+					id="serversComboBox"
+					rowCount="30"
+					dataProvider="{serversData.servers}"
+					change="serverId=serversComboBox.selectedItem.id"
+					selectedIndex="0"
+				/>
+			</mx:VBox >
+			<mx:VBox >
+				<mx:Label text="Location: "/>
+				<mx:ComboBox
+					id="locationsComboBox"
+					rowCount="30"
+					dataProvider="{locationsData.locations}"
+					change="locationId=locationsComboBox.selectedItem.locationId"
+					selectedIndex="-1"
+				/>
+			</mx:VBox >
+			<mx:VBox >
+				<mx:Label text="Location ID: "/>
+				<mx:HBox >
+				<mx:TextInput
+					id="remoteIdField"
+					change="setPreferredRemoteId()"
+				/>
+				<mx:Button
+					label="flush"
+					click="clearRemoteObject()"
+					enabled="{sendEnabled}"
+				/>
+				</mx:HBox>
+			</mx:VBox>
+			<mx:VBox>
+				<mx:Label text="Move To: "/>
+				<mx:HBox>
+					<mx:TextInput id="moveInput" />
+					<mx:Button label="move" click="moveCharsCommand()"/>
+						</mx:HBox>
+						</mx:VBox>
+		</mx:HBox>
+		
+		<!-- enabled="{sendEnabled}"-->
+		<mx:TabNavigator
+			width="100%"
+			height="100%"
+			enabled="{sendEnabled}"
+			>
+				
+			<CharModifiers
+				width="100%"
+				height="100%"
+				label="Characters"
+				serverId="{serverId}"
+				remoteId="{remoteId}"
+			/>
+			
+			<Animation
+				width="100%"
+				height="100%"
+				label="Animations"
+				serverId="{serverId}"
+				remoteId="{remoteId}"
+			/>
+			
+			<Rain
+				width="100%"
+				height="100%"
+				label="Rain"
+				serverId="{serverId}"
+				remoteId="{remoteId}"
+			/>
+			
+			<AdvancedColor
+				width="100%"
+				height="100%"
+				label="Change Color"
+				serverId="{serverId}"
+				remoteId="{remoteId}"
+			/>
+			
+			
+		</mx:TabNavigator>
+	
+	</mx:VBox>
+	
+		
+</MagicBase>

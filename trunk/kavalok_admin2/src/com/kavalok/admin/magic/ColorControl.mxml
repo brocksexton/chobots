@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ColorControlBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+		
+	<mx:HBox>
+		<mx:VBox>
+			<mx:FormItem label="R:">
+				<mx:HSlider
+					id="redSlider"
+					width="200"
+					minimum="0"
+					maximum="1"
+					value="1"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+			
+			<mx:FormItem label="G:">
+				<mx:HSlider
+					id="greenSlider"
+					width="200"
+					minimum="0"
+					maximum="1"
+					value="1"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+			
+			<mx:FormItem label="B:">
+				<mx:HSlider
+					id="blueSlider"
+					width="200"
+					minimum="0"
+					maximum="1"
+					value="1"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+			
+			<mx:Spacer height="10" />
+			
+			<mx:FormItem label="H:">
+				<mx:HSlider
+					id="hueSlider"
+					width="200"
+					minimum="-180"
+					maximum="180"
+					value="0"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+
+			<mx:FormItem label="S:">
+				<mx:HSlider
+					id="saturationSlider"
+					width="200"
+					minimum="-100"
+					maximum="100"
+					value="0"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+			
+			<mx:FormItem label="B:">
+				<mx:HSlider
+					id="brightnessSlider"
+					width="200"
+					minimum="-100"
+					maximum="100"
+					value="0"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+			
+			<mx:FormItem label="Contrast:">
+				<mx:HSlider
+					id="contrastSlider"
+					width="170"
+					minimum="-100"
+					maximum="100"
+					value="0"
+					liveDragging="true"
+					change="refresh()"
+				/>
+			</mx:FormItem>
+		</mx:VBox>
+		
+		<mx:Spacer width="20" />
+		
+		<mx:VBox
+			width="300"
+			>
+			<mx:Image
+				id="image"
+				source="{imageSource}"
+				autoLoad="true"
+				/>
+			<mx:Button
+				label="reset"
+				click="reset()"
+			/>
+		</mx:VBox>
+	</mx:HBox>
+</ColorControlBase>

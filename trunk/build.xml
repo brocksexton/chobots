@@ -1,0 +1,7 @@
+<project default="flash">
+	<target name="flash">
+		<property file="build.properties"/>
+		<echo>Building Raedclient Flash</echo>
+		<ant antfile="build-all.xml" dir="kavalok-build" target="deploy-flash"/>
+	</target>
+</project>

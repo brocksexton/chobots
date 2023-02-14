@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DataGrid xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:columns>
+		<mx:DataGridColumn
+			dataField="login"
+			headerText="login"/>
+		<mx:DataGridColumn
+			dataField="email"
+			headerText="email"/>
+		<mx:DataGridColumn
+			dataField="ip"
+			headerText="ip"/>
+		<mx:DataGridColumn
+			dataField="parent"
+			headerText="is parent"/>
+		<mx:DataGridColumn
+			dataField="chatEnabled"
+			headerText="chat enabled"/>
+		<mx:DataGridColumn
+			dataField="chatEnabledByParent"
+			headerText="chat enabled(By Parent)"/>
+		<mx:DataGridColumn
+			dataField="enabled"
+			headerText="enabled"/>
+		<mx:DataGridColumn
+			dataField="activated"
+			headerText="activated"/>
+		<mx:DataGridColumn
+			dataField="agent"
+			headerText="agent"/>
+		<mx:DataGridColumn
+			dataField="baned"
+			headerText="baned"/>
+	</mx:columns>
+</mx:DataGrid>

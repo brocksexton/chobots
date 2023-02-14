@@ -1,0 +1,272 @@
+Application {
+   backgroundImage: Embed(source="backgrounds.swf#greenstripe");
+   backgroundColor: #009900;
+   backgroundGradientColors: #333333, #000000;
+   backgroundGradientAlphas: 1, 1;
+   themeColor: #000000;
+   color: #000000;
+}
+
+Button {
+   cornerRadius: 0;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #009900, #006600, #006600, #009900;
+   color: #000000;
+   textRollOverColor: #000000;
+   textSelectedColor: #000000;
+   borderColor: #000000;
+   themeColor: #009900;
+}
+
+CheckBox {
+   highlightAlphas: 0.1, 0.07;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #009900, #006600, #006600, #009900;
+   borderColor: #000000;
+   iconColor: #000000;
+   disabledIconColor: #666666;
+   color: #000000;
+   textSelectedColor: #666666;
+   textRollOverColor: #006633;
+   themeColor: #006600;
+}
+
+ColorPicker {
+   closeDuration: 1;
+   columnCount: 12;
+   horizontalGap: 4;
+   openDuration: 1;
+   previewHeight: 12;
+   swatchBorderColor: #ffffff;
+   swatchGridBackgroundColor: #ffffff;
+   swatchHighlightColor: #000000;
+   verticalGap: 3;
+}
+
+ComboBox {
+   cornerRadius: 1;
+   color: #000000;
+   borderColor: #000000;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #009900, #006600, #006600, #009900;
+   arrowButtonWidth: 20;
+   selectionColor: #00cc66;
+   useRollOver: true;
+   rollOverColor: #006600;
+   textRollOverColor: #000000;
+   themeColor: #006600;
+   alternatingItemColors: #009900, #00cc00;
+   openDuration: 46;
+   closeDuration: 10;
+}
+
+Alert{
+color : #FFFFFF;
+background-color: #006600;
+backgroundAlpha: 0.47;
+header-colors : #006600, #009900;
+header-height:19;
+drop-shadow-enabled: true;
+drop-shadow-color :#243322;
+corner-radius :0;
+border-style :solid;
+border-thickness: 1;
+border-color : #000000;
+footer-colors : #009900, #006600;
+title-style-name : "title";
+}
+
+.title{
+font-family :Verdana;
+font-size :10;
+font-weight :bold;
+color :#ffffff;
+}
+
+DataGrid {
+   backgroundAlpha: 0.47;
+   backgroundColor: #009900;
+   alternatingItemColors: #ffffff, #cccccc;
+   headerColors: #00cc00, #006600;
+   horizontalGridLines: false;
+   verticalGridLineColor: #000000;
+   rollOverColor: #009900;
+   borderThickness: 1;
+   borderColor: #000000;
+   selectionColor: #00cc00;
+   color: #000000;
+   textSelectedColor: #333333;
+   headerStyleName: "mydataGridHeaderStyle";
+}
+
+.mydataGridHeaderStyle {
+   color: #000000;
+}
+
+DateChooser {
+   cornerRadius: 0;
+   headerColors: #006600, #009900;
+   fillColors: #009933, #00cc00, #009900, #003300;
+   todayColor: #00ff99;
+   rollOverColor: #006600;
+   selectionColor: #00cc00;
+   color: #000000;
+   borderColor: #000000;
+   backgroundColor: #009900;
+   themeColor: #009900;
+   dropShadowEnabled: false;
+}
+
+HDividedBox {
+   dividerAffordance: 5;
+   dividerAlpha: 0.81;
+   dividerColor: #000000;
+   dividerThickness: 5;
+}
+
+HScrollBar {
+   cornerRadius: 0;
+   highlightAlphas: 0.21, 0.06;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #009900, #006600, #009900, #009900;
+   trackColors: #009900, #009900;
+   themeColor: #006600;
+   borderColor: #000000;
+   iconColor: #000000;
+   thumbOffset: 1;
+}
+
+HSlider {
+   thumbOffset: -7;
+   tickColor: #000000;
+   showTrackHighlight: true;
+   invertThumbDirection: true;
+   borderColor: #000000;
+   themeColor: #009900;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #006600, #00cc00, #00cc00, #006600;
+   labelStyleName: "myhSliderLabelStyle";
+}
+
+.myhSliderLabelStyle {
+   letterSpacing: 0;
+   color: #000000;
+}
+
+List {
+   backgroundAlpha: 0.54;
+   backgroundColor: #00cc00;
+   alternatingItemColors: #ffffff, #cccccc;
+   useRollOver: true;
+   rollOverColor: #00ff33;
+   borderStyle: inset;
+   borderThickness: 1;
+   borderColor: #000000;
+   selectionColor: #009900;
+   color: #000000;
+   textSelectedColor: #003300;
+   dropShadowEnabled: true;
+   shadowDistance: 0;
+   dropShadowColor: #006600;
+   textAlign: left;
+}
+
+Panel {
+   borderColor: #006600;
+   roundedBottomCorners: false;
+   cornerRadius: 0;
+   headerHeight: 27;
+   backgroundAlpha: 0.17;
+   headerColors: #006600, #009900;
+   footerColors: #009900, #003300;
+   backgroundColor: #00cc00;
+   dropShadowEnabled: true;
+   shadowDistance: 0;
+   shadowDirection: left;
+   dropShadowColor: #006600;
+   titleStyleName: "mypanelTitle";
+}
+
+.mypanelTitle {
+   color: #000000;
+   textAlign: center;
+}
+
+RadioButton {
+   highlightAlphas: 0.19, 0.04;
+   fillAlphas: 1, 1, 0.6, 0.53;
+   fillColors: #009900, #003300, #009900, #003300;
+   borderColor: #000000;
+   disabledIconColor: #999999;
+   color: #000000;
+   textSelectedColor: #000000;
+   textRollOverColor: #333333;
+   themeColor: #000000;
+   disabledColor: #666666;
+}
+
+TabNavigator {
+   cornerRadius: 0;
+   backgroundAlpha: 0.84;
+   backgroundColor: #ffffff;
+   borderStyle: outset;
+   borderColor: #000000;
+   color: #000000;
+   tabStyleName: "myTabs";
+   firstTabStyleName: "myTabs";
+   lastTabStyleName: "myTabs";
+   selectedTabTextStyleName: "mySelectedTabs";
+}
+
+.myTabs {
+   cornerRadius: 1;
+   fillColors: #009900, #006600;
+   borderColor: #000000;
+   color: #000000;
+   themeColor: #009900;
+   disabledColor: #003204;
+
+}
+
+.mySelectedTabs {
+}
+
+TextArea {
+   color: #000000;
+   paddingRight: 0;
+   leading: 0;
+   textIndent: 0;
+   backgroundAlpha: 0.54;
+   backgroundColor: #006600;
+   borderColor: #000000;
+   borderThickness: 1;
+}
+
+TextInput {
+   borderStyle: inset;
+   borderColor: #000000;
+   backgroundAlpha: 0.54;
+   backgroundColor: #006600;
+   color: #000000;
+   textAlign: left;
+   dropShadowEnabled: true;
+   shadowDirection: left;
+   shadowDistance: 0;
+   dropShadowColor: #006600;
+}
+
+ToolTip {
+   backgroundColor: #009900;
+   color: #ffffff;
+}
+
+VScrollBar {
+   cornerRadius: 0;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #006600, #009900, #009900, #00cc00;
+   trackColors: #006600, #009900;
+   themeColor: #006600;
+   borderColor: #000000;
+   thumbOffset: 1;
+}
+

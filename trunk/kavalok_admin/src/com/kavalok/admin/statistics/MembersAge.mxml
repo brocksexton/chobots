@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MembersAgeBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+		label="refresh"
+		click="onRefreshClick(event)"/>
+	<mx:ComboBox
+		id="periodComboBox"
+		dataProvider="{periods}"
+		labelField="label"/>
+	<mx:HBox
+		width="100%"
+		height="100%">
+		<mx:Legend
+			dataProvider="{chart}"/>
+		<mx:ColumnChart
+			id="chart"
+			width="100%"
+			height="100%"
+			type="stacked"
+			showDataTips="true"
+			dataTipFunction="{getDataTip}"
+			series="{series}"
+			dataProvider="{dataProvider}">
+			<mx:horizontalAxis>
+				<mx:CategoryAxis
+					dataProvider="{dataProvider}"
+					displayName="user age (in days)"
+					title="user age (in days)"
+					labelFunction="{getLabel}"
+					categoryField="userAge"/>
+			</mx:horizontalAxis>
+		</mx:ColumnChart>
+	</mx:HBox>
+</MembersAgeBase>

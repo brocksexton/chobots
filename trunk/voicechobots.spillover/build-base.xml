@@ -1,0 +1,112 @@
+<project>
+    <taskdef name="svn" classname="org.tigris.subversion.svnant.SvnTask">
+        <classpath>
+        	<pathelement location="${basedir}/kavalok-build/svnant.jar" />
+            <pathelement location="${basedir}/kavalok-build/svnClientAdapter.jar" />
+            <pathelement location="${basedir}/kavalok-build/svnjavahl.jar" />
+            <pathelement location="${basedir}/kavalok-build/svnkit.jar" />
+        </classpath>
+    </taskdef>
+	
+    <available file=".git" type="dir" property="git.present"/>
+
+	<target name="git.revision" description="Store git revision in ${repository.version}" if="git.present">
+	    <exec executable="git" outputproperty="git.revision" failifexecutionfails="false" errorproperty="">
+	        <arg value="describe"/>
+	        <arg value="--tags"/>
+	        <arg value="--always"/>
+	        <arg value="HEAD"/>
+	    </exec>
+	    <condition property="repository.version" value="${git.revision}" else="unknown">
+	        <and>
+	            <isset property="git.revision"/>
+	            <length string="${git.revision}" trim="yes" length="0" when="greater"/>
+	        </and>
+	    </condition>
+	</target>
+
+
+	<target name="get-svn-revision" depends="git.revision">
+	 <!--  	<exec outputproperty="build.current.revision" executable="svnversion">
+		         <arg line="-n -c" />
+		         <redirector>
+		           <outputfilterchain>
+		             <tokenfilter>
+		                 <replaceregex pattern="^[0-9]*:?" replace="" flags="g"/>
+		             </tokenfilter>
+		          </outputfilterchain>
+		        </redirector>
+		</exec>
+		<exec outputproperty="build.current.version" executable="svn">
+		  <arg line="info" />
+		  <redirector>
+		  <outputfilterchain>
+		  <linecontainsregexp><regexp pattern="^URL:" /></linecontainsregexp>
+		   <tokenfilter>
+		     <replaceregex pattern=".*\/([^\/]+)$" replace="\1" flags="g"/>
+		   </tokenfilter>
+		  </outputfilterchain>
+		</redirector>
+		</exec> 
+	-->
+
+		<property name="full.build.version" value="${git.revision}" />
+		<property name="build.current.version" value="${full.build.verison}" />
+		<property name="svn.revision" value="${full.build.version}" />
+		<property name="build.current.revision" value="${svn.revision}" />
+		
+		<echo>Building Version: ${svn.revision} to directory /var/www/game/${build.current.revision}</echo>
+	</target>
+
+	<target name="update-from-svn">
+		<!--<exec executable="svn">
+			<arg value="cleanup"/>
+		</exec>-->
+		<exec executable="git">
+			<arg value="pull"/>
+		</exec>
+	</target>
+	<target name="create-database" depends="update-from-svn">
+		<ant
+			antfile="build-all.xml" dir="kavalok-build" target="create-database"/>
+	</target>
+	<target name="build-all-release">
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+	   <property   name="default.swf.debug" value="false"/>
+	   <antcall target="build-all"/>
+	</target>
+	<target name="build-all" depends="update-from-svn">
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"/>
+	</target>
+	<target name="build-flash" depends="update-from-svn">
+	   <property   name="default.swf.debug" value="true"/>
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"
+			target="deploy-flash"/>
+	</target>
+    
+    <target name="build-flash-ethan" depends="update-from-svn">
+	   <property   name="default.swf.debug" value="true"/>
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"
+			target="deploy-flash-ethan"/>
+	</target>
+	
+	<target name="build-flash-ethan-windows" depends="update-from-svn">
+	   <property   name="default.swf.debug" value="true"/>
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"
+			target="deploy-flash-ethan"/>
+	</target>
+	
+	<target name="build-all-ethan-windows" depends="update-from-svn">
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"/>
+	</target>
+</project>

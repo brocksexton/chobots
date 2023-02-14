@@ -1,0 +1,105 @@
+<project name="build-all" default="deploy-java">
+	<taskdef name="var" classname="ise.antelope.tasks.Variable">
+        <classpath>
+                <pathelement location="${basedir}/AntelopeTasks_3.4.2.jar" />
+        </classpath>
+    </taskdef>
+
+  <target name="clear">
+      <delete dir="java_output"/>
+      <mkdir dir="java_output"/>
+  </target>
+
+	<target name="build-all" depends="clear, build-java"/>
+
+	<target name="configure-properties">
+		<exec executable="hostname" outputproperty="instance.addresses"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/classes/kavalok.properties" token="{host.ip}" value="127.0.0.1"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/classes/application.properties" token="{host.address}" value="${host.address}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/classes/hibernate.cfg.xml" token="{database.host}" value="${database.host}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/classes/hibernate.cfg.xml" token="{database.name}" value="${database.name}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/classes/hibernate.cfg.xml" token="{database.user}" value="${database.user}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/classes/hibernate.cfg.xml" token="{database.password}" value="${database.password}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/red5-web.properties" token="{context.path}" value="/${deploy.subdir}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/red5-web.properties" token="{host.ip}" value="127.0.0.1"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/red5-web.properties" token="{instance.addresses}" value="${instance.addresses}"/>
+		<replace file="${deploy.dir}/${deploy.subdir}/WEB-INF/web.xml" token="{context.path}" value="/${deploy.subdir}"/>
+	</target>
+
+	<target name="deploy-java" depends="clear, build-red5, build-java">
+		<var name="deploy.subdir" value="kavalok"/>
+		<delete dir="${deploy.dir}/${deploy.subdir}" quiet="true"/>
+		<copy todir="${deploy.dir}/${deploy.subdir}/jsp" overwrite="true">
+			<fileset dir="../kavalok-red5/jsp"/>
+		</copy>
+		<copy todir="${deploy.dir}/${deploy.subdir}/WEB-INF" overwrite="true">
+			<fileset dir="../kavalok-red5/WEB-INF"/>
+		</copy>
+
+		<copy todir="${deploy.dir}/${deploy.subdir}/WEB-INF/lib">
+			<fileset dir="../kavalok-red5/lib" excludes="red5.jar*, spring*.jar"/>
+		</copy>
+		<copy todir="${deploy.dir}/${deploy.subdir}/WEB-INF/classes" failonerror="false">
+			<fileset dir="${java.output.dir}"/>
+		</copy>
+		
+		<copy todir="${deploy.dir}/kavalok1" overwrite="true">
+			<fileset dir="${deploy.dir}/kavalok"/>
+		</copy>
+		<antcall target="configure-properties"/>
+		<var name="deploy.subdir" value="kavalok1"/>
+		<antcall target="configure-properties"/>
+	</target>
+
+	<target name="build-red5">
+		<delete dir="java_output/red5"/>
+		<mkdir dir="java_output/red5"/>
+		<javac srcdir="../red5/src" destdir="java_output/red5" encoding="utf8" debug="true" includeantruntime="false">
+		  	<classpath>
+		  	    <fileset dir="../red5/lib" includes="**/*.jar"/>
+		    </classpath>
+		</javac>
+		<copy todir="lib">
+			<fileset dir="../red5/lib"></fileset>
+		</copy>
+		<manifestclasspath property="red5.jar.classpath" jarfile="red5.jar">
+			<classpath>
+				<fileset dir="lib" includes="**"/>
+			</classpath>
+		</manifestclasspath>
+		<delete dir="lib"/>
+		<jar destfile="java_output/red5/red5.jar">
+			<fileset dir="java_output/red5">
+				<include name="**"/>
+			</fileset>
+			<fileset dir="../red5" includes="conf/**">
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Yasmin Evans"/>
+				<attribute name="Main-Class" value="org.red5.server.Standalone"/>
+				<attribute name="Class-Path" value="conf/ ${red5.jar.classpath}"/>
+			</manifest>
+			<metainf dir="../red5/src/META-INF">
+				<include name="**"/>
+			</metainf>
+		</jar>
+		<copy file="java_output/red5/red5.jar" tofile="../../red5/red5.jar"/>
+		<copy file="java_output/red5/red5.jar" tofile="../kavalok-red5/lib/red5.jar"/>
+	</target>
+
+	<target name="build-java">
+		<delete dir="${java.output.dir}" failonerror="true"/>
+		<mkdir dir="${java.output.dir}"/>
+
+    <javac source="1.6" target="1.6" includeantruntime="false" srcdir="../kavalok-red5/src" bootclasspath="../java-compatibility/rt.jar:../java-compatibility/jce.jar" destdir="${java.output.dir}" encoding="utf8" debug="true">
+        <classpath>
+            <fileset dir="../kavalok-red5/lib" includes="**/*.jar, **/*.xml, log4j.properties" excludes="**/*.txt" />
+        </classpath>
+		</javac>
+
+		<copy todir="${java.output.dir}">
+			<fileset dir="../kavalok-red5/src/" includes="**/*.jar, **/*.xml, **/*.properties"/>
+		</copy>
+	</target>
+
+</project>

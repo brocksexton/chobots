@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdminConfigBase
+	xmlns="com.kavalok.admin.admin.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:filters="com.kavalok.admin.users.filters.*" 
+	xmlns:controls="org.goverla.controls.*" xmlns:users="com.kavalok.admin.users.*">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.TextArea;
+			import mx.controls.TextInput;
+			import mx.controls.CheckBox;
+		]]>
+	</mx:Script>
+	
+	<mx:Form>
+	<mx:FormItem
+	    label="Username:">
+	<mx:TextInput id="usernameInput"/>
+	</mx:FormItem>
+	<mx:FormItem
+	    label="Password:">
+	<mx:TextInput id="passInput"/>
+	</mx:FormItem>
+	<mx:FormItem
+	label="permission level:">
+	<mx:TextInput
+	   id="permissionInput"/>
+	</mx:FormItem>
+	<mx:FormItem>
+	<mx:Button
+	    label="create"
+        click="createAccount(event)"/>
+	 </mx:FormItem>
+	</mx:Form>
+
+</AdminConfigBase>

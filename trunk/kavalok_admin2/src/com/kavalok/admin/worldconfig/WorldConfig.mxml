@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldConfigBase xmlns="com.kavalok.admin.worldconfig.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Form>
+		<mx:FormItem
+			label="safeModeEnabled">
+			<mx:CheckBox 
+				id="safeModeEnabledCheckBox"
+				selected="{dataProvider.safeModeEnabled}"
+				click="changed = true"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Button
+		label="save"
+		enabled="{changed}"
+		click="onSaveClick(event)"/>
+</WorldConfigBase>

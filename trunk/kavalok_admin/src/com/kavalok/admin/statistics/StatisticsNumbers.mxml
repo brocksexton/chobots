@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StatisticsNumbersBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.TimeUtils;
+			import org.goverla.utils.Strings;
+			import org.goverla.utils.Dates;
+		]]>
+	</mx:Script>
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:Form>
+		<mx:FormItem
+			label="total logins">
+			<mx:Label
+				text="{loginStatistics.loginCount}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="average play time">
+			<mx:Label
+				text="{TimeUtils.getTimeString(loginStatistics.averageTime * 1000)}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="registrations">
+			<mx:Label
+				text="{activations.registered}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="activations">
+			<mx:Label
+				text="{activations.activated}"/>
+		</mx:FormItem>
+			
+	</mx:Form>
+</StatisticsNumbersBase>

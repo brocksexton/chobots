@@ -1,0 +1,9 @@
+<messages>
+  <caption>St. Patrick</caption>
+  <firstItem>Greetings, good chap! While me went for the loo, some cranky Nicho stole all me gold! Can ye help me find em gold? Me promises you shall receive a reward...</firstItem>
+  <idleMessage>Yeh yeh, ye got the reward already chap!</idleMessage>
+  <noItem>Exquisite! Now ye need find {0} more for ye reward, aye? </noItem>
+  <npcName>St. Patrick</npcName>
+  <questComplete>Ye did one JOLLY good job, like a sir! Here take em reward me promise..</questComplete>
+  <questTask>Ye shall go now!! Me is growing bored...</questTask>
+</messages>

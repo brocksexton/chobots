@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KnownWordItemBase xmlns="com.kavalok.admin.chat.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Label
+		text="{data.word}"/>
+	<mx:Button
+		label="X"
+		click="onRemoveClick(event)"/>
+</KnownWordItemBase>

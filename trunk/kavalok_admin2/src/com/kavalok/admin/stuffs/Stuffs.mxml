@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StuffsBase
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="com.kavalok.admin.stuffs.*"
+	>
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+		
+	<mx:VBox width="100%" height="100%">
+		
+		<mx:HBox
+			width="100%"
+		>
+			<mx:ComboBox
+				id="shopCombo"
+				rowCount="30"
+				dataProvider="{shopList}"
+				change="refresh()"
+			/>
+			<mx:Button
+				label="Refresh"
+				click="refresh()"
+				enabled="{shopCombo.selectedItem}"
+			/>
+			
+			<mx:Spacer width="100"/>
+			
+			<mx:HBox>
+				<mx:Label text="CurrentGroup:" />
+				<mx:TextInput
+					id="groupNumField"
+					text="{groupNum}"
+					restrict="0123456789"
+					maxChars="2"
+					width="50"
+				/>
+				<mx:Button
+					id="saveGroupButton"
+					label="save"
+					click="saveGroupNum()"
+					enabled="{!Strings.isBlank(groupNumField.text)}"
+				/>
+			</mx:HBox>
+			
+			<mx:Button
+				label="Add item"
+				click="onAddClick()">
+			</mx:Button>
+			
+		</mx:HBox>
+		
+		<mx:HBox width="100%" height="100%">
+			
+			 <mx:DataGrid width="100%" height="100%"
+				id="stuffsGrid"
+				dataProvider="{stuffList}"
+				change="onItemChange(event)">
+				 <mx:columns>
+					<mx:DataGridColumn
+						dataField="id"
+						headerText="id"
+						/>
+					<mx:DataGridColumn
+						dataField="fileName"
+						headerText="fileName"
+						/>
+					<mx:DataGridColumn
+						dataField="groupNum"
+						headerText="group"
+						/>
+					<mx:DataGridColumn
+						dataField="type"
+						headerText="type"
+						/>
+					<mx:DataGridColumn
+						dataField="price"
+						headerText="price"
+						/>
+					<mx:DataGridColumn
+						dataField="premium"
+						headerText="premium">
+						<mx:itemRenderer>
+							<mx:Component>
+								<mx:CheckBox
+									enabled="false"/>
+							</mx:Component>
+						</mx:itemRenderer>
+					</mx:DataGridColumn>
+					<mx:DataGridColumn
+						dataField="giftable"
+						headerText="giftable">
+						<mx:itemRenderer>
+							<mx:Component>
+								<mx:CheckBox
+									enabled="false"/>
+							</mx:Component>
+						</mx:itemRenderer>
+					</mx:DataGridColumn>
+					<mx:DataGridColumn
+						dataField="rainable"
+						headerText="rainable">
+						<mx:itemRenderer>
+							<mx:Component>
+								<mx:CheckBox
+									enabled="false"/>
+							</mx:Component>
+						</mx:itemRenderer>
+					</mx:DataGridColumn>
+					<mx:DataGridColumn
+						dataField="info"
+						headerText="info"
+						/>
+					<mx:DataGridColumn
+						dataField="itemOfTheMonth"
+						headerText="itemOfTheMonth"
+						/>
+				 </mx:columns>
+			 </mx:DataGrid>
+			
+			 <StuffTypeView
+				id="stuffTypeView"
+				width="220"
+				height="100%"
+				item="{selectedItem}"
+				shopList="{shopList}"
+			 />
+		</mx:HBox>
+	</mx:VBox>
+	
+</StuffsBase>

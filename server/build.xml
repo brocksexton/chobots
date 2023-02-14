@@ -1,0 +1,12 @@
+<project default="java">
+
+	<target name="java">
+		<property file="database.conf"/>
+		<echo>Building Chobots Server</echo>
+		<property name="output.dir" value="bin/red5"/>
+		<property name="java.output.dir" value="bin/java"/>
+		<property name="deploy.dir" value="../../red5/webapps/"/>
+		<ant antfile="build-all.xml" dir="kavalok-build" target="deploy-java"/>
+	</target>
+
+</project>

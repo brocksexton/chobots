@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InfoItemBase
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="com.kavalok.admin.infoPanel.*"
+	xmlns:customView="com.kavalok.admin.infoPanel.view.*"
+	>
+		
+	<mx:VBox width="100%">
+		<mx:FormItem
+			label="caption">
+			<mx:TextInput
+				id="captionInput"
+				width="250"
+				text="{infoItem.caption}"
+				/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="date">
+			<mx:Label text="{infoItem.created}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="enabled">
+			<mx:CheckBox
+				id="enabledCheckBox"
+				selected="{infoItem.enabled}"
+				/>
+		</mx:FormItem>
+		
+		<mx:Label text="char names (separated by comma)"/>
+		<mx:TextInput id="namesInput" width="90%" />
+		
+		<mx:Label text="char models (separated by comma)"/>
+		<mx:ComboBox
+			id="modelCombo"
+			text="select..."
+			width="150"
+			dataProvider="{models}"
+			selectedIndex="-1"
+			change="onModelSelect(event)"
+		/>
+		<mx:TextInput id="modelsInput" width="90%" />
+		
+		<mx:Label text="URL to background (jpg, png, swf, flv)"/>
+		<mx:TextInput id="urlInput" width="90%" />
+		
+		
+		<mx:HBox width="90%" height="100"
+			id="localeTexts">
+			<mx:Repeater
+				id="localeRepeater"
+				recycleChildren="true"
+				dataProvider="{locales}">
+				
+				<mx:VBox width="100%" height="100%">
+					<mx:Label text="{localeRepeater.currentItem.locale}"/>
+					<mx:TextInput
+						name="{localeRepeater.currentItem.locale}"
+						width="100%" height="100%"
+						text="{localeRepeater.currentItem.text}" />
+				</mx:VBox>
+			</mx:Repeater>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Button
+				id="saveButton"
+				label="save"
+				click="onSaveClick()"
+				/>
+			<mx:Button
+				id="showButton"
+				label="show"
+				enabled="{saved}"
+				click="onShowClick()"
+				/>
+			<mx:Button
+				id="sendButton"
+				label="send"
+				enabled="{saved}"
+				click="onSendClick()"/>
+		</mx:HBox>
+	</mx:VBox>
+	
+</InfoItemBase>

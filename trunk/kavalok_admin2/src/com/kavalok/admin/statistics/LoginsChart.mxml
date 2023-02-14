@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LoginsChartBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:HBox
+		width="100%"
+		height="100%">
+		<mx:LineChart
+			width="100%"
+			height="100%"
+			dataProvider="{dataProvider}"
+			showDataTips="true">
+			<mx:horizontalAxis>
+				<mx:CategoryAxis
+					dataProvider="{dataProvider}"
+					categoryField="date"
+					dataFunction="{StatisticsUtil.dateLabel}"/>
+			</mx:horizontalAxis>
+			<mx:series>
+				<mx:LineSeries
+					yField="loginCount"
+					displayName="total login count"
+					/>
+			</mx:series>
+		</mx:LineChart>
+		<mx:LineChart
+			width="100%"
+			height="100%"
+			dataProvider="{dataProvider}"
+			showDataTips="true">
+			<mx:verticalAxisRenderers>
+				<mx:AxisRenderer
+					axis="{axis}"
+					labelFunction="{StatisticsUtil.toChartTimeString}"/>
+			</mx:verticalAxisRenderers>
+			<mx:horizontalAxis>
+				<mx:CategoryAxis
+					id="axis"
+					dataProvider="{dataProvider}"
+					categoryField="date"
+					dataFunction="{StatisticsUtil.dateLabel}"
+					/>
+			</mx:horizontalAxis>
+			<mx:series>
+				<mx:LineSeries
+					yField="secondsInGame"
+					displayName="time in game"/>
+					
+			</mx:series>
+		</mx:LineChart>
+	</mx:HBox>
+</LoginsChartBase>
+

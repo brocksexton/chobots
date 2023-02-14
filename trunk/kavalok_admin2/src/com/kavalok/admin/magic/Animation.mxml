@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimationBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+		
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	
+	<mx:VBox>
+		<mx:Label text="Show animation:" fontWeight="bold"/>
+		<mx:TextInput
+			id="urlField"
+			width="500"
+			change="refreshByInput()"
+		/>
+		<mx:ComboBox
+			id="urlCombo"
+			rowCount="25"
+			dataProvider="{animationList}"
+			width="150"
+			change="refreshByCombo()"
+			selectedIndex="-1"
+		/>
+		<mx:Button
+			label="Send"
+			click="onSendClick()"
+			enabled="{!Strings.isBlank(animationURL)}"
+		/>
+		
+		<mx:Spacer height="0"/>
+		<mx:Label text="Promo plane:" fontWeight="bold"/>
+		<mx:HBox>
+			<mx:TextInput id="promoInput" width="300" />
+			<mx:Button label="Send" click="sendPromoText()"/>
+		</mx:HBox>
+		
+	</mx:VBox>
+</AnimationBase>

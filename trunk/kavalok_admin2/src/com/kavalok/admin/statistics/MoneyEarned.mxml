@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MoneyEarnedBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="org.goverla.controls.*">
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:DataGrid
+		dataProvider="{dataProvider}"
+		width="100%"
+		height="100%">
+		<mx:columns>
+			<mx:DataGridColumn
+				dataField="userEmail"
+				headerText="email"/>
+			<mx:DataGridColumn
+				dataField="moneyEarned"
+				headerText="money earned"/>
+		</mx:columns>
+	</mx:DataGrid>
+	<controls:Pager
+		dataProvider="{dataProvider}"/>
+</MoneyEarnedBase>

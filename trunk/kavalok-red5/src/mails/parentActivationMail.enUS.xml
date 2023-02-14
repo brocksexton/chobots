@@ -1,0 +1,39 @@
+<email>
+	<title>Chobots Account Registration</title>
+	<content>Hello from the Chobots team,
+	
+	Your e-mail address was used for creating a free account on Chobots.
+	If you didn't register in our system, please disregard this e-mail. You will not receive any mails from us, unless you click the activation link below.
+	
+	Your child's Chobots account information is: 
+	Username: %1$s 
+	Password: %2$s
+
+	Chobots is a safe educational family game where kids can play, communicate with other kids and learn interesting facts about the Earth.
+	
+	To use Chobots with moderated chat, please click the activation link below: 
+	Link: %3$s
+	Features:
+		-Your child may type in the chat bar to communicate with other users
+		-Your child can see all of the chat from all users, safe mode or not
+		-Your child's chat will be monitored by Chobots moderators 24/7 making sure they follow the rules, keeping the game safe and fun.
+
+	For younger kids, there is an option to activate with limit, but safe picture-based chat.
+	Link: %4$s
+	Features:
+		-Your child's gameplay will not be limited, however they will not be able to communicate freely.
+		-Your child can use the pre-approved, safe messages and pictures to communicate with other users
+		-Your child will be protected by a Chobots moderator 24/7 making sure the game is a safe and fun environment
+	
+	If you are unable to click on the link above, copy and paste the URL to your browser.
+	
+	If you have any questions or you want to edit or delete this account, please contact our Support team at support@chobots.net.
+
+	Sincerely, The Chobots Team 
+	support@chobots.net
+	Chobots! Your Family Game
+	 
+*************************************************************************************************
+**  Please do not reply to this email, click on the url address above to activate your account **
+*************************************************************************************************</content>
+</email>

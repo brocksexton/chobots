@@ -1,0 +1,11 @@
+<messages>
+  <usd>USD</usd>
+  <usdSign>$</usdSign>
+  <usdCents>cents</usdCents>
+  <euro>EUR</euro>
+  <euroSign>€</euroSign>
+  <euroCents>cents</euroCents>
+  <inr>INR</inr>
+  <inrSign>Rs</inrSign>
+  <inrCents>cents</inrCents>
+</messages>

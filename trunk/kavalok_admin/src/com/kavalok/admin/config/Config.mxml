@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigBase xmlns="com.kavalok.admin.config.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Form>
+		<mx:FormItem
+			label="registration">
+			<mx:CheckBox 
+				id="registrationCheckBox"
+				selected="{dataProvider.registrationEnabled}"
+				click="changed = true"/>
+		</mx:FormItem>
+		<!--<mx:FormItem
+			label="guestEnabled">
+			<mx:CheckBox 
+				id="guestCheckBox"
+				selected="{dataProvider.guestEnabled}"
+				click="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="adyenEnabled">
+			<mx:CheckBox 
+				id="adyenCheckBox"
+				selected="{dataProvider.adyenEnabled}"
+				click="changed = true"/>
+		</mx:FormItem>-->
+		<mx:FormItem
+			label="spam message limit">
+			<mx:TextInput id="spamMessagesLimitInput"
+				text="{dataProvider.spamMessagesLimit}"
+				restrict="0-9"
+				click="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="max server load">
+			<mx:TextInput id="serverLoadInput"
+				text="{dataProvider.serverLimit}"
+				restrict="0-9"
+				click="changed = true"/>
+		</mx:FormItem>
+		<!--	<mx:FormItem
+				label="game version"
+				visible="false">
+				<mx:TextInput id="gameVersionInput"
+					text="{dataProvider.gameVersion}"
+					restrict="0-9"
+					visible="false"
+					click="changed = true"/>
+			</mx:FormItem> -->
+		<mx:FormItem
+			label="party location"
+			visible="true">
+			<mx:TextInput id="savedDataInput"
+				text="{dataProvider.savedData}"
+				visible="true"
+				click="changed = true"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Button
+		label="save"
+		enabled="{changed}"
+		click="onSaveClick(event)"/>
+</ConfigBase>

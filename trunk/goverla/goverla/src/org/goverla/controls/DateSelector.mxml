@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DateSelectorBase xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="org.goverla.controls.*"
+	xmlns:controls="org.goverla.controls.*"
+	currentState="{DATE_MONTH_YEAR_STATE}">
+	<states>
+		<mx:State name="{MONTH_YEAR_STATE}">
+			<mx:AddChild position="firstChild">
+				<mx:target>
+					<mx:ComboBox id="monthComboBox"
+						change="onMonthComboBoxChange()" />
+				</mx:target>
+			</mx:AddChild>
+		</mx:State>
+		<mx:State name="{DATE_MONTH_YEAR_STATE}" basedOn="{MONTH_YEAR_STATE}">
+			<mx:AddChild relativeTo="{monthComboBox}" position="after">
+				<mx:target>
+					<controls:ExtendedComboBox id="dayComboBox"
+						restrict="0-9"
+						maxChars="2"
+						change="onDayComboBoxChange()"
+						focusOut="onDayComboBoxFocusOut()"
+						enter="onDayComboBoxEnter()" />
+				</mx:target>
+			</mx:AddChild>
+		</mx:State>
+	</states>
+	<controls:ExtendedComboBox id="yearComboBox"
+		restrict="0-9"
+		maxChars="4"
+		change="onYearComboBoxChange()"
+		focusOut="onYearComboBoxFocusOut()"
+		enter="onYearComboBoxEnter()" />
+</DateSelectorBase>

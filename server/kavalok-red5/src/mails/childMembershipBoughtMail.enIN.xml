@@ -1,0 +1,20 @@
+<email>
+	<title>Chobots Membership</title>
+	<content>Dear parent,
+
+	You have bought the membership for %2$s month(s) on Chobots for your child's account  %1$s.
+	It will expire on  %3$s (chobots time).
+
+	If you have any questions, please contact our
+	Support team at support@chobots.com. They will willingly help you.
+	
+	Here is an URL to play: %4$s
+
+	Sincerely, The Chobots Team 
+	support@chobots.com
+	Chobots! Your Family Game
+
+*************************************************************************************************
+** Please do not reply **
+*************************************************************************************************</content>
+</email>

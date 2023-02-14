@@ -1,0 +1,59 @@
+<project name="build-all" default="deploy">
+
+	<property file="build.properties"/>
+
+	<target name="deploy">
+		<antcall target="delete-deploy-dir"/>
+		<antcall target="deploy-flash"/>
+	</target>
+
+	<target name="delete-deploy-dir">
+		<delete dir="${deploy.flash.dir}" quiet="false"/>
+	</target>
+
+	<target name="clear">
+		<delete dir="${output.dir}"/>
+    	<mkdir dir="${output.dir}"/>
+    	<mkdir dir="${flash.output.dir}"/>
+    	<mkdir dir="${flash.output.dir}/${static.lib.dir}"/>
+    </target>
+
+    <target name="build-flash" depends="clear">
+		<ant antfile="build-flash-fcsh.xml" />
+	</target>
+
+	<target name="deploy-flash" depends="build-flash, copy-deploy-flash"/>
+
+	<target name="copy-deploy-flash">
+
+		<antcall target="delete-deploy-dir"/>
+
+		<echo>Deploying flash to bin: ${deploy.flash.dir}</echo>
+		<copy todir="${deploy.flash.dir}" overwrite="true">
+			<fileset dir="${flash.output.dir}">
+				<include name="**/*.swf" />
+        		<include name="**/*.xml" />
+        		<include name="**/*.jpg" />
+        	</fileset>
+		</copy>
+
+		<!--Deploying PHP <3 -->
+		<copy todir="${deploy.flash.dir}" overwrite="true">
+    		<fileset dir="../website/"/>
+  		</copy>
+
+	</target>
+
+
+
+	<target name="copy-default">
+		<var name="project.output.dir"  value="${flash.output.dir}/resources/${project.name}"/>
+		<var name="project.dir" value="../${project.name}"/>
+		<ant antfile="build-swf.xml" target="copy-resources">
+		</ant>
+	</target>
+
+
+
+
+</project>

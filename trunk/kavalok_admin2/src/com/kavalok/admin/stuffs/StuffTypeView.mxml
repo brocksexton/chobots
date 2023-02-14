@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StuffTypeViewBase
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="com.kavalok.admin.stuffs.*"
+	>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:Label text="FileName"/>
+		<mx:TextInput
+			id="fileNameField"
+			text="{item.fileName}"
+			enabled="{Boolean(item)}"
+		/>
+
+		<mx:Label
+			fontSize="14"
+			fontWeight="bold"
+			text="{item.fileName}" />
+			
+		<StuffItemView
+			stuffType="{item}"
+		/>
+			
+		<mx:FormItem label="type">
+			<mx:TextInput
+				id="typeField"
+				text="{item.type}"
+				enabled="{Boolean(item)}"
+			/>
+		</mx:FormItem>
+			
+		<mx:CheckBox
+			id="colorBox"
+			label="hasColor"
+			selected="{item.hasColor}"
+			enabled="{Boolean(item)}"
+		/>
+		<mx:CheckBox
+			id="premiumBox"
+			label="premium"
+			selected="{item.premium}"
+			enabled="{Boolean(item)}"
+		/>
+		<mx:CheckBox
+			id="giftableBox"
+			label="giftable"
+			selected="{item.giftable}"
+			enabled="{Boolean(item)}"
+		/>
+		<mx:CheckBox
+			id="rainableBox"
+			label="rainable"
+			selected="{item.rainable}"
+			enabled="{Boolean(item)}"
+		/>
+		
+		<mx:FormItem label="price">
+			<mx:TextInput
+				id="priceField"
+				text="{item.price}"
+				width="50"
+				enabled="{Boolean(item)}"
+			/>
+		</mx:FormItem>
+			
+		<mx:Label text="Shop"/>
+		<mx:ComboBox
+			id="shopCombo"
+			enabled="{Boolean(item)}"
+			rowCount="20"
+			dataProvider="{shopList}"
+			selectedItem="{item.shopName}"
+		/>
+		<mx:FormItem label="group (0..99)">
+			<mx:TextInput
+				id="groupNumField"
+				text="{item.groupNum}"
+				width="50"
+				restrict="0123456789"
+				maxChars="2"
+				enabled="{Boolean(item)}"
+			/>
+		</mx:FormItem>
+		
+		<mx:Label text="name"/>
+		<mx:TextInput
+			id="nameField"
+			text="{item.name}"
+			enabled="{Boolean(item)}"
+		/>
+		
+		<mx:Label text="placement"/>
+		<mx:TextInput
+			id="placementField"
+			text="{item.placement}"
+			enabled="{Boolean(item)}"
+		/>
+		
+		<mx:Label text="itemOfTheMonth"/>
+		<mx:TextInput
+			id="itemOfTheMonthField"
+			text="{item.itemOfTheMonth}"
+			enabled="{Boolean(item)}"
+		/>
+			
+		<mx:Label text="info"/>
+		<mx:TextArea
+			id="infoField"
+			text="{item.info}"
+			width="100%"
+			height="50"
+			enabled="{Boolean(item)}"
+		/>
+		
+		<mx:Button
+			id="saveButton"
+			label="save"
+			click="save()"
+			enabled="{Boolean(item)}"
+		/>
+		
+		
+	</mx:VBox>
+	
+</StuffTypeViewBase>

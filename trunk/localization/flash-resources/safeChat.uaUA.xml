@@ -1,0 +1,153 @@
+<messages>
+  <exclamation>!</exclamation>
+  <plus>+</plus>
+  <comma>,</comma>
+  <dot>.</dot>
+  <time10min>10 хвилин</time10min>
+  <time15min>15 хвилин</time15min>
+  <time2min>2 хвилини</time2min>
+  <time30min>30 хвилин</time30min>
+  <time5min>5 хвилин</time5min>
+  <question>?</question>
+  <christmas>Різдво</christmas>
+  <much>багато</much>
+  <TV>телик</TV>
+  <tv>Телик</tv>
+  <actions>дії</actions>
+  <after>після</after>
+  <angel>ангел</angel>
+  <angry>злий</angry>
+  <ask>питати</ask>
+  <baby>немовля</baby>
+  <bad>поганий</bad>
+  <before>до</before>
+  <big>великий</big>
+  <birthday>день народження</birthday>
+  <cafe>рюмочна</cafe>
+  <call>дзвонити</call>
+  <can>могти</can>
+  <chat>чат</chat>
+  <people>чоботи</people>
+  <chobots>чоботи</chobots>
+  <cold>холодний</cold>
+  <come>приходити</come>
+  <computer>комп</computer>
+  <crazy>божевільний</crazy>
+  <cry>плакати</cry>
+  <dancing>танцювати</dancing>
+  <day>день</day>
+  <descript>опис</descript>
+  <devil>чорт</devil>
+  <different>різний</different>
+  <down>вниз</down>
+  <drink>пити</drink>
+  <eMail>електронна пошта</eMail>
+  <evening>вечір</evening>
+  <family>родина</family>
+  <feel>почуття</feel>
+  <food>їсти</food>
+  <football>фуцик</football>
+  <friend>друг</friend>
+  <fun>забава</fun>
+  <game>гра</game>
+  <give>давати</give>
+  <go>йти</go>
+  <god>бог</god>
+  <good>добрий</good>
+  <happy>щасливий</happy>
+  <hear>чути</hear>
+  <here>тут</here>
+  <home>дім</home>
+  <hope>надіятись</hope>
+  <hot>горячий</hot>
+  <hour>година</hour>
+  <idea>ідея</idea>
+  <important>важливий</important>
+  <in>в</in>
+  <love>любов</love>
+  <infinity>безкінечність</infinity>
+  <internet>інтернет</internet>
+  <is>є</is>
+  <kiss>цілувати</kiss>
+  <lamp>лампа</lamp>
+  <language>мова</language>
+  <shutUp>Тсссс!!!!</shutUp>
+  <luck>щастя</luck>
+  <mail>пошта</mail>
+  <me>я</me>
+  <missionAgency>Агенція Місій</missionAgency>
+  <money>бабло</money>
+  <morning>ранок</morning>
+  <movie>кіно</movie>
+  <music>музика</music>
+  <night>ніч</night>
+  <no>ні</no>
+  <noon>обід</noon>
+  <ok>оукей</ok>
+  <or>чи</or>
+  <out>з чогось</out>
+  <party>вечірка</party>
+  <places>місця</places>
+  <silence>тиша</silence>
+  <relax>розслаблятися</relax>
+  <remember>пам'ятати</remember>
+  <restaurant>ресторан</restaurant>
+  <sad>сумний</sad>
+  <same>такий ж</same>
+  <say>сказати</say>
+  <fear>страх</fear>
+  <see>бачити</see>
+  <shop>магазин</shop>
+  <sick>хворий</sick>
+  <sleep>спати</sleep>
+  <small>малий</small>
+  <smell>пахнути</smell>
+  <surprise>сюрприз</surprise>
+  <take>брати</take>
+  <taste>смакувати</taste>
+  <there>там</there>
+  <think>думати</think>
+  <time>час</time>
+  <today>сьогодні</today>
+  <toilet>туалет</toilet>
+  <tomorrow>завтра</tomorrow>
+  <touch>дотикатися</touch>
+  <up>вверх</up>
+  <us>ми</us>
+  <wait>чекати</wait>
+  <where>де</where>
+  <whereIs>де</whereIs>
+  <whoIs>хто</whoIs>
+  <who>хто</who>
+  <with>з кимось</with>
+  <without>без</without>
+  <work>працювати</work>
+  <year>рік</year>
+  <yes>так</yes>
+  <yesterday>вчора</yesterday>
+  <you>ти</you>
+  <hate>ненавидіти</hate>
+  <hi>привіт</hi>
+  <bye>бувай</bye>
+  <cinema>кінотеатр</cinema>
+  <spaceRacing>космічні перегони</spaceRacing>
+  <sweetBattle>солодка битва</sweetBattle>
+  <garbageCollector>прибиральник сміття</garbageCollector>
+  <rope>мотузка</rope>
+  <missions>місії</missions>
+  <academy>академія</academy>
+  <checkers>шашки</checkers>
+  <farm>ферма</farm>
+  <clothesShop>магазин з одягом</clothesShop>
+  <magicShop>магазин все для магії</magicShop>
+  <cafePlace>вулиця Кафешна</cafePlace>
+  <gamezone>зона ігор</gamezone>
+  <furnitureShop>меблевий магазин</furnitureShop>
+  <petShop>магазин тварин</petShop>
+  <park>парк</park>
+  <crab>краб</crab>
+  <choboard>чоборд</choboard>
+  <asteroid>астероїд</asteroid>
+  <robots>роботи</robots>
+  <choBall>чобол</choBall>
+</messages>

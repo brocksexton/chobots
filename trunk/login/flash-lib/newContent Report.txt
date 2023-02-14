@@ -1,0 +1,373 @@
+﻿newContent.swf Movie Report
+----------------------------
+
+Metadata
+--------
+Bytes         Value
+----------    -----
+       984    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash CS4 Professional</xmp:CreatorTool> <xmp:CreateDate>2009-04-03T13:59:33+03:00</xmp:CreateDate> <xmp:MetadataDate>2021-11-05T18:46-04:00</xmp:MetadataDate> <xmp:ModifyDate>2021-11-05T18:46-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:621A4677893EEC11A63D823614CE117E</stRef:instanceID> <stRef:documentID>xmp.did:DFB0540C0E2068118083B78CF3330E35</stRef:documentID> <stRef:originalDocumentID>xmp.did:1BBB34BFE35FDE11B76683569DEF7B0E</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:641A4677893EEC11A63D823614CE117E</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:641A4677893EEC11A63D823614CE117E</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:1BBB34BFE35FDE11B76683569DEF7B0E</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> 
+
+Frame #    Frame Bytes    Total Bytes    Scene
+-------    -----------    -----------    -----
+      1         923369         923369    Scene 1 (AS 3.0 Classes Export Frame)
+
+Scene      Shape Bytes    Text Bytes    ActionScript Bytes
+-------    -----------    ----------    ------------------
+Scene 1              0             0                 11493
+
+Symbol                                Shape Bytes    Text Bytes    ActionScript Bytes
+----------------------------------    -----------    ----------    ------------------
+efe                                           117             0                     0
+f                                             668             0                     0
+gold_ball                                     116             0                     0
+gorshik_light 2                                55             0                     0
+Gorshik new copy                              209             0                     0
+Gorshik_light                                  88             0                     0
+Gorshok_shadow                                127             0                     0
+lapa 1                                        258             0                     0
+lapa 2                                        243             0                     0
+lapa 3                                        273             0                     0
+lapa 4                                        389             0                     0
+podarunok                                    1441             0                     0
+shadow                                          0             0                     0
+snig 2                                        135             0                     0
+snig 3                                        700             0                     0
+snig4                                         304             0                     0
+snizhinka                                       0             0                     0
+star_glow                                       0             0                     0
+yalinka]                                     2556             0                     0
+<Path>                                        207             0                     0
+1                                              42             0                     0
+2                                              71             0                     0
+3                                             111             0                     0
+4                                              46             0                     0
+5                                              85             0                     0
+111                                             0             0                     0
+115                                            60             0                     0
+117                                             0             0                     0
+119                                             0             0                     0
+123                                             0             0                     0
+124                                             0           129                     0
+132                                            43           233                     0
+138                                            43           324                     0
+139                                            54             0                     0
+140                                            39             0                     0
+141                                            30             0                     0
+240                                             0             0                     0
+231                                             0             0                     0
+232                                            59             0                     0
+232 green                                      59             0                     0
+241                                             0             0                     0
+242                                            31             0                     0
+243                                            61             0                     0
+243 copy                                       61             0                     0
+244                                             0             0                     0
+245                                             0             0                     0
+246                                             0             0                     0
+530                                             0             0                     0
+531                                             0             0                     0
+532                                             0             0                     0
+533                                             0             0                     0
+535                                             0             0                     0
+asdasdasdasdasdasd                             39             0                     0
+Account full-safe chat-convert.psd              0             0                     0
+bigButtonBorder 4copy                           0             0                     0
+border_spacestation                           145             0                     0
+button1                                         0             0                     0
+button2                                         0             0                     0
+button3                                         0             0                     0
+button4                                         0             0                     0
+button5                                         0             0                     0
+buttonPointer                                   0             0                     0
+buttonsClip                                     0             0                     0
+Become Def                                     68             0                     0
+Become Disabled                                66             0                     0
+Become Over                                    66             0                     0
+Become Pressed                                 66             0                     0
+charPosition                                    0             0                     0
+charShadow                                     55             0                     0
+checkBox3                                      61             0                     0
+chobot_body1                                 1682             0                     0
+pidzhak 2                                    5467             0                     0
+VUKHACHI                                      876             0                     0
+chobot_body2                                 1582             0                     0
+chobot_body3                                 1635             0                     0
+chobot_body4                                 1636             0                     0
+chobot_body5                                 1635             0                     0
+chobot_body6                                 1636             0                     0
+chobot_body7                                 1635             0                     0
+chobot_body9                                 1640             0                     0
+chobot_body10                                1635             0                     0
+chobot_body11                                1634             0                     0
+contentMask                                    48             0                     0
+Char name                                      59             0                     0
+CHOBOT BLUE GOLOVA                            580             0                     0
+Citizenship button  copy                      216           114                     0
+Colors                                          0           135                     0
+dragds                                        119             0                     0
+fghdfgtdfxx                                    55             0                     0
+McArmBottom copy                                0             0                     0
+McArmTop copy                                   0             0                     0
+McHead2                                       259             0                     0
+ovall                                          92             0                     0
+place for                                     205             0                     0
+Symbol 2 copy 2                                 0             0                     0
+Symbol 4 copy 2                                 0             0                     0
+Symbol 6                                       29             0                     0
+Symbol 7 copy                                   0             0                     0
+Symbol 8 copy                                   0             0                     0
+Symbol 9                                       63             0                     0
+Symbol 9 copy                                   0             0                     0
+Symbol 10                                      61             0                     0
+Symbol 11 copy                                  0             0                     0
+Symbol 12                                       0             0                     0
+Symbol 13                                       0             0                     0
+Symbol 21                                     865             0                     0
+Symbol 23                                     951             0                     0
+ErrorMessage                                    0           345                     0
+Symbol 13                                       0             0                     0
+face                                          217             0                     0
+fffffffffff                                     0             0                     0
+fgfgsd                                          0             0                     0
+gggggggggg                                      0             0                     0
+green button                                  206            50                     0
+green button copy                               0           135                     0
+green button copy 2                             0           148                     0
+green button copy 3                           114            98                     0
+green button copy 5                             0           131                     0
+green button copy 6                           218           117                     0
+green button copy 8                           175            88                     0
+gudzik                                         93             0                     0
+hand_up                                         0             0                     0
+kn1 def                                        81             0                     0
+kn1 def copy                                   81             0                     0
+kn1 over                                       82             0                     0
+kn1 over copy                                  82             0                     0
+kn1 pr                                         82             0                     0
+kn1 pr copy 2                                  82             0                     0
+kn2 def                                        81             0                     0
+kn2 over                                       82             0                     0
+kn2 pr                                         82             0                     0
+kn3 def                                        81             0                     0
+kn3 over                                       82             0                     0
+kn3 pr                                         82             0                     0
+kn4 def                                        80             0                     0
+kn4 def   copy                                 80             0                     0
+kn4 over                                       82             0                     0
+kn4 over copy                                  82             0                     0
+kn4 pr                                         82             0                     0
+kn4 pr copy                                    82             0                     0
+kn5 def                                        77             0                     0
+kn5 over                                       78             0                     0
+kn5 pr                                         77             0                     0
+kn6 def                                        76             0                     0
+kn6 over                                       78             0                     0
+kn6 pr                                         78             0                     0
+kn7 def                                        77             0                     0
+kn7 over                                       78             0                     0
+kn7 pr                                         78             0                     0
+kn8 def  copy 2                                77             0                     0
+kn8 def  copy 3                                77             0                     0
+kn8 over                                       78             0                     0
+kn8 over  copy                                 78             0                     0
+kn8 pr                                         78             0                     0
+kn8 pr  copy                                   78             0                     0
+kn9 def                                        77             0                     0
+kn9 over                                       78             0                     0
+kn9 pr                                         78             0                     0
+kn10 def                                       77             0                     0
+kn10 over                                      78             0                     0
+kn10 pr                                        78             0                     0
+kn11 def                                       76             0                     0
+kn11 over                                      78             0                     0
+kn11 pr                                        78             0                     0
+kn12 def                                       77             0                     0
+kn12 over                                      78             0                     0
+kn12 pr                                        78             0                     0
+kn13 def                                       77             0                     0
+kn13 over                                      78             0                     0
+kn13 pr                                        78             0                     0
+knopka 1                                       65            42                     0
+knopka 1 copy 2                                65            45                     0
+knopka 2                                       65            46                     0
+knopka 3                                       65            46                     0
+knopka 4                                      120            44                     0
+knopka 4 copy 2                               120            46                     0
+knopka 5                                       65             0                     0
+knopka 6                                       65             0                     0
+knopka7                                        65             0                     0
+knopka8                                         0             0                     0
+knopka8 copy                                  117             0                     0
+knopka9                                        65             0                     0
+knopka10                                       65             0                     0
+knopka11                                       65             0                     0
+knopka12                                       65             0                     0
+knopka13                                       65             0                     0
+kolo                                           56             0                     0
+kontur_head_6                                  77             0                     0
+kuchugur 1                                   1368             0                     0
+kulya                                          79             0                     0
+Kontur_hand_up  copy 4                          0             0                     0
+logo_new                                     1684             0                     0
+mitla                                          73             0                     0
+McActivationPage                                0           692                     0
+orange button copy 8                            0           139                     0
+orange button copy 7                            0           134                     0
+Play def                                       67             0                     0
+PlayOver                                       67             0                     0
+Play Press                                     67             0                     0
+Play Disable                                   67             0                     0
+Symbol 8                                        0             0                     0
+McArmBottom copy 3                             62             0                     0
+McArmBottom copy 4                             62             0                     0
+McArmTop copy 4                                59             0                     0
+McArmTop copy 5                                 0             0                     0
+McBehavior                                      0           161                     0
+orange button copy 9                            0           129                     0
+Rule4                                           0           115                     0
+orange button copy 4                            0           137                     0
+Rule3                                           0           115                     0
+Rule2                                           0           115                     0
+rule1                                           0           115                     0
+McBody2                                         0             0                     0
+McBody2 copy 4                                 65             0                     0
+McEntrance                                      0           424                     0
+McLeg2                                          0             0                     0
+McHead2                                       259             0                     0
+new_button1 copy                              339           192                     0
+new_button1 copy 2                            225           175                     0
+new_button2 copy                              277           162                     0
+numberClip                                      0             0                     0
+Symbol 46                                       0             0                     0
+Symbol 3333                                   932             0                     0
+Symbol 1111                                   965             0                     0
+snigovik                                      501             0                     0
+oval                                          165             0                     0
+Symbol 10                                      61             0                     0
+Zeleniy Chobot                               2796             0                     0
+Siniy Chobot                                 1665             0                     0
+Rozheviy Chobot                              2859             0                     0
+McHead2 copy 2                                476             0                     0
+McInvitedCheck                                 33             0                     0
+McLeg2 copy 5                                  68             0                     0
+McLeg2 copy 6                                   0             0                     0
+McLoginView                                   621           856                     0
+Symbol 48                                     300             0                     0
+Symbol 14                                     304             0                     0
+Symbol 47                                    1105             0                     0
+Symbol 6                                       29             0                     0
+rftjhr4j                                      718             0                     0
+McMainContainer                                 0             0                     0
+SuccessMessage                                  0           345                     0
+McMainViewStack                                 0             0                     0
+McRestorePasswordPage                           0           486                     0
+McRegisterView                                  0           215                     0
+McSelectChatView                              490           364                     0
+Symbol 41                                       0             0                     0
+McOrangeCircle                                 57             0                     0
+McRegisterPage                                  0          2093                     0
+orange button copy 6                            0           136                     0
+yes                                            54             0                     0
+TransparentButton                              41             0                     0
+McRegisterViewStack                             0             0                     0
+McSelectColor                                   0           134                     0
+restoreBg                                       0             0                     0
+Star                                          166            84                     0
+Star less                                       0            84                     0
+sdfgsdfgsdfg s                                 67             0                     0
+orange button copy 5                            0           134                     0
+Symbol 2                                       65             0                     0
+Symbol 4                                        0           132                     0
+Symbol 44                                      41             0                     0
+Symbol 45                                     649             0                     0
+McTokenView                                     0           229                     0
+Symbol 40                                       0             0                     0
+naagrudnik element                             79             0                     0
+Symbol 36 copy                                  0             0                     0
+sky                                           229             0                     0
+vinik                                          78             0                     0
+Symbol 12                                       0             0                     0
+Symbol 3                                       56             0                     0
+Symbol 5                                        0             0                     0
+Symbol 16                                      63             0                     0
+Symbol 17                                      38             0                     0
+Symbol 17 copy                                 42             0                     0
+Symbol 17 copy 2                               34             0                     0
+Symbol 18                                      73             0                     0
+Symbol 19                                      59             0                     0
+Symbol 20                                      55             0                     0
+Symbol 21                                     865             0                     0
+Symbol 22                                      49             0                     0
+Symbol 23                                     951             0                     0
+Symbol 24                                      40             0                     0
+Symbol 25                                     133             0                     0
+Symbol 26                                     141             0                     0
+Symbol 27                                      81             0                     0
+Symbol 28                                       0             0                     0
+Symbol 29                                      38             0                     0
+Symbol 30                                     517             0                     0
+Symbol 31                                     150             0                     0
+Symbol 37 copy                                 59             0                     0
+
+Font Name            Bytes         Characters
+-----------------    ----------    ----------
+Arial-BoldMT Bold            21    
+Tahoma-Bold Bold           3956     +-123789ABCGNPY_abceghilmnorstuvwy 
+ArialMT                  327062     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƀƁƂƃƄƅƆƇƈƉƊƋƌƍƎƏƐƑƒƓƔƕƖƗƘƙƚƛƜƝƞƟƠơƢƣƤƥƦƧƨƩƪƫƬƭƮƯưƱƲƳƴƵƶƷƸƹƺƻƼƽƾƿǀǁǂǃǄǅǆǇǈǉǊǋǌǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǝǞǟǠǡǢǣǤǥǦǧǨǩǪǫǬǭǮǯǰǱǲǳǴǵǶǷǸǹǺǻǼǽǾǿȀȁȂȃȄȅȆȇȈȉȊȋȌȍȎȏȐȑȒȓȔȕȖȗȘșȚțȜȝȞȟȠȡȢȣȤȥȦȧȨȩȪȫȬȭȮȯȰȱȲȳȴȵȶȷȸȹȺȻȼȽȾȿɀɁɂɃɄɅɆɇɈɉɊɋɌɍɎɏɐɑɔɛɡɪɵʃʊˆˇˉˊˋˍː˘˙˚˛˜˝ʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҇҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖՙ՚՛՜՝՞՟աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆև։֊֍֎֏ְֱֲֳִֵֶַָֹֺֻּֽ־ֿ׀ׁׂ׃ׅׄ׆ׇאבגדהוזחטיךכלםמןנסעףפץצקרשתװױײ׳״؀؁؂؃؄؅؆؇؈؉؊؋،؍؎؏ؘؙؚؐؑؒؓؔؕؖؗ؛؜؞؟ؠءآأؤإئابةتثجحخدذرزسشصضطظعغػؼؽؾؿـفقكلمنهوىيًٌٍَُِّْٕٖٜٟٓٔٗ٘ٙٚٛٝٞ٠١٢٣٤٥٦٧٨٩٪٫٬٭ٮٯٰٱٲٳٴٵٶٷٸٹٺٻټٽپٿڀځڂڃڄڅچڇڈډڊڋڌڍڎڏڐڑڒړڔڕږڗژڙښڛڜڝڞڟڠڡڢڣڤڥڦڧڨکڪګڬڭڮگڰڱڲڳڴڵڶڷڸڹںڻڼڽھڿۀہۂۃۄۅۆۇۈۉۊۋیۍێۏېۑےۓ۔ەۖۗۘۙۚۛۜ۝۞ۣ۟۠ۡۢۤۥۦۧۨ۩۪ۭ۫۬ۮۯ۰۱۲۳۴۵۶۷۸۹ۺۻۼ۽۾ۿḀḁḂḃḄḅḆḇḈḉḊḋḌḍḎḏḐḑḒḓḔḕḖḗḘḙḚḛḜḝḞḟḠḡḢḣḤḥḦḧḨḩḪḫḬḭḮḯḰḱḲḳḴḵḶḷḸḹḺḻḼḽḾḿṀṁṂṃṄṅṆṇṈṉṊṋṌṍṎṏṐṑṒṓṔṕṖṗṘṙṚṛṜṝṞṟṠṡṢṣṤṥṦṧṨṩṪṫṬṭṮṯṰṱṲṳṴṵṶṷṸṹṺṻṼṽṾṿẀẁẂẃẄẅẆẇẈẉẊẋẌẍẎẏẐẑẒẓẔẕẖẗẘẙẚẛẜẝẞẟẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặẸẹẺẻẼẽẾếỀềỂểỄễỆệỈỉỊịỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợỤụỦủỨứỪừỬửỮữỰựỲỳỴỵỶỷỸỹỺỻỼỽỾỿἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕἘἙἚἛἜἝἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅὈὉὊὋὌὍὐὑὒὓὔὕὖὗὙὛὝὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐῖῗῘῙῚΊ῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`ῲῳῴῶῷῸΌῺΏῼ´῾           ​‌‍‎‏‒–—―‖‗‘’‚‛“”„‟†‡•…‪‫‬‭‮ ‰′″‴‹›‼‽‾⁄⁞⁪⁫⁬⁭⁮⁯⁴ⁿ₠₡₢₣₤₥₦₧₨₩₪₫€₭₮₯₰₱₲₳₴₵₶₷₸₹₺₻₼₽₾₿℅ℓ№℗™Ω℮⅍ⅎ⅓⅔⅛⅜⅝⅞←↑→↓↔↕∂∏∑∕√∞∟∩∫≠≡≤≥─│┌┐└┘├┤┬┴┼═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬▄█▌▒▓■□▲▼○●♀♂♠♣♥♪♯ꜗꜘꜙꜚꜛꜜꜝꜞꜟ꜠꜡ꜢꜣꜤꜥꜦꜧꜨꜩꜪꜫꜬꜭꜮꜯꜰꜱꜲꜳꜴꜵꜶꜷꜸꜹꜺꜻꜼꜽꜾꜿꝀꝁꝂꝃꝄꝅꝆꝇꝈꝉꝊꝋꝌꝍꝎꝏꝐꝑꝒꝓꝔꝕꝖꝗꝘꝙꝚꝛꝜꝝꝞꝟꝠꝡꝢꝣꝤꝥꝦꝧꝨꝩꝪꝫꝬꝭꝮꝯꝰꝱꝲꝳꝴꝵꝶꝷꝸꝹꝺꝻꝼꝽꝾꝿꞀꞁꞂꞃꞄꞅꞆꞇꞈ꞉꞊ꞋꞌꞍꞎꞏꞐꞑꞒꞓꞔꞕꞖꞗꞘꞙꞚꞛꞜꞝꞞꞟꞠꞡꞢꞣꞤꞥꞦꞧꞨꞩꞪꞫꞬꞭꞮꞰꞱꞲꞳꞴꞵꞶꞷꟷꟸꟹꟺꟻꟼꟽꟾꟿꬰꬱꬲꬳꬴꬵꬶꬷꬸꬹꬺꬻꬼꬽꬾꬿꭀꭁꭂꭃꭄꭅꭆꭇꭈꭉꭊꭋꭌꭍꭎꭏꭐꭑꭒꭓꭔꭕꭖꭗꭘꭙꭚ꭛ꭜꭝꭞꭟꭠꭡꭢꭣꭤꭥﬓﬔﬕﬖﬗיִﬞײַﬠﬡﬢﬣﬤﬥﬦﬧﬨ﬩שׁשׂשּׁשּׂאַאָאּבּגּדּהּוּזּטּיּךּכּלּמּנּסּףּפּצּקּרּשּתּוֹבֿכֿפֿﭏﭐﭑﭒﭓﭔﭕﭖﭗﭘﭙﭚﭛﭜﭝﭞﭟﭠﭡﭢﭣﭤﭥﭦﭧﭨﭩﭪﭫﭬﭭﭮﭯﭰﭱﭲﭳﭴﭵﭶﭷﭸﭹﭺﭻﭼﭽﭾﭿﮀﮁﮂﮃﮄﮅﮆﮇﮈﮉﮊﮋﮌﮍﮎﮏﮐﮑﮒﮓﮔﮕﮖﮗﮘﮙﮚﮛﮜﮝﮞﮟﮠﮡﮢﮣﮤﮥﮦﮧﮨﮩﮪﮫﮬﮭﮮﮯﮰﮱ﮲﮳﮴﮵﮶﮷﮸﮹﮺﮻﮼﮽﮾﮿﯀﯁ﯓﯔﯕﯖﯗﯘﯙﯚﯛﯜﯝﯞﯟﯠﯡﯢﯣﯤﯥﯦﯧﯨﯩﯪﯫﯬﯭﯮﯯﯰﯱﯲﯳﯴﯵﯶﯷﯸﯹﯺﯻﯼﯽﯾﯿﱞﱟﱠﱡﱢﱣﳲﳳﳴﴼﴽ﴾﴿ﷲﷴﷺﷻ﷼﷽ﹰﹱﹲﹳﹴﹶﹷﹸﹹﹺﹻﹼﹽﹾﹿﺀﺁﺂﺃﺄﺅﺆﺇﺈﺉﺊﺋﺌﺍﺎﺏﺐﺑﺒﺓﺔﺕﺖﺗﺘﺙﺚﺛﺜﺝﺞﺟﺠﺡﺢﺣﺤﺥﺦﺧﺨﺩﺪﺫﺬﺭﺮﺯﺰﺱﺲﺳﺴﺵﺶﺷﺸﺹﺺﺻﺼﺽﺾﺿﻀﻁﻂﻃﻄﻅﻆﻇﻈﻉﻊﻋﻌﻍﻎﻏﻐﻑﻒﻓﻔﻕﻖﻗﻘﻙﻚﻛﻜﻝﻞﻟﻠﻡﻢﻣﻤﻥﻦﻧﻨﻩﻪﻫﻬﻭﻮﻯﻰﻱﻲﻳﻴﻵﻶﻷﻸﻹﻺﻻﻼ￼
+
+ActionScript Bytes    Location
+------------------    --------
+               360    Scene 1:Frame 1:ErrorMessage
+               302    Scene 1:Frame 1:KNOPK
+               478    Scene 1:Frame 1:McActivationPage
+               484    Scene 1:Frame 1:McBehavior
+               835    Scene 1:Frame 1:McEntrance
+               431    Scene 1:Frame 1:McMainContainer
+               582    Scene 1:Frame 1:McMainViewStack
+               681    Scene 1:Frame 1:McRegisterPage
+               466    Scene 1:Frame 1:McRegisterView
+               436    Scene 1:Frame 1:McRegisterViewStack
+               450    Scene 1:Frame 1:McRestorePasswordPage
+               496    Scene 1:Frame 1:McSelectChatView
+               601    Scene 1:Frame 1:McSelectColor
+               359    Scene 1:Frame 1:SuccessMessage
+               313    Scene 1:Frame 1:chobot_body1
+               315    Scene 1:Frame 1:chobot_body10
+               315    Scene 1:Frame 1:chobot_body11
+               313    Scene 1:Frame 1:chobot_body2
+               313    Scene 1:Frame 1:chobot_body3
+               313    Scene 1:Frame 1:chobot_body4
+               313    Scene 1:Frame 1:chobot_body5
+               313    Scene 1:Frame 1:chobot_body6
+               313    Scene 1:Frame 1:chobot_body7
+               313    Scene 1:Frame 1:chobot_body9
+               944    Scene 1:Frame 1:com.kavalok.login.McLoginView
+               454    Scene 1:Frame 1:com.kavalok.login.McTokenView
+
+Bitmap                 Compressed    Original      Compression
+-------------------    ----------    ----------    -----------
+122                           594         20856    JPEG Quality=80
+ChobotsBG3.png              34466       1836000    JPEG Quality=80
+Layer 37                    23159        722496    JPEG Quality=80
+Vector Smart Object        238439        827652    Lossless
+116                           488          3360    JPEG Quality=80
+118                           249           692    JPEG Quality=80
+277                         19579        432432    JPEG Quality=80
+567                           513          4620    JPEG Quality=80
+563                           594         20856    JPEG Quality=80
+566                           594         20856    JPEG Quality=80
+564                           556         16896    JPEG Quality=80
+565                           556         16896    JPEG Quality=80
+Layer 2                      6491         82992    JPEG Quality=80
+Layer 5                      8373         82152    JPEG Quality=80
+Layer 4                      4406         51200    JPEG Quality=80
+Layer 3                      8367         66568    JPEG Quality=80
+253                           365         16724    JPEG Quality=80
+252                           540         15540    JPEG Quality=80
+rays                       120883        458304    Lossless
+safe chat pic                8615        130000    JPEG Quality=80
+full chat pic                9693        127488    JPEG Quality=80
+
+
+
+

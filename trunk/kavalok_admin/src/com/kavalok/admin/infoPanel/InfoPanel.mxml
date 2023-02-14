@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InfoPanelBase
+	xmlns="com.kavalok.admin.infoPanel.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	>
+	
+	<mx:VBox width="100%" height="100%">
+		<mx:HBox width="100%">
+			<mx:Button
+				label="refresh"
+				click="refresh()">
+			</mx:Button>
+			<mx:Button
+				label="Add item"
+				click="onAddClick()">
+			</mx:Button>
+		</mx:HBox>
+		<mx:HBox width="100%" height="100%">
+			<mx:DataGrid
+				id="infoDataGrid"
+				height="100%"
+				dataProvider="{infoList}"
+				itemClick="onItemClick(event)">
+				<mx:columns>
+					<mx:DataGridColumn
+						headerText="date"
+						dataField="created"
+						width="70">
+					</mx:DataGridColumn>
+					<mx:DataGridColumn
+						headerText="enabled"
+						dataField="enabled"
+						width="70">
+						<mx:itemRenderer>
+							<mx:Component>
+								<mx:CheckBox enabled="false"/>
+							</mx:Component>
+						</mx:itemRenderer>
+					</mx:DataGridColumn>
+					
+					<mx:DataGridColumn
+						headerText="caption"
+						dataField="caption"
+						width="250">
+					</mx:DataGridColumn>
+				
+				</mx:columns>
+			</mx:DataGrid>
+			<InfoItem
+				id="infoItem"
+				infoItem="{selectedItem}"
+				visible="{Boolean(selectedItem)}"
+				width="100%"
+				height="100%">
+			</InfoItem>
+		</mx:HBox>
+	</mx:VBox>
+	
+</InfoPanelBase>

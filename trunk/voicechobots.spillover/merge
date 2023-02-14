@@ -1,0 +1,4 @@
+git checkout master
+git merge kavalok
+git push
+git checkout kavalok

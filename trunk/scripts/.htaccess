@@ -1,0 +1,3 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule content/(.*)$ /media/content/2455/$1 [R=301,L]

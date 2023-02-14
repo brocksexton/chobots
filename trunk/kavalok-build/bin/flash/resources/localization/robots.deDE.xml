@@ -1,0 +1,66 @@
+<messages>
+  <accuracy>Genauigkeit</accuracy>
+  <activate>Aktiviere einen Roboter</activate>
+  <active>Aktiv</active>
+  <removeFromTeamConfirm>Bist du sicher, dass du {0} aus dem Team entfernen willst?</removeFromTeamConfirm>
+  <attack>Angriff</attack>
+  <attackMiddle>Attackiert Körper</attackMiddle>
+  <attackTop>Attackiert Kopf</attackTop>
+  <attackBottom>Attackiert Beine</attackBottom>
+  <baseItems>Grundausstattung</baseItems>
+  <total>Kämpfe</total>
+  <resultBlock>Abgewehrt!</resultBlock>
+  <challenge>Herausfordern!</challenge>
+  <onBuyRobotMessage>Besuche den Roboter Generator!</onBuyRobotMessage>
+  <mustBeSameServer>Herrausforderung ist unmöglich. Spieler ist in einer anderen Stadt</mustBeSameServer>
+  <createTeam>Team erstellen</createTeam>
+  <daysLeft>Ubrige Tage</daysLeft>
+  <defence>Verteidigung</defence>
+  <energy>Energie</energy>
+  <experience>Erfahrung</experience>
+  <expDate>Verfällt am</expDate>
+  <teamHelp>Folge den nächsten Schritten um ein Team zu erstellen:1. Such dir die Farbe für dein zukünftiges Team aus und klick OK2. Lade Freunde in dein Team ein3. Sei ein starker Kämpfer um dein Team an der Spitze zu halten!</teamHelp>
+  <inactive>Inaktiv</inactive>
+  <inviteToTeam>Ins Team einladen</inviteToTeam>
+  <level>Level</level>
+  <resultMiss>Verfehlt!</resultMiss>
+  <mobility>Beweglichkeit</mobility>
+  <name>Name</name>
+  <opponentDisconnect>Gegner hat die Verbindung getrennt</opponentDisconnect>
+  <prise>Der Preis für Eintritt der {0} Besten</prise>
+  <rate>Rang</rate>
+  <timeLeft>Restliche Zeit</timeLeft>
+  <remains>Rest</remains>
+  <removeFromTeam>Vom Team entfernen</removeFromTeam>
+  <repair>Reparieren</repair>
+  <repairMessage>Reparatur Preis: {0} Blech</repairMessage>
+  <teamRequestSent>Anfrage wurde gesendet</teamRequestSent>
+  <noEnergy>Roboter hat keine Energie</noEnergy>
+  <combatRequest>Eine Kampf Anfrage senden?</combatRequest>
+  <specialItems>Spezielle Sachen</specialItems>
+  <teamName>Team</teamName>
+  <teamColor>Team Farbe</teamColor>
+  <teamMessageCaption>Team Nachricht</teamMessageCaption>
+  <teamCreated>Das Team wurde erfolgreich erstellt</teamCreated>
+  <teamLimit>Du hast keinen Platz in deinem Team</teamLimit>
+  <levelLimit>Dieser Teleporter funktioniert nur für Roboter-Besitzer mit einem Level was nicht höher ist als {0}</levelLimit>
+  <artifacts>Verbesserungen</artifacts>
+  <useCount>Gebrauchs Menge</useCount>
+  <lifeTime>Gebrauchs Zeit (Tage)</lifeTime>
+  <waitingForOpponent>Warten auf einen Gegner...</waitingForOpponent>
+  <win>Siege</win>
+  <combatNotAllowed>Du kannst keinen Teamkollegen herrausfordern</combatNotAllowed>
+  <haveNotRobot>Du hast bisher keinen Roboter</haveNotRobot>
+  <teamExistsWarning>Du bist grade dabei dein aktuelles Team zu entlassen. Weiter?</teamExistsWarning>
+  <payedRobotItemBought>Du hast einen neuen Gegenstand für deinen Roboter gekauft. Besuche den Roboter Generator!</payedRobotItemBought>
+  <reachedLevel>Du hast Level {0} erreicht!</reachedLevel>
+  <youLose>Du hast verloren!</youLose>
+  <youWon>Du hast gewonnen!</youWon>
+  <combatRespondMessage>{0} (level {1}) nimmt die Herrausforderung an. Jetzt starten?</combatRespondMessage>
+  <combatRequestMessage>{0} (level {1}) fordert dich zu einen Roboter Kampf herraus</combatRequestMessage>
+  <teamOwnerIsFull>{0} hat ein eigenes Team und kann deinem nicht beitreten</teamOwnerIsFull>
+  <teamRequest>{0} lädt dich zu einem Team ein. Akzeptieren?</teamRequest>
+  <teamMemberAdded>{0} ist deinem Team beigetreten</teamMemberAdded>
+  <removedFromTeamMsg>{0} hat dich vom Team entfernt</removedFromTeamMsg>
+  <teamNameFormat>{0}'s Team</teamNameFormat>
+</messages>

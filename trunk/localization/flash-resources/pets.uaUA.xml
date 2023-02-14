@@ -1,0 +1,31 @@
+<messages>
+  <petPrice>Ціна</petPrice>
+  <buyPet>Купити</buyPet>
+  <petConstructor>Конструктор домашнього улюбленця</petConstructor>
+  <petAtHome>Твій улюбленець вже зачекався тебе вдома!</petAtHome>
+  <petExists>Ти вже маєш домашнього улюбленця</petExists>
+  <takePet>Взяти свого домашнього улюбленця на прогулянку</takePet>
+  <leavePet>Залишити свого домашнього улюбленця вдома</leavePet>
+  <disposePet>Вигнати свого домашнього улюбленця</disposePet>
+  <toFeed>Кормити</toFeed>
+  <toPlay>Забава</toPlay>
+  <toRest>Відпочинок</toRest>
+  <health>Здоров’я</health>
+  <food>Їжа</food>
+  <loyality>Вірність</loyality>
+  <disposeQuastion>Are you sure you want to turn your pet out?</disposeQuastion>
+  <petRules>Правила</petRules>
+  <petName>Зорбос</petName>
+  <petDisposedText>Дорогий хазяїн, ви погано відносились до мене, тому я втік від вас. 
+Краще піклуйтесь про свого майбутнього домашнього улюбленця 
+  Ваш домашній улюбленець</petDisposedText>
+  <bodyButton>Привіт незнайомцю! …им, вибач, я зовсім забув про тебе, отже мене звати доктор Алан Чогрін, можеш мене кликати доком. Я тут, щоб сконструювати тобі домашнього улюбленця, то що, починаємо! Тааак, тут ти можеш вибрати форму твого улюбленця</bodyButton>
+  <faceButton>Вибери обличчя своєму улюбленцю</faceButton>
+  <topButton>Шукаєш вуха? Вони тут</topButton>
+  <sideButton>…вибач, а ти хто? Ааа! Я знов забув! Так, звісно, вибери руки улюбленцю, чи то крила</sideButton>
+  <bottomButton>І останнє – ноги. Вітаю! Тепер клікни Купити і дозволь мені продовжити мої експерименти… До зустрічі!</bottomButton>
+  <inputName>Назви свого улюбленця</inputName>
+  <badName>Погане ім’я. Будь-ласка, спробуй інше</badName>
+  <maskCatalog>Каталог масок</maskCatalog>
+  <petIsHungry>Дорогий хазяїн, Я голодний! Будь-ласка повернись до мене і дай мені щось попоїсти! В інакшому випадку я втечу</petIsHungry>
+</messages>

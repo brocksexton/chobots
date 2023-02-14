@@ -1,0 +1,30 @@
+<messages>
+  <academy>Akademie</academy>
+  <changeServer>Wähle eine Stadt</changeServer>
+  <fournitureShop>Möbelgeschäft</fournitureShop>
+  <garbageCollector>Müllmann</garbageCollector>
+  <home>Haus</home>
+  <housesShop>MachDeinEigenesHaus-Geschäft</housesShop>
+  <locAccShop>Geschäft</locAccShop>
+  <locCafe>Cafe</locCafe>
+  <locEco>Öko-Ort</locEco>
+  <locEcoShop>Öko Geschäft</locEcoShop>
+  <locGames>Spielplatz</locGames>
+  <locMagicShop>Magiegeschäft</locMagicShop>
+  <locMissions>Missionenagentur</locMissions>
+  <locMusic>Rockemall Straße</locMusic>
+  <locPark>Park</locPark>
+  <locPetsShop>Haustieregeschäft</locPetsShop>
+  <locRobots>Roboter Arena</locRobots>
+  <missionAgency>Missionsagentur</missionAgency>
+  <park>Park</park>
+  <pets>Haustier-Bastler</pets>
+  <petsShop>Haustieregeschäft</petsShop>
+  <rope>Seil</rope>
+  <spaceGame>Raumsspiel</spaceGame>
+  <spaceRacing>Raumrennen</spaceRacing>
+  <sweetBattle>Süßigkeiten-Kampf</sweetBattle>
+  <loc6>Snowland</loc6>
+  <locNichos>Nichos Kingdom</locNichos>
+<locBeach>Beach!</locBeach>
+</messages>

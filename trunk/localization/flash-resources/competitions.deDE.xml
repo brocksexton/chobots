@@ -1,0 +1,20 @@
+<messages>
+  <finishTime>Zeit zu Ende {0}.{1}.{2} {3}:{4}</finishTime>
+  <noCompetitions>Es gibt zur Zeit keinen Wettbewerb</noCompetitions>
+  <sweetBattle>Süßigkeiten Wettbewerb</sweetBattle>
+  <asteroid>Asteroiden Wettbewerb</asteroid>
+  <choboard>Choboard Wettbewerb</choboard>
+  <pinball>Pinnball Wettbewerb</pinball>
+  <crab>Krabben Wettbewerb</crab>
+  <robots>Roboter Wettbewerb</robots>
+  <spaceRacing>Weltraumrennen Wettbewerb</spaceRacing>
+  <garbageCollector>Müllsammler Wettbewerb</garbageCollector>
+  <farm>Kuhpflegemission Wettbewerb</farm>
+  <rope>Seil Wettbewerb</rope>
+  <coins>Münzen Wettbewerb</coins>
+  <palm>Palmen Wettbewerb</palm>
+  <checkers>Damenspiel Wettbewerb</checkers>
+  <chess>Schach Wettbewerb</chess>
+  <chopaj>Chopajev</chopaj>
+  <questChopix>Chopix Wettbewerb</questChopix>
+</messages>

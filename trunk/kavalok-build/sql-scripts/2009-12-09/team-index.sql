@@ -1,0 +1,1 @@
+create index RobotTeam_experience on RobotTeam(experience);

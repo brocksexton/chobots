@@ -1,0 +1,146 @@
+Application {
+   backgroundColor: #9966ff;
+   backgroundGradientColors: #9966ff, #9999cc;
+   themeColor: #9900ff;
+   color: #000000;
+}
+
+Button {
+   cornerRadius: 0;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #9933ff, #9966ff, #9900cc, #9933cc;
+   color: #000000;
+   textRollOverColor: #000000;
+   borderColor: #6600ff;
+   themeColor: #6600ff;
+}
+
+CheckBox {
+   fillAlphas: 0.82, 0.79, 0.75, 0.65;
+   fillColors: #9933ff, #9999ff, #9900cc, #9933cc;
+   borderColor: #6600ff;
+   themeColor: #9900ff;
+}
+
+ComboBox {
+   cornerRadius: 0;
+   color: #000000;
+   borderColor: #6600ff;
+   highlightAlphas: 0.38, 0.03;
+   fillAlphas: 0.84, 0.55, 0.75, 0.65;
+   fillColors: #9933ff, #9966ff, #9900cc, #9933ff;
+   themeColor: #9900ff;
+   alternatingItemColors: #ffffff, #f3f3f3;
+   openDuration: 98;
+   closeDuration: 75;
+}
+
+DateChooser {
+   headerColors: #9966ff, #9933ff;
+   highlightAlphas: 0.43, 0.33;
+   fillAlphas: 0.67, 0.4, 0.75, 0.65;
+   fillColors: #9966ff, #9900cc, #9966ff, #eeeeee;
+   todayColor: #9900ff;
+   borderColor: #6600ff;
+   themeColor: #9900ff;
+}
+
+HScrollBar {
+   cornerRadius: 0;
+   highlightAlphas: 0.3, 0;
+   fillAlphas: 0.76, 0.7, 0.75, 0.65;
+   fillColors: #9933ff, #9966ff, #9933ff, #9999ff;
+   trackColors: #9966ff, #9933ff;
+   themeColor: #9900ff;
+   borderColor: #6600ff;
+}
+
+List {
+   alternatingItemColors: #ffffff, #f9f9f9;
+   rollOverColor: #6666ff;
+   borderColor: #6600ff;
+   selectionColor: #9966ff;
+   cornerRadius: 0;
+}
+
+Panel {
+   borderColor: #9966ff;
+   roundedBottomCorners: true;
+   cornerRadius: 2;
+   headerColors: #6633ff, #6600ff;
+   footerColors: #6666ff, #6600ff;
+   backgroundColor: #ffffff;
+   dropShadowEnabled: true;
+   titleStyleName: "mypanelTitle";
+}
+
+.mypanelTitle {
+   color: #000000;
+}
+
+RadioButton {
+   fillColors: #9999ff, #9933ff, #9900cc, #9966ff;
+   borderColor: #6600ff;
+   themeColor: #6600ff;
+}
+
+TabNavigator {
+   borderColor: #6633ff;
+   color: #000000;
+   tabStyleName: "myTabs";
+   firstTabStyleName: "myTabs";
+   lastTabStyleName: "myTabs";
+   backgroundColor: #e2cfff;
+   selectedTabTextStyleName: "mySelectedTabs";
+}
+
+DataGrid {
+   backgroundColor: #cc99ff;
+   alternatingItemColors: #9999ff, #9966ff;
+   headerColors: #9999ff, #9966cc;
+   horizontalGridLines: false;
+   horizontalGridLineColor: #6600ff;
+   verticalGridLines: true;
+   verticalGridLineColor: #6600ff;
+   useRollOver: true;
+   rollOverColor: #6600cc;
+   textRollOverColor: #ffffff;
+   borderColor: #6600ff;
+   selectionColor: #f066ff;
+}
+
+.myTabs {
+   highlightAlphas: 0.3, 0.06;
+   fillAlphas: 0.84, 0.81;
+   fillColors: #9933ff, #9999ff;
+   borderColor: #6600ff;
+   themeColor: #9900ff;
+   color: #000000;
+
+}
+
+.mySelectedTabs {
+   color: #000000;
+}
+
+TextInput {
+   borderColor: #6600ff;
+}
+TextArea {
+   borderColor: #6600ff;
+}
+
+ToolTip {
+   backgroundColor: #9900ff;
+}
+
+VScrollBar {
+   cornerRadius: 0;
+   highlightAlphas: 0.3, 0.14;
+   fillAlphas: 0.96, 1, 0.75, 0.65;
+   fillColors: #9933ff, #9966ff, #9999ff, #9933ff;
+   trackColors: #9933ff, #9966ff;
+   themeColor: #6600ff;
+   borderColor: #6600ff;
+}
+

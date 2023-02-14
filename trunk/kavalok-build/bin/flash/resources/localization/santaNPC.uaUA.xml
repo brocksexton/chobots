@@ -1,0 +1,10 @@
+<messages>
+  <caption>Дід Мороз</caption>
+  <npcName>Дід Мороз</npcName>
+  <firstItem>Бррр, зимно!</firstItem>
+  <questTask>Ho Ho Ho!Christmas is on its way, and Mr. Santa and I decided to give out free items to you every day for the next 12 days. Have a very nice December and enjoy Chobots! I heard there are lots of surprises in store for you :)</questTask>
+  <noItem>Я не зможу знайти дзвіночки сам. Мені дійсно потрібна твоя допомога. Знайди три дзвіночка.</noItem>
+  <nextItem>Спасибі за допомогу мені. Але деякі дзвіночки все ще загублені. Принеси мені будь ласка решту.</nextItem>
+  <questComplete>Файно є! Це те, що я шукав! За це я тобі дам черевички та шалик. Щасливого Різдва!</questComplete>
+  <idleMessage>Дякую за допомогу. Я сподіваюсь, тобі сподобались мої подарунки. Розважайся!</idleMessage>
+</messages>

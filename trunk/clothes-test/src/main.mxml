@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<MainWindow
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="com.kavalok.clothes.*"
+	layout="vertical" width="800" height="600"
+	initialize = "onInitialize(event)"
+	activate="refresh(event)"
+	title="Clothes test"
+	minWidth="800" minHeight="600">
+	
+	<mx:Panel width="100%" layout="absolute" title="Clothes folder">
+		
+		<mx:Text id="txtPath" fontSize="12" left="0" right="120">
+		</mx:Text>
+		
+		<mx:Button
+			click="clear(event)"
+			label="Clear"
+			right="120">
+		</mx:Button>
+		
+		<mx:Button
+			click="refresh(event)"
+			label="Refresh"
+			right="44">
+		</mx:Button>
+		
+		<mx:Button
+			id="btnFolder"
+			click="selectFolder(event)"
+			right="0" label="...">
+		</mx:Button>
+	
+	</mx:Panel>
+	
+	<mx:HDividedBox width="100%" height="100%">
+		
+		<mx:Panel layout="horizontal" width = "75%" height = "100%" title="Models">
+			
+			<mx:Tile id="tiles" width="100%" height="100%">
+			</mx:Tile>
+				
+		</mx:Panel>
+		
+			
+		<mx:Panel layout="vertical" width = "25%" height = "100%" title="Clothes">
+			
+			<mx:FileSystemList
+					id = "swfList"
+					change="onClothesSelected(event)"
+					width = "100%" height = "100%">
+			</mx:FileSystemList>
+		
+		</mx:Panel>
+			
+	</mx:HDividedBox>
+	
+</MainWindow>

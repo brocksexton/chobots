@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NewsBase xmlns="com.kavalok.admin.news.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Form>
+	<mx:FormItem
+			label="Date 1:">
+					<mx:TextInput 
+						id="date1input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+			<mx:FormItem
+			label="Event 1:">
+					<mx:TextInput 
+						id="event1input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+			<mx:FormItem
+			label="Image 1:">
+					<mx:TextInput 
+						id="image1input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+
+		<mx:FormItem
+			label="Date 2:">
+					<mx:TextInput 
+						id="date2input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+				<mx:FormItem
+			label="Event 2:">
+					<mx:TextInput 
+						id="event2input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+			<mx:FormItem
+			label="Image 2:">
+					<mx:TextInput 
+						id="image2input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+		<mx:FormItem
+			label="Date 3:">
+					<mx:TextInput 
+						id="date3input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+				<mx:FormItem
+			label="Event 3:">
+					<mx:TextInput 
+						id="event3input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+			<mx:FormItem
+			label="Image 3:">
+					<mx:TextInput 
+						id="image3input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+		<mx:FormItem
+			label="Date 4:">
+					<mx:TextInput 
+						id="date4input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+				<mx:FormItem
+			label="Event 4:">
+					<mx:TextInput 
+						id="event4input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+			<mx:FormItem
+			label="Image 4:">
+					<mx:TextInput 
+						id="image4input" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+
+
+
+				<mx:FormItem
+			label="Featured User:">
+					<mx:TextInput 
+						id="featuredUserInput" 
+						maxChars="100"
+						change="changed = true"/>
+						
+		</mx:FormItem>
+		<mx:Button
+		    label="save"
+		click="onSaveNewsClick(event)"
+		enabled="{changed}"/>
+</mx:Form>
+</NewsBase>

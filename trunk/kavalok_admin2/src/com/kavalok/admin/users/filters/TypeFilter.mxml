@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TypeFilterBase xmlns="com.kavalok.admin.users.filters.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Objects;
+			import com.audioo.admin.constants.TrackTypes;
+		]]>
+	</mx:Script>
+	<mx:Label
+		text="{filterData.fieldName}"/>
+	<mx:ComboBox
+		id="valueComboBox"
+		prompt="select type..."
+		dataProvider="{TrackTypes.TYPES}"
+		selectedIndex="{getIndex(Objects.castToString(filterData.value))}"
+		change="onValueChange(event)"/>
+	<mx:Button
+		label="X"
+		fillColors="{[0xff0000, 0x660000]}"
+		click="{sendRemove()}"/>
+	
+</TypeFilterBase>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QuestBase xmlns="com.kavalok.admin.quest.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="org.goverla.controls.*">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.TextArea;
+		]]>
+	</mx:Script>
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:DataGrid
+		width="400"
+		height="100%"
+		rowHeight="30"
+		dataProvider="{quests}">
+		<mx:columns>
+			<mx:DataGridColumn
+				headerText="QuestName"
+				dataField="name"
+				width="200">
+			</mx:DataGridColumn>
+		
+			<mx:DataGridColumn
+				headerText="server"
+				dataField="serverId"
+				width="200">
+				<mx:itemRenderer>
+					<mx:Component>
+						<mx:ComboBox
+							labelField="name"
+							dataProvider="{outerDocument.serversDataProvider.list}"
+							selectedIndex="{outerDocument.getServerIndex(data.serverId)}"
+							change="data.serverId=selectedItem.id"
+						/>
+					</mx:Component>
+				</mx:itemRenderer>
+			</mx:DataGridColumn>
+			
+			<mx:DataGridColumn
+				headerText="enabled"
+				dataField="enabled"
+				width="200">
+				<mx:itemRenderer>
+					<mx:Component>
+						<mx:Button
+							label="enabled"
+							click="outerDocument.setQuestEnabled(data, this)"
+							enabled="{data.serverId!=-2}"
+						/>
+					</mx:Component>
+				</mx:itemRenderer>
+			</mx:DataGridColumn>
+		</mx:columns>
+	</mx:DataGrid>
+</QuestBase>

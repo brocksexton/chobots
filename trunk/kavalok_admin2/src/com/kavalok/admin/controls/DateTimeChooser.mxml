@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DateTimeChooserBase xmlns="com.kavalok.admin.controls.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:DateChooser
+		id="dateChooser"
+		selectedDate="{new Date()}"
+		change="dispatchEvent(event)"/>
+	<mx:ComboBox
+		id="hoursComboBox"
+		dataProvider="{hours}"
+		change="dispatchEvent(event)"/>
+	<mx:Label
+		text="H"/>
+</DateTimeChooserBase>

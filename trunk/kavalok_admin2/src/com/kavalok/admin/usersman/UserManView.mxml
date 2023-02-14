@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserManViewBase
+	xmlns="com.kavalok.admin.usersman.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:stuffs="com.kavalok.admin.stuffs.*">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.main.PermissionLevels;
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:Label
+				text="{user.login}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="email">
+			<mx:Label
+				text="{user.email}"/>
+		</mx:FormItem>
+	</mx:Form>
+	
+	<mx:Spacer height="10"/>
+	<mx:Label text="Give membership" fontWeight="bold"/>
+	<mx:VBox  borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4"
+		visible="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+
+		<mx:HBox>
+			<mx:Label text="Months"/>
+			<mx:TextInput id="citizenshipMonths"
+				restrict="0-9"
+				change="if(!Strings.isBlank(citizenshipMonths.text)) citizenshipDays.text='' "
+				/>
+			<mx:Label text="Days"/>
+			<mx:TextInput id="citizenshipDays"
+				restrict="0-9"
+				change="if(!Strings.isBlank(citizenshipDays.text)) citizenshipMonths.text='' "
+				/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Reason"/>
+			<mx:TextInput id="citizenshipReason" width="100%" />
+		</mx:HBox>
+
+		<mx:Button label="Give"
+			enabled="{ (!Strings.isBlank(citizenshipMonths.text) || !Strings.isBlank(citizenshipDays.text)) &amp;&amp; !Strings.isBlank(citizenshipReason.text)}"
+			click="onAddCitizenshipClick(event)"/>
+	</mx:VBox>
+	
+	<mx:Spacer height="10"/>
+	<mx:Label text="Give stuff" fontWeight="bold"/>
+	<mx:VBox  borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4"
+		visible="{permissionLevel >= PermissionLevels.MODER}">
+		<stuffs:StuffChooser
+			id="stuffChooser"
+		/>
+		<mx:HBox>
+				<mx:Label text="Reason"/>
+				<mx:TextInput id="stuffReason" width="100%" />
+			<mx:Button label="Give"
+				enabled="{!Strings.isBlank(stuffReason.text)}"
+				click="onAddStuffClick(event)"/>
+		</mx:HBox>
+	</mx:VBox>
+	
+	<mx:VBox
+		visible="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+		<mx:Spacer height="200">
+			
+		</mx:Spacer>
+
+		<mx:Button label="Delete user"
+			click="onDeleteClick(event)"/>
+	</mx:VBox>
+	
+	
+</UserManViewBase>

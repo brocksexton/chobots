@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeeneBase xmlns="com.kavalok.admin.seene.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Form>
+	<mx:FormItem
+	    label="User ID:">
+<mx:HBox>
+<mx:TextInput
+        id="usernameInput"/>
+<mx:Button
+        label="superuser"
+        click="makeSuperUser(event)"/>
+</mx:HBox>
+</mx:FormItem>
+ <mx:FormItem
+        label="Modifiers:">
+		<mx:HBox>
+        <mx:VBox >
+				<mx:ComboBox
+					id="modifiersComboBox"
+					dataProvider="{modifiers}"
+				/>
+			</mx:VBox >
+        <mx:Button
+                label="Apply Modifier"
+		         click="applyMod(event)"/>
+		                 <mx:Button
+                label="Remove Modifier"
+		         click="removeMod(event)"/>
+		         </mx:HBox>
+</mx:FormItem>
+
+<mx:FormItem
+        label="models:">
+		<mx:HBox>
+        <mx:VBox >
+				<mx:ComboBox
+					id="directionComboBox"
+					dataProvider="{directions}"
+				/>
+			
+			</mx:VBox >
+
+			 <mx:VBox >
+				<mx:ComboBox
+					id="numComboBox"
+					dataProvider="{num}"
+			/>
+			</mx:VBox >
+			
+        <mx:Button
+                label="Apply Direction"
+		         click="applyDirection(event)"/>
+		         </mx:HBox>
+</mx:FormItem>
+<mx:CheckBox
+id="globalCheckBox"
+label="Apply Global"/>
+</mx:Form>
+<!--<mx:TextInput id="accessToken"/>
+<mx:TextInput id="accessTokenSecret"/>
+<mx:Button label="submit" click="addTokens(event)"/>
+<mx:Button label="Get Tokens" click="getTokens(event)"/>
+<mx:Form>
+</mx:Form> -->
+</SeeneBase>

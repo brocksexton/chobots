@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StatisticsBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="com.kavalok.admin.controls.*">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.main.PermissionLevels;
+		]]>
+	</mx:Script>
+	<controls:DateRangeChooser
+		id="dateRangeChooser"/>
+	<mx:TabNavigator
+		width="100%"
+		height="100%">
+		<mx:TabNavigator
+			label="membership"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			>
+			<MembersAge
+				label="members age"
+				minDate="{dateRangeChooser.from}"
+				maxDate="{dateRangeChooser.to}"
+				/>
+		</mx:TabNavigator>
+		<StatisticsNumbers
+			label="numbers"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			visible="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>
+<!--		<LoginStatistics
+			label="system usage"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>-->
+		<ActivatedRegistered
+			label="activated/registered"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			visible="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>
+		<LoadStatistics
+			label="users online"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			visible="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>
+		<PurchaseStatistics
+			label="purchase statistics"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			visible="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>
+<!--		<MoneyEarned
+			label="money statistics"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>-->
+		<TransactionStatistics
+			label="processed transactions"
+			width="100%"
+			height="100%"
+			minDate="{dateRangeChooser.from}"
+			maxDate="{dateRangeChooser.to}"
+			visible="{permissionLevel == PermissionLevels.PARTNER || permissionLevel > PermissionLevels.SUPER_MODER}"
+			enabled="{permissionLevel == PermissionLevels.PARTNER || permissionLevel > PermissionLevels.SUPER_MODER}"
+			/>
+	</mx:TabNavigator>
+</StatisticsBase>

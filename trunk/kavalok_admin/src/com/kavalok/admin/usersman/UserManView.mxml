@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserManViewBase
+	xmlns="com.kavalok.admin.usersman.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:stuffs="com.kavalok.admin.stuffs.*">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.main.PermissionLevels;
+			import org.goverla.utils.Strings;
+			import com.kavalok.services.MoneyService;
+			import com.kavalok.services.AdminService;
+		]]>
+	</mx:Script>
+	
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:Label
+				text="{user.login}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="email">
+			<mx:Label
+				text="{user.email}"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Label text="Gifts" fontWeight="bold"/>
+	<mx:VBox  borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4"
+		visible="{permissionLevel > PermissionLevels.HALF_MODER}">
+		<mx:Label text="Citizenship" fontWeight="bold"/>
+		<mx:HBox>
+			<mx:Label text="Months"/>
+			<mx:TextInput id="citizenshipMonths"
+				restrict="0-9"
+				change="if(!Strings.isBlank(citizenshipMonths.text)) citizenshipDays.text='' "
+				/>
+			<mx:Label text="Days"/>
+			<mx:TextInput id="citizenshipDays"
+				restrict="0-9"
+				change="if(!Strings.isBlank(citizenshipDays.text)) citizenshipMonths.text='' "
+				/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="Reason"/>
+			<mx:TextInput id="citizenshipReason" width="100%" />
+		</mx:HBox>
+		<mx:Button label="Give"
+			enabled="{ (!Strings.isBlank(citizenshipMonths.text) || !Strings.isBlank(citizenshipDays.text)) &amp;&amp; !Strings.isBlank(citizenshipReason.text)}"
+			click="onAddCitizenshipClick(event)"/>
+			<mx:Label text="Money" fontWeight="bold"/>
+			<mx:HBox
+				visible="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+				<mx:Label text="add money"/>
+				<mx:TextInput id="moneyTextInput"
+					restrict="0-9"/>
+				<mx:Button label="add"
+					enabled="{!Strings.isBlank(moneyTextInput.text)}"
+					click="onAddMoneyClick(event)"/>
+			</mx:HBox>
+		<mx:Label text="Items" fontWeight="bold"/>
+		<stuffs:StuffChooser
+			id="stuffChooser"
+		/>
+		<mx:HBox
+			visible="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:Label text="Reason"/>
+			<mx:TextInput id="stuffReason" width="100%" />
+			<mx:Button label="Give"
+				enabled="{!Strings.isBlank(stuffReason.text)}"
+				click="onAddStuffClick(event)"/>
+		</mx:HBox>
+	</mx:VBox>
+	<mx:VBox
+		enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+	</mx:VBox>
+	<mx:VBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:Label
+				text="{user.login}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="email">
+			<mx:Label
+				text="{user.email}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Agent"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="agentCheckBox"
+				selected="{user.agent}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Forumer"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="forumerCheckBox"
+				selected="{user.forumer}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Developer"
+			enabled="{permissionLevel >= PermissionLevels.ADMIN}">
+			<mx:CheckBox
+			 id="devCheckBox"
+			 selected="{user.dev}"
+			 change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Moderator"
+			enabled="{permissionLevel >= PermissionLevels.ADMIN}">
+			<mx:CheckBox
+				id="moderatorCheckBox"
+				selected="{user.moderator}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Councillor"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:CheckBox
+				id="scoutCheckBox"
+				selected="{user.scout}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Journalist"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:CheckBox
+				id="journalistCheckBox"
+				selected="{user.journalist}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Support"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="supportCheckBox"
+				selected="{user.support}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+				label="Designer"
+				enabled="{permissionLevel >= PermissionLevels.ADMIN}">
+				<mx:CheckBox
+					id="desCheckBox"
+					selected="{user.des}"
+					change="changed = true"/>
+			</mx:FormItem>
+		<mx:FormItem
+			label="Staff"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="staffCheckBox"
+				selected="{user.staff}"
+				change="changed = true"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Button
+		label="save"
+		enabled="{changed}"
+		click="onSaveClick(event)"/>
+		</mx:VBox>
+	
+	
+</UserManViewBase>

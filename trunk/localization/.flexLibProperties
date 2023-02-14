@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="com.kavalok.utils.Maths"/>
+    <classEntry path="com.kavalok.interfaces.IIterator"/>
+    <classEntry path="com.kavalok.flash.playback.events.IntervalEndEvent"/>
+    <classEntry path="com.kavalok.errors.IllegalServerResponce"/>
+    <classEntry path="com.kavalok.errors.IllegalArgumentError"/>
+    <classEntry path="com.kavalok.utils.Timers"/>
+    <classEntry path="com.kavalok.errors.OverloadError"/>
+    <classEntry path="com.kavalok.interfaces.IRequirement"/>
+    <classEntry path="com.kavalok.utils.comparing.ComparingResult"/>
+    <classEntry path="com.kavalok.localization.LoadMessagesAction"/>
+    <classEntry path="com.kavalok.localization.ResourceBundleFactory"/>
+    <classEntry path="com.kavalok.utils.converting.ConstructorConverter"/>
+    <classEntry path="com.kavalok.utils.Objects"/>
+    <classEntry path="com.kavalok.events.TargetEvent"/>
+    <classEntry path="com.kavalok.utils.comparing.ClassRequirement"/>
+    <classEntry path="com.kavalok.errors.NotImplementedError"/>
+    <classEntry path="com.kavalok.utils.comparing.PropertyComparer"/>
+    <classEntry path="com.kavalok.errors.ResponderError"/>
+    <classEntry path="com.kavalok.utils.PrefixRequirement"/>
+    <classEntry path="com.kavalok.localization.ResourceBundle"/>
+    <classEntry path="com.kavalok.utils.comparing.RequirementsCollection"/>
+    <classEntry path="com.kavalok.constants.BrowserConstants"/>
+    <classEntry path="com.kavalok.utils.comparing.ClassNameRequirement"/>
+    <classEntry path="com.kavalok.interfaces.ICommand"/>
+    <classEntry path="com.kavalok.errors.ReflectionError"/>
+    <classEntry path="com.kavalok.errors.CollectionError"/>
+    <classEntry path="com.kavalok.utils.TimeUtils"/>
+    <classEntry path="com.kavalok.errors.IllegalStateError"/>
+    <classEntry path="com.kavalok.utils.common.FieldDescription"/>
+    <classEntry path="com.kavalok.serialization.Serializer"/>
+    <classEntry path="com.kavalok.interfaces.IConverter"/>
+    <classEntry path="com.kavalok.events.DefaultEvent"/>
+    <classEntry path="com.kavalok.utils.comparing.PropertyCompareRequirement"/>
+    <classEntry path="com.kavalok.utils.Strings"/>
+    <classEntry path="com.kavalok.remoting.BaseRed5Delegate"/>
+    <classEntry path="com.kavalok.utils.converting.ToPropertyValueConverter"/>
+    <classEntry path="com.kavalok.utils.Arrays"/>
+    <classEntry path="com.kavalok.localization.interfaces.IResourceBundleFactory"/>
+    <classEntry path="com.kavalok.utils.comparing.EqualsRequirement"/>
+    <classEntry path="com.kavalok.interfaces.IMap"/>
+    <classEntry path="com.kavalok.interfaces.IComparer"/>
+    <classEntry path="com.kavalok.utils.sorting.QuickSorter"/>
+    <classEntry path="com.kavalok.utils.WeakReference"/>
+    <classEntry path="com.kavalok.interfaces.ISorter"/>
+    <classEntry path="com.kavalok.errors.PropertyAccessError"/>
+    <classEntry path="com.kavalok.flash.playback.MovieClipPlayer"/>
+    <classEntry path="com.kavalok.localization.MessageConverter"/>
+    <classEntry path="com.kavalok.utils.ReflectUtil"/>
+    <classEntry path="com.kavalok.collections.ArrayList"/>
+    <classEntry path="com.kavalok.localization.Localiztion"/>
+    <classEntry path="com.kavalok.remoting.BaseDelegate"/>
+    <classEntry path="com.kavalok.flash.process.EnterFrameTimer"/>
+    <classEntry path="com.kavalok.flash.geom.Point"/>
+    <classEntry path="com.kavalok.events.EventSender"/>
+    <classEntry path="com.kavalok.utils.timers.CallFunctionAction"/>
+    <classEntry path="com.kavalok.errors.XMLError"/>
+    <classEntry path="com.kavalok.errors.ObjectAccessError"/>
+    <classEntry path="com.kavalok.utils.common.MemberDescription"/>
+    <classEntry path="com.kavalok.errors.AbstractMethodError"/>
+    <classEntry path="com.kavalok.events.PropertyValueChangeEvent"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditableControlBase xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="org.goverla.controls.editable.common.*"
+	verticalAlign="middle"
+	currentState="{VIEW_STATE}">
+	<states>
+		<mx:State name="{VIEW_STATE}" enterState="onViewStateEnter()">
+			<mx:AddChild>
+				<mx:target>
+					<mx:Box id="viewBox" width="100%" height="100%" visible="{showEmpty}" includeInLayout="{showEmpty}" />
+				</mx:target>
+			</mx:AddChild>
+		</mx:State>
+		<mx:State name="{SHORT_EDIT_STATE}" enterState="onEditStateEnter()">
+			<mx:AddChild>
+				<mx:target>
+					<mx:Box id="editBox" width="100%" height="100%" />
+				</mx:target>
+			</mx:AddChild>
+		</mx:State>
+		<mx:State name="{FULL_EDIT_STATE}" basedOn="{SHORT_EDIT_STATE}">
+			<mx:AddChild position="lastChild">
+				<mx:target>
+					<SaveOrCancelBox id="saveOrCancelBox" save="onSaveButtonClick()" cancel="onCancelButtonClick()" />
+				</mx:target>
+			</mx:AddChild>
+		</mx:State>
+	</states>
+	<transitions>
+		<mx:Transition fromState="{VIEW_STATE}" toState="{SHORT_EDIT_STATE}">
+			<mx:Fade target="{this}" />
+		</mx:Transition>
+		<mx:Transition fromState="{SHORT_EDIT_STATE}" toState="{VIEW_STATE}">
+			<mx:Fade target="{this}" />
+		</mx:Transition>
+		<mx:Transition fromState="{VIEW_STATE}" toState="{FULL_EDIT_STATE}">
+			<mx:Fade target="{this}" />
+		</mx:Transition>
+		<mx:Transition fromState="{FULL_EDIT_STATE}" toState="{VIEW_STATE}">
+			<mx:Fade target="{this}" />
+		</mx:Transition>
+	</transitions>
+</EditableControlBase>

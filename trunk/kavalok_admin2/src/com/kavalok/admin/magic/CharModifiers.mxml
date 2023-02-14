@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CharModifiersBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:stuffs="com.kavalok.admin.stuffs.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+		
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.constants.StuffTypes;
+			[Bindable] private var clothes:Array = [StuffTypes.CLOTHES];			
+		]]>
+	</mx:Script>
+		
+	<mx:VBox
+		width="100%"
+		height="100%">
+			
+		<mx:Label text="scale:" fontWeight="bold" />
+		<mx:HBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+			<mx:Label text="{scaleSlider.value}"/>
+			<mx:HBox>
+				<mx:HSlider
+					id="scaleSlider"
+					value="0.49"
+					minimum="0.1"
+					maximum="2"
+				/>
+				<mx:Button label="apply" click="applyScale()"/>
+				<mx:Button label="clear" click="clearScale()"/>
+			</mx:HBox>
+		</mx:HBox>
+		
+		<mx:Spacer height="10"/>
+		<mx:Label text="body:" fontWeight="bold" />
+		<mx:HBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+			<mx:ComboBox
+				id="bodyCombo"
+				dataProvider="{bodies}"
+				rowCount="20" />
+			<mx:Button label="apply" click="applyBody()"/>
+			<mx:Button label="clear" click="clearBody()"/>
+		</mx:HBox>
+		
+		<mx:Spacer height="10"/>
+		<mx:Label text="clothes:" fontWeight="bold" />
+		<mx:VBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+			<mx:HBox>
+				<stuffs:StuffChooser
+					id="stuffChooser"
+					allowedTypes="{clothes}"
+				/>
+				<mx:Button label="apply" click="applyClothes()" enabled="{Boolean(stuffChooser.item)}" />
+				<mx:Button label="clear" click="clearClothes()"	/>
+			</mx:HBox>
+			<mx:CheckBox
+				id="replaceClothesCheckBox"
+				label="Replace original clothes"
+			/>
+		</mx:VBox>
+		
+	</mx:VBox>
+</CharModifiersBase>

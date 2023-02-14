@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartnersViewBase
+	xmlns="com.kavalok.admin.main.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:login="com.kavalok.admin.login.*" 
+	xmlns:statistics="com.kavalok.admin.statistics.*" 
+	xmlns:users="com.kavalok.admin.users.*" 
+	xmlns:config="com.kavalok.admin.config.*" 
+	xmlns:log="com.kavalok.admin.log.*" 
+	xmlns:servers="com.kavalok.admin.servers.*"
+	xmlns:chat="com.kavalok.admin.chat.*"
+	xmlns:adminMessages="com.kavalok.admin.adminMessages.*" 
+	xmlns:mail="com.kavalok.admin.mail.*" 
+	xmlns:errors="com.kavalok.admin.errors.*" 
+	xmlns:messages="com.kavalok.admin.messages.*"
+	creationComplete="onCreationComplete(event)" >
+	<mx:Canvas 
+		width="100%"
+		height="100%">
+		<login:Login
+			id="login"
+			visible="false"
+			horizontalCenter="0"
+			verticalCenter="0"
+			/>
+	</mx:Canvas>
+	<mx:TabNavigator
+		width="100%"
+		height="100%">
+		<users:PartnerUsers
+			label="users"
+			width="100%"
+			height="100%"/>
+		<statistics:Statistics
+			label="stats"
+			width="100%"
+			height="100%"
+			permissionLevel="{PermissionLevels.PARTNER}"
+			/>
+	</mx:TabNavigator>
+</PartnersViewBase>

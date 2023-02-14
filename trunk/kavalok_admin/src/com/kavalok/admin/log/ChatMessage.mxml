@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ChatMessageBase xmlns="com.kavalok.admin.log.*"  xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.constants.AdminConstants;
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:HBox>
+	</mx:HBox>
+	<mx:VBox>
+	<mx:TextArea
+		id="messageTextArea"
+		width="601"
+		editable="false"
+		height="304"/>
+		</mx:VBox>
+		<mx:HBox>
+		<mx:Button
+			label="{scrollable?'pause':'resume'}"
+			click="scrollable=!scrollable"/>	
+					
+			<mx:Button
+			label="clear"
+			click="onClearClick(event)"
+			/>
+			</mx:HBox>
+</ChatMessageBase>

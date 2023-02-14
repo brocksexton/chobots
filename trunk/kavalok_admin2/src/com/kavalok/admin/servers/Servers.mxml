@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServersBase xmlns="com.kavalok.admin.servers.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+		label="refresh"
+		click="onRefreshClick(event)"/>
+	<mx:Repeater
+		id="serversRepeater"
+		dataProvider="{dataProvider.servers}">
+		<mx:HBox>
+			<mx:Text
+				text="{serversRepeater.currentItem.label}"/>
+			<mx:Button
+				label="available"
+				toggle="true"
+				selected="{serversRepeater.currentItem.available}"
+				data="{serversRepeater.currentItem}"
+				click="onAvailableClick(event)"/>
+			<mx:Button
+				label="reboot"
+				data="{serversRepeater.currentItem}"
+				click="onRebootClick(event)"/>
+			<mx:Button
+				label="move users"
+				data="{serversRepeater.currentItem}"
+				click="onMoveUsersClick(event)"/>
+		</mx:HBox>
+	</mx:Repeater>
+	<mx:Label
+		text="move to"/>
+	<mx:ComboBox
+		id="moveToComboBox"
+		dataProvider="{dataProvider.servers}"/>
+</ServersBase>

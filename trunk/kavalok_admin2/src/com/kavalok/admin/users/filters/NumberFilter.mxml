@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NumberFilterBase xmlns="com.kavalok.admin.users.filters.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Label
+		text="{filterData.fieldName}"/>
+	<mx:TextInput
+		id="valueTextInput"
+		change="onValueChange(event)"/>
+	<mx:Button
+		label="X"
+		fillColors="{[0xff0000, 0x660000]}"
+		click="{sendRemove()}"/>
+</NumberFilterBase>
+

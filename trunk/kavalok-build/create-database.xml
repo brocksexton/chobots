@@ -1,0 +1,34 @@
+<project
+	name="create-database"
+	default="schemaexport">
+  	<path id="project.classpath">
+  	    <fileset dir="../kavalok-red5/lib" includes="**/*.jar"/>
+    </path>
+	<taskdef name="hibernatetool"
+	          classname="org.hibernate.tool.ant.HibernateToolTask"
+	          classpathref="project.classpath"
+				/>
+	<target name="schemaexport" description="Exports a generated schema to DB and file">
+		<sql driver="com.mysql.jdbc.Driver" password="root" url="jdbc:mysql://localhost/kavalok" userid="root"
+			src="${java.output.dir}/recreate-kavalok-db.sql"
+			classpathref="project.classpath"/>
+	    <hibernatetool destdir="${basedir}">
+	    	<classpath>
+	    		<pathelement location="${java.output.dir}"/>
+	    	</classpath>
+	    	<annotationconfiguration 
+	    		configurationfile="${java.output.dir}/hibernate.cfg.xml" />
+	        <hbm2ddl
+	             drop="true"
+	             create="true"
+	             export="true"
+	             outputfilename="create-kavalok-db-ddl.sql"
+	             delimiter=";"
+	             format="true"/>
+	    </hibernatetool>
+		<sql driver="com.mysql.jdbc.Driver" password="root" url="jdbc:mysql://localhost/kavalok" userid="root"
+			src="${java.output.dir}/populate-kavalok-db.sql"
+			classpathref="project.classpath"/>
+	</target>
+
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DateRangeChooserBase xmlns="com.kavalok.admin.controls.*" xmlns:mx="http://www.adobe.com/2006/mxml"
+	from="{minimumDateChooser.selectedDate}"
+	to="{maximumDateChooser.selectedDate}">
+	<mx:DateChooser
+		id="minimumDateChooser"
+		selectedDate="{yesterday}"/>
+	<mx:DateChooser
+		id="maximumDateChooser"
+		selectedDate="{tomorrow}"/>
+</DateRangeChooserBase>

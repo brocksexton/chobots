@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KnownWordsBase xmlns="com.kavalok.admin.chat.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<BlockWordsList
+		label="block words"
+		width="100%"
+		height="100%"/>
+	<SkipWordsList
+		label="skip words"
+		width="100%"
+		height="100%"
+		minLength="3"/>
+	<AllowedWordsList
+		label="allowed words"
+		width="100%"
+		height="100%"
+		minLength="1"
+		/>
+	<ReviewWordsList
+		label="review words"
+		width="100%"
+		height="100%"
+		minLength="3"
+		/>
+</KnownWordsBase>

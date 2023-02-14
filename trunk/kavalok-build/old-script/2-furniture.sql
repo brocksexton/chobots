@@ -1,0 +1,1 @@
+UPDATE StuffType s SET premium=false where type="F";

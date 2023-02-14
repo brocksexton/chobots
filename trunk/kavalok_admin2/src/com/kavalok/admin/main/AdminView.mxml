@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdminViewBase
+	xmlns="com.kavalok.admin.main.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:login="com.kavalok.admin.login.*"
+	xmlns:locations="com.kavalok.admin.locations.*"
+	xmlns:graphity="com.kavalok.admin.graphity.*"
+	xmlns:quest1="com.kavalok.admin.quest.*"
+	xmlns:statistics="com.kavalok.admin.statistics.*"
+	xmlns:users="com.kavalok.admin.users.*"
+	xmlns:usersMan="com.kavalok.admin.usersman.*"
+	xmlns:config="com.kavalok.admin.config.*"
+	xmlns:log="com.kavalok.admin.log.*"
+	xmlns:servers="com.kavalok.admin.servers.*"
+	xmlns:chat="com.kavalok.admin.chat.*"
+	xmlns:adminMessages="com.kavalok.admin.adminMessages.*"
+	xmlns:mail="com.kavalok.admin.mail.*"
+	xmlns:errors="com.kavalok.admin.errors.*"
+	xmlns:messages="com.kavalok.admin.messages.*"
+	xmlns:quest="com.kavalok.quest.*"
+	xmlns:infopanel="com.kavalok.admin.infoPanel.*"
+	xmlns:worldconfig="com.kavalok.admin.worldconfig.*"
+	xmlns:magic="com.kavalok.admin.magic.*"
+	xmlns:competitions="com.kavalok.admin.competitions.*"
+	creationComplete="onCreationComplete(event)"
+	xmlns:stuffs="com.kavalok.admin.stuffs.*">
+		
+	<mx:Canvas
+		width="100%"
+		height="100%">
+		<login:Login
+			id="login"
+			visible="false"
+			horizontalCenter="0"
+			verticalCenter="0"
+			/>
+	</mx:Canvas>
+	<mx:TabNavigator
+		id="tabNavigator"
+		width="100%"
+		height="100%">
+		<chat:ChatAdmin
+			width="100%"
+			height="100%"
+			label="Chat"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}"/>
+		<messages:Messages
+			width="100%"
+			height="100%"
+			label="Admin messages"
+			permissionLevel="{permissionLevel}"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}"
+			showFamily="onShowFamily(event)"/>
+		<statistics:Statistics
+			label="Statistics"
+			width="100%"
+			height="100%"
+			permissionLevel="{permissionLevel}"
+			enabled="{permissionLevel == PermissionLevels.PARTNER || permissionLevel > PermissionLevels.SUPER_MODER}"/>
+		<users:Users
+			id="users"
+			label="Users"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}"
+			permissionLevel="{permissionLevel}"
+			/>
+		<usersMan:UsersManagement
+			label="Users Management"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.MODER}"
+			permissionLevel="{permissionLevel}"
+			/>
+		<servers:Servers
+			label="Servers"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"/>
+			
+		<magic:Magic
+			label="Magic"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.EXTERNAL_MODER}"/>
+			
+		<servers:MailServers
+			label="Mail Servers"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"/>
+		<mx:TabNavigator
+			label="Config"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}">
+			<config:Config
+				label="Server Config"
+				width="100%"
+				height="100%"
+				enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"/>
+		</mx:TabNavigator>
+		<errors:Errors
+			label="Errors"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel > PermissionLevels.SUPER_MODER}"/>
+		<log:Log
+			id="log"
+			label="Log"
+			width="100%"
+			height="100%"
+			permissionLevel="{permissionLevel}"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}"
+			showFamily="onShowFamily(event)"
+			/>
+		<graphity:Graphity
+			label="Graphity"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.EXTERNAL_MODER}"
+			/>
+		<stuffs:Stuffs
+			label="Stuffs"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}"
+			/>
+		<worldconfig:WorldConfig
+			label="WorldConfig"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}"
+			/>
+		<mx:TabNavigator
+			label="World"
+			width="100%"
+			height="100%"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<infopanel:InfoPanel
+				label="Info panel"
+				width="100%"
+				height="100%"
+				enabled="{permissionLevel >= PermissionLevels.MODER}"/>
+			<competitions:Competitions
+				label="Competitions"
+				width="100%"
+				height="100%"
+				enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}"/>
+			<quest1:Quest
+				label="Quests"
+				width="100%"
+				height="100%"
+				enabled="{permissionLevel >= PermissionLevels.MODER}"
+				/>
+		</mx:TabNavigator>
+	</mx:TabNavigator>
+</AdminViewBase>

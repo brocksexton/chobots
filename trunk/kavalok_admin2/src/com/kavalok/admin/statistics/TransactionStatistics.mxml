@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransactionStatisticsBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:DataGrid
+		width="100%"
+		height="100%"
+		dataProvider="{citizenDataProvider}">
+		<mx:columns>
+			<mx:DataGridColumn
+				dataField="type"
+				headerText="Transaction type"/>
+			<mx:DataGridColumn
+				dataField="count"
+				headerText="Count"/>
+			<mx:DataGridColumn
+				dataField="sum"
+				headerText="Income"/>
+		</mx:columns>
+	</mx:DataGrid>
+	<mx:Form>
+		<mx:FormItem
+			label="Citizenship Total transactions count">
+			<mx:Label
+				text="{citizenTotalCount}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Citizenship Total income">
+			<mx:Label
+				text="{citizenTotalSum}"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:DataGrid
+		width="100%"
+		height="100%"
+		dataProvider="{robotDataProvider}">
+		<mx:columns>
+			<mx:DataGridColumn
+				dataField="type"
+				headerText="Transaction type"/>
+			<mx:DataGridColumn
+				dataField="count"
+				headerText="Count"/>
+			<mx:DataGridColumn
+				dataField="sum"
+				headerText="Income"/>
+		</mx:columns>
+	</mx:DataGrid>
+	<mx:Form>
+		<mx:FormItem
+			label="Robots Total transactions count">
+			<mx:Label
+				text="{robotTotalCount}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Robots Total income">
+			<mx:Label
+				text="{robotTotalSum}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Total income">
+			<mx:Label
+				text="{totalSum}"/>
+		</mx:FormItem>
+	</mx:Form>
+</TransactionStatisticsBase>

@@ -1,0 +1,224 @@
+Application {
+   backgroundImage: Embed(source="backgrounds.swf#bluestripe");
+   backgroundColor: #0099ff;
+   themeColor: #0033ff;
+   color: #000000;
+}
+
+Button {
+   cornerRadius: 0;
+   highlightAlphas: 0.29, 0.12;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #0099ff, #0033cc, #0033cc, #0099ff;
+   color: #000000;
+   textRollOverColor: #ffffff;
+   borderColor: #000000;
+}
+
+CheckBox {
+   highlightAlphas: 0.06, 0.13;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #0099ff, #0033cc, #0033cc, #0099ff;
+   borderColor: #000000;
+   iconColor: #ffffff;
+   disabledIconColor: #0033cc;
+   color: #000000;
+   textRollOverColor: #000000;
+   themeColor: #ffffff;
+}
+
+ColorPicker {
+   swatchBorderColor: #0099ff;
+   swatchGridBackgroundColor: #0099ff;
+   swatchHighlightColor: #0066ff;
+}
+
+ComboBox {
+   cornerRadius: 0;
+   color: #000000;
+   borderColor: #000000;
+   highlightAlphas: 0.19, 0.12;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #0099ff, #0033cc, #0033cc, #0099ff;
+   backgroundAlpha: 0.64;
+   rollOverColor: #0099ff;
+   textRollOverColor: #ffffff;
+   themeColor: #ffffff;
+   alternatingItemColors: #0099ff, #0066cc;
+   openDuration: 98;
+   closeDuration: 213;
+   dropdownStyleName: "myComboBoxDropDowns";
+}
+
+.myComboBoxDropDowns {
+   borderColor: #000000;
+}
+
+DataGrid {
+   backgroundAlpha: 0.66;
+   backgroundColor: #0099ff;
+   alternatingItemColors: #0099ff, #0066ff;
+   headerColors: #0066ff, #0033cc;
+   horizontalGridLines: false;
+   verticalGridLineColor: #000000;
+   rollOverColor: #0000cc;
+   textRollOverColor: #ffffff;
+   borderThickness: 1;
+   borderColor: #000000;
+   selectionColor: #00ccff;
+   color: #ffffff;
+   textIndent: 0;
+}
+
+DateChooser {
+   headerColors: #0066ff, #0000cc;
+   fillAlphas: 0.76, 0.4, 0.75, 0.65;
+   fillColors: #0066ff, #0033cc, #0066ff, #0033cc;
+   todayColor: #000066;
+   rollOverColor: #0099ff;
+   color: #000000;
+   borderColor: #000000;
+   themeColor: #ffffff;
+   dropShadowEnabled: true;
+   shadowDistance: 3;
+   shadowDirection: right;
+   headerStyleName: "mydateChooserHeaderStyle";   weekDayStyleName: "mydateChooserWeekDayStyle";
+}
+
+.mydateChooserHeaderStyle {
+   color: #000000;
+
+}
+
+.mydateChooserWeekDayStyle {
+   color: #0033cc;
+}
+
+HScrollBar {
+   cornerRadius: 0;
+   highlightAlphas: 0.12, 0.15;
+   fillAlphas: 1, 0.82, 0.75, 0.65;
+   fillColors: #0099ff, #000099, #0000cc, #0066ff;
+   trackColors: #006699, #003366;
+   themeColor: #ffffff;
+   iconColor: #ffffff;
+}
+
+HSlider {
+   labelOffset: 21;
+   thumbOffset: 3;
+   tickLength: 0;
+   tickThickness: 0;
+   tickColor: #ffffff;
+   showTrackHighlight: true;
+   invertThumbDirection: false;
+   borderColor: #000000;
+   themeColor: #ffffff;
+   fillAlphas: 1, 0.67, 1, 1;
+   fillColors: #0099ff, #000099, #0000cc, #0099ff;
+}
+
+List {
+   backgroundAlpha: 0.55;
+   alternatingItemColors: #0099ff, #0033ff;
+   useRollOver: true;
+   rollOverColor: #0099ff;
+   borderColor: #000099;
+   color: #ffffff;
+   letterSpacing: 0;
+   selectionDuration: 433;
+}
+
+Panel {
+   borderColor: #0033ff;
+   borderAlpha: 0.56;
+   roundedBottomCorners: false;
+   cornerRadius: 0;
+   headerHeight: 35;
+   backgroundAlpha: 0.52;
+   highlightAlphas: 0.17, 0.17;
+   headerColors: #0099ff, #0033ff;
+   footerColors: #0033cc, #0099ff;
+   backgroundColor: #0099ff;
+   shadowDistance: 4;
+   shadowDirection: right;
+}
+
+RadioButton {
+   highlightAlphas: 0.04, 0.04;
+   fillAlphas: 0.82, 0.7, 0.75, 0.65;
+   fillColors: #0066ff, #000099, #0000cc, #0066ff;
+   borderColor: #ffffff;
+   iconColor: #ffffff;
+   disabledIconColor: #003399;
+   themeColor: #ffffff;
+}
+
+TabNavigator {
+   cornerRadius: 0;
+   horizontalAlign: left;
+   borderStyle: solid;
+   borderThickness: 1;
+   tabStyleName: "myTabs";
+   firstTabStyleName: "myTabs";
+   lastTabStyleName: "myTabs";
+   selectedTabTextStyleName: "mySelectedTabs";
+}
+
+.myTabs {
+   cornerRadius: 0;
+   highlightAlphas: 0.4, 0.13;
+   fillAlphas: 1, 1;
+   fillColors: #0099ff, #0033cc;
+   borderColor: #000000;
+   color: #ffffff;
+   textRollOverColor: #ffffff;
+   themeColor: #ffffff;
+
+}
+
+.mySelectedTabs {
+   color: #0033cc;
+   textRollOverColor: #000000;
+}
+
+TextArea {
+   color: #ffffff;
+   backgroundAlpha: 0.54;
+   backgroundColor: #0066ff;
+   borderColor: #000000;
+   borderThickness: 1;
+   cornerRadius: 0;
+   dropShadowEnabled: true;
+   shadowDirection: right;
+   shadowDistance: 1;
+}
+
+TextInput {
+   borderColor: #0033cc;
+   backgroundAlpha: 0.56;
+   backgroundColor: #0066ff;
+   color: #ffffff;
+   dropShadowEnabled: true;
+   shadowDistance: 0;
+   dropShadowColor: #000099;
+}
+
+ToolTip {
+   backgroundAlpha: 0.49;
+   backgroundColor: #0099ff;
+   color: #ffffff;
+}
+
+VScrollBar {
+   cornerRadius: 0;
+   highlightAlphas: 0.17, 0.12;
+   fillAlphas: 0.99, 0.85, 0.75, 0.65;
+   fillColors: #0099ff, #003399, #0033cc, #0099ff;
+   trackColors: #003366, #006699;
+   themeColor: #ffffff;
+   borderColor: #000000;
+   iconColor: #ffffff;
+   thumbOffset: 1;
+}
+

@@ -1,0 +1,24 @@
+-- select @foodShop:='petFoodShop';
+-- select @gameShop:='petGameShop';
+-- select @restShop:='petRestShop';
+-- 
+-- set @shopId = 0;
+-- select id from Shop where name = @foodShop into @shopId;
+-- insert into StuffType (shop_id, type, hasColor, premium, placement, fileName, info, price) values 
+-- -- ,(@shopId, 'P', 0, 0, '', 'jajcya', 'food=+10', 10)
+-- -- ,(@shopId, 'P', 0, 0, '', 'viskas', 'food=+20;health=-10', 15)
+-- -- ,(@shopId, 'P', 0, 0, '', 'ravlyky',  'food=+20;health=-10', 22);
+-- 
+-- select id from Shop where name = @gameShop into @shopId;
+-- insert into StuffType (shop_id, type, hasColor, premium, placement, fileName, info, price) values 
+-- --  (@shopId, 'P', 0, 1, '', 'gameCircle', 'food=-5;health=-5;loyality=+2', 20)
+-- -- ,(@shopId, 'P', 0, 1, '', 'gameVantus', 'food=-5;health=-5;loyality=+2', 33)
+-- -- ,(@shopId, 'P', 0, 1, '', 'gameBatut',  'food=-5;health=-10;loyality=+3', 30)
+-- -- ,(@shopId, 'P', 0, 1, '', 'gameScate',  'food=-5;health=-10;loyality=+3', 35)
+-- 
+-- select id from Shop where name = @restShop into @shopId;
+-- insert into StuffType (shop_id, type, hasColor, premium, placement, fileName, info, price) values 
+-- -- ,(@shopId, 'P', 0, 1, '', 'maska',    'health=+10', 33)
+-- -- ,(@shopId, 'P', 0, 1, '', 'gnizdo',   'health=+20;food=-10', 30)
+-- -- ,(@shopId, 'P', 0, 1, '', 'knyzhka',  'health=+20;food=-10', 35)
+-- -- ,(@shopId, 'P', 0, 1, '', 'tapok',    'health=+20;food=-10', 40);

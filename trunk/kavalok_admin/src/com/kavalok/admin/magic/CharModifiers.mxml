@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CharModifiersBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:stuffs="com.kavalok.admin.stuffs.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+		
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.constants.StuffTypes;
+			[Bindable] private var clothes:Array = [StuffTypes.CLOTHES];			
+		]]>
+	</mx:Script>
+		
+	<mx:VBox
+		width="100%"
+		height="100%">
+		<mx:HBox>
+			<mx:Label text="scale:" fontWeight="bold" />
+			<mx:Label text="{scaleSlider.value}"/>
+				<mx:HSlider
+					id="scaleSlider"
+					value="1"
+					minimum="0.1"
+					maximum="4"
+				/>
+			<mx:Button label="clear" click="clearScale()"/>
+</mx:HBox>
+		<mx:HBox>
+					<mx:Label text="rotation:" fontWeight="bold" />
+						<mx:Label text="{rotationSlider.value}"/>
+			
+							<mx:HSlider
+								id="rotationSlider"
+								value="0"
+								minimum="-180"
+								maximum="180"
+							/>
+			<mx:Button label="clear" click="clearRotation()"/>
+		</mx:HBox>
+		<mx:HBox>
+						<mx:Label text="alpha:" fontWeight="bold" />
+							<mx:Label text="{alphaSlider.value}"/>
+								<mx:HSlider
+									id="alphaSlider"
+									value="1"
+									minimum="0"
+									maximum="1"
+								/>
+			<mx:Button label="clear" click="clearAlpha()"/>
+		</mx:HBox>
+		<mx:HBox>
+		<mx:Button label="apply" click="applyAll()"/>
+		<mx:Button label="clear" click="clearAll()"/>
+	</mx:HBox>
+		<mx:Label text="body:" fontWeight="bold" />
+		<mx:HBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+			<mx:ComboBox
+				id="bodyCombo"
+				dataProvider="{bodies}"
+				rowCount="20" />
+			<mx:Button label="apply" click="applyBody()"/>
+			<mx:Button label="clear" click="clearBody()"/>
+		</mx:HBox>
+<!--		<mx:Label
+		text="modifier:" fontWeight="bold"/>
+		<mx:HBox>
+<mx:ComboBox
+ id="modCombo"
+dataProvider="{modifiers}"
+rowCount="20"/>
+		<mx:Button
+		  label="apply"
+		  click="applyModifier()"/>
+		</mx:HBox> 
+		
+		<mx:FormItem
+		        label="Modifiers:">
+				<mx:HBox>
+		        <mx:VBox >
+						<mx:ComboBox
+							id="modifiersComboBox"
+							dataProvider="{modifiers}"
+						/>
+					</mx:VBox >
+		        <mx:Button
+		                label="Apply Modifier"
+				         click="applyMod(event)"/>
+				                 <mx:Button
+		                label="Remove Modifier"
+				         click="removeMod(event)"/>
+				         </mx:HBox>
+		</mx:FormItem>
+		<mx:CheckBox
+		id="globalCheckBox"
+		label="Apply Global"/>
+		</mx:Form>
+		-->
+		<mx:Label text="clothes:" fontWeight="bold" />
+		<mx:VBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+			<mx:HBox>
+				<stuffs:StuffChooser
+					id="stuffChooser"
+					allowedTypes="{clothes}"
+				/>
+				<mx:Button label="apply" click="applyClothes()" enabled="{Boolean(stuffChooser.item)}" />
+				<mx:Button label="clear" click="clearClothes()"	/>
+			</mx:HBox>
+			<mx:CheckBox
+				id="replaceClothesCheckBox"
+				label="Replace original clothes"
+			/>
+		</mx:VBox>
+	<mx:Spacer height="10"/>
+	<mx:Spacer height="10"/>
+			
+		<mx:Spacer height="10"/>
+		
+		<mx:Spacer height="10"/>
+		
+	</mx:VBox>
+</CharModifiersBase>

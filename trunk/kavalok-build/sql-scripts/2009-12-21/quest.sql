@@ -1,0 +1,1 @@
+insert into Quest (name, enabled) values ('questSanta2010', 0);

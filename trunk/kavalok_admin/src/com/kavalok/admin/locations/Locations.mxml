@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocationsBase xmlns="com.kavalok.admin.locations.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:ComboBox
+		id="serversComboBox"
+		dataProvider="{serversData.servers}"/>
+	<mx:HBox>
+		<mx:TextInput
+			id="locationTextInput"/>
+		<mx:Button
+			label="clear"
+			enabled="{!Strings.isBlank(locationTextInput.text)}"
+			click="clearLocation(locationTextInput.text)"/>
+	</mx:HBox>
+	<mx:DataGrid
+		width="100%"
+		height="100%"
+		dataProvider="{dataProvider}">
+		<mx:columns>
+			<mx:DataGridColumn
+				headerText="shared object"
+				dataField="name"/>
+			<mx:DataGridColumn
+				dataField="name">
+				<mx:itemRenderer>
+					<mx:Component>
+						<mx:Button
+							label="clear"
+							click="outerDocument.onClearClick(event)"/>
+					</mx:Component>
+				</mx:itemRenderer>
+			</mx:DataGridColumn>
+		</mx:columns>
+	</mx:DataGrid>
+	
+</LocationsBase>

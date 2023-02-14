@@ -1,0 +1,12 @@
+<messages>
+  <caption>Samantha</caption>
+  <npcName>Samantha</npcName>
+  <firstItem>Hey there!
+
+My dear fellow, my name's Santa - same as one man's from the North Pole which is on that Blue planet. Take this hat not to catch a cold at this snowed up location.</firstItem>
+  <questTask>Hey there! I'm Samantha! I love music so much! Who doesn't?? Hehe! But I need your help! A miute ago, I was playing one of my favorite songs on my new guitar! I went to get some water, and a group of Nichos ran by and stole some of my guitar equipment! I have no idea where my guitar picks are! Can you please help me find them? If you do find all three guitar picks, I'll give you a cool prize.</questTask>
+  <noItem>Dude, the picks won't find themselves. Go go go! My concert starts in 15 minutes.</noItem>
+  <nextItem>Thanks so much for finding a pick! Now do you think you can find the others...? I'm being as patient as I can!</nextItem>
+  <questComplete>Wow, you managed to find all my picks! I'm so thankful... but next time try being faster!! Anyway, take this present.</questComplete>
+  <idleMessage>Thank you for your help, but I've got to rehearse for my concert!</idleMessage>
+</messages>

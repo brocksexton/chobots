@@ -1,0 +1,8 @@
+<messages>
+  <otherTeamExit>The other team quit the game. You’ve won!!!</otherTeamExit>
+  <winText>Congrats! You are the winner. You’ve won!</winText>
+  <loseText>Sorry, you’ve lost. But you’ve earned {0} bugs for the good job!</loseText>
+  <rules>Collect more garbage than the competitor’s team.</rules>
+  <bonusRules>Use a magnet collector to catch bonuses. They will allow you to neutralize any garbage with any gun within 3 seconds.</bonusRules>
+  <bonusTime>Bonus time</bonusTime>
+</messages>

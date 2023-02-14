@@ -1,0 +1,138 @@
+compc -source-path ../localization/src  -output bin/flash/localization.swc  -debug  -target-player=11.1.0  -include-sources ../localization/src  -compiler.library-path   -compiler.library-path ../flex/frameworks/libs  -compiler.library-path ../flex/frameworks/locale/en_US  -compiler.external-library-path bin/flash  -compiler.external-library-path ../flex/frameworks/libs/player
+clear
+compc -source-path ../kavalok_core/src  -output bin/flash/kavalok_core.swc  -debug  -target-player=11.1.0  -include-sources ../kavalok_core/src  -compiler.library-path ../kavalok_core/flash-lib  -compiler.library-path ../flex/frameworks/libs  -compiler.library-path ../flex/frameworks/locale/en_US  -compiler.external-library-path bin/flash  -compiler.external-library-path ../flex/frameworks/libs/player
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/MainLoader.swf  ../Loader/src/MainLoader.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/MainLoaderFullScreen.swf  ../Loader/src/MainLoaderFullScreen.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/MainLoaderGirls.swf  ../Loader/src/MainLoaderGirls.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/AcademyLoader.swf  ../Loader/src/AcademyLoader.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/AcademyLoaderDE.swf  ../Loader/src/AcademyLoaderDE.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/ParkLoader.swf  ../Loader/src/ParkLoader.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/ParkLoaderDE.swf  ../Loader/src/ParkLoaderDE.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/RopeLoader.swf  ../Loader/src/RopeLoader.as -debug=true
+clear
+mxmlc   -library-path+=../Loader/flash-lib  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/RopeLoaderDE.swf  ../Loader/src/RopeLoaderDE.as -debug=true
+clear
+mxmlc   -library-path+=bin/flash  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/profile.swf  ../charWidget/src/CharWidget.as -debug=true
+clear
+mxmlc   -library-path+=../itemViewer/flash-lib,bin/flash,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/ItemViewer.swf  ../itemViewer/src/ItemViewer.as -debug=true
+clear
+mxmlc -include-libraries bin/flash/kavalok_core.swc  -library-path+=bin/flash,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/client.swf  ../kavalok/src/Main.as -debug=true
+clear
+compc -source-path ../goverla/src  -output bin/flash/goverla.swc  -debug  -target-player=11.1.0  -include-sources ../goverla/src  -compiler.library-path   -compiler.library-path ../flex/frameworks/libs  -compiler.library-path ../flex/frameworks/locale/en_US  -compiler.external-library-path bin/flash  -compiler.external-library-path ../flex/frameworks/libs/player
+clear
+compc -source-path ../graphity/src  -output bin/flash/static-lib/graphity.swc  -debug  -target-player=11.1.0  -include-sources ../graphity/src  -compiler.library-path   -compiler.library-path ../flex/frameworks/libs  -compiler.library-path ../flex/frameworks/locale/en_US  -compiler.external-library-path bin/flash  -compiler.external-library-path ../flex/frameworks/libs/player
+clear
+mxmlc   -library-path+=../kavalok_admin/flash-lib,bin/flash,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=  -output bin/flash/SecuredKavalokClient2022.swf  ../kavalok_admin/src/KavalokAdmin.mxml -debug=true
+clear
+mxmlc   -library-path+=../login/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/login/Login.swf  ../login/src/Login.as -debug=true
+clear
+mxmlc   -library-path+=../danceConstructor/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/danceConstructor/DanceConstructor.swf  ../danceConstructor/src/DanceConstructor.as -debug=true
+clear
+mxmlc   -library-path+=../locGraphity/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/locGraphity/LocGraphity.swf  ../locGraphity/src/LocGraphity.as -debug=true
+clear
+mxmlc   -library-path+=../locGraphityM/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/locGraphityM/LocGraphityM.swf  ../locGraphityM/src/LocGraphityM.as -debug=true
+clear
+mxmlc   -library-path+=../locGraphityA/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/locGraphityA/LocGraphityA.swf  ../locGraphityA/src/LocGraphityA.as -debug=true
+clear
+mxmlc   -library-path+=../locationRope/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/locationRope/LocationRope.swf  ../locationRope/src/LocationRope.as -debug=true
+clear
+mxmlc   -library-path+=../locDudes/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/locDudes/LocDudes.swf  ../locDudes/src/LocDudes.as -debug=true
+clear
+mxmlc   -library-path+=../locationCinema/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/locationCinema/LocationCinema.swf  ../locationCinema/src/LocationCinema.as -debug=true
+clear
+mxmlc   -library-path+=../telescop/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/telescop/Telescop.swf  ../telescop/src/Telescop.as -debug=true
+clear
+mxmlc   -library-path+=../family/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/family/Family.swf  ../family/src/Family.as -debug=true
+clear
+mxmlc   -library-path+=../questChopix/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questChopix/QuestChopix.swf  ../questChopix/src/QuestChopix.as -debug=true
+clear
+mxmlc   -library-path+=../questAlex/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questAlex/QuestAlex.swf  ../questAlex/src/QuestAlex.as -debug=true
+clear
+mxmlc   -library-path+=../questMusic/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questMusic/QuestMusic.swf  ../questMusic/src/QuestMusic.as -debug=true
+clear
+mxmlc   -library-path+=../questPets/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questPets/QuestPets.swf  ../questPets/src/QuestPets.as -debug=true
+clear
+mxmlc   -library-path+=../questAcademy/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questAcademy/QuestAcademy.swf  ../questAcademy/src/QuestAcademy.as -debug=true
+clear
+mxmlc   -library-path+=../questCupid22/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questCupid22/QuestCupid22.swf  ../questCupid22/src/QuestCupid22.as -debug=true
+clear
+mxmlc   -library-path+=../questNichos/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questNichos/QuestNichos.swf  ../questNichos/src/QuestNichos.as -debug=true
+clear
+mxmlc   -library-path+=../questQ/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questQ/QuestQ.swf  ../questQ/src/QuestQ.as -debug=true
+clear
+mxmlc   -library-path+=../questHoover/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questHoover/QuestHoover.swf  ../questHoover/src/QuestHoover.as -debug=true
+clear
+mxmlc   -library-path+=../questCowboy/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/questCowboy/QuestCowboy.swf  ../questCowboy/src/QuestCowboy.as -debug=true
+clear
+mxmlc   -library-path+=../home/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/home/Home.swf  ../home/src/Home.as -debug=true
+clear
+mxmlc   -library-path+=../serverSelect/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/serverSelect/ServerSelect.swf  ../serverSelect/src/ServerSelect.as -debug=true
+clear
+mxmlc   -library-path+=../stuffCatalog/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/stuffCatalog/StuffCatalog.swf  ../stuffCatalog/src/StuffCatalog.as -debug=true
+clear
+mxmlc   -library-path+=../academy/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/academy/Academy.swf  ../academy/src/Academy.as -debug=true
+clear
+mxmlc   -library-path+=../academySelector/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/academySelector/AcademySelector.swf  ../academySelector/src/AcademySelector.as -debug=true
+clear
+mxmlc   -library-path+=../charBody/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/charBody/CharBody.swf  ../charBody/src/CharBody.as -debug=true
+clear
+mxmlc   -library-path+=../bodyPanel/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/bodyPanel/BodyPanel.swf  ../bodyPanel/src/BodyPanel.as -debug=true
+clear
+mxmlc   -library-path+=../pets/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/pets/Pets.swf  ../pets/src/Pets.as -debug=true
+clear
+mxmlc   -library-path+=../map/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/map/Map.swf  ../map/src/Map.as -debug=true
+clear
+mxmlc   -library-path+=../homeClothes/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/homeClothes/HomeClothes.swf  ../homeClothes/src/HomeClothes.as -debug=true
+clear
+mxmlc   -library-path+=../gameSweetBattle/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameSweetBattle/GameSweetBattle.swf  ../gameSweetBattle/src/GameSweetBattle.as -debug=true
+clear
+mxmlc   -library-path+=../gameMoney/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameMoney/GameMoney.swf  ../gameMoney/src/GameMoney.as -debug=true
+clear
+mxmlc   -library-path+=../gameCheckers/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameCheckers/GameCheckers.swf  ../gameCheckers/src/GameCheckers.as -debug=true
+clear
+mxmlc   -library-path+=../gameChess/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameChess/GameChess.swf  ../gameChess/src/GameChess.as -debug=true
+clear
+mxmlc   -library-path+=../gameChopaj/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameChopaj/GameChopaj.swf  ../gameChopaj/src/GameChopaj.as -debug=true
+clear
+mxmlc   -library-path+=../gameRobots/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameRobots/GameRobots.swf  ../gameRobots/src/GameRobots.as -debug=true
+clear
+mxmlc   -library-path+=../gameAsteroid/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameAsteroid/GameAsteroid.swf  ../gameAsteroid/src/GameAsteroid.as -debug=true
+clear
+mxmlc   -library-path+=../gameChoboard/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameChoboard/GameChoboard.swf  ../gameChoboard/src/GameChoboard.as -debug=true
+clear
+mxmlc   -library-path+=../gameCrab/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameCrab/GameCrab.swf  ../gameCrab/src/GameCrab.as -debug=true
+clear
+mxmlc   -library-path+=../gamePinball/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gamePinball/GamePinball.swf  ../gamePinball/src/GamePinball.as -debug=true
+clear
+mxmlc   -library-path+=../gameWordTetris/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameWordTetris/GameWordTetris.swf  ../gameWordTetris/src/GameWordTetris.as -debug=true
+clear
+mxmlc   -library-path+=../gameHunting/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameHunting/GameHunting.swf  ../gameHunting/src/GameHunting.as -debug=true
+clear
+mxmlc   -library-path+=../gameGarbageCollector/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameGarbageCollector/GameGarbageCollector.swf  ../gameGarbageCollector/src/GameGarbageCollector.as -debug=true
+clear
+mxmlc   -library-path+=../gameSpaceRacing/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/gameSpaceRacing/GameSpaceRacing.swf  ../gameSpaceRacing/src/GameSpaceRacing.as -debug=true
+clear
+mxmlc   -library-path+=../missionFarm/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/missionFarm/MissionFarm.swf  ../missionFarm/src/MissionFarm.as -debug=true
+clear
+mxmlc   -library-path+=../missionNichos/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/missionNichos/MissionNichos.swf  ../missionNichos/src/MissionNichos.as -debug=true
+clear
+mxmlc   -library-path+=../robotConfig/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/robotConfig/RobotConfig.swf  ../robotConfig/src/RobotConfig.as -debug=true
+clear
+mxmlc   -library-path+=../robotCombat/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/robotCombat/RobotCombat.swf  ../robotCombat/src/RobotCombat.as -debug=true
+clear
+mxmlc   -library-path+=../robotStat/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/robotStat/RobotStat.swf  ../robotStat/src/RobotStat.as -debug=true
+clear
+mxmlc   -library-path+=../robotTeam/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/robotTeam/RobotTeam.swf  ../robotTeam/src/RobotTeam.as -debug=true
+clear
+mxmlc   -library-path+=../robotTeamStat/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/robotTeamStat/RobotTeamStat.swf  ../robotTeamStat/src/RobotTeamStat.as -debug=true
+clear
+mxmlc   -library-path+=../externalGame/flash-lib,bin/flash/static-lib,../console/Console.swc  -target-player=11.1.0  -define=CONFIG::VERSION,"0.01"  -external-library-path+=bin/flash/kavalok_core.swc,bin/flash/localization.swc  -output bin/flash/resources/externalGame/ExternalGame.swf  ../externalGame/src/ExternalGame.as -debug=true
+clear

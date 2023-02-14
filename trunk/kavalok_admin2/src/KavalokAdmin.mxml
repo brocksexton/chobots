@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KavalokAdminBase xmlns:mx="http://www.adobe.com/2006/mxml" xmlns="com.kavalok.admin.*" layout="absolute" xmlns:chat="com.kavalok.admin.chat.*"
+	xmlns:main="com.kavalok.admin.main.*">
+		
+	<mx:Style>
+		global
+		{
+			open-duration: "0";
+			close-duration: "0";
+			selection-duration: "0";
+			modal-transparency: "0";
+		    modal-transparencyBlur: "0";
+    		modal-transparencyColor: "#000000";
+    		modal-transparencyDuration: "1";
+		}
+		Alert
+		{
+			border-alpha: "0.95";
+			background-alpha: "0.95";
+		}
+	</mx:Style>
+		
+	<main:AdminView
+		width="100%"
+		height="100%"/>
+</KavalokAdminBase>

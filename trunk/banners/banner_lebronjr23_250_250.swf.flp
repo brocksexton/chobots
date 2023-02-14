@@ -1,0 +1,11 @@
+<flash_project name="banner_lebronjr23_250_250.swf.flp" version="1">
+    <project_folder name="banner_lebronjr23_250_250_fla" expanded="false">
+        <project_file path="./banner_lebronjr23_250_250.swf_as/banner_lebronjr23_250_250_fla/Sprite63_1.as" filetype="as" />
+    </project_folder>
+    <project_file path="./banner_lebronjr23_250_250.swf_as/BannerBase.as" filetype="as" />
+    <project_file path="./banner_lebronjr23_250_250.swf_as/PalmBlue.as" filetype="as" />
+    <project_file path="./banner_lebronjr23_250_250.swf_as/PlayGuitarRock.as" filetype="as" />
+    <project_file path="./banner_lebronjr23_250_250.swf_as/PlayShakers.as" filetype="as" />
+    <project_file path="./banner_lebronjr23_250_250.swf_as/PlayVinyl.as" filetype="as" />
+    <project_file path="./banner_lebronjr23_250_250.swf.fla" filetype="fla" profile="" def_file="true" />
+</flash_project>

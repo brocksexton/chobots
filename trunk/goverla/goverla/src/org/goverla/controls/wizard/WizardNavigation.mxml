@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WizardNavigationBase 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="org.goverla.controls.wizard.*">
+	
+	<mx:Button
+		id="backButton"
+		label="Back"
+		click="onBackClick(event)" />
+	<mx:Button
+		id="nextButton"
+		label="Next"
+		click="onNextClick(event)" />
+		
+</WizardNavigationBase>

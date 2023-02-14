@@ -1,0 +1,19 @@
+<messages>
+  <finishTime>Конец {0}.{1}.{2} {3}:{4}</finishTime>
+  <noCompetitions>На данное время соревнования не проводятся</noCompetitions>
+  <sweetBattle>Cоревнование с Сладкого Сражения</sweetBattle>
+  <asteroid>Cоревнование с Астероида</asteroid>
+  <choboard>Cоревнование с Чоборда</choboard>
+  <pinball>Cоревнование с Пинбола</pinball>
+  <crab>Cоревнование с Краба</crab>
+  <robots>Cоревнование с Робозавода</robots>
+  <spaceRacing>Cоревнование с Космических Гонок</spaceRacing>
+  <garbageCollector>Cоревнование с Сборщика Мусора</garbageCollector>
+  <farm>Cоревнование с Миссии Корова</farm>
+  <rope>Cоревнование с перетягивания Каната</rope>
+  <coins>Cоревнование с Монетного Дождя</coins>
+  <palm>Cоревнование с Пальмы</palm>
+  <checkers>Cоревнование с Шашек</checkers>
+  <chess>Cоревнование с Шахмат</chess>
+  <chopaj>Чопаев</chopaj>
+</messages>

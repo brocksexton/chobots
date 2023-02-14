@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidatorsViewBase xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns="org.goverla.controls.validators.examples.*"
+	xmlns:validators="org.goverla.controls.validators.*"
+	width="100%"
+	height="100%">
+
+	<validators:Validators id="validators1" enabled="{enabledCheckBox1.selected}">
+		<validators:CustomValidator id="customVal" controlToValidate="textInput1" 
+			errorMessage="This string is not equil to '11'." />
+		
+		<validators:RequiredFieldValidator id="required1Val" controlToValidate="textInput1" />
+	
+		<validators:EmailValidator id="emailVal" controlToValidate="textInput2" />
+		
+		<validators:RequiredFieldValidator id="required2Val" controlToValidate="textInput2" />
+	
+		<validators:CompareValidator id="compare1Val" controlToValidate="textInput4" controlToCompare="textInput3" type="int" operator="LessThan" 
+			errorMessage="First must be smaller then second." />
+
+		<validators:RangeValidator id="range1Val" controlToValidate="textInput5" type="int" minimumValue="5" maximumValue="25" />
+
+		<validators:StringValidator id="stringVal" controlToValidate="textInput6" minimumLength="8" maximumLength="8" errorMessage="Must have 8 symbols length." />
+		
+		<validators:CreditCardValidator id="creditCardVal" controlToValidate="textInput10" cardType="{comboBox4.selectedItem}" />
+	</validators:Validators>
+	
+	<validators:Validators id="validators2" enabled="{enabledCheckBox2.selected}">
+		<validators:CompareValidator id="compare2Val" controlToValidate="textInput8" controlToCompare="textInput7" />
+		
+		<validators:RangeValidator id="range2Val" controlToValidate="textInput9" type="date" minimumValue="02.12.2006" maximumValue="09.25.2006" />
+		
+		<validators:RequiredFieldValidator id="required3Val" controlToValidate="textInput9" />
+		
+		<validators:RequiredFieldValidator id="required4Val" controlToValidate="comboBox1" />
+		
+		<validators:CompareValidator id="compare3Val" controlToValidate="comboBox3" controlToCompare="comboBox2" type="int" operator="Equal" />
+
+		<validators:RangeValidator id="range3Val" controlToValidate="numericStepper1" type="int" minimumValue="2" maximumValue="5" 
+			errorMessage="Must be between 2 - 5." />
+			
+		<validators:NumberValidator id="numberVal" controlToValidate="textInput11" />
+	</validators:Validators>
+	
+	<mx:HBox>
+		
+		<mx:Form>
+			<mx:FormItem label="Enabled:">
+				<mx:CheckBox id="enabledCheckBox1" selected="true" />
+			</mx:FormItem>
+		
+			<mx:FormItem label="Custom validator:" required="true" enabled="{enabledCheckBox1.selected}">
+				<mx:TextInput id="textInput1" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Email validator:" required="true" enabled="{enabledCheckBox1.selected}">
+				<mx:TextInput id="textInput2" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Integer compare validator:" enabled="{enabledCheckBox1.selected}">
+				<mx:TextInput id="textInput3" />
+				<mx:TextInput id="textInput4" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Integer range validator:" enabled="{enabledCheckBox1.selected}">
+				<mx:TextInput id="textInput5" />
+			</mx:FormItem>
+		
+			<mx:FormItem label="String validator:" enabled="{enabledCheckBox1.selected}">
+				<mx:TextInput id="textInput6" />
+			</mx:FormItem>
+
+			<mx:FormItem label="CreditCard validator:" enabled="{enabledCheckBox1.selected}">
+				<mx:ComboBox id="comboBox4" dataProvider="{comboBox4DataProvider}" />
+				<mx:TextInput id="textInput10" />
+			</mx:FormItem>
+			
+			<mx:FormItem>
+				<mx:Button id="validate1Button" label="Validate 1st Block" />
+			</mx:FormItem>
+		</mx:Form>
+		
+		<mx:Form>
+			<mx:FormItem label="Enabled:">
+				<mx:CheckBox id="enabledCheckBox2" selected="false" />
+			</mx:FormItem>
+		
+			<mx:FormItem label="String compare validator:" enabled="{enabledCheckBox2.selected}">
+				<mx:TextInput id="textInput7" />
+				<mx:TextInput id="textInput8" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Date range validator:" required="true" enabled="{enabledCheckBox2.selected}">
+				<mx:TextInput id="textInput9" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Required validator:" required="true" enabled="{enabledCheckBox2.selected}">
+				<mx:ComboBox id="comboBox1" dataProvider="{comboBox1DataProvider}" />
+			</mx:FormItem>
+
+			<mx:FormItem label="Compare validator:" required="true" enabled="{enabledCheckBox2.selected}">
+				<mx:ComboBox id="comboBox2" dataProvider="{comboBox2DataProvider}" />
+				<mx:ComboBox id="comboBox3" dataProvider="{comboBox3DataProvider}" />
+			</mx:FormItem>
+
+			<mx:FormItem label="Range validator:" enabled="{enabledCheckBox2.selected}">
+				<mx:NumericStepper id="numericStepper1" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Number validator:" enabled="{enabledCheckBox2.selected}">
+				<mx:TextInput id="textInput11" />
+			</mx:FormItem>
+			
+			<mx:FormItem>
+				<mx:Button id="validate2Button" label="Validate 2nd Block" />
+			</mx:FormItem>
+		</mx:Form>
+	</mx:HBox>
+
+</ValidatorsViewBase>

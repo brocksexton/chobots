@@ -1,0 +1,466 @@
+<project name="build-flash-fcsh" default="run">
+
+	<taskdef name="stringutil" classname="ise.antelope.tasks.StringUtilTask">
+        <classpath>
+                <pathelement location="${basedir}/AntelopeTasks_3.4.2.jar" />
+        </classpath>
+	</taskdef>
+
+	<property file="build.properties"/>
+
+	<target name="run">
+
+		<delete file="fchs-input"/>
+
+		<antcall target="build-localization"/>
+		<antcall target="build-kavalok-core"/>
+		<antcall target="build-loader"/>
+		<antcall target="build-charWidget"/>
+		<!-- <antcall target="build-charView"/> -->
+		<antcall target="build-itemViewer"/>
+		<antcall target="build-kavalok"/>
+		<antcall target="build-goverla"/>
+		<antcall target="build-graphity"/>
+		 <antcall target="build-kavalok-admin"/>
+		<!--<antcall target="build-kavalok-partners"/>-->
+		<!--<antcall target="build-kavalok-mod"/> -->
+		<antcall target="copy-core-resources"/>
+
+		<antcall target="copy-default"><param name="project.name" value="console"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="banners"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="locations"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="loaders"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="tips"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="music"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="clothes"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="petStuffs"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="charTools"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="stuffs"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="houses"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="furniture"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="cocktails"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="houses"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="instruments"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="playerCards"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="robots"/></antcall>
+		<antcall target="copy-default"><param name="project.name" value="magic"/></antcall>
+
+		<antcall target="build-default"><param name="project.name" value="login"/></antcall>
+	<!--	<antcall target="build-default"><param name="project.name" value="girlsRegistration"/></antcall>-->
+		<antcall target="build-default"><param name="project.name" value="danceConstructor"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="locGraphity"/></antcall>
+			<antcall target="build-default"><param name="project.name" value="locGraphityM"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="locGraphityA"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="locationRope"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="locDudes"/></antcall>
+	<!--	<antcall target="build-default"><param name="project.name" value="loc3"/></antcall> -->
+		<antcall target="build-default"><param name="project.name" value="locationCinema"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="telescop"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="family"/></antcall>
+
+<!--		<antcall target="build-default"><param name="project.name" value="questBetaParty"/></antcall>
+	<antcall target="build-default"><param name="project.name" value="questHalloween"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questPatrick"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questSanta2010"/></antcall>-->
+		<antcall target="build-default"><param name="project.name" value="questChopix"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questAlex"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questMusic"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questPets"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questAcademy"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questCupid22"/></antcall>
+	<!--	<antcall target="build-default"><param name="project.name" value="questTasha"/></antcall>-->
+		<antcall target="build-default"><param name="project.name" value="questNichos"/></antcall>
+			<antcall target="build-default"><param name="project.name" value="questQ"/></antcall>
+	<!--	<antcall target="build-default"><param name="project.name" value="santaNPC"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="elfNPC"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="elfNPC"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="betaNPC"/></antcall>	-->
+		<antcall target="build-default"><param name="project.name" value="questHoover"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questCowboy"/></antcall>
+
+		<antcall target="build-default"><param name="project.name" value="home"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="serverSelect"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="stuffCatalog"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="academy"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="academySelector"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="charBody"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="bodyPanel"/></antcall>
+		<!--<antcall target="build-default"><param name="project.name" value="remote"/></antcall>-->
+		<antcall target="build-default"><param name="project.name" value="pets"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="map"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="homeClothes"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameSweetBattle"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameMoney"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameCheckers"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameChess"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameChopaj"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameRobots"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameAsteroid"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameChoboard"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameCrab"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gamePinball"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameWordTetris"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameHunting"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="gameGarbageCollector"/></antcall>
+
+		<antcall target="build-default"><param name="project.name" value="gameSpaceRacing"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="missionFarm"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="missionNichos"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="robotConfig"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="robotCombat"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="robotStat"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="robotTeam"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="robotTeamStat"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="externalGame"/></antcall>
+		<antcall target="run-fcsh"/>
+	</target>
+
+	<!--target name="run-fcsh">
+		<property name="log-file" value="fchs-log"/>
+		<record name="${log-file}" loglevel="warn" action="start"/>
+		<exec executable="${flex.sdk}/bin/fcsh${exe.extension}" failonerror="true" spawn="false"
+			input="fchs-input">
+		</exec>
+		<record name="${log-file}" action="stop"/>
+		<loadfile property="log-content" srcFile="${log-file}"/>
+		<fail message=":-)" if="log-content">
+${log-content}
+		</fail>
+	</target-->
+
+	<target name="run-fcsh">
+
+		<exec executable="../flex/bin/fcsh" failonerror="true" spawn="false" input="fchs-input" errorproperty="log-content"></exec>
+		<fail message=":-)">
+			<condition>
+				<length string="${log-content}" when="greater" length="0" />
+			</condition>
+${log-content}
+		</fail>
+	</target>
+
+	<target name="build-localization">
+		<antcall target="compile-swc">
+			<param name="output.swc" value="localization.swc"/>
+			<param name="source.dir" value="../localization/src"/>
+			<param name="library.dir" value=""/>
+		</antcall>
+		<antcall target="copy-default">
+			<param name="project.name" value="localization"/>
+		</antcall>
+	</target>	
+
+	<target name="build-kavalok-core">
+		<antcall target="compile-swc">
+			<param name="output.swc"  value="kavalok_core.swc"/>
+			<param name="source.dir" value="../kavalok_core/src"/>
+			<param name="library.dir" value="../kavalok_core/flash-lib"/>
+		</antcall>
+	</target>
+	<target name="build-kavalok-admin">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../kavalok_admin"/>
+			<param name="output.file"  value="SecuredKavalokClient2022.swf"/>
+			<param name="input.file" value="KavalokAdmin.mxml"/>
+			<param name="library.path" value="../kavalok_admin/flash-lib,bin/flash,${flash.static.lib},../console/Console.swc"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+<!--	<target name="build-index">
+		<antcall target="compile-swf">
+			<param name="project.output.dir" value="bin/flash"/>
+			<param name="project.dir" value="../index"/>
+			<param name="output.file"  value="Index.swf"/>
+			<param name="input.file" value="Index.as"/>
+			<param name="library.path" value="../index/flash-lib,bin/flash"/>
+			<param name="external.library.path" value="../index"/>
+			<param name="custom.compiler" value="-frame start StartPage"/>
+		</antcall>
+	</target>-->
+
+	
+	<target name="build-loader">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="MainLoader.swf"/>
+			<param name="input.file" value="MainLoader.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="MainLoaderFullScreen.swf"/>
+			<param name="input.file" value="MainLoaderFullScreen.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="MainLoaderGirls.swf"/>
+			<param name="input.file" value="MainLoaderGirls.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="AcademyLoader.swf"/>
+			<param name="input.file" value="AcademyLoader.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="AcademyLoaderDE.swf"/>
+			<param name="input.file" value="AcademyLoaderDE.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="ParkLoader.swf"/>
+			<param name="input.file" value="ParkLoader.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="ParkLoaderDE.swf"/>
+			<param name="input.file" value="ParkLoaderDE.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="RopeLoader.swf"/>
+			<param name="input.file" value="RopeLoader.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../Loader"/>
+			<param name="output.file"  value="RopeLoaderDE.swf"/>
+			<param name="input.file" value="RopeLoaderDE.as"/>
+			<param name="library.path" value="../Loader/flash-lib"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+	<target name="build-kavalok">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../kavalok"/>
+			<param name="output.file"  value="client.swf"/>
+			<param name="input.file" value="Main.as"/>
+			<param name="library.path" value="bin/flash,../console/Console.swc"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value="-include-libraries bin/flash/kavalok_core.swc"/>
+		</antcall>
+		<!-- <antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../kavalok"/>
+			<param name="output.file"  value="MainAgent.swf"/>
+			<param name="input.file" value="Main.as"/>
+			<param name="library.path" value="bin/flash"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value="-include-libraries bin/flash/kavalok_core.swc"/>
+		</antcall>
+			<antcall target="compile-swf">
+				<param name="project.output.dir"  value="bin/flash"/>
+				<param name="project.dir" value="../kavalok"/>
+				<param name="output.file"  value="MainDebug0.swf"/>
+				<param name="input.file" value="Main.as"/>
+				<param name="library.path" value="bin/flash"/>
+				<param name="external.library.path" value=""/>
+				<param name="custom.compiler" value="-include-libraries bin/flash/kavalok_core.swc"/>
+			</antcall>
+	<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../kavalok"/>
+			<param name="output.file"  value="MainGirls.swf"/>
+			<param name="input.file" value="MainGirls.as"/>
+			<param name="library.path" value="bin/flash"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value="-include-libraries bin/flash/kavalok_core.swc"/>
+		</antcall>
+			<antcall target="compile-swf">
+				<param name="project.output.dir"  value="bin/flash"/>
+				<param name="project.dir" value="../kavalok"/>
+				<param name="output.file"  value="MainMod.swf"/>
+				<param name="input.file" value="MainMod.as"/>
+				<param name="library.path" value="bin/flash"/>
+				<param name="external.library.path" value=""/>
+				<param name="custom.compiler" value="-include-libraries bin/flash/kavalok_core.swc"/>
+			</antcall>-->
+	</target>
+	<target name="build-charWidget">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../charWidget"/>
+			<param name="output.file" value="profile.swf"/>
+			<param name="input.file" value="CharWidget.as"/>
+			<param name="library.path" value="bin/flash"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+	<target name="build-itemViewer">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="${flash.output.dir}"/>
+			<param name="project.dir" value="../itemViewer"/>
+			<param name="output.file"  value="ItemViewer.swf"/>
+			<param name="input.file" value="ItemViewer.as"/>
+			<param name="library.path" value="../itemViewer/flash-lib,${flash.output.dir},${flash.static.lib},../console/Console.swc"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+	<!--
+	<target name="build-charView">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../charView"/>
+			<param name="output.file"  value="CharView.swf"/>
+			<param name="input.file" value="CharView.as"/>
+			<param name="library.path" value="bin/flash"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+	-->
+	<target name="build-goverla">
+		<antcall target="compile-swc">
+			<param name="output.swc" value="goverla.swc"/>
+			<param name="source.dir" value="../goverla/src"/>
+			<param name="library.dir" value=""/>
+		</antcall>
+	</target>
+	<target name="build-graphity">
+		<antcall target="compile-swc">
+			<param name="output.swc"  value="${static.lib.dir}/graphity.swc"/>
+			<param name="source.dir" value="../graphity/src"/>
+			<param name="library.dir" value=""/>
+		</antcall>
+	</target>
+
+	<!--
+	<target name="build-kavalok-partners">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../kavalok_admin"/>
+			<param name="output.file"  value="KavalokPartners.swf"/>
+			<param name="input.file" value="KavalokPartners.mxml"/>
+			<param name="library.path" value="../kavalok_admin/flash-lib,bin/flash"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+	-->
+
+	<!--
+	<target name="build-kavalok-mod">
+		<antcall target="compile-swf">
+			<param name="project.output.dir"  value="bin/flash"/>
+			<param name="project.dir" value="../kavalok_admin"/>
+			<param name="output.file"  value="ChobotsMagic.swf"/>
+			<param name="input.file" value="KavalokMod.mxml"/>
+			<param name="library.path" value="../kavalok_admin/flash-lib,bin/flash"/>
+			<param name="external.library.path" value=""/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+	-->
+
+	<target name="build-default">
+		<property name="project.output.dir"  value="bin/flash/resources/${project.name}"/>
+		<property name="project.dir" value="../${project.name}"/>
+	    <stringutil string="${project.name}" property="first.letter">
+	    	<substring beginindex="0" endindex="1"/>
+	       	<uppercase/>
+	    </stringutil>
+	    <stringutil string="${project.name}" property="name.length">
+	    	<length/>
+	    </stringutil>
+	    <stringutil string="${project.name}" property="last.letters">
+	    	<substring beginindex="1" endindex="${name.length}"/>
+	    </stringutil>
+		<property name="swf-name" value="${first.letter}${last.letters}"/>
+		<antcall target="compile-swf">
+			<param name="output.file"  value="${swf-name}.swf"/>
+			<param name="input.file" value="${swf-name}.as"/>
+			<param name="library.path" value="../${project.name}/flash-lib,${flash.static.lib},../console/Console.swc"/>
+			<param name="external.library.path" value="bin/flash/kavalok_core.swc,bin/flash/localization.swc"/>
+			<param name="custom.compiler" value=""/>
+		</antcall>
+	</target>
+
+	<target name="copy-core-resources">
+		<antcall target="copy-resources">
+			<param name="project.output.dir"  value="bin/flash/resources/kavalok_core"/>
+			<param name="project.dir" value="../kavalok_core"/>
+		</antcall>
+	</target>
+
+
+     <target name="compile-swf" depends="copy-resources">
+		<property name="mxmlc.args" value="${custom.compiler}
+ -library-path+=${library.path}
+ -target-player=11.1.0
+ -define=CONFIG::VERSION,&quot;0.01&quot;
+ -external-library-path+=${external.library.path}
+ -output ${project.output.dir}/${output.file}
+ ${project.dir}/src/${input.file}"/>
+		<echo file="fchs-input" append="true">mxmlc ${mxmlc.args} -debug=${default.swf.debug}
+clear
+</echo>
+     </target>
+
+     <target name="compile-swc">
+		<property name="compc.args" value="-source-path ${source.dir}
+ -output bin/flash/${output.swc}
+ -debug
+ -target-player=11.1.0
+ -include-sources ${source.dir}
+ -compiler.library-path ${library.dir}
+ -compiler.library-path ${flex.sdk}/frameworks/libs
+ -compiler.library-path ${flex.sdk}/frameworks/locale/en_US
+ -compiler.external-library-path bin/flash
+ -compiler.external-library-path ${flex.sdk}/${flex.sdk.player}" />
+
+	<echo file="fchs-input" append="true">compc ${compc.args}
+clear
+</echo>
+	</target>
+
+	<target name="copy-default">
+		<antcall target="copy-resources">
+			<param name="project.output.dir"  value="bin/flash/resources/${project.name}"/>
+			<param name="project.dir" value="../${project.name}"/>
+		</antcall>
+	</target>
+
+	<target name="copy-resources">
+	 	<copy todir="${project.output.dir}"
+	 		failonerror="false">
+	 		<fileset dir="${project.dir}/flash-resources" excludes="*.fla"/>
+	 	</copy>
+	 </target>
+</project>

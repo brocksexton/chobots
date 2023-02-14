@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ErrorsBase xmlns="com.kavalok.admin.errors.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="org.goverla.controls.*">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.TextArea;
+		]]>
+	</mx:Script>
+	<mx:Button
+		label="refresh"
+		click="dataProvider.reload()"/>
+	<mx:DataGrid
+		width="100%"
+		height="100%"
+		rowHeight="60"
+		dataProvider="{dataProvider}">
+		<mx:columns>
+			<mx:DataGridColumn
+				headerText="stack trace"
+				dataField="message"
+				itemRenderer="{new ClassFactory(TextArea)}"/>
+			<mx:DataGridColumn
+				headerText="count"
+				dataField="count"/>
+		</mx:columns>
+	</mx:DataGrid>
+	<controls:Pager
+		dataProvider="{dataProvider}"/>
+</ErrorsBase>

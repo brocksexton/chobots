@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KavalokAdminBase xmlns:mx="http://www.adobe.com/2006/mxml" xmlns="com.kavalok.admin.*" layout="absolute" xmlns:chat="com.kavalok.admin.chat.*"
+	xmlns:main="com.kavalok.admin.main.*">
+	<main:PartnersView
+		width="100%"
+		height="100%"/>
+</KavalokAdminBase>

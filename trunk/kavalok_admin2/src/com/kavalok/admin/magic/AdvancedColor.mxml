@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdvancedColorBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+		
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.McLocationPreview;
+			import com.kavalok.admin.McCharPreview;
+		]]>
+	</mx:Script>
+		
+	<mx:HBox>
+		<mx:VBox>
+			<mx:Label
+				text="Location Color"
+				fontSize="16"
+				fontWeight="bold"
+			/>
+			<ColorControl
+				id="locationColor"
+				imageSource="{new McLocationPreview()}"
+			/>
+			<mx:Spacer height="20" />
+			
+			<mx:HBox>
+				<mx:RadioButtonGroup 
+					id="targetRadioGroup"
+				/>
+				<mx:RadioButton 
+					groupName="targetRadioGroup"
+					label="entire content"
+					value="1"
+					selected="true"
+				/>
+				<mx:RadioButton 
+					groupName="targetRadioGroup"
+					label="background only"
+					value="2"
+				/>
+				<mx:Button
+					label="apply"
+					click="applyLocationColor()"
+				/>
+				<mx:Button
+					label="clear"
+					click="resetLocationColor()"
+				/>
+			</mx:HBox>
+		</mx:VBox>
+
+		<mx:VBox>
+			<mx:Label 
+				text="Char Color"
+				fontSize="16"
+				fontWeight="bold"
+			/>
+			<ColorControl
+				id="charsColor"
+				imageSource="{new McCharPreview()}"
+			/>
+			<mx:Spacer height="20" />
+			<mx:HBox>
+				<mx:Button
+					label="apply"
+					click="applyCharColor()"
+				/>
+				<mx:Button
+					label="clear"
+					click="resetCharColor()"
+				/>
+			</mx:HBox>
+		</mx:VBox>
+		
+	</mx:HBox>
+</AdvancedColorBase>

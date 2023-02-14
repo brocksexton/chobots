@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MailServersBase xmlns="com.kavalok.admin.servers.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+	label="refresh"
+	click="onRefreshClick(event)"/>
+	<mx:Repeater
+		id="serversRepeater"
+		dataProvider="{servers}">
+		<mx:HBox>
+			<mx:Text
+				text="{getLabel(serversRepeater.currentItem)}"/>
+			<mx:Button
+				label="available"
+				toggle="true"
+				selected="{serversRepeater.currentItem.available}"
+				data="{serversRepeater.currentItem}"
+				click="onAvailableClick(event)"/>
+			<mx:Label
+				text="last day {serversRepeater.currentItem.sentLastDay} messages"/>
+			<mx:Label
+				text="last usage {(serversRepeater.currentItem.lastUsageDate as Date).toDateString()}"/>
+		</mx:HBox>
+	</mx:Repeater>
+
+</MailServersBase>

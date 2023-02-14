@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FiltersListBase xmlns="com.kavalok.admin.users.filters.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:containers="org.goverla.containers.*">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.dto.admin.FilterTO;
+		]]>
+	</mx:Script>
+	<mx:HBox>
+		<mx:Label
+			text="add filter"/>
+		<mx:ComboBox
+			id="selectFilterComboBox"
+			prompt="please select field..."
+			labelField="fieldName"
+			dataProvider="{filtersConfig}"
+			/>
+		<mx:Button
+			label="+"
+			enabled="{selectFilterComboBox.selectedItem != null}"
+			click="onAddFilterClick(event)"/>
+	</mx:HBox>
+	<mx:Repeater
+		id="filtersRepeater"
+		dataProvider="{dataProvider}">
+		<containers:BoxWithChild
+			sizeByContent="true"
+			child="{createFilter(FilterTO(filtersRepeater.currentItem))}"/>
+	</mx:Repeater>
+</FiltersListBase>

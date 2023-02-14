@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="com.kavalok.graphity.LineInfo"/>
+    <classEntry path="com.kavalok.graphity.LineShape"/>
+    <classEntry path="com.kavalok.services.GraphityService"/>
+    <classEntry path="flash.geom.Bezier"/>
+    <classEntry path="flash.geom.IParametric"/>
+    <classEntry path="flash.geom.Intersection"/>
+    <classEntry path="flash.geom.Line"/>
+    <classEntry path="flash.geom.SmoothCurve"/>
+    <classEntry path="flash.math.Equations"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

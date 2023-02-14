@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimationBase
+	xmlns="com.kavalok.admin.magic.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+		
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+			import com.kavalok.admin.main.PermissionLevels;
+		]]>
+	</mx:Script>
+	<mx:HBox>
+		<mx:VBox>
+		<mx:List
+				id="urlCombo"
+				dataProvider="{animationList}"
+				change="refreshByCombo()"
+				width="150"
+				height="450"
+			/>
+		</mx:VBox>
+		<mx:VBox>
+	<mx:VBox>
+		<mx:Label text="Show animation:" fontWeight="bold"/>
+		<mx:TextInput
+			id="urlField"
+			width="300"
+			change="refreshByInput()"
+		/>
+		<!--<mx:ComboBox
+			id="urlCombo"
+			rowCount="25"
+			dataProvider="{animationList}"
+			width="150"
+			change="refreshByCombo()"
+			selectedIndex="-1"
+		/>-->
+		<mx:Button
+			label="Send"
+			click="onSendClick()"
+			enabled="{!Strings.isBlank(animationURL)}"
+		/>
+		
+		<mx:Spacer height="0"/>
+		<mx:Label text="Promo plane:" fontWeight="bold"/>
+			<mx:Spacer height="1"/>
+		<mx:VBox>
+		<mx:TextInput id="promoInput" width="300" />
+		<mx:HBox>
+		<mx:ComboBox
+					id="promoComboBox"
+					rowCount="3"
+					width="150"
+					dataProvider="{promoData}"
+					change="updateChange()"
+					selectedIndex="0"
+				/>
+			<mx:Button label="Send" click="sendPromo()"/>
+		</mx:HBox>
+		</mx:VBox>
+		 <mx:Spacer height="0"/>
+		<mx:Label text="Play MP3 track:" fontWeight="bold"/>
+			<mx:Spacer height="1"/>
+		<mx:VBox>
+		<mx:TextInput id="musicInput" width="300" />
+		<mx:HBox>
+			<mx:Button label="Play" click="playMusicMP3()"/>
+			<mx:Button label="Stop" click="stopMusicMP3()"/>
+		</mx:HBox>
+		</mx:VBox>
+		<mx:HBox>
+		<mx:FormItem label="Music Volume:">
+				<mx:HSlider
+					id="volumeSlider"
+					width="100"
+					minimum="0"
+					maximum="100"
+					value="100"
+					liveDragging="true"
+				/>
+			</mx:FormItem>
+		<mx:Button label="Set" click="resetMusicVolume()"/>
+		</mx:HBox>
+		<mx:Label text="Show notification:" fontWeight="bold"/>
+		<mx:TextInput
+			id="notifyField"
+			width="300"
+			change="refreshByInputN()"
+		/>
+		<mx:HBox>
+		<mx:Button
+			label="Send"
+			click="onSendNotification()"
+			enabled="{!Strings.isBlank(notifyText)}"
+		/>
+		<mx:CheckBox
+			id="globalCheckBox"
+			label="global"
+			/>
+			</mx:HBox>
+
+	</mx:VBox>
+</mx:VBox>
+</mx:HBox>
+</AnimationBase>

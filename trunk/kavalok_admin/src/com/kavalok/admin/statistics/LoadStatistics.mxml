@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LoadStatisticsBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:HBox
+		width="100%"
+		height="100%">
+		<mx:LineChart
+			id="chart"
+			width="100%"
+			height="100%"
+			showDataTips="true"
+			series="{series}"
+			dataProvider="{dataProvider}">
+			<mx:horizontalAxis>
+				<mx:CategoryAxis
+					dataProvider="{dataProvider}"
+					categoryField="date"
+					dataFunction="{StatisticsUtil.dateLabel}"/>
+			</mx:horizontalAxis>
+			<!--<mx:series>
+				<mx:LineSeries
+					yField="Serv5"
+					displayName="users online"/>
+			</mx:series>-->
+		</mx:LineChart>
+	</mx:HBox>
+</LoadStatisticsBase>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LoginBase xmlns="com.kavalok.admin.login.*" xmlns:mx="http://www.adobe.com/2006/mxml"
+	initialize="onInitialize()">
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:TextInput
+				id="loginTextInput"
+				enter="tryLogin()"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="pass">
+			<mx:TextInput
+				id="passTextInput"
+				displayAsPassword="true"
+				enter="tryLogin()"/>
+		</mx:FormItem>
+		<mx:FormItem>
+			<mx:Button
+				label="ok"
+				enabled="{!(Strings.isBlank(loginTextInput.text) || Strings.isBlank(passTextInput.text)) }"
+				click="tryLogin()"/>
+		</mx:FormItem>
+	</mx:Form>
+	
+</LoginBase>

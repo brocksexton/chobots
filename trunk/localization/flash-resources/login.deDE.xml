@@ -1,0 +1,120 @@
+<messages>
+  <entrancePic5>24/7 Live Moderation kombiniert mit innovativen Technologien!</entrancePic5>
+  <pleaseEnterLogin>Das Feld für den Login kann nicht leer bleiben. Gib bitte Deinen Login ein.</pleaseEnterLogin>
+  <activateYourAccount>Aktiviere dein Konto</activateYourAccount>
+  <activationSend>Bestätigungsmail wurde abgeschickt</activationSend>
+  <invalidActivationUrl>Aktivierungsschlüssel ist falsch</invalidActivationUrl>
+  <saveLogin>Benutzerkennung wurde gespeichert</saveLogin>
+  <activationText>Bestätigungsmail wurde an die Adresse geschickt. Um dein Konto zu aktivieren, brauchst Du nur den Link in dieser E-Mail anzuklicken. Falls die E-Mail-Adresse {0} falsch ist, musst Du ein neues Konto erstellen!</activationText>
+  <rules2>Aussagen mit sexuellen oder gewaltsamen Inhalten sind verboten</rules2>
+  <rule2>Aussagen mit sexuellen oder gewaltsamen Inhalten sind verboten</rule2>
+  <parentsReviewAgreement>Biete deine Eltern {0} zu prüfen, als du weniger als 13 Jahre alt bist!</parentsReviewAgreement>
+  <back>Zurück</back>
+  <rules4>Du musst daran denken, dass Du ein kleiner Chobot bist. Deshalb sind alle Aussagen und Verhaltensweisen, die für Kinder nicht angemessen sind, verboten</rules4>
+  <rule4>Du musst daran denken, dass Du ein kleiner Chobot bist. Deshalb sind alle Aussagen und Verhaltensweisen, die für Kinder nicht angemessen sind, verboten</rule4>
+  <becomeAChobot>Chobot werden</becomeAChobot>
+  <behaviorCode>Chat- und Verhaltensnormen</behaviorCode>
+  <rules>Chat- und Verhaltensnormen</rules>
+  <child>Kind</child>
+  <chooseColor>Farbe wählen</chooseColor>
+  <favoriteColor>Wähle deine Lieblingsfarbe</favoriteColor>
+  <entrancePic1>Frühling mit Chobots!</entrancePic1>
+  <citizenship>Staatsbürgerschaft!</citizenship>
+  <confirmPassw>Wiederholen</confirmPassw>
+  <yourAccountIsActivated>Super! Dein Konto wurde erfolgreich aktiviert. Viel Spaß beim Spielen!</yourAccountIsActivated>
+  <register>Registrieren</register>
+  <entrancePic4>Entwickle eigene Designs für Graffitibilder, Dein Haus und sogar Dein Haustier!</entrancePic4>
+  <dontUseRealName>Bitte Fantasienamen Benutzen</dontUseRealName>
+  <insertParentsEmail>E-Mail</insertParentsEmail>
+  <insertEmail>E-Mail</insertEmail>
+  <enterChobotsShort>Chobots beitreten</enterChobotsShort>
+  <enterChobots>Der Chobotswelt beitreten</enterChobots>
+  <parentsEmailDescription>Schreib bitte Email-Adresse deiner Eltern, als du weniger als 13 Jahre alt bist! Wir werden an diese Adresse eine Bestätigungsmail senden.</parentsEmailDescription>
+  <fillInInformation>Du musst deine Kontoinformation ausfüllen</fillInInformation>
+  <fullChat>Voller Chat</fullChat>
+  <fullChatDescription>Der Volle Chat gibt Ihren Kindern die Möglichkeit, frei zu kommunizieren</fullChatDescription>
+  <howToActivate>Wie soll ich mein Konto aktivieren?</howToActivate>
+  <howOldAreYou>Wie alt bist Du?</howOldAreYou>
+  <agreeRules>Ich stimme zu</agreeRules>
+  <agreeTermsParent>Ich stimme zu</agreeTermsParent>
+  <agreeTerms>Ich stimme zu, die Geschäftsbedingungen zu beachten</agreeTerms>
+  <agreeToFollow>Ich stimme den Regeln zu</agreeToFollow>
+  <agreeWithAgreement>Ich stimme den hier beschriebenen AGB’s zu</agreeWithAgreement>
+  <invitedBy>Eingeladen von</invitedBy>
+  <newAccountText>Wenn die angegebene Adresse falsch ist, melde Dich noch einmal an</newAccountText>
+  <dontHaveAccount>Falls du noch kein Konto hast</dontHaveAccount>
+  <whyActivateDescription>Wenn Du  Funktionen wie den VollChat, den Mitteilungdienst , Freunde hinzufügen, Geschenke verschicken und bekommen und noch mehr haben möchtest, musst Du Dein Konto aktivieren</whyActivateDescription>
+  <entrancePic3>Größte Kindercommunity der Weltforscher!
+Chatte und finde Freunde!</entrancePic3>
+  <entranceCaption>Willkommen in der Chobots Welt!</entranceCaption>
+  <keepPlaying>Spiel fortsetzen</keepPlaying>
+  <licenseAgreement>AGB’s</licenseAgreement>
+  <rules0>Wie jede andere Community auch, hat die Chobotswelt ihre eigenen Gesetze, die dafür entwickelt wurden, diesen virtuellen Spielplatz sicher und freundlich für Dich zu gestalten. Bitte nimm zur Kenntniss, dass folgende Chat- und Verhaltensnormen erfüllt werden müssen, wenn du Chobots spielst:</rules0>
+  <looksNice>Sieht super aus!</looksNice>
+  <agreeTermsChild>Meine Eltern und ich stimmen zu</agreeTermsChild>
+  <insertName>Name</insertName>
+  <newAccount>Neues Konto</newAccount>
+  <next>Weiter</next>
+  <entranceDescription>Hier kannst du chatten, mit Freunden feiern, im Spiel zeigen dass du Teamfähig bist, über 500 verschiedene Sachen sammeln und vieles mehr. Chobots Magie kannst du in keinem anderen Spiel finden.</entranceDescription>
+  <parent>Eltern</parent>
+  <childRegistration>Deine Eltern müssen dein Konto durch klicken des Links in der E-Mail aktivieren. Du kannst schon jetzt spielen, aber nur mit Einschränkungen (als Gast).</childRegistration>
+  <locPark>Park</locPark>
+  <insertPassw>Kennwort</insertPassw>
+  <passwordSent>Kennwort wurde verschickt</passwordSent>
+  <entrancePic2>Spiele und arbeite mit anderen zusammen in einem Spiel für die ganze Familie!
+100% Kostenlos!</entrancePic2>
+  <guestTitle>Im Gastmodus spielen</guestTitle>
+  <asGuest>Im Gastmodus spielen</asGuest>
+  <playNow>Jetzt spielen!</playNow>
+  <guestText>Der Gastmodus ist geeignet, um Chobots.de kennen zu lernen. Aber wenn Du vollen Zugang zu allen tollen Funktionen unserer virtuellen Welt haben möchtest, musst Du Dich registrieren!</guestText>
+  <rules1>Du darfst nicht nach persönlichen Daten, wie echten Namen, Telefonnummern und Adressen fragen und sie erwähnen. Du darfst sagen: „Ich lebe in Berlin“, aber bitte nicht, in welcher Strasse.</rules1>
+  <rule1>Du darfst nicht nach persönlichen Daten wie echten Namen, Telefonnummern und Adressen fragen und sie erwähnen. Du darfst sagen: „Ich lebe in Berlin“, aber bitte nicht, in welcher Strasse.</rule1>
+  <emailDescription>Bitte gib eine gültige Mailadresse an, damit unsere Mail bei Dir ankommt</emailDescription>
+  <reviewAgreement>Bitte lesen: {0} sjgkdfn;h</reviewAgreement>
+  <pleaseSelectChatMode>Wähle den Chatmodus aus</pleaseSelectChatMode>
+  <passwordRestored>Kennwort wurde an die angegebene E-Mail gesendet</passwordRestored>
+  <restorePasswordDescription>Um Dein Kennwort wiederherzustellen, 
+  musst Du die Email-Adresse angeben, mit der Du Deinen Chobot registriert hast.</restorePasswordDescription>
+  <regDisabled>Registrierung ist nicht möglich</regDisabled>
+  <rememberLogin>Angemeldet bleiben</rememberLogin>
+  <rememberPassw>Kennwort speichern</rememberPassw>
+  <resendActivation>Mail noch mal schicken</resendActivation>
+  <forgotPassw>Kennwort vergessen?</forgotPassw>
+  <restorePassword>Kennwort wiederherstellen</restorePassword>
+  <safeChat>Sicherer Chat</safeChat>
+  <safeChatDescription>Der Sichere Chat soll verhindern, dass Ihre Kinder Anderen persönliche Informationen mitteilen können</safeChatDescription>
+  <sendActivation>Aktivierung zusenden</sendActivation>
+  <sendPassword>Kennwort zusenden</sendPassword>
+  <rules3>Das Ärgern von anderen Benutzern in Gesprächen und durch andere Handlungen ist verboten</rules3>
+  <rule3>Das Ärgern von anderen Benutzern in Gesprächen und durch andere Handlungen ist verboten</rule3>
+  <termsAndConditions>Geschäftsbedingungen</termsAndConditions>
+  <badEmail>Eine falsche E-Mail-Adresse wurde angegeben. Bitte versuche es noch ein mal.</badEmail>
+  <familyIsFull>Die Familie, die auf deine E-Mail-Adresse registriert wurde, besteht bereits aus 7 Mitgliedern</familyIsFull>
+  <pleaseEnterPassw>Das Feld für das Kennwort darf nicht leer bleiben. Gib bitte Dein Kennwort ein.</pleaseEnterPassw>
+  <badConfirmPassw>Wiederholen</badConfirmPassw>
+  <outdatedSwf>Du hast eine alte Spielversion. Du musst den Cache in Deinem Browser löschen.</outdatedSwf>
+  <restoreWrongEmail>Das Kennwort ist zu kurz. Es muss aus mindestens 6 Zeichen bestehen. Du kannst zwischen 6 und 20 Zeichen benutzen</restoreWrongEmail>
+  <emailExists>Email existiert schon</emailExists>
+  <emailNotFount>Die E-Mail wurde nicht gefunden</emailNotFount>
+  <leaveThisEmpty>Das Feld kann freigelassen werden</leaveThisEmpty>
+  <loginExists>Die Benutzerkennung existiert schon</loginExists>
+  <unknown>Fehler unbekannt. Vielleicht sollst Du den Cache Deines Browsers löschen.</unknown>
+  <loginOrPasswordInvalidChars>Du kannst nur lateinische Buchstaben und Zahlen für die Benutzerkennung nutzen</loginOrPasswordInvalidChars>
+  <pleaseEnterEmail>Das Feld für die Email-Adresse darf nicht leer bleiben und keine Fehler beinhalten. Gib bitte Deine E-Mail ein.</pleaseEnterEmail>
+  <savePassword>Vorsicht! Dein Kennwort wird gespeichert. Jeder, der diesen Computer benutzt,  wird Zugang zu Deinem Chobot haben</savePassword>
+  <welcome>Willkommen</welcome>
+  <whyActivate>Warum soll ich mein Konto aktivieren?</whyActivate>
+  <badLogin>Falsche Benutzerkennung</badLogin>
+  <badPassw>Falsches Kennwort</badPassw>
+  <localConnectionExists>Du spielst gerade in Chobots. Überprüfe auch die anderen Tabs.</localConnectionExists>
+  <parentRegistration>Du hast dich erfolgreich registriert. Überprüfe Deine E-Mails, um den Aktivierungslink zu betätigen.</parentRegistration>
+  <youMustAgree>Du musst zuerst den Geschäftsbedingungen und Regeln zustimmen!</youMustAgree>
+  <parentAhtung>Du musst volljährig sein. Fortsetzen?</parentAhtung>
+  <youShouldHaveAccount>Du musst ein registriertes Konto haben</youShouldHaveAccount>
+  <mustContain>6 bis 20 Zeichen erlaubt</mustContain>
+  <ipBanned>Deine IP Adresse ist blockiert</ipBanned>
+  <loginBanned>Dein Konto ist blockiert</loginBanned>
+  <loginDisabled>Dein Konto wurde abgeschaltet</loginDisabled>
+  <loginNotActive>Dein Konto ist noch nicht aktiviert.</loginNotActive>
+  <passwordSameAsLogin>Dein Kennwort darf nicht mit deiner Benutzerkennung übereinstimmen. Das ist gefährlich. Bitte wähle ein anderes Kennwort.</passwordSameAsLogin>
+</messages>

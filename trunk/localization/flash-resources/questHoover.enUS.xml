@@ -1,0 +1,11 @@
+<messages>
+  <caption>Chistochob</caption>
+  <firstItem>Hi! I’m Chistochob! Those pesky moderators threw a large party earlier, and a lot of trash was left behind! How about you find 10 pieces of trash and then return to me? I promise I'll give you something in return. 
+
+Take this vacuum to help you!</firstItem>
+  <idleMessage>Thanks a lot! I wish the Earth was as clean as our city.</idleMessage>
+  <noItem>You have to find {0} elements more</noItem>
+  <npcName>Chistochob</npcName>
+  <questComplete>Congrats! Nice job. Here is your reward!</questComplete>
+  <questTask>Now you can go and collect that garbage!</questTask>
+</messages>

@@ -1,0 +1,11 @@
+<messages>
+  <caption>Santa</caption>
+  <npcName>Santa</npcName>
+  <firstItem>Ho, ho, ho!
+My dear fellow, my name's Santa - same as one man's from the North Pole which is on that Blue planet. Take this hat not to catch a cold at this snowed up location.</firstItem>
+  <questTask>Santa Claus brings Christmas presents to people every year. I think we should have such great tradition. So I packed my bags with presents, flew around the city trying to find a Party. When I found the place I could land on, one of my bags got torn. And three of my bells fell dawn to different locations.  I would really appreciate it if you could find and bring them back to me. When the mission is accomplished, you'll receive your Christmas Present. Good luck. See you!</questTask>
+  <noItem>I don't think I'll manage to find the bells myself. I really need your help. Please find three bells.</noItem>
+  <nextItem>Thank you for helping me. But some bells are still missing. Could you bring me three of them, my dear?</nextItem>
+  <questComplete>Good job! These are the bells I lost. You helped me out! These shoes and scarf are your Christmas presents! Merry Christmas.</questComplete>
+  <idleMessage>Thank you for your help. I hope you like your presents. Have fun!</idleMessage>
+</messages>

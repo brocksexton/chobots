@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MessagesBase xmlns="com.kavalok.admin.messages.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.main.PermissionLevels;
+		]]>
+	</mx:Script>
+	<mx:TabNavigator
+		width="100%"
+		height="100%">
+		<GlobalMessage
+			width="100%"
+			height="100%"
+			label="global messages"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}"/>
+		<UserReports
+			width="100%"
+			height="100%"
+			label="user reports"
+			permissionLevel="{permissionLevel}"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}"
+			showFamily="dispatchEvent(event)"
+			/>
+	</mx:TabNavigator>
+</MessagesBase>

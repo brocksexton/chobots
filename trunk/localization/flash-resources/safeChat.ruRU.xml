@@ -1,0 +1,153 @@
+<messages>
+  <exclamation>!</exclamation>
+  <plus>+</plus>
+  <comma>,</comma>
+  <dot>.</dot>
+  <time10min>10 минут</time10min>
+  <time15min>15 минут</time15min>
+  <time2min>2 минуты</time2min>
+  <time30min>30 минут</time30min>
+  <time5min>5 минут</time5min>
+  <question>?</question>
+  <christmas>Рождество</christmas>
+  <much>много</much>
+  <TV>телик</TV>
+  <tv>Телик</tv>
+  <actions>действия</actions>
+  <after>после</after>
+  <angel>ангел</angel>
+  <angry>злой</angry>
+  <ask>спрашивать</ask>
+  <baby>младенец</baby>
+  <bad>плохой</bad>
+  <before>до</before>
+  <big>большой</big>
+  <birthday>день рождения</birthday>
+  <cafe>рюмочная</cafe>
+  <call>звонить</call>
+  <can>быть способным</can>
+  <chat>чат</chat>
+  <people>чоботы</people>
+  <chobots>чоботы</chobots>
+  <cold>холодный</cold>
+  <come>приходить</come>
+  <computer>комп</computer>
+  <crazy>безумный</crazy>
+  <cry>плакать</cry>
+  <dancing>танцевать</dancing>
+  <day>день</day>
+  <descript>описание</descript>
+  <devil>черт</devil>
+  <different>разный</different>
+  <down>вниз</down>
+  <drink>пить</drink>
+  <eMail>электронная почта</eMail>
+  <evening>вечер</evening>
+  <family>семья</family>
+  <feel>чувства</feel>
+  <food>жрать</food>
+  <football>футбол</football>
+  <friend>друг</friend>
+  <fun>забава</fun>
+  <game>игра</game>
+  <give>давать</give>
+  <go>идти</go>
+  <god>бог</god>
+  <good>хороший</good>
+  <happy>счастливый</happy>
+  <hear>слышать</hear>
+  <here>здесь</here>
+  <home>дом</home>
+  <hope>надеяться</hope>
+  <hot>горячий</hot>
+  <hour>час</hour>
+  <idea>идея</idea>
+  <important>важный</important>
+  <in>в</in>
+  <love>любовь</love>
+  <infinity>бесконечность</infinity>
+  <internet>интернет</internet>
+  <is>есть</is>
+  <kiss>целовать</kiss>
+  <lamp>лампа</lamp>
+  <language>язык</language>
+  <shutUp>закройся</shutUp>
+  <luck>счастье</luck>
+  <mail>почта</mail>
+  <me>я</me>
+  <missionAgency>агентство миссий</missionAgency>
+  <money>бабло</money>
+  <morning>утро</morning>
+  <movie>кино</movie>
+  <music>музыка</music>
+  <night>ночь</night>
+  <no>нет</no>
+  <noon>обед</noon>
+  <ok>оукей</ok>
+  <or>или</or>
+  <out>из чего-то</out>
+  <party>вечеринка</party>
+  <places>места</places>
+  <silence>тишина</silence>
+  <relax>расслабляться</relax>
+  <remember>помнить</remember>
+  <restaurant>ресторан</restaurant>
+  <sad>печальный</sad>
+  <same>такой же</same>
+  <say>сказать</say>
+  <fear>испуганный</fear>
+  <see>видеть</see>
+  <shop>магазин</shop>
+  <sick>больной</sick>
+  <sleep>спать</sleep>
+  <small>малый</small>
+  <smell>пахнуть</smell>
+  <surprise>сюрприз</surprise>
+  <take>брать</take>
+  <taste>смаковать</taste>
+  <there>там</there>
+  <think>думать</think>
+  <time>время</time>
+  <today>сегодня</today>
+  <toilet>туалет</toilet>
+  <tomorrow>завтра</tomorrow>
+  <touch>прикасаться</touch>
+  <up>вверх</up>
+  <us>мы</us>
+  <wait>ожидать</wait>
+  <where>где</where>
+  <whereIs>где</whereIs>
+  <whoIs>кто</whoIs>
+  <who>кто</who>
+  <with>с кем-то</with>
+  <without>без</without>
+  <work>работать</work>
+  <year>год</year>
+  <yes>да</yes>
+  <yesterday>вчера</yesterday>
+  <you>ты</you>
+  <hate>ненавидеть</hate>
+  <hi>привет</hi>
+  <bye>пока</bye>
+  <cinema>кинотеатр</cinema>
+  <spaceRacing>космические гонки</spaceRacing>
+  <sweetBattle>сладкое сражение</sweetBattle>
+  <garbageCollector>сборщик мусора</garbageCollector>
+  <rope>канат</rope>
+  <missions>миссии</missions>
+  <academy>академия</academy>
+  <checkers>шашки</checkers>
+  <farm>ферма</farm>
+  <clothesShop>магазин с одеждой</clothesShop>
+  <magicShop>магазин всё для магии</magicShop>
+  <cafePlace>улица кафешная</cafePlace>
+  <gamezone>зона игр</gamezone>
+  <furnitureShop>мебельный магазин</furnitureShop>
+  <petShop>магазин животных</petShop>
+  <park>парк</park>
+  <crab>краб</crab>
+  <choboard>чоборд</choboard>
+  <asteroid>астероид</asteroid>
+  <robots>роботы</robots>
+  <choBall>чобол</choBall>
+</messages>

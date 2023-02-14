@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DateFilterBase xmlns="com.kavalok.admin.users.filters.*" xmlns:mx="http://www.adobe.com/2006/mxml"
+	initialize="onInitialize(event)">
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Objects;
+			import mx.effects.easing.Bounce;
+		]]>
+	</mx:Script>
+	<mx:Label
+		text="{filterData.fieldName}"/>
+	<mx:ComboBox
+		id="operatorComboBox"
+		labelField="name"
+		dataProvider="{OPERATORS}"
+		selectedIndex="{getOperatorIndex(filterData.operator)}"
+		change="onOperatorChange(event)"/>
+	<mx:Label
+		id="dateLabel"
+		text="{Objects.castToDate(filterData.value).toDateString()}"
+		click="currentState = OPEN_STATE"/>
+	<mx:DateChooser
+		id="dateChooser"
+		width="0"
+		height="0"
+		visible="false"
+		selectedDate="{getValue(filterData)}"
+		change="onDateChange(event)"/>
+	<mx:Button
+		label="X"
+		fillColors="{[0xff0000, 0x660000]}"
+		click="{sendRemove()}"/>
+	<states>
+		<mx:State
+			name="{OPEN_STATE}"/>
+	</states>	
+	<transitions>
+		<mx:Transition 
+			toState="{OPEN_STATE}">
+			<mx:Parallel>
+				<mx:Resize
+					target="{dateLabel}"
+					heightTo="0"
+					widthTo="0"
+					/>
+				<mx:SetPropertyAction
+					target="{dateChooser}"
+					name="visible"
+					value="true"/>
+				<mx:Resize
+					target="{dateChooser}"
+					heightTo="200"
+					widthTo="200"
+					/>
+			</mx:Parallel>
+		</mx:Transition>
+		<mx:Transition
+			fromState="{OPEN_STATE}">
+			<mx:Parallel>
+				<mx:Resize
+					target="{dateChooser}"
+					heightTo="0"
+					widthTo="0"
+					/>
+				<mx:SetPropertyAction
+					target="{dateChooser}"
+					name="visible"
+					value="false"/>
+				<mx:Resize
+					target="{dateLabel}"
+					heightTo="24"
+					widthTo="120"
+					/>
+			</mx:Parallel>
+			
+		</mx:Transition>
+	</transitions>
+</DateFilterBase>

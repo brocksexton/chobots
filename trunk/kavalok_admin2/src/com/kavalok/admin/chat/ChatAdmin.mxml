@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ChatAdminBase xmlns="com.kavalok.admin.chat.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Label
+		fontSize="32"
+		text="Chat admin"/>
+	<KnownWords
+		label="known words"
+		width="100%"
+		height="100%"/>
+</ChatAdminBase>

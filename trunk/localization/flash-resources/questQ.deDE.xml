@@ -1,0 +1,14 @@
+<messages>
+  <caption>Agent Q's Mission</caption>
+  <npcName>Q</npcName>
+  <firstItem></firstItem>
+  <questTask>Chobot, bist du bereit dich zum Dienst zu melden? Wo sind deine Werkzeuge? Wieso trägst du keinen speziellen Anzug? Hast du dich überhaupt vorbereitet?
+
+Entschuldige, falscher Chobot. Ich sollte mich selbst vorstellen. Mein Name ist Q. Ich bin ein Wissenschaftler in der Chobots Agentur. Zur Zeit arbeiten wir an Weltraumerforschungen! Wir testen die Kommunikationssysteme und ich bitte dich um einen kleinen Gefallen. Es sind 5 Satellitenschüsseln in Chobots verteilt ... kannst du sie los gehen und sie einschalten? Sie sind unter einem unsichtbarem Umhang und ich selbst kann sie nicht mehr finden! Komm zurück, wenn du alle 5 eingeschaltet hast.
+</questTask>
+  <noItem>OK, hast du sie alle eingeschaltet? Nein? Dann beeile dich! Denke daran, dass sie unsichtbar sind, weshalb du überall suchen sollst.
+</noItem>
+  <nextItem>Gute Arbeit bis jetzt. Wir sind noch nicht fertig – du musst immer noch einige von ihnen einschalten!</nextItem>
+  <questComplete>Bravo, Chobot! Das Kommunikationssystem ist hochgefahren und arbeitsbereit! Jetzt müssen wir nur noch die eigentlichen Satelliten bauen... das könnte eine Weile dauern!</questComplete>
+  <idleMessage>Nein, wir sind noch nicht fertig, aber danke für deine Hilfe! Man sieht sich eines Tages im Weltall.</idleMessage>
+</messages>

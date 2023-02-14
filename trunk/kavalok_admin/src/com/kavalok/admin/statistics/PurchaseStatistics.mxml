@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PurchaseStatisticsBase xmlns="com.kavalok.admin.statistics.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Button
+		label="refresh"
+		click="refresh()"/>
+	<mx:DataGrid
+		width="100%"
+		height="100%"
+		dataProvider="{dataProvider}">
+		<mx:columns>
+			<mx:DataGridColumn
+				dataField="itemName"
+				headerText="item"/>
+			<mx:DataGridColumn
+				dataField="count"
+				headerText="number purchased"/>
+		</mx:columns>
+	</mx:DataGrid>
+</PurchaseStatisticsBase>

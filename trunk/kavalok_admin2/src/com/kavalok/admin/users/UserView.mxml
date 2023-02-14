@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserViewBase xmlns="com.kavalok.admin.users.*" xmlns:mx="http://www.adobe.com/2006/mxml"
+	backgroundAlpha="{0.25}"
+	backgroundColor="{user.citizen ? 0x00FF00 : user.agent ? 0x0000FF : user.moderator ? 0xFF0000 : 0xffffff }">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.utils.DateUtil;
+			import com.kavalok.admin.main.PermissionLevels;
+			import com.kavalok.services.MoneyService;
+			import com.kavalok.services.AdminService;
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:Label
+				text="{user.login}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="email">
+			<mx:Label
+				text="{user.email}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="age">
+			<mx:Label
+				text="{user.age}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Citizenship start Date">
+			<mx:Label
+				text="{DateUtil.toString(user.citizenStartDate)}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="Citizenship end Date">
+			<mx:Label
+				text="{DateUtil.toString(user.citizenExpirationDate)}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="ip">
+			<mx:Label
+				text="{user.ip}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="server">
+			<mx:Label
+				text="{user.server}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="parent">
+			<mx:CheckBox 
+				id="parentCheckBox"
+				enabled="false"
+				selected="{user.parent}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="agent"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="agentCheckBox"
+				selected="{user.agent}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="moderator"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="moderatorCheckBox"
+				selected="{user.moderator}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="activated"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:CheckBox
+				id="activatedCheckBox"
+				selected="{user.activated}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="chat enabled"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:CheckBox
+				id="chatEnabledCheckBox"
+				selected="{user.chatEnabled}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="chat enabled(By Parent)"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:CheckBox
+				id="chatEnabledByParentCheckBox"
+				selected="{user.chatEnabledByParent}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="draw enabled"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}">
+			<mx:CheckBox
+				id="drawEnabledCheckBox"
+				selected="{user.drawEnabled}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="rules"
+			enabled="{permissionLevel >= PermissionLevels.HALF_MODER}">
+			<mx:Button
+				label="send rules"
+				click="onSendRulesClick(event)"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="baned"
+			enabled="{permissionLevel >= PermissionLevels.MODER}">
+			<mx:Button
+				label="kick out!!!"
+				enabled="{permissionLevel >= PermissionLevels.HALF_MODER}"
+				click="onKickOutClick(event)"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="location">
+			<mx:Label
+				text="{user.locations}"/>
+		</mx:FormItem>		
+	</mx:Form>
+	<mx:Button
+		label="save"
+		enabled="{changed}"
+		click="onSaveClick(event)"/>
+	<mx:Button
+		label="send activation mail"
+		visible="{!user.activated}"
+		click="onSendMailClick(event)"/>
+	<mx:Button
+		label="show family"
+		click="onShowFamilyClick(event)"/>
+	<mx:HBox
+		visible="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+		<mx:Label text="add money"/>
+		<mx:TextInput id="moneyTextInput"
+			restrict="0-9"/>
+		<mx:Button label="add"
+			enabled="{!Strings.isBlank(moneyTextInput.text)}"
+			click="new AdminService().addMoney(user.userId, uint(moneyTextInput.text), 'from admin');"/>
+	</mx:HBox>
+	<mx:HBox>
+		<mx:Label text="disable chat for: "/>
+		<mx:Button id="disableChatButton1" selected="{user.banCount==1}" label="5 min" click="onDisableChat(1)"/>
+		<mx:Button id="disableChatButton2" selected="{user.banCount==2}" label="15 min" click="onDisableChat(2)"/>
+		<mx:Button id="disableChatButton3" selected="{user.banCount==3}" label="12 hrs" click="onDisableChat(3)"/>
+	</mx:HBox>
+	<mx:VBox 
+		verticalGap="0">
+		<mx:Label 
+			text="Ban reason:"/>
+		<mx:TextInput 
+			id="banReasonTextInput" 
+			width="270"
+			maxChars="250"/>
+		<mx:Button 
+			visible="{!user.baned}"
+			label="Ban"
+			height="{user.baned ? 0 : 20}"
+			enabled="{!Strings.isBlank(banReasonTextInput.text)}"
+			click="onBanClick(event)"/>
+		<mx:Button 
+			label="UnBan" 
+			height="{user.baned ? 20 : 0}"
+			visible="{user.baned}" 
+			click="onUnBanClick(event)"/>
+<!--		<mx:Button 
+			visible="{superUser &amp;&amp; !user.ipBaned}"
+			label="Ban IP"
+			height="{user.ipBaned ? 0 : 20}"
+			enabled="{!Strings.isBlank(banReasonTextInput.text)}"
+			click="onBanIPClick(event)"/>
+		<mx:Button 
+			visible="{superUser &amp;&amp; user.ipBaned}"
+			label="UnBan IP"
+			height="{user.ipBaned ? 20 : 0}"
+			click="onUnBanIPClick(event)"/>-->
+		<mx:Label 
+			text="Last ban reason:"/>
+		<mx:TextArea 
+			text="{user.banReason}" 
+			width="270" 
+			height="80" />
+	</mx:VBox>
+
+	
+</UserViewBase>

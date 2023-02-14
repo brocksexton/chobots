@@ -1,0 +1,10 @@
+<messages>
+  <otherTeamExit>Die andere Mannschaft hat das Spiel verlassen. Du bist der 
+
+Sieger!!!</otherTeamExit>
+  <winText>Glückwunsch! Du bist der Sieger. Du hast {0} Blech verdient!</winText>
+  <loseText>Schade, du hast verloren. Aber du hast {0} Blech für Deine gute Arbeit verdient!</loseText>
+  <rules>Sammle mehr Müll als die Konkurrenzmannschaft.</rules>
+  <bonusRules>Du kannst Boni mit einem Magneten fangen. Mit der Hilfe von Boni kannst Du in den nächsten 3 Sekunden jeden Müll mit einer beliebigen Waffe neutralisieren.</bonusRules>
+  <bonusTime>Bonus-Zeit</bonusTime>
+</messages>

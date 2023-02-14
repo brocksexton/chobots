@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartnerUsersBase 
+	xmlns="com.kavalok.admin.users.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:controls="com.kavalok.admin.controls.*" 
+	xmlns:controls1="org.goverla.controls.*">
+	<mx:HBox>
+		<mx:CheckBox
+			id="useDatesCheckBox"
+			label="use date range"/>
+		<controls:DateRangeChooser
+			id="dateRangeChooser"
+			enabled="{useDatesCheckBox.selected}"/>
+		<mx:Button
+			label="refresh"
+			click="dataProvider.reload()"/>
+	</mx:HBox>
+	<UsersDataGrid
+		dataProvider="{dataProvider.list}"
+		width="100%"
+		height="100%"/>
+	<controls1:Pager
+		dataProvider="{dataProvider}"/>
+</PartnerUsersBase>

@@ -1,0 +1,7 @@
+<messages>
+  <citizenPopup>Du musst Staatsbürger sein, um zeichnen zu können</citizenPopup>
+  <drawingDisabled>Malen ist deaktiviert</drawingDisabled>
+  <notAvailableForJuniors>Nur Staatsbürger, Agenten und Moderatoren 
+dürfen auf dieser Wand malen</notAvailableForJuniors>
+  <gameSafeMode/>
+</messages>

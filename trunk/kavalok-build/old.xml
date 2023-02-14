@@ -1,0 +1,67 @@
+	<target name="create-database"	depends="build-java">
+		<copy file="../kavalok-red5/populate-kavalok-db.sql" todir="${java.output.dir}"/>
+		<copy file="../kavalok-red5/recreate-kavalok-db.sql" todir="${java.output.dir}"/>
+		<ant antfile="create-database.xml" />
+		<delete file="${java.output.dir}/populate-kavalok-db.sql"/>
+	</target>
+	
+	<target name="update-database"	depends="build-java">
+		<available file="../kavalok-red5/update-kavalok-db.sql" property="isFileAvailable"/>
+		<if	name="isFileAvailable">
+		  	<path id="project.classpath">
+		  	    <fileset dir="../kavalok-red5/lib" includes="**/*.jar"/>
+		    </path>
+			<copy file="../kavalok-red5/update-kavalok-db.sql" todir="${java.output.dir}"/>
+			<sql driver="com.mysql.jdbc.Driver" password="root" url="jdbc:mysql://localhost/kavalok" userid="root"
+				src="${java.output.dir}/update-kavalok-db.sql"
+				classpathref="project.classpath"/>
+			<delete file="${java.output.dir}/update-kavalok-db.sql"/>
+			<exec executable="svn">
+				<arg line="delete ../kavalok-red5/update-kavalok-db.sql"/>
+			</exec>
+			<exec executable="svn">
+				<arg line="ci"/>
+				<arg line="-m xyj"/>
+			</exec>
+		</if>
+	</target>
+
+	
+	<target name="copy-locations" depends="build-localization, build-locations, copy-deploy-flash"/>
+	
+	
+	
+	
+	<target name="build-bot" depends="build-kavalok-core">
+		<var name="project.output.dir"  value="${flash.output.dir}"/>
+		<var name="project.dir" value="../_debug_performance"/>
+		<var name="output.file"  value="BotPerformance.swf"/>
+		<var name="input.file" value="BotPerformance.as"/>
+		<var name="library.path" value="${flash.output.dir}"/>
+		<var name="external.library.path" value="${project.dir}"/>
+		<ant antfile="build-main.xml">
+		</ant>
+	</target>
+	<target name="build-index" depends="build-kavalok-core">
+		<var name="project.output.dir" value="${flash.output.dir}"/>
+		<var name="project.dir" value="../index"/>
+		<var name="output.file"  value="Index.swf"/>
+		<var name="input.file" value="Index.as"/>
+		<var name="library.path" value="../index/flash-lib,${flash.output.dir}"/>
+		<var name="external.library.path" value="${project.dir}"/>
+		<var name="custom.compiler" value="-frame start StartPage"/>
+		<ant antfile="build-swf.xml">
+		</ant>
+		<var name="custom.compiler" value=""/>
+		<replace file="${flash.output.dir}/version.js" token="{svn.revision}" value="${svn.revision}"/>
+		<echo>Svn revision set to: ${svn.revision}</echo> 
+	</target>
+	<target name="build-newsPaper">
+		<var name="project.name" value="newsPaper"/>
+		<antcall target="build-default"/>
+	</target>
+	<target name="build-paperMessages">
+		<var name="project.name" value="paperMessages"/>
+		<antcall target="copy-default"/>
+	</target>	
+	

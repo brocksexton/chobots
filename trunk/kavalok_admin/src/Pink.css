@@ -1,0 +1,182 @@
+Application {
+   backgroundImage: Embed(source="backgrounds.swf#pinkstripe");
+   backgroundColor: #9999ff;
+}
+
+Button {
+   highlightAlphas: 0.35, 0.15;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #ff98ff, #d66de5, #ffccff, #ffa7f5;
+   color: #000000;
+   textRollOverColor: #000000;
+   textSelectedColor: #000000;
+   borderColor: #000000;
+   themeColor: #cc99ff;
+}
+
+CheckBox {
+   fillColors: #f7a4ed, #be00cd, #f5b9fa, #ff33ff;
+   borderColor: #000000;
+   iconColor: #ffffff;
+   disabledIconColor: #848484;
+   color: #000000;
+   textSelectedColor: #000000;
+   textRollOverColor: #000000;
+   themeColor: #cc66ff;
+}
+
+ComboBox {
+   color: #0b333c;
+   borderColor: #000000;
+   highlightAlphas: 0.14, 0.15;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #dc6fe2, #a658c6, #ffffff, #eeeeee;
+   selectionColor: #cc7de9;
+   rollOverColor: #cc33ff;
+   themeColor: #cc33cc;
+   alternatingItemColors: #ffffff, #ebebeb;
+}
+
+DataGrid {
+   backgroundColor: #9999ff;
+   alternatingItemColors: #ffffff, #eff1f2;
+   headerColors: #cc66ff, #cc00ff;
+   horizontalGridLines: false;
+   verticalGridLineColor: #000000;
+   rollOverColor: #cc99ff;
+   textRollOverColor: #000000;
+   borderColor: #000000;
+   iconColor: #000000;
+   selectionColor: #9900cc;
+   textSelectedColor: #ffffff;
+   headerStyleName: "mydataGridHeaderStyle";
+}
+
+.mydataGridHeaderStyle {
+   color: #000000;
+}
+
+DateChooser {
+   headerColors: #ff99ff, #ffccff;
+   fillAlphas: 0.76, 0.4, 0.75, 0.65;
+   fillColors: #d45eff, #9240f7, #e081f4, #8137ab;
+   todayColor: #ccccff;
+   rollOverColor: #9966ff;
+   selectionColor: #cc00cc;
+   borderColor: #000000;
+   backgroundColor: #ffccff;
+   themeColor: #cc33cc;
+   dropShadowEnabled: true;
+}
+
+HScrollBar {
+   cornerRadius: 0;
+   highlightAlphas: 0.18, 0.25;
+   fillAlphas: 1, 1, 0.75, 0.65;
+   fillColors: #f434ff, #b700d0, #ffa9f5, #b63ffa;
+   trackColors: #cbcccc, #e7e7e7;
+   themeColor: #cc00cc;
+   borderColor: #000000;
+   iconColor: #ffffff;
+   thumbOffset: 0;
+}
+
+HSlider {
+   labelOffset: 5;
+   thumbOffset: 0;
+   tickOffset: 7;
+   tickThickness: 0;
+   tickColor: #000000;
+   showTrackHighlight: true;
+   invertThumbDirection: false;
+   borderColor: #000000;
+   themeColor: #9933cc;
+   fillAlphas: 0.55, 1, 1, 1;
+   fillColors: #f85ae6, #be2aa5, #f4b8f6, #cc6dc6;
+}
+
+Panel {
+   borderColor: #cc99ff;
+   roundedBottomCorners: true;
+   headerColors: #cc66ff, #cc99ff;
+   footerColors: #cc99ff, #cc33ff;
+   backgroundColor: #ffffff;
+}
+
+RadioButton {
+   fillColors: #cb00b9, #8c0290, #f0aaff, #9933cc;
+   borderColor: #000000;
+   iconColor: #ffffff;
+   disabledIconColor: #000000;
+   themeColor: #990099;
+   disabledColor: #000000;
+}
+
+TabNavigator {
+   tabHeight: 23;
+   horizontalGap: 3;
+   backgroundColor: #ffffff;
+   borderStyle: solid;
+   borderColor: #000000;
+   borderThickness: 1;
+   color: #000000;
+   dropShadowEnabled: false;
+   shadowDirection: right;
+   tabStyleName: "myTabs";
+   firstTabStyleName: "myTabs";
+   lastTabStyleName: "myTabs";
+   selectedTabTextStyleName: "mySelectedTabs";
+}
+
+.myTabs {
+   highlightAlphas: 0.34, 0.28;
+   letterSpacing: 1;
+   fillAlphas: 1, 1;
+   fillColors: #cc66ff, #cc00ff;
+   borderColor: #000000;
+   color: #000000;
+   textRollOverColor: #000000;
+   themeColor: #cc33cc;
+
+}
+
+.mySelectedTabs {
+   letterSpacing: 0;
+   color: #000000;
+   textRollOverColor: #ff33ff;
+}
+
+TextArea {
+   color: #0b333c;
+   paddingLeft: 0;
+   leading: 0;
+   backgroundAlpha: 0.44;
+   backgroundColor: #ffccff;
+   borderStyle: inset;
+   borderColor: #cc00ff;
+   borderThickness: 2;
+   cornerRadius: 3;
+   dropShadowEnabled: true;
+   shadowDirection: right;
+}
+
+TextInput {
+   borderStyle: inset;
+   borderColor: #cc00cc;
+   backgroundColor: #ffffff;
+   color: #000000;
+}
+
+ToolTip {
+   backgroundColor: #cc66ff;
+   color: #ffffff;
+}
+
+VScrollBar {
+   highlightAlphas: 0.1, 0.35;
+   fillAlphas: 0.91, 1, 0.75, 0.65;
+   fillColors: #f950fa, #e600ff, #faa3f6, #e294ff;
+   themeColor: #cc33cc;
+   borderColor: #000000;
+}
+

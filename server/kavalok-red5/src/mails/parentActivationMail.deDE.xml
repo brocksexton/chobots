@@ -1,0 +1,28 @@
+<email>
+	<title>Chobots Kontoregistrierung</title>
+	<content>Sehr geehrte Eltern,
+	
+	Sie haben ein Konto auf Сhobots registriert.
+	Chobots ist ein sicheres und kindgerechtes Bildungsspiel für die ganze Familie. Hier können Ihre Kinder spielen, mit anderen kommunizieren und interessante Fakten über die Erde lernen.
+	
+	Um Ihr Konto zu aktivieren, klicken Sie bitte folgenden Link:
+	
+	%3$s
+
+	Sollte der Link nicht funktionieren, kopieren Sie ihn bitte einfach in den Browser.
+	
+	Ihre Chobots Konto-Information: 
+	Konto: %1$s 
+	Kennwort: %2$s
+	
+	Wenn Sie Fragen oder Verbesserungsvorschläge haben oder Ihr Konto verändern oder löschen möchten, schreiben sie uns einfach an support@chobots.de. Wir helfen gerne.
+
+	Mit lieben Grüßen,
+	das Chobots-Team
+	support@chobots.de
+	Chobots! Dein Familienspiel!
+	 
+*************************************************************************************************
+** Bitte, beantworten Sie diese E-Mail nicht, folgen sie der URL-Adresse unten, um Ihr Konto zu aktivieren**
+*************************************************************************************************</content>
+</email>

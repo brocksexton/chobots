@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserChatViewBase xmlns="com.kavalok.admin.userschat.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.utils.DateUtil;
+			import com.kavalok.admin.main.PermissionLevels;
+			import com.kavalok.services.MoneyService;
+			import com.kavalok.services.AdminService;
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:Label
+				text="{user.login}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="email">
+			<mx:Label
+				text="{user.email}"/>
+		</mx:FormItem>
+					<mx:ComboBox
+						id="chatComboBox"
+						dataProvider="{chat}"
+					/>
+	</mx:Form>
+	<mx:Button
+		label="save"
+		click="onSaveClick(event)"/>
+</UserChatViewBase>

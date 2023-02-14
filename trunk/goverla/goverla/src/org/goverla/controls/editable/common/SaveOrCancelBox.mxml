@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="org.goverla.controls.editable.common.*"
+	xmlns:controls="org.goverla.controls.*"
+	currentState="{BUTTON_STATE}">
+	
+	<mx:Metadata>
+		[Event(name="save", type="org.goverla.events.SaveOrCancelBoxEvent")]
+		[Event(name="cancel", type="org.goverla.events.SaveOrCancelBoxEvent")]
+	</mx:Metadata>
+
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.constants.Icons;
+			import org.goverla.events.SaveOrCancelBoxEvent;
+
+			public static const BUTTON_STATE : String = "buttonState";
+
+			public static const BUTTON_WITH_ICON_STATE : String = "buttonWithIconState";
+
+			public static const LINK_BUTTON_STATE : String = "linkButtonState";
+
+			public static const LINK_BUTTON_WITH_ICON_STATE : String = "linkButtonWithIconState";
+
+			public static const ICON_STATE : String = "iconState";
+
+			private static const SAVE_ICON : Class = Icons.ICON_16X16_ACCEPT_UP;
+
+			private static const CANCEL_ICON : Class = Icons.ICON_16X16_DECLINE_UP;
+
+			private function onSaveButtonClick() : void {
+				dispatchEvent(new SaveOrCancelBoxEvent(SaveOrCancelBoxEvent.SAVE));
+			}
+	
+			private function onCancelButtonClick() : void {
+				dispatchEvent(new SaveOrCancelBoxEvent(SaveOrCancelBoxEvent.CANCEL));
+			}
+		]]>
+	</mx:Script>
+
+	<mx:states>
+		<mx:State name="{BUTTON_STATE}">
+			<mx:AddChild>
+				<mx:Button id="saveButton" label="Save" width="100%" click="onSaveButtonClick()" />
+			</mx:AddChild>
+			<mx:AddChild>
+				<mx:Button id="cancelButton" label="Cancel" width="100%" click="onCancelButtonClick()" />
+			</mx:AddChild>
+			<mx:SetProperty name="defaultButton" value="{saveButton}" />
+		</mx:State>
+		<mx:State name="{BUTTON_WITH_ICON_STATE}" basedOn="{BUTTON_STATE}">
+			<mx:SetStyle target="{saveButton}" name="icon" value="{SAVE_ICON}" />
+			<mx:SetStyle target="{cancelButton}" name="icon" value="{CANCEL_ICON}" />
+		</mx:State>
+		<mx:State name="{LINK_BUTTON_STATE}">
+			<mx:AddChild>
+				<controls:ExtendedLinkButton id="saveLinkButton" label="Save" width="100%" click="onSaveButtonClick()" />
+			</mx:AddChild>
+			<mx:AddChild>
+				<controls:ExtendedLinkButton id="cancelLinkButton" label="Cancel" width="100%" click="onCancelButtonClick()" />
+			</mx:AddChild>
+			<mx:SetProperty name="defaultButton" value="{saveLinkButton}" />
+		</mx:State>
+		<mx:State name="{LINK_BUTTON_WITH_ICON_STATE}" basedOn="{LINK_BUTTON_STATE}">
+			<mx:SetStyle target="{saveLinkButton}" name="icon" value="{SAVE_ICON}" />
+			<mx:SetStyle target="{cancelLinkButton}" name="icon" value="{CANCEL_ICON}" />
+		</mx:State>
+		<mx:State name="{ICON_STATE}">
+			<mx:AddChild>
+				<mx:Image id="saveImage" source="{SAVE_ICON}" toolTip="Save" click="onSaveButtonClick()" />
+			</mx:AddChild>
+			<mx:AddChild>
+				<mx:Image id="cancelImage" source="{CANCEL_ICON}" toolTip="Cancel" click="onCancelButtonClick()" />
+			</mx:AddChild>
+			<mx:SetProperty name="defaultButton" value="{saveImage}" />
+		</mx:State>
+	</mx:states>
+</mx:HBox>

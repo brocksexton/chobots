@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BadWordItemBase xmlns="com.kavalok.admin.chat.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.admin.chat.data.WordData;
+		]]>
+	</mx:Script>
+	<mx:Label
+		text="{data.item.word}"
+		width="100"/>
+	<mx:Text
+		text="{data.item.message}"
+		width="260"/>
+	<mx:Text
+		text="{data.item.userEmail}"
+		width="160"/>
+	<mx:Button
+		label="block word"
+		enabled="{WordData(data).enabled}"
+		click="onBlockClick(event)"/>
+	<mx:Button
+		label="skip word"
+		enabled="{WordData(data).enabled}"
+		click="onSkipClick(event)"/>
+	<mx:Button
+		label="allow word"
+		enabled="{WordData(data).enabled}"
+		click="onAllowClick(event)"/>
+	<mx:Button
+		label="disable user chat"
+		enabled="{WordData(data).enabled}"
+		click="onBlockUserClick(event)"/>
+	<mx:Button
+		label="X"
+		enabled="{WordData(data).enabled}"
+		click="onRemoveClick(event)"/>
+</BadWordItemBase>

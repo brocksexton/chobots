@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OkCancelTitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="org.goverla.containers.*"
+	width="300"
+	defaultButton="{okButton}"
+	styleName="ErrorAlert">
+	
+	<mx:Text id="mainText" width="100%" minWidth="0" />
+	
+	<mx:HBox width="100%" horizontalAlign="center">
+		<mx:Button id="okButton" label="OK" click="onOk(event)" />
+	</mx:HBox>
+	
+	<mx:Script>
+		<![CDATA[
+			
+			public function get text() : String {
+				return mainText.text;
+			}
+			
+			public function set text(value : String) : void {
+				mainText.text = value;
+			}
+			
+			public function get htmlText() : String {
+				return mainText.htmlText;
+			}
+			
+			public function set htmlText(value : String) : void {
+				mainText.htmlText = value;
+			}
+			
+			protected override function show() : void {
+				okButton.setFocus();
+			}
+			
+		]]>
+	</mx:Script>
+	
+</OkCancelTitleWindow>

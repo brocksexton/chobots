@@ -1,0 +1,38 @@
+<project
+	default="build-all">
+   <property name="flex.sdk" value="C:/flex3"/>
+   <property name="red5.dir" value="C:/Program Files/Red5"/>
+   <property name="jre.dir" value="C:/Program Files/Java/jre6/lib"/>
+   
+   
+   <target name="update-from-svn">
+		<!--<exec executable="svn">
+			<arg value="cleanup"/>
+		</exec>-->
+		<exec executable="git">
+			<arg value="pull"/>
+		</exec>
+	</target>
+   
+	<target name="build-all-win" depends="update-from-svn">
+	   <property name="deploy.dir" value="${red5.dir}/webapps/"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"
+			target="build-all-win"/>
+	</target>
+	<target name="build-flash-win">
+	   <property name="deploy.dir" value="${red5.dir}/webapps/kavalok"/>
+		<ant
+			antfile="build-all.xml" dir="kavalok-build"
+			target="deploy-flash-win"/>
+	</target>
+	
+	<target name="build-java-win" depends="update-from-svn">
+	   <property name="deploy.dir" value="${red5.dir}/webapps/kavalok"/>
+	   <ant
+	    antfile="build-all.xml" dir="kavalok-build"
+		target="build-java-win"/>
+	</target>
+	
+	
+</project>

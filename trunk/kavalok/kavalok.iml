@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Main">
+    <configurations>
+      <configuration name="Main" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="11.1">
+          <entries>
+            <entry library-id="4c468e2a-c5a2-4fa2-935d-9b8af491a2a6">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="kavalok_core" build-configuration-name="kavalok_core">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="7320fbcf-1de3-476b-9e8c-eeed84201bd2">
+              <dependency linkage="External" />
+            </entry>
+            <entry library-id="01b21bd1-28ea-4f3c-b86f-2faf91c00838">
+              <dependency linkage="External" />
+            </entry>
+            <entry library-id="5199bbc7-d0db-46f2-ace7-907d56acc51c">
+              <dependency linkage="External" />
+            </entry>
+            <entry library-id="7570fd18-8fbc-48d8-be3e-09fd4906577a">
+              <dependency linkage="External" />
+            </entry>
+            <entry library-id="bdcd9032-b360-4c40-9afb-0a68b9d6a29c">
+              <dependency linkage="External" />
+            </entry>
+            <entry library-id="88e76e3b-b72c-44ba-bf6b-89c58427a79f">
+              <dependency linkage="External" />
+            </entry>
+          </entries>
+          <sdk name="flex_3_sdk" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.locale" value="" />
+          </map>
+          <option name="additionalOptions" value="-link-report output.xml  -define=CONFIG::VERSION,&quot;3414&quot;" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="flex_3_sdk" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="4c468e2a-c5a2-4fa2-935d-9b8af491a2a6" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../console/Console.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kavalok_core" exported="" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="7320fbcf-1de3-476b-9e8c-eeed84201bd2" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/chobots/flex_3_sdk/frameworks/libs/datavisualization.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="01b21bd1-28ea-4f3c-b86f-2faf91c00838" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/chobots/flex_3_sdk/frameworks/libs/flex.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="5199bbc7-d0db-46f2-ace7-907d56acc51c" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/chobots/flex_3_sdk/frameworks/libs/framework.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="7570fd18-8fbc-48d8-be3e-09fd4906577a" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/chobots/flex_3_sdk/frameworks/libs/rpc.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="bdcd9032-b360-4c40-9afb-0a68b9d6a29c" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/chobots/flex_3_sdk/frameworks/libs/utilities.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="88e76e3b-b72c-44ba-bf6b-89c58427a79f" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/chobots/flex_3_sdk/frameworks/libs/player/playerglobal.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserBadgeViewBase xmlns="com.kavalok.admin.usersbadge.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.utils.DateUtil;
+			import com.kavalok.admin.main.PermissionLevels;
+			import com.kavalok.services.MoneyService;
+			import com.kavalok.services.AdminService;
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:VBox borderStyle="outset" paddingLeft="4" paddingRight="4" paddingTop="4" paddingBottom="4">
+	<mx:Form>
+		<mx:FormItem
+			label="login">
+			<mx:Label
+				text="{user.login}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="email">
+			<mx:Label
+				text="{user.email}"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="agent"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="agentCheckBox"
+				selected="{user.agent}"
+				change="changed = true"/>
+		</mx:FormItem>
+			<mx:FormItem
+				label="designer"
+				enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+				<mx:CheckBox
+					id="desCheckBox"
+					selected="{user.des}"
+					change="changed = true"/>
+			</mx:FormItem>
+		<mx:FormItem
+			label="developer"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+			 id="devCheckBox"
+			 selected="{user.dev}"
+			 change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="moderator"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="moderatorCheckBox"
+				selected="{user.moderator}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="ninja"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="ninjaCheckBox"
+				selected="{user.ninja}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="staff"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="staffCheckBox"
+				selected="{user.staff}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="support"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="supportCheckBox"
+				selected="{user.support}"
+				change="changed = true"/>
+		</mx:FormItem>
+		<mx:FormItem
+			label="journalist"
+			enabled="{permissionLevel >= PermissionLevels.SUPER_MODER}">
+			<mx:CheckBox
+				id="journalistCheckBox"
+				selected="{user.journalist}"
+				change="changed = true"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Button
+		label="save"
+		enabled="{changed}"
+		click="onSaveClick(event)"/>
+		</mx:VBox>
+</UserBadgeViewBase>

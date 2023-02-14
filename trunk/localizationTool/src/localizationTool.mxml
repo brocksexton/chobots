@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalizationToolBase
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="com.kavalok.*" 
+	layout="vertical"
+	initialize="{maximize()}">
+	<mx:Script>
+		<![CDATA[
+			import com.kavalok.EditTextArea;
+			import mx.controls.TextArea;
+		]]>
+	</mx:Script>
+	<mx:HBox>
+		<mx:Button
+			label="openFolder"
+			click="onOpenFolderClick(event)"/>
+		<mx:Button
+			label="saveFiles"
+			click="onSaveClick(event)"/>
+	</mx:HBox>
+	<mx:HDividedBox
+		width="100%"
+		height="100%">
+		<mx:DataGrid
+			width="80%"
+			height="100%"
+			editable="true"
+			rowHeight="60"
+			dataProvider="{dataProvider}">
+			<mx:columns>
+				<mx:DataGridColumn 
+					width="{width*4/30}"
+					dataField="name"
+					headerText="message"
+					editable="false"/>
+				<mx:DataGridColumn 
+					width="{width*4/30}"
+					
+					dataField="enUS"
+					headerText="enUS"
+					
+					itemEditor="{new ClassFactory(EditTextArea)}"/>
+				<mx:DataGridColumn 
+					width="{width*4/30}"
+					dataField="deDE"
+					headerText="deDE"
+					itemEditor="{new ClassFactory(EditTextArea)}"/>
+				<mx:DataGridColumn 
+					width="{width*4/30}"
+					dataField="uaUA"
+					headerText="uaUA"
+					itemEditor="{new ClassFactory(EditTextArea)}"/>
+				<mx:DataGridColumn 
+					width="{width*4/30}"
+					dataField="ruRU"
+					headerText="ruRU"
+					itemEditor="{new ClassFactory(EditTextArea)}"/>
+				<mx:DataGridColumn 
+					width="{width*4/30}"
+					dataField="enIN"
+					headerText="enIN"
+					itemEditor="{new ClassFactory(EditTextArea)}"/>
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:List
+			id="filesList"
+			width="20%"
+			height="100%"
+			dataProvider="{files}"
+			itemClick="onFileClick(event)"/>
+	</mx:HDividedBox>
+</LocalizationToolBase>

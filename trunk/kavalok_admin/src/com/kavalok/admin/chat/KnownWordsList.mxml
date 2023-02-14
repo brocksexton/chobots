@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KnownWordsListBase xmlns="com.kavalok.admin.chat.*" xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:renderers="com.kavalok.admin.messages.renderers.*" xmlns:controls="org.goverla.controls.*">
+	<mx:Script>
+		<![CDATA[
+			import org.goverla.utils.Strings;
+		]]>
+	</mx:Script>
+	<mx:Label
+		fontSize="24"
+		text="{label}"/>
+	<mx:HBox>
+		<mx:TextInput
+			id="textInput"/>
+		<mx:Button
+			label="Add"
+			enabled="{textInput.text.length >= minLength}"
+			click="onAddClick(event)"/>
+		<mx:Button
+			label="Find"
+			click="onFindClick(event)"/>
+	</mx:HBox>
+	<mx:Button
+		label="refresh"
+		click="dataProvider.reload()"/>
+	<mx:DataGrid
+		height="100%"
+		width="100%"
+		dataProvider="{dataProvider.list}">
+		<mx:columns>
+			<mx:DataGridColumn
+				headerText="word"
+				dataField="word"/>
+			<mx:DataGridColumn>
+				<mx:itemRenderer>
+					<mx:Component>
+						<renderers:ButtonRenderer
+							label="remove"
+							click="outerDocument.removeWord(data.id)"/>
+					</mx:Component>
+				</mx:itemRenderer>
+			</mx:DataGridColumn>
+		</mx:columns>
+	</mx:DataGrid>
+	<controls:Pager
+		width="100%"
+		dataProvider="{dataProvider}"/>
+</KnownWordsListBase>

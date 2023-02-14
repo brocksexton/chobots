@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KavalokMagicViewBase
+xmlns="com.kavalok.admin.main.*"
+xmlns:mx="http://www.adobe.com/2006/mxml"
+xmlns:login="com.kavalok.admin.login.*"
+xmlns:locations="com.kavalok.admin.locations.*"
+xmlns:graphity="com.kavalok.admin.graphity.*"
+xmlns:quest1="com.kavalok.admin.quest.*"
+xmlns:statistics="com.kavalok.admin.statistics.*"
+xmlns:users="com.kavalok.admin.users.*"
+xmlns:usersMan="com.kavalok.admin.usersman.*"
+xmlns:config="com.kavalok.admin.config.*"
+xmlns:log="com.kavalok.admin.log.*"
+xmlns:servers="com.kavalok.admin.servers.*"
+xmlns:chat="com.kavalok.admin.chat.*"
+xmlns:adminMessages="com.kavalok.admin.adminMessages.*"
+xmlns:mail="com.kavalok.admin.mail.*"
+xmlns:errors="com.kavalok.admin.errors.*"
+xmlns:super="com.kavalok.admin.super.*"
+xmlns:messages="com.kavalok.admin.messages.*"
+xmlns:quest="com.kavalok.quest.*"
+xmlns:infopanel="com.kavalok.admin.infoPanel.*"
+xmlns:worldconfig="com.kavalok.admin.worldconfig.*"
+xmlns:magic="com.kavalok.admin.magic.*"
+xmlns:competitions="com.kavalok.admin.competitions.*"
+creationComplete="onCreationComplete(event)"
+xmlns:stuffs="com.kavalok.admin.stuffs.*">
+	<mx:Canvas 
+		width="100%"
+		height="100%">
+		<login:Login
+			id="login"
+			visible="false"
+			horizontalCenter="0"
+			verticalCenter="0"
+			/>
+	</mx:Canvas>
+		<magic:Magic
+			label="Magic"
+			width="100%"
+			height="100%"/>
+</KavalokMagicViewBase>

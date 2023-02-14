@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GraphityBase
+	xmlns="com.kavalok.admin.graphity.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	show="active = true"
+	hide="active = false">
+	
+	<mx:HDividedBox
+		width="100%"
+		height="100%">
+			
+		<mx:VBox height="100%">
+			<mx:HBox>
+				<mx:Button
+					label="checkAll"
+					click="doCheckAll()"/>
+				<mx:Button
+					label="uncheckAll"
+					click="doUncheckAll()"/>
+			</mx:HBox>
+			
+			<mx:List
+				id="wallsList"
+				dataProvider="{servers}"
+				labelField="name"
+				labelFunction="{localizeName}"
+				width="200"
+				height="100%">
+				
+				<mx:itemRenderer>
+					<mx:Component>
+						<mx:CheckBox
+							selected="{WallItem(data).selected}"
+							change="WallItem(data).selected = selected">
+						</mx:CheckBox>
+					</mx:Component>
+				</mx:itemRenderer>
+				
+			</mx:List>
+		</mx:VBox>
+		
+		<mx:VBox
+			width="100%"
+			height="100%">
+			
+			<mx:HBox>
+				<mx:Label text="Scale"/>
+				<mx:HSlider
+					id="scaleSlider"
+					width="200"
+					maximum="1"
+					value="{WallBase.defaultScale}"
+				/>
+			</mx:HBox>
+			<mx:Tile
+				id="tile"
+				width="100%"
+				height="100%">
+				<mx:Repeater
+					id="wallsRepeater"
+					dataProvider="{selectedServers}"
+					recycleChildren="true">
+					<Wall
+						id="walls"
+						server="{WallItem(wallsRepeater.currentItem).server}"
+						wallId="{WallItem(wallsRepeater.currentItem).wallId}"
+						title="{localizeName(WallItem(wallsRepeater.currentItem))}"
+						scale="{scaleSlider.value}"
+						active="{active}"/>
+				</mx:Repeater>
+			</mx:Tile>
+			
+		</mx:VBox>
+		
+	</mx:HDividedBox>
+		
+		
+</GraphityBase>

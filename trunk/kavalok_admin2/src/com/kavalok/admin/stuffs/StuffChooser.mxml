@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StuffChooserBase
+	xmlns="com.kavalok.admin.stuffs.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	>
+	<mx:Script>
+		<![CDATA[
+		]]>
+	</mx:Script>
+	
+	<mx:HBox>
+		<mx:VBox>
+			<mx:Label text="Shop"/>
+			<mx:ComboBox
+				id="shopListCombo"
+				rowCount="20"
+				dataProvider="{shopList}"
+				change="onShopChange()"
+			/>
+			<mx:Label text="Item"/>
+			<mx:ComboBox
+				id="shopItemsListCombo"
+				rowCount="20"
+				dataProvider="{shopItemsList}"
+				change="onShopItemChange()"
+				labelField="fileName"
+			/>
+		</mx:VBox>
+		
+		<mx:VBox>
+			<mx:Label
+				id="colorPickerLabel" 
+				text="color:"
+				visible="false"
+			/>
+			<mx:ColorPicker
+				id="colorPicker"
+				change="onColorChange();"
+				color="0xFFFFFF"
+				visible="false"
+			/>
+		</mx:VBox>
+	
+		<StuffItemView
+			id="stuffItemView"
+		/>
+	</mx:HBox>
+	
+</StuffChooserBase>

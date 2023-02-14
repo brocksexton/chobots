@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldConfigBase xmlns="com.kavalok.admin.worldconfig.*" xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:Form>
+		<mx:FormItem
+			label="Safe Chat">
+			<mx:CheckBox 
+				id="safeModeEnabledCheckBox"
+				selected="{dataProvider.safeModeEnabled}"
+				click="changed = true"/>
+		</mx:FormItem>
+		
+		<mx:FormItem
+			label="Drawing Wall">
+			<mx:CheckBox 
+				id="drawingWallDisabledCheckBox"
+				selected="{dataProvider.drawingWallDisabled}"
+				click="changed = true"/>
+		</mx:FormItem>
+	</mx:Form>
+	<mx:Button
+		label="save"
+		enabled="{changed}"
+		click="onSaveClick(event)"/>
+<!-- <mx:Form
+    visible="{blahdubla}">
+	<mx:FormItem
+	    label="User ID:"
+		visible="{blahdubla}">
+<mx:HBox>
+<mx:TextInput
+        id="usernameInput"
+        visible="{blahdubla}"/>
+<mx:Button
+        label="superuser"
+        visible="{blahdubla}"
+        click="makeSuperUser(event)"/>
+</mx:HBox>
+</mx:FormItem>
+<mx:FormItem
+        label="Modifiers:"
+		visible="{blahdubla}">
+		<mx:HBox>
+        <mx:VBox >
+				<mx:ComboBox
+					id="modifiersComboBox"
+					dataProvider="{modifiers}"
+				/>
+			</mx:VBox >
+        <mx:Button
+                label="Apply"
+		        visible="{blahdubla}"
+		         click="applyMod(event)"/>
+		</mx:HBox>
+</mx:FormItem>
+<mx:CheckBox
+visible="{blahdubla}"
+id="globalCheckBox"
+label="Apply Global"/>
+</mx:Form> -->
+</WorldConfigBase>

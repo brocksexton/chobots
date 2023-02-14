@@ -1,0 +1,6 @@
+<messages>
+  <citizenPopup>Ты должен быть гражданином, чтобы иметь возможность рисовать</citizenPopup>
+  <drawingDisabled>Ты не можешь рисовать</drawingDisabled>
+  <notAvailableForJuniors>Только Граждане   могут использовать панель инструментов</notAvailableForJuniors>
+  <gameSafeMode>Мир Чоботс находится в безопасном режиме. Ты не можешь использовать текстовый чат и граффити</gameSafeMode>
+</messages>

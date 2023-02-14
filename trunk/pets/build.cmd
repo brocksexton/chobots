@@ -1,0 +1,1 @@
+copy flash-resources\*.swf ..\bin\resources\pets

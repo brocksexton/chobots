@@ -1,0 +1,36 @@
+<messages>
+  <afterBuyWarning>Nach diesem Kauf wirst Du {0} Blech auf Deiner Rechnung haben. Möchtest Du es kaufen?</afterBuyWarning>
+  <bagIsFull>Deine Tasche ist voll! Leider kannst Du nichts mehr kaufen.</bagIsFull>
+  <buy>Kaufen</buy>
+  <comingSoon>Kommt bald!</comingSoon>
+  <magicBalls>Luftballons machen Spaß, aber Ballspielen macht noch mehr Spaß!</magicBalls>
+  <magicBevel>Möchtest Du Cho-Energie spüren?</magicBevel>
+  <magicBlend>Spionenmodus an!</magicBlend>
+  <magicBlur>Möchtest Du dich wie ein Geist fühlen - koste diese Praline und Du wirst unsichtbar.  Halloooooo? Wo bist Du? Ich kann Dich nicht sehen.</magicBlur>
+  <magicBottle>Ein Tropfen von diesem Elixier und Du wirst im Rampenlicht stehen. Ist das nicht genau das, wovon Du geträumt hast?</magicBottle>
+  <magicBubble>Es ist höchste Zeit, um zu feiern! Juhuuu!!! Nimm diese Praline und in Deinen Händen erscheint ein Luftballon. So kannst Du feierliche Stimmung schaffen!</magicBubble>
+  <magicBubbleBlue>Zwei Luftballons sind besser als einer, nicht wahr? Worauf wartest Du dann? Schlucke sie runter!</magicBubbleBlue>
+  <magicBubbleYellow>Drei Luftballons sind besser als zwei!</magicBubbleYellow>
+  <magicCharly>Hast Du mal Filme von Charlie Chaplin gesehen? Ja-ja, der schwarzweiße Humor!</magicCharly>
+  <magicFlame>Vorsicht! Du kannst Dich mit dieser Praline verletzen!</magicFlame>
+  <magicGhost>Und es bleibt nur ein Schatten...</magicGhost>
+  <magicHue>80-er Disko? Ja, tanzen!</magicHue>
+  <magicInvert>Schwarzes Loch - was ist das?</magicInvert>
+  <magicLarge>Weißt Du wer der bekannteste Riese ist? Ja, genau, der Gulliver! Möchtest Du an seiner Stelle sein?</magicLarge>
+  <magicNearest>Magiewirkung verbreiten</magicNearest>
+  <magicPromotion/>
+  <magicScale>Wenn Du diese Praline isst, wirst Du klein wie eine Ameise werden.</magicScale>
+  <magicSpeed>Diese Praline wird Dir helfen, blitzschnell zu laufen.</magicSpeed>
+  <magicStar>Wenn Du schon in Rampenlicht gestanden hast, dann möchtest Du vielleicht noch einen Stern auf dem Kopf haben?</magicStar>
+  <magicTeleport>Teleport</magicTeleport>
+  <magicToxic>Bist Du schon mal in Chernobyl gewesen?</magicToxic>
+  <magicUmnik>Hey, möchtest Du ein großes Gehirn in deinem Kopf haben?</magicUmnik>
+  <magicZhurdyai>100 Hamburger drinnen!</magicZhurdyai>
+  <magic_buben>der Regen</magic_buben>
+  <magic_lightning>der Blitz</magic_lightning>
+  <magic_rainbow>der Regenbogen</magic_rainbow>
+  <magic_snow>der Schnee</magic_snow>
+  <moonWalk/>
+  <notEnoughMoney>Du hast nicht genug Geld, um es zu kaufen.</notEnoughMoney>
+  <null/>
+</messages>
