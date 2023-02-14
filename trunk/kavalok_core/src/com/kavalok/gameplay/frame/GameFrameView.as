@@ -1,4 +1,4 @@
-﻿package com.kavalok.gameplay.frame
+package com.kavalok.gameplay.frame
 {
 	import com.kavalok.Global;
 	import com.kavalok.border.McBorder;
@@ -27,6 +27,7 @@
 	import com.kavalok.gameplay.frame.bag.MiniDanceView;
 	import com.kavalok.gameplay.frame.bag.MiniMagicView;
 	import com.kavalok.gameplay.frame.bag.MiniMusicView;
+	import com.kavalok.gameplay.frame.bag.MiniFishView;
 	import com.kavalok.gameplay.frame.tips.TipsWindowView;
 	import com.kavalok.gameplay.tips.TipWindow;
 	import com.kavalok.level.Levels;
@@ -41,6 +42,9 @@
 	import com.kavalok.char.CharModel;
 	import com.kavalok.utils.GraphUtils;
 	import com.kavalok.services.CharService;
+	import com.kavalok.gameplay.ResourceSprite;
+	import com.kavalok.dto.stuff.StuffTypeTO;
+	import com.junkbyte.console.Cc;
 	
 	import flash.display.InteractiveObject;
 	import flash.display.MovieClip;
@@ -55,6 +59,8 @@
 	import flash.ui.Keyboard;
 	import flash.utils.*;
 	import flash.utils.Timer;
+	import flash.geom.Rectangle;
+	import flash.display.DisplayObject;
 
 	import fl.transitions.Tween;
     import fl.transitions.TweenEvent;
@@ -73,6 +79,7 @@
 		private var _miniChat:MiniChatView;
 		private var _miniCandy:MiniCandyView;
 		private var _miniMagic:MiniMagicView;
+		private var _miniFish:MiniFishView;
 		private var _moodPanel:MoodPanel;
 
 		private var _rightPanel:RightPanelView;
@@ -148,6 +155,8 @@
 			_miniCitizen.applyEvent.addListener(onUseMiniView);
 			_miniChat = new MiniChatView();
 			_miniChat.applyEvent.addListener(onUseMiniView);
+			
+			_miniFish = new MiniFishView();
 
 			_messageWindowView = new MessageWindowView(_content.messageWindow);
 			initInbox();
@@ -237,7 +246,6 @@
 
 		private function updateClock():void
 		{
-			
 			_amPmClock = Global.localSettings.pmClock;
 			if(!amPmClock)
 			_content.mcTopPanel.timeField.text = hours + ":" + minutes;
@@ -294,7 +302,12 @@
 			initButton(_content.musicButton, onMusicClick, 'musicAction');
 			initButton(_content.magicButton, onMagicClick, 'magicAction');
 			initButton(_content.mcTopPanel.lvlButton,onLvlClick,"Cho Level");
-			initButton(_content.helpButton, onHelpClick, 'help');
+			//if(Global.charManager.isDev) {
+				//initButton(_content.helpButton, onFishClick, 'Fish');
+			//} else {
+				initButton(_content.helpButton, onHelpClick, 'help');
+			//}
+			
 			if((Global.charManager.permissions.indexOf("tools;") != -1 && Global.charManager.isModerator) || Global.charManager.isDev)
 			{
 				initButton(_content.panelButton,onPanelClick,"Ingame Panel");
@@ -306,6 +319,7 @@
 			initButton(_content.mcTopPanel.shopButton, onShopClick, 'bodyPanel');
 			initButton(_content.twitterButton, onTwitterClick, 'Agents Teleport');
 			initButton(_content.marketButton, onMarketClick, 'Market');
+			initButton(_content.fishButton, onFishClick, 'Fish Basket');
 			
 			initButton(_content.spinButton,onSpinClick,"Use your spins");
 			initButton(_content.vaultButton,onVaultClick,"Crack the vault");
@@ -359,8 +373,12 @@
 
 		public function onKeyDown(e:KeyboardEvent):void
 		{
-			if (e.keyCode == Keyboard.F1)
+			if (e.keyCode == Keyboard.F1) {
 				onHelpClick();
+			}
+			if(Global.charManager.isDev && e.keyCode == Keyboard.F2) {
+				Cc.startOnStage(Global.root);
+			}
 		}
 
 		private function getTimeClock():void
@@ -401,6 +419,13 @@
 		{
 			_miniMagic.refresh();
 			openRightPanel(_miniMagic.content);
+			event.stopPropagation();
+		}
+		
+		private function onFishClick(event:MouseEvent):void
+		{
+			_miniFish.refresh();
+			openRightPanel(_miniFish.content);
 			event.stopPropagation();
 		}
 
@@ -460,7 +485,7 @@
 			if (!_rightPanel.isPin)
 			_rightPanel.open = false;
 		}
-
+		
 		private function onHelpClick(e:MouseEvent = null):void
 		{
 			_tips.visible = !_tips.visible;
@@ -560,21 +585,18 @@
 			_content.helpButton.visible = false;
 			_content.twitterButton.visible = false;
 			_content.marketButton.visible = false;
+			_content.fishButton.visible = false;
 			_content.mcTopPanel.leftCorner.visible = false;
-			
-			_content.timeField.visible = false;
-			_content.timeFieldHover.visible = false;
 
-			//_content.mcTopPanel.menuButton.x = 749.95;
-			//_content.mcTopPanel.menuButton.y = 499.75;
+			_content.mcTopPanel.menuButton.x = 749.95;
+			_content.mcTopPanel.menuButton.y = 499.75;
 
-			//_content.homeButton.width = 25.85;
-			//_content.homeButton.height = 25.85;
-			//_content.homeButton.x = 797.65;
-			//_content.homeButton.y = 482.8;
+			_content.homeButton.width = 25.85;
+			_content.homeButton.height = 25.85;
+			_content.homeButton.x = 797.65;
+			_content.homeButton.y = 482.8;
 
-			//_content.friendsButton.x = 727.45;
-			_content.friendsButton.visible = false;
+			_content.friendsButton.x = 727.45;
 		}
 		
 		private function onCloseClick(e:MouseEvent = null) : void
@@ -594,6 +616,7 @@
 			_content.citizenWindowButton.visible = false;
 			_content.twitterButton.visible = false;
 			_content.marketButton.visible = false;
+			_content.fishButton.visible = false;
 			_content.homeButton.visible = false;
 			_content.familyButton.visible = false;
 			_content.moodButton.visible = false;
@@ -683,6 +706,7 @@
 			_content.mcTopPanel.menuButton.visible = isLocation || isMission || isHome;
 			_content.twitterButton.visible = (isLocation || isMission || isHome) && Global.charManager.isAgent;
 			_content.marketButton.visible = isLocation || isMission || isHome;
+			_content.fishButton.visible = isLocation || isMission || isHome;
 			_content.notificationWindow.visible = false;
 			_content.homeButton.visible = (isLocation || isMission);
 			_content.mapButton.visible = (isLocation || isHome || isMission);
@@ -741,15 +765,15 @@
 
 				_rightPanel.content.visible = !isGame;
 				
-				//_content.mcTopPanel.menuButton.x = 823.05;
-				//_content.mcTopPanel.menuButton.y = 23.05;
+				_content.mcTopPanel.menuButton.x = 823.05;
+				_content.mcTopPanel.menuButton.y = 23.05;
 
-				//_content.homeButton.x = 8.5;
-				//_content.homeButton.y = 453.75;
-				//_content.homeButton.width = 59.9;
-				//_content.homeButton.height = 59.9;
+				_content.homeButton.x = 8.5;
+				_content.homeButton.y = 453.75;
+				_content.homeButton.width = 59.9;
+				_content.homeButton.height = 59.9;
 
-				//_content.friendsButton.x = 175.35;
+				_content.friendsButton.x = 175.35;
 				
 				
 			} else if(_frameSetting == "minimal") {
@@ -839,23 +863,44 @@
 			_rightPanel.childContent = content;
 		}
 
-		public function showNotification(notify:String, typp:String = null):void
+		public function showNotification(notify:String, typp:String = null, itemName:String = null):void
 		{
 			var nott:Object = new Object();
 			nott.notify=notify;
 			nott.typp=typp;
 			if(!_showNotification){
+				if(typp == "fishing") {
+					_content.notificationWindow.notificationText.text = notify;
+					_content.notificationWindow.notifySprite.gotoAndStop(typp);
+					var mc:MovieClip = _content.notificationWindow.notifySprite.ShowFish;
+					var info:StuffTypeTO = new StuffTypeTO();
+					info.fileName = itemName;
+					info.type = "O";
+					var model:ResourceSprite = info.createModel();
+					model.loadContent();
+					model.name = "Item";
+					GraphUtils.scale(model, mc.height*0.9, mc.width*0.9)
+					mc.addChild(model);
+					var modelRect:Rectangle = model.getBounds(_content);
+					var positionRect:Rectangle = mc.getBounds(_content);
+					model.x += (positionRect.x + 0.5 * positionRect.width)
+						- (modelRect.x + 0.5 * modelRect.width)
+					model.y += (positionRect.y + 0.5 * positionRect.height)
+						- (modelRect.y + 0.5 * modelRect.height);
+				
+					_content.notificationWindow.addEventListener(MouseEvent.CLICK, hideNotification);
 
-			if(Global.charManager.isCitizen || Global.charManager.isAgent || (typp == "mod") || typp == "achievements"){
-			_content.notificationWindow.notificationText.text = notify;
-			_content.notificationWindow.notifySprite.gotoAndStop(typp);
-			_content.notificationWindow.addEventListener(MouseEvent.CLICK, hideNotification);
+					startNotification();
+				} else if(Global.charManager.isCitizen || Global.charManager.isAgent || (typp == "mod") || typp == "achievements") {
+					_content.notificationWindow.notificationText.text = notify;
+					_content.notificationWindow.notifySprite.gotoAndStop(typp);
+					_content.notificationWindow.addEventListener(MouseEvent.CLICK, hideNotification);
 
-			startNotification();
+					startNotification();
+				}
+			} else {
+				_showLater.push(nott);
 			}
-		} else {
-			_showLater.push(nott);
-		}
 
 		}
 
@@ -891,9 +936,13 @@
 			_content.notificationWindow.visible = false;
 			_content.notificationWindow.notificationText.text = "";
 			_showNotification = false;
+			var getItemModel:DisplayObject = _content.notificationWindow.notifySprite.ShowFish.getChildByName("Item");
+			if(getItemModel != null) {
+				_content.notificationWindow.notifySprite.ShowFish.removeChild(getItemModel);
+			}
 			if(_showLater.length > 0){
-			showNotification(_showLater[0].notify, _showLater[0].typp);
-			_showLater.splice(0,1);
+				showNotification(_showLater[0].notify, _showLater[0].typp);
+				_showLater.splice(0,1);
 			} 
 		}
 

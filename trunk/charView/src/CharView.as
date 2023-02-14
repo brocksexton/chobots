@@ -1,4 +1,4 @@
-﻿package {
+package {
 	import com.kavalok.Global;
 	import com.kavalok.StartupInfo;
 	import com.kavalok.gameplay.KavalokConstants;
@@ -74,7 +74,7 @@
 		
 		private function getServerNameFromURL(url:String):String
 		{
-		    return "game.chobots.icu"
+		    return "game.chobots.world"
 		}
 		
 		private function onReady():void
@@ -100,7 +100,7 @@ trace("connected");
 		{
 			var login:String = loaderInfo.parameters.login;
 			if (!login)
-				login="brock";
+				login="zoo";
 			//new GetCharCommand(login, 0, onViewComplete).execute();
 			new CharService(onCharInfo).getCharViewLogin(login);
 		}

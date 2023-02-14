@@ -1,4 +1,4 @@
-﻿package
+package
 {
 
 	import com.junkbyte.console.Cc;
@@ -59,7 +59,7 @@
 			}
 			
 			info.prefix = loaderInfo.parameters.guest;
-			info.url = 'game.kavalok.net/kavalok';
+			info.url = 'game.chobots.world/kavalok';
 			info.locale = loaderInfo.parameters.locale;
 			info.partnerUid = loaderInfo.parameters.partnerUid;
 			info.homeURL = loaderInfo.parameters.homeURL;
@@ -74,12 +74,16 @@
 			info.mppc_partner = loaderInfo.parameters.mppc_partner;
 			info.disableQualityAuto = loaderInfo.parameters.disableQualityAuto;
 			info.hash = loaderInfo.parameters.hash;
-
 			if (loaderInfo.parameters.hasOwnProperty('scale'))
 				Global.scale = loaderInfo.parameters.scale;
-
+			
+			if (loaderInfo.parameters.hasOwnProperty('isBot'))
+				info.isBot = true;
+			
+			Global.debugging = true;
+	
 			Global.referer = loaderInfo.parameters.referer;
-
+			//Cc.startOnStage(this);
 			Cc.log("connecting to : " + info.url);
 
 			Global.localSettings.pmClock = false;

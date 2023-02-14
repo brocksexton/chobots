@@ -1,8 +1,6 @@
 package com.kavalok.location.entryPoints
 {
-	
-	import ChoData.FishInfo;
-	
+	import com.junkbyte.console.Cc;
 	import com.kavalok.Global;
 	import com.kavalok.char.CharModels;
 	import com.kavalok.char.Directions;
@@ -31,6 +29,7 @@ package com.kavalok.location.entryPoints
 	import com.kavalok.utils.GraphUtils;
 	import com.kavalok.utils.MathUtils;
 	import com.kavalok.utils.Strings;
+	import com.kavalok.security.Base64;
 	
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
@@ -44,42 +43,50 @@ package com.kavalok.location.entryPoints
 	
 	public class FishingEntryPoint extends EntryPointBase
 	{
-		public static const BASIC_ROD_NAME:String = "fishing";
-		//public static const CITIZEN_ROD_NAME:String = "citizen_fishing_rod";
+		public static const BASIC_ROD_NAME:String = "fishingPoleDefault";
+		public static const CITIZEN_ROD_NAME:String = "fishingPoleCitizen";
 		//public static const PREMIUM_ROD_NAME:String = "premium_fishing_rod";
 		
 		//private var isFishing:Boolean = false;
 		private var fishTimer:Timer;
 		private var initMCs:Array = [];
 		private var _time:Date;
+		private var _holes : Array = [];
+		private static const HOLE_NAME_PREFIX : String = "hole_";
+		private static const HOLE_NAME : String = "hole";
+		private var _currentHole : MovieClip;
 		
-		public static var fishies:Array = [ 
-			// we can load the fishies from the db in the future, but for now.. lets just make it static
-			
-			
-			/*
-			{ name: CITIZEN_ROD_NAME, fish: new FishType(1, "null", 15, CITIZEN_ROD_NAME, "Null") },
-			{ name: CITIZEN_ROD_NAME, fish: new FishType(1, "basic_fish", 50, CITIZEN_ROD_NAME, "Basic Fish") },
-			{ name: CITIZEN_ROD_NAME, fish: new FishType(1, "uncommon_fish", 25, CITIZEN_ROD_NAME, "Uncommon Fish") },
-			{ name: CITIZEN_ROD_NAME, fish: new FishType(1, "rare_fish", 10, CITIZEN_ROD_NAME, "Rare Fish") },
-			{ name: CITIZEN_ROD_NAME, fish: new FishType(1, "nicho_fish", 5, CITIZEN_ROD_NAME, "Nicho Fish") },
-			*/
-			
-		];
+		public static var fishies:Array = [];
 		private var lastMouseX:Number;
 		private var lastMouseY:Number;
 		
 		public function FishingEntryPoint(location:LocationBase, prefix:String=null, remoteId:String=null)
 		{
-			//TODO: implement function
 			_location = location;
 			Global.charManager.charViewChangeEvent.addListenerIfHasNot(onCharChangedEvent);
 			
 			Global.locationManager.locationChange.addListenerIfHasNot(onLocationChange);
 			_time = Global.getServerTime();
 			
-			
+			registerHoles(_location.content);
+			if(location.locId == "locBeach") {
+				new StuffServiceNT(onGotStuffTypes, onFailGetStuffTypes).getStuffTypes("fish");
+			}
 			super(location, "fishing", remoteId);
+			_location.readyEvent.addListener(initMousePointer);
+		}
+		
+		private function registerHoles(container : Sprite) : void
+		{
+			for(var i : uint = 0; i < container.numChildren; i++)
+			{
+				var child : DisplayObject = container.getChildAt(i);
+				if(child is MovieClip && (Strings.startsWidth(child.name, HOLE_NAME_PREFIX) || child.name == HOLE_NAME))
+				{
+					_holes.push(child);
+					MovieClip(child).activePool.gotoAndStop(1);
+				}
+			}
 		}
 		
 		private function onLocationChange():void
@@ -95,14 +102,8 @@ package com.kavalok.location.entryPoints
 		
 		override public function initialize(mc:MovieClip):void
 		{
-			trace("initalizing fishing entry point... " + mc.name);
-			
-			
-			new StuffServiceNT(onGotStuffTypes, onFailGetStuffTypes).getStuffTypes("fish");
-			
 			initMCs.push(mc);
-			
-			//initMousePointer(); // gears
+			initMousePointer();
 			mc.alpha = 0;
 			
 			super.initialize(mc);
@@ -110,108 +111,58 @@ package com.kavalok.location.entryPoints
 		
 		private function onGotStuffTypes(stuffsarray:Array):void
 		{
-			fishies.push({ name: BASIC_ROD_NAME, fish: new FishType(0, "null", 20, BASIC_ROD_NAME, "Null", false) });
-			// ^ null/void/no item, no reward
-			
-			// bugs
-			fishies.push({ name: BASIC_ROD_NAME, fish: new FishType(1, "bugs", 10, BASIC_ROD_NAME, "#{amount} bugs", false) });
-			
-			var totalBytes:int = 0;
-			
+			fishies.push({ name: BASIC_ROD_NAME, fish: new FishType(0, "null", 10, BASIC_ROD_NAME, "Null", false) });// null/void/no item, no reward
+			fishies.push({ name: BASIC_ROD_NAME, fish: new FishType(1, "bugs", 10, BASIC_ROD_NAME, "#{amount} bugs", false) }); // bugs
 			for each(var item:StuffTypeTO in stuffsarray)
 			{
-				processFishInfoType(item);
-				totalBytes = totalBytes + (item.otherInfo as Array).length;
+				if(item.type == StuffTypes.FISH) {
+					var id:int = fishies.length+1;
+					var rodName:String = (item.otherInfo.split("r=")[1].split(";")[0] == 1) ? BASIC_ROD_NAME : (item.otherInfo.split("r=")[1].split(";")[0] == 2) ? CITIZEN_ROD_NAME : "0";
+					var probability:int = item.otherInfo.split("p=")[1].split(";")[0];
+					var isItem:Boolean = item.otherInfo.split("it=")[1].split(";")[0];
+					var dayNightTimes:int = item.otherInfo.split("dn=")[1].split(";")[0]; // 1 = day only, 2= night only, 3 or otherwise = anytime
+					// 11pm -> 8am
+					if(dayNightTimes == 2 && _time.hours < 23 && _time.hours > 8 )
+					{
+						return; //Cc.log("night time only fish " + item.name);
+					} else if(dayNightTimes == 1 && _time.hours > 23 && _time.hours < 8) {
+						return; //Cc.log("day only fish");
+					}
+					fishies.push({ name: rodName, fish: new FishType(id, item.fileName, probability, rodName, item.name, isItem) });
+				}
 			}
-			
-			trace("Total Bytes Received: " + totalBytes + " bytes");
-			
 			initMousePointer();
 		}
-		
-		private function processFishInfoType(item:StuffTypeTO):void 
-		{
-			var fishInfo:FishInfo = getFishOtherInfo(item.otherInfo);
-			//	trace("decode -> " + fishInfo.id + " <- rod -> " + fishInfo.r);
-			
-			trace("FishInfo Payload: " + fishInfo.toString() + " Payload Size: " + (item.otherInfo as Array).length 
-				+ " bytes");
-			var id:int = fishInfo.id;
-			var rodName:String = (fishInfo.r == 1) ? BASIC_ROD_NAME : "0";
-			var probability:int = fishInfo.p;
-			var isItem:Boolean = fishInfo.it;
-			var dayNightTimes:int = fishInfo.dn; // 1 = day only, 2= night only, 3 or otherwise = anytime
-			
-			// 11pm -> 8am
-			if(dayNightTimes == 2 && _time.hours < 23 && _time.hours > 8 )
-			{
-				trace("night time only fish " + item.name);
-				return;
-				
-			} else if(dayNightTimes == 1 && _time.hours > 23 && _time.hours < 8) {
-				trace("day only fish");
-				return;
-			}
-			fishies.push({ name: rodName, fish: new FishType(id, item.fileName, probability, rodName, item.name, isItem) });
-			
-		}
-		
-		private function getFishOtherInfo(otherInfo:*):FishInfo
-		{
-			var byteArray:ByteArray = new ByteArray();
-			for each(var o:int in otherInfo)
-			{
-				byteArray.writeByte(o);
-			}
-			var b64d:String = Serializer.toBase64(byteArray);
-			
-			var fi:FishInfo = new FishInfo();
-			fi.mergeFrom(Serializer.fromBase64(b64d));
-			//trace(b64d);
-			//trace("info :> " + fi.p); 
-			
-			
-			return fi;
-			//return BSON.decode(Serializer.fromBase64(b64d));
-			
-		}
-		
+
 		private function onFailGetStuffTypes(e:* = null):void
 		{
-			// TODO Auto Generated method stub
-			trace("error getting stuff types");
+			Cc.log("error getting stuff types");
 		}
 		
 		private function initMousePointer():void
 		{
 			if(isWearingRod()){
-				for each(var i:DisplayObject in initMCs)
-				{
+				for each(var i:DisplayObject in initMCs) {
 					MousePointer.registerObject(i, MousePointer.ACTION);
 				}
 			} else {
 				removeMousePointer();
 			}
-			
 		}
 		
 		private function removeMousePointer():void 
 		{
-			for each(var i:DisplayObject in initMCs)
-			{
+			for each(var i:DisplayObject in initMCs) {
 				MousePointer.unRegisterObject(i);
 			}
-			
 			MousePointer.resetIcon();
 		}
 		
 		private function isWearingRod():Boolean 
 		{
-			if(stuffs.isItemUsed(BASIC_ROD_NAME))
-			{
+			if(stuffs.isItemUsed(BASIC_ROD_NAME) || stuffs.isItemUsed(CITIZEN_ROD_NAME)) {
 				return true;
 			}
-			
 			return false;
 		}
 		
@@ -225,30 +176,38 @@ package com.kavalok.location.entryPoints
 		private function doFish():void 
 		{
 			Global.isFishing = true;
-			
-			var char:LocationChar = _location.chars[Global.charManager.charId];
-			
-			if	(char != null)
-				char.setModel(CharModels.STAY, Directions.getDirection(lastMouseX - char.content.x, lastMouseY - char.content.y));
-			
-			trace("gonna fish...");
-			var time:int = MathUtils.randomNumberRange(15, 35);
-			trace("waiting -> " + time + " secs");
-			
-			fishTimer = new Timer(time * 1000, 0);
-			fishTimer.addEventListener(TimerEvent.TIMER, onFishTimer);
-			showFishingAnimations();
-			fishTimer.start();
-			
-			
-			
 			removeMousePointer();
+			showFishingAnimations();
+			
+			fishTimer = new Timer(100, 0);
+			fishTimer.addEventListener(TimerEvent.TIMER, onFishFirstTimer);
+			fishTimer.start();
 		}
 		
 		private function showFishingAnimations():void
 		{
-			// TODO: work on fishing animations showing, when player puts rod in water.. catches fish etc
+			/*var char:LocationChar = _location.chars[Global.charManager.charId];
+			if	(char != null)
+				char.setModel(CharModels.THROW, Directions.getDirection(lastMouseX - char.content.x, lastMouseY - char.content.y))
+			*/
+			 var idx:int=Math.floor(Math.random() * _holes.length);
+			 _currentHole = _holes[idx];
+			 _currentHole.activePool.gotoAndPlay(2);
+		}
+		
+		protected function onFishFirstTimer(event:TimerEvent = null):void
+		{
+			fishTimer.stop();
+			var time:int = MathUtils.randomNumberRange(5, 10);
+			Cc.log("waiting -> " + time + " secs");
 			
+			var char:LocationChar = _location.chars[Global.charManager.charId];
+			if	(char != null)
+				char.setModel(CharModels.THROW, Directions.getDirection(lastMouseX - char.content.x, lastMouseY - char.content.y))
+				
+			fishTimer = new Timer(time * 1000, 0);
+			fishTimer.addEventListener(TimerEvent.TIMER, onFishTimer);
+			fishTimer.start();
 		}
 		
 		protected function onFishTimer(event:TimerEvent = null):void
@@ -256,92 +215,86 @@ package com.kavalok.location.entryPoints
 			if(Global.isFishing)
 			{
 				var weights:Array = [];
-				
-				for each(var fish:FishType in getFishiesByRod(BASIC_ROD_NAME)){
-
-					//trace("added fishie " + fish.name);
+				for each(var fish:FishType in getFishiesByRod()){
 					weights.push(fish.probability);
 				}
-				
-				
 				processFish(MathUtils.randomIndexByWeights(weights));
 			}
-			
 		}
 		
 		private function processFish(prob:int):void 
 		{
-			var fishs:Array = getFishiesByRod(BASIC_ROD_NAME);
+			_currentHole.activePool.gotoAndStop(1);
+			_currentHole.Splash.gotoAndPlay(2);
+			var fishs:Array = getFishiesByRod();
 			var le_fish:FishType = fishs[prob];
-			
-			
-			
-			
-			if(le_fish == null)
-				return;
-			var selc_fish:FishType = le_fish;
-			trace(selc_fish.name);
-			endFish();
-			
-			// award fish 
-			
-			if(le_fish.name == "null")
-			{
-				Dialogs.showOkDialog("The fish swam away, darn it!", true);
+			if(le_fish == null) {
+				endFish();
 				return;
 			}
-				
-				
+			var selc_fish:FishType = le_fish;
+			//Cc.log(selc_fish.name);
+			
+			// award fish 
+			if(le_fish.name == "null")
+			{
+				//Dialogs.showOkDialog("The fish swam away, darn it!", true);
+				endFish();
+				return;
+			}
+			
 		    if(!le_fish.isItem)
 			{
 				processBugs(le_fish);
+				endFish();
 				return;
 			} else {
-				
-				(canGetMoreFish()) ? new RetriveStuffCommand(le_fish.name, "").execute() : Dialogs.showOkDialog("Your fishermans backpack is full!", true);
-				if(!canGetMoreFish())
+				if(canGetMoreFish()) {
+					Global.frame.showNotification("Yay You've caught a " + le_fish.nice_name, "fishing", le_fish.name); // Global.frame.showNotification(notify,"achievements");
+					new RetriveStuffCommand(le_fish.name, "").execute();
+				} else {
+					Dialogs.showOkDialog("Your fishermans backpack is full!", true)
+					endFish();
 					return;
+				}
 			}
-				
-			var msg:String = "Yay You've caught a " + le_fish.nice_name;
-			doIHaveFish(le_fish.name);
 			
-			Dialogs.showOkDialog(msg, true);
+			//doIHaveFish(le_fish.name);
+			endFish();
+			//Dialogs.showOkDialog(msg, true);
 			
 			if(le_fish.probability < 21 )
 				Global.addExperience(1);
-				
 		}
 		
 		private function canGetMoreFish():Boolean
 		{
 			var maxFish:int = (Global.charManager.isCitizen) ? 10 : 5;
-			//trace("is mod? " + Global.charManager.isModerator);
 			if(Global.charManager.isModerator){
 				maxFish = 99999;
 			}
-				
 			return !(stuffs.getStuffsCount(StuffTypes.FISH) >= maxFish);
 		}
 		
-		public function doIHaveFish(fishName:String = ""):void
+		public function doIHaveFish(fishName:String):void
 		{
-			// testing
-			
-			trace("do i have this fish? " + stuffs.stuffExists(fishName));
+			var haveFish:Boolean = stuffs.stuffExists(fishName);
+			if(haveFish) {
+				Cc.log("I already have this fish!");
+			} else {
+				Cc.log("New fish caught!");
+			}
 		}
 		
 		private function processBugs(le_fish:FishType):void
 		{
 			var bugs:int = getRandomBugs();
-			
 			if(!le_fish.isItem && le_fish.name == "bugs")
 			{
-				trace("giving bugs");
+				Cc.log("giving bugs");
 				new AddMoneyCommand(bugs, Competitions.COINS, false, null, false).execute();
 				Dialogs.showOkDialog("Yay! You've found " + bugs + " bugs in the bottom of the ocean", true);
 			}
-			
 		}
 		
 		private function getRandomBugs():int
@@ -352,22 +305,25 @@ package com.kavalok.location.entryPoints
 			var bugsProb:Array = [
 					50, 30, 20
 				];
-			
 			return bugs[MathUtils.randomIndexByWeights(bugsProb)];
 		}
 		
-		private function getFishiesByRod(rod:String):Array
+		private function getFishiesByRod():Array
 		{
+			var rods:Array = [BASIC_ROD_NAME];
+			if(stuffs.isItemUsed(CITIZEN_ROD_NAME)) {
+				rods.push(CITIZEN_ROD_NAME);
+			}
 			var fis:Array = [];
-			
-			for each(var o:Object in fishies){
-				if(o.name == rod)
-				{
-					fis.push(o.fish);
-					
+			for each(var rod:String in rods){
+				for each(var o:Object in fishies) {
+					if(o.name == rod)
+					{
+						//Cc.log("getFishiesByRod: " + o.name + " - " + o.fish.name);
+						fis.push(o.fish);
+					}
 				}
 			}
-			
 			return fis;
 		}
 		
@@ -375,7 +331,9 @@ package com.kavalok.location.entryPoints
 		{
 			if(!Global.isFishing)
 				return;
-			
+				
+			_currentHole.activePool.gotoAndStop(1);
+				
 			initMousePointer();
 			Global.isFishing = false;
 			if(fishTimer != null)
@@ -384,25 +342,19 @@ package com.kavalok.location.entryPoints
 		
 		override public function destroy():void
 		{
-			trace("deactived.... destroyed");
 			Global.charManager.charViewChangeEvent.removeListenerIfHas(onCharChangedEvent);
 			super.destroy();
 		}
 		
 		override public function goIn():void
 		{
-			trace("going in to fishing");
-
 			if(!Global.isFishing)
 				doFish();
-			
 			super.goIn();
 		}
 		
 		override public function goOut():void
 		{
-			trace("leaving fishing");
-			
 			if(Global.isFishing) 
 				endFish();
 			
@@ -412,15 +364,12 @@ package com.kavalok.location.entryPoints
 		override protected function onClick(event : MouseEvent) : void
 		{
 			var mc:MovieClip = MovieClip(event['currentTarget']);
-			
-			trace("on click " + event['currentTarget']);
 			if (mc.hitTestPoint(
 				Global.stage.mouseX,
 				Global.stage.mouseY) && isWearingRod())
 			{
 				if(Global.isFishing) 
 					return;
-				trace("activated fishing...");
 				//doFish();
 				clickedClip = mc;
 				lastMouseX = Global.stage.mouseX;
@@ -432,7 +381,6 @@ package com.kavalok.location.entryPoints
 				}
 			}
 		}
-		
 		
 		private function get stuffs():Stuffs 
 		{

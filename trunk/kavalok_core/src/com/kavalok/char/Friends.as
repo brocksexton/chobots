@@ -1,4 +1,4 @@
-﻿package com.kavalok.char
+package com.kavalok.char
 {
 	import com.kavalok.dto.friend.FriendTO;
 	import com.kavalok.events.EventSender;
@@ -38,14 +38,6 @@
 			}
 		}
 		
-		public static function upperCase(str:String):String {
-			var firstChar:String = str.substr(0, 1);
-			var restOfString:String = str.substr(1, str.length);
-			
-			return firstChar.toUpperCase() + restOfString.toLowerCase();
-			
-		}	
-	
 		public function refresh():void
 		{
 			new CharService(onResult).getCharFriends();

@@ -28,7 +28,12 @@
 	import com.kavalok.services.AdminService;
 	import com.kavalok.services.LoginService;
 	import com.kavalok.utils.ResourceScanner;
+	import com.kavalok.security.MD5;
+	import com.kavalok.constants.BrowserConstants;
 	
+	import flash.net.URLRequest;
+	import flash.net.URLRequestMethod;
+	import flash.net.navigateToURL;
 	import flash.events.MouseEvent;
 	import flash.external.ExternalInterface;
 
@@ -83,18 +88,14 @@
 			_activationView.registerEvent.addListener(onRegisterSelect);
 			_activationView.messageEvent.addListener(showSuccess);
 
-	
-
 			_entranceView=new EntranceView(_content.viewStack.entranceView);
 			_entranceView.loginEvent.addListener(onLoginSelect);
 			_entranceView.registerEvent.addListener(onRegisterSelect);
-
 
 			_restorePasswordView=new RestorePasswordView(_content.viewStack.restorePasswordView);
 			_restorePasswordView.messageEvent.addListener(showSuccess);
 			_restorePasswordView.errorEvent.addListener(showError);
 			_restorePasswordView.backEvent.addListener(onLoginSelect);
-
 
 			_loginView=new LoginView(_content.viewStack.loginView);
 			_loginView.guestEnabled=false;
@@ -123,7 +124,6 @@
 			_viewStack.addPage(_activationView);
 			_viewStack.addPage(_registerView);
 			_viewStack.addPage(_selectChatView);
-
 
 			selectStartPage();
 
@@ -224,12 +224,12 @@
 		{
 			_skipActivation=skipRegistration;
 			_login=login;
-			_pass=password;
+			_pass=MD5.hash(password);
 			Global.isLocked=true;
-			Global.enteredPassword = password;
+			Global.enteredPassword = MD5.hash(password);
 			Global.enteredUser = login.toString().toLowerCase();
 			Global.authManager.loginEvent.addListener(onLogin);
-			Global.authManager.tryLogin(login, password);
+			Global.authManager.tryLogin(login, MD5.hash(password));
 		}
 
 		private function onLoginFault(loginResult:LoginResultTO):void
@@ -349,8 +349,10 @@
 
 		private function onRestorePassword():void
 		{
-			_viewStack.selectedPage=_restorePasswordView;
-			trackAnalytics("restorePassword");
+			var request:URLRequest = new URLRequest(Global.MAIN_SITE_URL + "/management/forgot");
+			navigateToURL(request, BrowserConstants.BLANK);
+			//_viewStack.selectedPage=_restorePasswordView;
+			//trackAnalytics("restorePassword");
 		}
 
 		private function onRegisterSelect(event:Object=null):void

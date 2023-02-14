@@ -10,6 +10,7 @@ package com.kavalok.gameplay.commands
 	import com.kavalok.services.AdminService;
 	import com.kavalok.utils.KavalokUtil;
 	import com.kavalok.utils.Strings;
+	import com.kavalok.security.MD5;
 	
 	import flash.events.MouseEvent;
 	
@@ -42,7 +43,7 @@ package com.kavalok.gameplay.commands
 			else if (!(newPassword == confirmPassword))
 				Dialogs.showOkDialog(bundle.messages.badConfirmPassw);
 			else
-				new AdminService(onResult).changePassword(currentPassword, newPassword);
+				new AdminService(onResult).changePassword(MD5.hash(currentPassword), MD5.hash(newPassword));
 		}
 		
 		private function onResult(result:String):void
@@ -50,7 +51,7 @@ package com.kavalok.gameplay.commands
 			Dialogs.showOkDialog(Global.messages[result]);
 			
 			if (result == PASSW_CHANGED){
-				Global.enteredPassword= _content.newPassword.text;
+				Global.enteredPassword= MD5.hash(_content.newPassword.text);
 				Dialogs.hideDialogWindow(_content);
 
 			}

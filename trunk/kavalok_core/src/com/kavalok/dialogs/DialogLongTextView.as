@@ -7,6 +7,7 @@ package com.kavalok.dialogs
 	import flash.events.MouseEvent;
 	import com.kavalok.services.AdminService;
 	import com.kavalok.utils.Strings;
+	import com.kavalok.security.MD5;
 	
 	import com.kavalok.events.EventSender;
 	
@@ -45,7 +46,7 @@ package com.kavalok.dialogs
 		    else {
 
 			Global.isLocked = true;
-			new AdminService(passresult).changeSecurePassword(Strings.trim(passTxt.text));
+			new AdminService(passresult).changeSecurePassword(MD5.hash(Strings.trim(passTxt.text)));
 
 			}
 		}
@@ -63,7 +64,7 @@ package com.kavalok.dialogs
 		{
 			hide();
 			Global.charManager.resetPass = false;
-			Global.enteredPassword = (Strings.trim(passTxt.text));
+			Global.enteredPassword = MD5.hash((Strings.trim(passTxt.text)));
 		}
 		
 		private function onResult(success:Boolean):void

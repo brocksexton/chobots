@@ -16,7 +16,7 @@ package com.kavalok
 		public var isBot:Boolean = false;
 		public var debugMode:Boolean = false;
 		public var locale:String;
-		public var errorLogEnabled:Boolean = false;
+		public var errorLogEnabled:Boolean = true;
 		public var widget:String = null;
 		public var partnerUid:String;
 		public var homeURL:String;

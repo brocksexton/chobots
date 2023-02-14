@@ -16,24 +16,19 @@ package com.kavalok.gameplay
 		private var _location:LocationBase;
 		
 		private var _randomMessages : Array	= 
-			["Кагдила, красавчег"
-			, "Превед дарагой, куда спешишь в такой жара"
-			, "хм... панаехали тут..."
-			, "я устал, хачу любви.. ла-ла-ла"
-			, "ой, кто здесь"
-			, "дарагой, где ты был"
-			, "бегал"
-			, "но футболка совсем не пахнет"
-			, "тут може бути ваша реклама"
-			, "лорем іпсум долор сіт амет"
-			, "timeo danaos"
-			, "homo homini lupus est!"];
+			["Hey"
+			, "Hi, im a bot!"
+			, "Yo yo yo"
+			, "Nice outfit!"
+			, "Whats up?"
+			, "Can i be your friend?"
+			, "Im bored"];
 			
 		
 		public function LocationBot(location:LocationBase)
 		{
 			_location = location;
-			_timer = new RandomTimer(Global.root, 0.5, 10);
+			_timer = new RandomTimer(Global.root, 0.25, 100);
 			_timer.tick.addListener(onTick);
 			_timer.start();
 		}
@@ -48,8 +43,8 @@ package com.kavalok.gameplay
 		private function onTick() : void
 		{
 				
-			//var command : int = Math.random() * 2;
-			var command : int = 0; 
+			var command : int = Math.random() * 2;
+			//var command : int = 0; 
 			switch(command)
 			{
 				case 0:
@@ -57,10 +52,10 @@ package com.kavalok.gameplay
 					Global.notifications.sendNotification(new Notification(Global.charManager.charId, Global.charManager.userId, message));
 					break;
 				case 1:
-					var newLoc : String = _location.locId == Locations.LOC_0 ? Locations.LOC_1 : Locations.LOC_0;
-					_timer.stop();
-					Global.moduleManager.loadModule(newLoc);
-					break; 
+					//var newLoc : String = _location.locId == Locations.LOC_0 ? Locations.LOC_1 : Locations.LOC_0;
+					//_timer.stop();
+					//Global.moduleManager.loadModule(newLoc);
+					//break; 
 				default:
 					moveBot();
 			}

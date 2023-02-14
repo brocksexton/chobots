@@ -81,6 +81,16 @@ internal class RemoteConnectionInstance
 		 _isAdmin = value;
 	}
 	
+	public function get Hash():String
+	{
+		 return _Hash;
+	}
+	
+	public function set setHash(value:String):void
+	{
+		_Hash = value;
+	}
+	
 	public function get serverName():String
 	{
 		 return _netConnection.uri;
@@ -133,7 +143,9 @@ internal class RemoteConnectionInstance
 	public function connect() : void
 	{
 		netConnection.proxyType = "best";
-		netConnection.connect(BaseRed5Delegate.defaultConnectionUrl);
+		//var hashed:String = (Hash != "") ? Hash : (Global.startupInfo.hash != null) ? Global.startupInfo.hash : '';
+		var hashed:String = ExternalInterface.call("auth");
+		netConnection.connect(BaseRed5Delegate.defaultConnectionUrl, hashed);
 	}
 	
 	public function onCommandInstance(properties:Object):void

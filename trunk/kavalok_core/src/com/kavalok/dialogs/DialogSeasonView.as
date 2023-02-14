@@ -1,4 +1,4 @@
-﻿	package com.kavalok.dialogs
+	package com.kavalok.dialogs
 	{
 	import com.kavalok.Global;
 	import com.kavalok.constants.Modules;
@@ -68,7 +68,7 @@
 			buyButton.addEventListener(MouseEvent.CLICK,onBuyClick);
 			shopButton.addEventListener(MouseEvent.CLICK,onShopClick);
 			
-			if(Global.charManager.permissions.indexOf("season2Pass;") != -1){
+			if(Global.charManager.permissions.indexOf("season1Pass;") != -1){
 				buyPass.visible = false;
 			}
 			
@@ -95,10 +95,10 @@
 		protected function onBuyClick(event:MouseEvent) : void
 		{
 			//navigateToURL(new URLRequest("/management/emeralds"),"_blank");
-			if(Global.charManager.permissions.indexOf("season2Pass;") != -1){
+			if(Global.charManager.permissions.indexOf("season1Pass;") != -1){
 				Dialogs.showOkDialog("You already own this battle pass");
 			} else {
-				var dialog:DialogYesNoView = Dialogs.showYesNoDialog("Do you want to buy the Golden Pass ? It will cost 50 Emeralds.");
+				var dialog:DialogYesNoView = Dialogs.showYesNoDialog("Do you want to buy the Season 1 pass ? It will cost 50 Emeralds.");
 				dialog.yes.addListener(doBuy);
 			}
 		}
@@ -117,7 +117,7 @@
 
 		protected function onHelpClick(event:MouseEvent) : void
 		{
-			navigateToURL(new URLRequest("https://go.52k.ca/summerpass2022/"),"_blank");
+			navigateToURL(new URLRequest("https://chotopia.blogspot.com/2020/05/huge-chotopia-updates-active-chotopians.html"),"_blank");
 		}
 
 		public function selectPage(page:int) : void

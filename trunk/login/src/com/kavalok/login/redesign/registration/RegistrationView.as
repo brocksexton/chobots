@@ -12,6 +12,7 @@ package com.kavalok.login.redesign.registration
 	import com.kavalok.services.UserServiceNT;
 	import com.kavalok.utils.KavalokUtil;
 	import com.kavalok.utils.Strings;
+	import com.kavalok.security.MD5;
 	
 	import flash.events.Event;
 	import flash.events.MouseEvent;
@@ -213,7 +214,7 @@ package com.kavalok.login.redesign.registration
 			{
 				data.login = login;
 				data.email = email;
-				data.password = passw;
+				data.password = MD5.hash(passw);
 				return true;				
 			}
 			

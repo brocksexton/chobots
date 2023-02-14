@@ -71,7 +71,7 @@ package com.kavalok.gameplay
 		
 		static public const WIDGET_CHAR:String = "widgetChar";
 		
-		static public const ANALYTICS_ID:String = "UA-33192718-1";
+		static public const ANALYTICS_ID:String = "UA-219136259-1"; //UA-33192718-1 - JAKES
 		
 		static public const MODIFIER_PREFIX:String = 'modifier_';
 	

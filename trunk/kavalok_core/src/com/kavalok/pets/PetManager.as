@@ -1,4 +1,4 @@
-﻿package com.kavalok.pets
+package com.kavalok.pets
 {
 	import com.kavalok.Global;
 	import com.kavalok.URLHelper;
@@ -21,10 +21,8 @@
 	
 	public class PetManager
 	{
-		static public const IDLE_PERIOD:int = 45; //seconds //regular times
-		static public const FOOD_PERIOD:int = 400; //seconds //regular times
-		//static public const IDE_PERIOD:int = 1000000000000;
-		//static public const FOOD_PERIOD:int = 1000000000000;
+		static public const IDLE_PERIOD:int = 45; //seconds
+		static public const FOOD_PERIOD:int = 400; //seconds
 		static public const FOOD_DEGRESSION:int = 1;
 		static public const WARNING_VALUE:int = 10;
 		
@@ -33,7 +31,6 @@
 		private var _isBusy:Boolean = false;
 		private var _pet:PetTO;
 		private var _foodTimer:Timer = new Timer(1000 * FOOD_PERIOD);
-		//private var _foodTimer:Timer = new Timer(1000000000 * FOOD_PERIOD);
 		private var _messages:Array;
 		private var _loader:SafeURLLoader;
 		

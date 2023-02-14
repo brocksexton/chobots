@@ -49,9 +49,9 @@
 		
 		public function save():void
 		{
-			var byteArray:ByteArray = new ByteArray();
+			//var byteArray:ByteArray = new ByteArray();
 			// item, so no info
-			byteArray.writeInt(2);
+			//byteArray.writeInt(2);
 			
 			
 			item.premium = premiumBox.selected;
@@ -69,7 +69,7 @@
 			item.name = Strings.trim(nameField.text);
 			item.fileName = Strings.trim(fileNameField.text);
 			item.type = Strings.trim(typeField.text);
-			item.otherInfo = byteArray;
+			item.otherInfo = Strings.trim(infoField.text);//byteArray;
 			
 			saveButton.enabled = false;
 			new StuffTypeService(onSave).saveItem(item);

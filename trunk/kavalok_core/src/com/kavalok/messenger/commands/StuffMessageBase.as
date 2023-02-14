@@ -73,7 +73,6 @@ package com.kavalok.messenger.commands
 				stuffs.useItem(_item);
 			}
 			
-			
 			closeDialog();
 			_item = null;
 		}
@@ -88,10 +87,11 @@ package com.kavalok.messenger.commands
 			if (_item.shopName == 'shopItems')
 			{
 				Dialogs.showOkDialog("You cannot sell items from bought with Emeralds");
-			}
-			else
-			{
+			} else {
 				var text:String = Strings.substitute(Global.messages.recycleWarning, _item.backPrice);
+				if(_item.type == StuffTypes.FISH) {
+					text = Strings.substitute(Global.messages.recycleWarning, _item.price);
+				}
 				var dialog:DialogYesNoView = Dialogs.showYesNoDialog(text);
 				dialog.yes.addListener(doRecycle);
 				closeDialog();
@@ -101,14 +101,17 @@ package com.kavalok.messenger.commands
 		private function doRecycle():void
 		{
 			new AdminService(trashVerified).verifyItemOwner(_item.id);
-
 		}
 		
 		public function trashVerified(val:Boolean):void
 		{
 			if(val){
-				Global.charManager.stuffs.removeItem(_item);				
-				new AddMoneyCommand(_item.backPrice, "recycle " + _item.fileName, false, null, false).execute();
+				if(_item.type == StuffTypes.FISH) {
+					new AddMoneyCommand(_item.price, "recycle " + _item.fileName, false, null, false).execute();
+				} else {
+					new AddMoneyCommand(_item.backPrice, "recycle " + _item.fileName, false, null, false).execute();
+				}
+				Global.charManager.stuffs.removeItem(_item);
 			}
 		}
 		
@@ -155,6 +158,9 @@ package com.kavalok.messenger.commands
 			
 			if(_item.type == StuffTypes.FISH)
 			{
+				view.useButton.visible = false;
+				view.sellButton.visible = true;
+				_bundle.registerButton(view.sellButton, 'Sell item');
 				view.captionField.text = "Caught a Fish";
 				view.messageField.text = "You've caught a fish!";
 			}

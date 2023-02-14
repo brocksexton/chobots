@@ -11,7 +11,6 @@ package com.kavalok.constants
 		static public var PLAYERCARD:String = 'B';
 		static public var ROBOT:String = 'R';
 		static public var BUGS:String = 'M';
-		
-		static public var FISH:String = "O";
+		static public var FISH:String = 'O';
 	}
 }
