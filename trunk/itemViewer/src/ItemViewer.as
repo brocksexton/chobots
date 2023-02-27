@@ -1,4 +1,4 @@
-package
+﻿package
 {
 	import com.kavalok.events.EventSender;
 	import com.kavalok.gameplay.controls.RectangleSprite;
@@ -57,19 +57,19 @@ package
 		
 		private function onLoaded(e:Event = null) : void
 		{
-			if(domainOfSwf == "chobots.world") {
+			if(domainOfSwf == "chobots.icu") {
 				stage.align = StageAlign.TOP_LEFT;
 				stage.scaleMode = StageScaleMode.NO_SCALE;
 				createView(); 
-			} else {
-				showSymbol(1)
+			//} else {
+				//showSymbol(1)
 			}
 		}
 		
 		private function linkToPage(e:MouseEvent):void
 		{
 			var itemId:int = int(loaderInfo.parameters.itemId);
-			var request:URLRequest = new URLRequest("/market/listItem?item="+itemId);
+			var request:URLRequest = new URLRequest("https://www.chobots.icu/market/listItem?item="+itemId);
 			navigateToURL(request);
 		}
 		
@@ -147,7 +147,7 @@ package
 					this.addEventListener(MouseEvent.CLICK, linkToPage);
 				}
 				
-				var url2:String = "/resources/clothes/"+itemName+".swf";
+				var url2:String = "https://www.chobots.icu/game/resources/clothes/"+itemName+".swf";
 				if(loaderInfo.parameters.color) {
 					if(currentColour) {
 						color = currentColour;

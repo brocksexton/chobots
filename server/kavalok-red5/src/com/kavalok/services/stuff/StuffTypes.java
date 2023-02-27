@@ -9,5 +9,5 @@ public class StuffTypes {
   public static final String PET_ITEMS = "P";
   public static final String PLAYERCARD = "B";
   public static final String ROBOT = "R";
-
+  public static final String FISH = "O";
 }

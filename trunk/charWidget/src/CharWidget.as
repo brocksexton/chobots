@@ -1,4 +1,4 @@
-package {
+﻿package {
 	import com.kavalok.Global;
 	import com.kavalok.StartupInfo;
 	import com.kavalok.char.Char;
@@ -47,7 +47,6 @@ package {
 			info.url = getServerNameFromURL(loaderInfo.url) + '/kavalok';
 			info.locale = loaderInfo.parameters.locale || "enUS";
 			info.widget = KavalokConstants.WIDGET_CHAR;
-			info.hash = loaderInfo.parameters.hash;
 			
 			var kavalok:Kavalok = new Kavalok(info, this);
 			kavalok.readyEvent.addListener(onReady);
@@ -55,8 +54,8 @@ package {
 		
 		private function getServerNameFromURL(url:String):String
 		{
-			if (this.loaderInfo.url.indexOf("chobots.world") != -1)
-				return "game.chobots.world";
+			if (this.loaderInfo.url.indexOf("kavalok.net") != -1)
+				return "game.kavalok.net";
 			else 
 				return "127.0.0.1";
 			}
@@ -82,7 +81,7 @@ package {
 		{
 			var login:String = loaderInfo.parameters.login;
 			if (!login)
-				login="sheenieboy";
+				login="brock";
 			new GetCharCommand(login, 0, onViewComplete).execute();
 		}
 		

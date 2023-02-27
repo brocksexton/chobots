@@ -90,6 +90,7 @@ public class RemoteServer extends DefaultTransactionStrategy {
         try {
             UserAdapter user = UserManager.getInstance().getUser(login);
             user.executeCommand(commandName, parameter);
+			System.out.println("Error exectuing command: " + commandName + "\n parameter: " + parameter);
         } catch (Exception e) {
             System.out.println("Error exectuing command: " + commandName + "\n parameter: " + parameter);
             logger.error(e.getMessage(), e);
@@ -200,12 +201,12 @@ public class RemoteServer extends DefaultTransactionStrategy {
         if (adapter != null) {
             adapter.goodBye(LoginService.SOMEONE_USED_YOUR_LOGIN, banned);
             long diff = System.currentTimeMillis() - now;
-            System.err.println("KICKOUT_SERVER time ms (KKKKUser - RemoteServer.java line 196) - brock added this because it annoyed him at some point: " + diff);
-            System.err.println("KICKOUT_SERVER time user (KKKKUser - RemoteServer.java line 196) - brock added this because it annoyed him at some point: " + adapter.getLogin());
+            System.err.println("KICKOUT_SERVER time ms: " + diff);
+            System.err.println("KICKOUT_SERVER time user: " + adapter.getLogin());
             if (diff > maxKickOutTime) {
                 maxKickOutTime = diff;
-                System.err.println("Max_KICKOUT_SERVER_CALL time user (KKKKUser - RemoteServer.java line 196) - brock added this because it annoyed him at some point: " + adapter.getLogin());
-                System.err.println("Max_KICKOUT_SERVER_CALL time ms (KKKKUser - RemoteServer.java line 196) - brock added this because it annoyed him at some point: " + maxKickOutTime);
+                System.err.println("Max_KICKOUT_SERVER_CALL time user: " + adapter.getLogin());
+                System.err.println("Max_KICKOUT_SERVER_CALL time ms: " + maxKickOutTime);
             }
         }
     }
@@ -218,12 +219,12 @@ public class RemoteServer extends DefaultTransactionStrategy {
         if (adapter != null) {
             adapter.goodBye(LoginService.SOMEONE_USED_YOUR_LOGIN, banned);
             long diff = System.currentTimeMillis() - now;
-            System.err.println("KICKOUT_SERVER (UKKKKuser) time ms (remoteserver.java line 214) - brock added this because it annoyed him at some point: " + diff);
-            System.err.println("KICKOUT_SERVER (UKKKKuser) time user (remoteserver.java line 214) - brock added this because it annoyed him at some point: " + adapter.getLogin());
+            System.err.println("KICKOUT_SERVER time ms: " + diff);
+            System.err.println("KICKOUT_SERVER time user: " + adapter.getLogin());
             if (diff > maxKickOutTime) {
                 maxKickOutTime = diff;
-                System.err.println("Max_KICKOUT_SERVER_CALL (UKKKKuser) time user (remoteserver.java line 214) - brock added this because it annoyed him at some point: " + adapter.getLogin());
-                System.err.println("Max_KICKOUT_SERVER_CALL (UKKKKuser) time ms (remoteserver.java line 214) - brock added this because it annoyed him at some point: " + maxKickOutTime);
+                System.err.println("Max_KICKOUT_SERVER_CALL time user: " + adapter.getLogin());
+                System.err.println("Max_KICKOUT_SERVER_CALL time ms: " + maxKickOutTime);
             }
         }
     }
@@ -236,12 +237,12 @@ public class RemoteServer extends DefaultTransactionStrategy {
         if (adapter != null) {
             adapter.logCharOff(LoginService.SOMEONE_USED_YOUR_LOGIN);
             long diff = System.currentTimeMillis() - now;
-            System.err.println("KICKOUT_SERVER (LKKKKuser) time ms (remoteserver.java line 231) - brock added this because it annoyed him at some point: " + diff);
-            System.err.println("KICKOUT_SERVER (LKKKKuser) time user (remoteserver.java line 231) - brock added this because it annoyed him at some point: " + adapter.getLogin());
+            System.err.println("KICKOUT_SERVER time ms: " + diff);
+            System.err.println("KICKOUT_SERVER time user: " + adapter.getLogin());
             if (diff > maxKickOutTime) {
                 maxKickOutTime = diff;
-                System.err.println("Max_KICKOUT_SERVER_CALL (LKKKKuser) time user (remoteserver.java line 231) - brock added this because it annoyed him at some point: " + adapter.getLogin());
-                System.err.println("Max_KICKOUT_SERVER_CALL (LKKKKuser) time ms (remoteserver.java line 231) - brock added this because it annoyed him at some point: " + maxKickOutTime);
+                System.err.println("Max_KICKOUT_SERVER_CALL time user: " + adapter.getLogin());
+                System.err.println("Max_KICKOUT_SERVER_CALL time ms: " + maxKickOutTime);
             }
         }
     }

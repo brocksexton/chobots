@@ -1,4 +1,4 @@
-package com.kavalok.pets
+﻿package com.kavalok.pets
 {
 	import com.kavalok.Global;
 	import com.kavalok.constants.BrowserConstants;
@@ -24,7 +24,7 @@ package com.kavalok.pets
 	
 	public class PetWindowView extends Window
 	{
-		static private const MODEL_SCALE:Number = 2;
+		static private const MODEL_SCALE:Number = 3;
 		
 		private var _pet:PetTO;
 		private var _content:McPetWindow = new McPetWindow();
@@ -84,7 +84,7 @@ package com.kavalok.pets
 		private function onHelpClick(e:MouseEvent):void
 		{
 			navigateToURL(
-				new URLRequest(Global.serverProperties.petHelpURL), BrowserConstants.BLANK);
+				new URLRequest("https://www.chobots.ca/pets"), BrowserConstants.BLANK);
 		}
 		
 		private function onStuffApply(item:StuffItemLightTO):void

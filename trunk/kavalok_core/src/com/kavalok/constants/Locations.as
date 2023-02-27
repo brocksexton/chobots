@@ -1,4 +1,4 @@
-package com.kavalok.constants
+﻿package com.kavalok.constants
 {
 	import com.kavalok.utils.Arrays;
 	import com.kavalok.utils.Maths;
@@ -83,6 +83,7 @@ package com.kavalok.constants
 
 		public static const LOC_SECRET_2 : String = "locSecret2";
 		public static const LOC_SECRET_3 : String = "locSecret3";
+		public static const LOC_BLISS : String = "locBliss";
 
 		public static const LOC_RADIO : String = "locRadio";
 

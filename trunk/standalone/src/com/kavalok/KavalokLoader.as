@@ -1,4 +1,4 @@
-package com.kavalok
+﻿package com.kavalok
 {
 	import flash.display.Loader;
 	import flash.display.Sprite;
@@ -36,7 +36,7 @@ package com.kavalok
 			addChild(_border);
 			
 			var version:String = "1";
-			var urlPrefix:String = "http://chobots.net/game/43/";
+			var urlPrefix:String = "http://chobots.icu/game";
 			
 			_loader = new Loader();
 			_loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadComplete);

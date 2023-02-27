@@ -1,6 +1,6 @@
 ﻿package com.kavalok.dto.stuff
 {
-	//import flash.utils.ByteArray;
+	import flash.utils.ByteArray;
 	
 	[RemoteClass(alias="com.kavalok.dto.stuff.StuffTypeAdminTO")]
 	
@@ -22,7 +22,7 @@
 		[Bindable] public var info:String;
 		[Bindable] public var itemOfTheMonth:String;
 		[Bindable] public var groupNum:int;
-		[Bindable] public var otherInfo:String;
+		[Bindable] public var otherInfo:ByteArray;
 	}
 	
 }

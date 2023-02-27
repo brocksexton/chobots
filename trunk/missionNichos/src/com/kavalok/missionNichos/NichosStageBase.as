@@ -110,7 +110,6 @@ package com.kavalok.missionNichos
 				}
 			}
 			return false;
-			//return true;
 		}
 		
 		protected function disableDarkness():void{

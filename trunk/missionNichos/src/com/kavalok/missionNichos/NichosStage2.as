@@ -4,7 +4,6 @@ package com.kavalok.missionNichos
 	import com.kavalok.missionNichos.location.entryPoint.GuneEntryPoint;
 	import com.kavalok.missionNichos.location.entryPoint.MoneyEntryPoint;
 	import com.kavalok.missionNichos.location.entryPoint.NichosRopeEntryPoint;
-	import com.kavalok.Global;
 	import com.kavalok.missionNichos.location.modifiers.StagePassModifier;
 	
 	import flash.display.MovieClip;
@@ -47,8 +46,6 @@ package com.kavalok.missionNichos
 				_content.finalAnim.addEventListener(Event.ENTER_FRAME, onEnterFailFrame);
 				disableDarkness();
 				_content.finalAnim.play();
-				Global.addExperience(2);
-				Global.sendAchievement("ac13;","Pinball");
 			}
 		}
 

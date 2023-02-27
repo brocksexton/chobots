@@ -205,6 +205,36 @@
 		{
 			doCall("findModerators", arguments);
 		}
+	
+		public function findDesigners():void
+		{
+			doCall("findDesigners", arguments);
+		}
+		
+		public function findStaff():void
+		{
+			doCall("findStaff", arguments);
+		}
+	
+		public function findScouts():void
+		{
+			doCall("findScouts", arguments);
+		}
+	
+		public function findSupport():void
+		{
+			doCall("findSupport", arguments);
+		}
+	
+		public function findDevs():void
+		{
+			doCall("findDevs", arguments);
+		}
+	
+		public function findCitizens():void
+		{
+			doCall("findCitizens", arguments);
+		}
 
 			public function findAgents():void
 		{

@@ -17,7 +17,6 @@ public class StuffType extends ModelBase {
 
     private Boolean doubleColor;
 
-
     private Boolean premium;
 
     private Boolean giftable;
@@ -34,7 +33,7 @@ public class StuffType extends ModelBase {
 
     private String placement;
 
-    private byte[] otherInfo;
+    private String otherInfo;
 
     private String info;
 
@@ -55,12 +54,12 @@ public class StuffType extends ModelBase {
     }
 
     @NotNull
-    @Column(columnDefinition = "BLOB")
-    public byte[] getOtherInfo() {
+    @Column(columnDefinition = "varchar(255)")
+    public String getOtherInfo() {
         return otherInfo;
     }
 
-    public void setOtherInfo(byte[] otherInfo) {
+    public void setOtherInfo(String otherInfo) {
         this.otherInfo = otherInfo;
     }
 

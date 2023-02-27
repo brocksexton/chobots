@@ -205,6 +205,7 @@
 				'locBeach_fish',
 				'locPark_CS5',
 				'locEmeralds',
+				'locBliss',
 			
 			];
 			

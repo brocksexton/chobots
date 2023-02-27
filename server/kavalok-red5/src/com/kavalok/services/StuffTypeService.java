@@ -79,12 +79,12 @@ public class StuffTypeService extends DataServiceBase {
         stuff.setFileName(item.getFileName());
         stuff.setType(item.getType());
 
-        if(item.getType().equals("O")) {
+       // if(item.getType().equals("O")) {
             // is fish
             stuff.setOtherInfo(item.getOtherInfo());
-        } else {
-            stuff.setOtherInfo(new byte[2]);
-        }
+        //} else {*/
+           // stuff.setOtherInfo(new byte[2]);
+        //}
         stuffDAO.makePersistent(stuff);
 
         List<Server> servers = new ServerDAO(getSession()).findRunning();

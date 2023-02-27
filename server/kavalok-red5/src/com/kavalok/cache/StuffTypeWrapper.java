@@ -56,15 +56,15 @@ public class StuffTypeWrapper {
 
   private String name;
 
-    public byte[] getOtherInfo() {
+    public String getOtherInfo() {
         return otherInfo;
     }
 
-    public void setOtherInfo(byte[] otherInfo) {
+    public void setOtherInfo(String otherInfo) {
         this.otherInfo = otherInfo;
     }
 
-    private byte[] otherInfo;
+    private String otherInfo;
 
   private int groupNum = 0;
 

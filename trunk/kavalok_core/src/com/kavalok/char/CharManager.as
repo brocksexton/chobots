@@ -1,4 +1,4 @@
-package com.kavalok.char
+﻿package com.kavalok.char
 {
 	/*
 	Author: Maxym Hryniv
@@ -117,6 +117,12 @@ package com.kavalok.char
 		private var _isBlog:String;
 		private var _lastOnlineDay:int;
 		private var superPeople:Array = new Array("");
+		private var _supportList:Array = new Array;
+		private var _adminList:Array = new Array;
+		private var _councillorList:Array = new Array;
+		private var _developerList:Array = new Array;
+		private var _designerList:Array = new Array;
+		private var _citizenList:Array = new Array;
 		private var _moderatorList:Array = new Array;
 		private var _agentList:Array = new Array;
 		private var _journalistList:Array = new Array;
@@ -334,6 +340,8 @@ package com.kavalok.char
 		{
 			for each(var properties:Object in commands)
 			{
+				//Cc.log(properties); // log c ommands, we might get a lot of em'
+				// nevermind, this isn't the place
 				RemoteCommand.createInstance(properties).execute();
 			}
 		}
@@ -368,17 +376,8 @@ package com.kavalok.char
 			else
 				return "default";
 		}
-		
-		private function onFailBotClothes(e:* = null):void
-		{
-			Cc.log("Failed getting bot clothes");
-		}
-		
 		private function onBotClothes(items:Array):void
 		{
-			Cc.log("Bot Clothes called");
-			_body=DEFAULT_BODY;
-			_color=Math.random() * 0xFFFFFF;
 			var botStuffs:Array=[];
 			
 			var item:StuffTypeTO=items[int(Math.random() * items.length)];
@@ -390,6 +389,9 @@ package com.kavalok.char
 			clothe.type=StuffTypes.CLOTHES;
 			
 			botStuffs.push(clothe);
+			
+			_body=DEFAULT_BODY;
+			_color=Math.random() * 0xFFFFFF;
 			_stuffs.setList(botStuffs);
 		}
 		
@@ -493,13 +495,14 @@ package com.kavalok.char
 			
 			if (!Global.startupInfo.isBot)
 			{
+				
 				_body=Base64.decode(result.body);
 				_color=result.color;
 				_stuffs.setList(result.stuffs);
 			}
 			else
 			{
-				new StuffServiceNT(onBotClothes, onFailBotClothes).getStuffTypes('costume');
+				new StuffServiceNT(onBotClothes).getStuffTypes('kostjumy');
 			}
 			_serverChatDisabled=result.serverInSafeMode;
 			_serverDrawDisabled=result.serverInSafeMode;
@@ -591,7 +594,7 @@ package com.kavalok.char
 			_userId=result.userId;
 
 			//FREE CITIZENSHIP
-			/*
+			
 			if(!result.citizenExpirationDate){
 			_isCitizen = true;
 			Global.fakeCitizen = true;
@@ -604,15 +607,15 @@ package com.kavalok.char
 			}
 
 			if(Global.fakeCitizen) {
-				var msg5:CitizenMembershipEndMessage=new CitizenMembershipEndMessage("Citizenship Promotion", "Yay! Enjoy the benefits of Citizenship completely free today on Chobots! Would you like to become a Citizen after the promotion?");
+				var msg5:CitizenMembershipEndMessage=new CitizenMembershipEndMessage("Free Citizenship", "On Chobots.ca, Citizenship is free. Enjoy it on us!");
 				Global.inbox.addMessage(msg5);
 				msg5.show();
 			}
 			//FREE CITIZENSHIP
-			*/
+			
 
 			//Patch to prevent unauthorized citizenship. DISABLE WHEN FREE CITIZENSHIP IS IN USE!
-		if(isCitizen) {
+		/*if(isCitizen) {
 
 			if(!result.citizenExpirationDate){
 				Dialogs.showOkDialog("A transaction was not found for user " + Global.upperCase(Global.charManager.charId) + ". Please contact Support for more information.",false);
@@ -623,7 +626,7 @@ package com.kavalok.char
 				RemoteConnection.instance.disconnect();
 			}
 
-		}
+		}*/
 
 			//END
 
@@ -719,6 +722,12 @@ package com.kavalok.char
 			refreshChatColor();
 			
 			new AdminService(onModeratorsFound).findModerators();
+			new AdminService(onDevsFound).findDevs();
+			new AdminService(onScoutsFound).findScouts();
+			new AdminService(onSupportFound).findSupport();
+			new AdminService(onStaffFound).findStaff();
+			new AdminService(onDesignersFound).findDesigners();
+			new AdminService(onCitizensFound).findDevs();
 			new AdminService(onAgentsFound).findAgents();
 			new AdminService(onJournalistsFound).findJournalists();
 			new AdminService(onColourFound).getColour();
@@ -860,6 +869,42 @@ package com.kavalok.char
 					RemoteConnection.instance.disconnect();
 					Dialogs.showOkDialog("You are not a moderator! Stop hacking.");
 				}
+			}
+		}
+		public function onSupportFound(result:Array):void
+		{
+			for each (var user:Object in result){
+				_supportList.push(user.name.toString());
+			}
+		}
+		public function onStaffFound(result:Array):void
+		{
+			for each (var user:Object in result){
+				_adminList.push(user.name.toString());
+			}
+		}
+		public function onScoutsFound(result:Array):void
+		{
+			for each (var user:Object in result){
+				_councillorList.push(user.name.toString());
+			}
+		}
+		public function onDevsFound(result:Array):void
+		{
+			for each (var user:Object in result){
+				_developerList.push(user.name.toString());
+			}
+		}
+		public function onDesignersFound(result:Array):void
+		{
+			for each (var user:Object in result){
+				_designerList.push(user.name.toString());
+			}
+		}
+		public function onCitizensFound(result:Array):void
+		{
+			for each (var user:Object in result){
+				_citizenList.push(user.name.toString());
 			}
 		}
 		public function onJournalistsFound(result:Array):void
@@ -1288,6 +1333,12 @@ package com.kavalok.char
 		public function get citizenTryCount():Boolean { return _citizenTryCount; }
 		
 		public function get citizenExpirationDate():Date { return _citizenExpirationDate; }
+		public function get developerList():Array { return _developerList; }
+		public function get designerList():Array { return _designerList; }
+		public function get supportList():Array { return _supportList; }
+		public function get councillorList():Array { return _councillorList; }
+		public function get adminList():Array { return _adminList; }
+		public function get citizenList():Array { return _citizenList; }
 		public function get moderatorList():Array { return _moderatorList; }
 		public function get journalistList():Array { return _journalistList; }
 		public function set citizenExpirationDate(value:Date):void

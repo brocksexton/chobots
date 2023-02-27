@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Maximum uptime before restart (in seconds)
+#max_uptime=60 #1 Minute
+#max_uptime=300 #5 Minutes
+#max_uptime=3600 #1 Hour
+#max_uptime=21600 #6 Hours
+#max_uptime=43200 #12 Hours
+max_uptime=86400 #24 Hours
+
+# Check if the Red5 server is running
+if pgrep -f red5.jar > /dev/null; then
+    echo "Red5 server is already running, give me just a second."
+    
+    # Get the PID of the Red5 server process
+    pid=$(pgrep -f red5.jar)
+    
+    # Get the uptime of the Red5 server process in seconds
+    uptime=$(($(date +%s) - $(date -d "$(ps -p $pid -o lstart=)" +%s)))
+    
+    if [[ $uptime -gt $max_uptime ]]; then
+        echo "Red5 server has been running for longer than $(($max_uptime / 3600)) hour(s) and $((($max_uptime / 60) % 60)) minute(s)... Time for a restart!"
+        killall -9 screen
+        screen -dmS red5 sh /home/localhost/red5/red5.sh
+	echo "Red5 server successfully stopped, and is currently restarting. Please allow a minute then run this script again if the game still isn't online."
+    else
+        echo "Red5 server has been running for less than $(($max_uptime / 3600)) hour(s) and $((($max_uptime / 60) % 60)) minute(s). No need to restart just yet."
+    fi
+else
+    echo "Red5 server is not running. Starting it now..."
+    screen -dmS red5 sh /home/localhost/red5/red5.sh
+    echo "Running screen -dmS red5 sh /home/localhost/red5/red5.sh please allow the game a moment to come online."
+fi

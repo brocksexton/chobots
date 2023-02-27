@@ -147,6 +147,7 @@ public class MessageCheck {
 
       }
     }
+	//System.err.println("Message content is: " + resultSafety + " which says " + resultPart);
     return new MessageCheckResult(resultPart, resultSafety);
   }
 

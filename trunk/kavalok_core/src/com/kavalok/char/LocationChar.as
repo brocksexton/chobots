@@ -1,4 +1,4 @@
-package com.kavalok.char
+﻿package com.kavalok.char
 {
 	import com.kavalok.char.modifiers.CharModifierBase;
 	import com.kavalok.dance.BoneParts;
@@ -198,17 +198,35 @@ package com.kavalok.char
 		public function set showName(value:Boolean):void
 		{
 			var bOrder:uint = 
-			Global.charManager.moderatorList.indexOf(_char.id) != -1 ? 0xFF6600 : 
-			Global.charManager.agentList.indexOf(_char.id) != -1 ? 0x0066FF : 
-			Global.charManager.journalistList.indexOf(_char.id) != -1 ? 0x3D003D : 0x990000;
+			Global.charManager.developerList.indexOf(_char.id) != -1 ? 0x6b00c9 : // Dark Purple
+			Global.charManager.designerList.indexOf(_char.id) != -1 ? 0x45d6c8 : // Dark Purple
+			Global.charManager.supportList.indexOf(_char.id) != -1 ? 0x267055 : // Slightly Less Bright Ass yellow
+			Global.charManager.adminList.indexOf(_char.id) != -1 ? 0x690000 : // Dark Red
+			Global.charManager.councillorList.indexOf(_char.id) != -1 ? 0xdd64e8 : // Discord Nitro Pink
+			Global.charManager.citizenList.indexOf(_char.id) != -1 ? 0x018f2c : // Dark Green
+			Global.charManager.moderatorList.indexOf(_char.id) != -1 ? 0xf0920e : // Dark Orange
+			Global.charManager.agentList.indexOf(_char.id) != -1 ? 0x0066FF : // Dark Blue
+			Global.charManager.journalistList.indexOf(_char.id) != -1 ? 0x3D003D : 0x990000; // Dark Purple
 			
 			var bAckground:uint = 
-			Global.charManager.moderatorList.indexOf(_char.id) != -1 ? 0xFF9900 : 
-			Global.charManager.agentList.indexOf(_char.id) != -1 ? 0x0066FF : 
-			Global.charManager.journalistList.indexOf(_char.id) != -1 ? 0x660066 : 0xffffff;
+			Global.charManager.developerList.indexOf(_char.id) != -1 ? 0x8800ff : // Purple
+			Global.charManager.designerList.indexOf(_char.id) != -1 ? 0x4eeddd : // Teal/Green
+			Global.charManager.supportList.indexOf(_char.id) != -1 ? 0x3eb489 : // Bright Ass Yellow / Suggestion by Ali
+			Global.charManager.adminList.indexOf(_char.id) != -1 ? 0xc41b1b : // Red
+			Global.charManager.councillorList.indexOf(_char.id) != -1 ? 0xf47fff : // Vibrant Pink
+			Global.charManager.citizenList.indexOf(_char.id) != -1 ? 0x07ba3e : // Green
+			Global.charManager.moderatorList.indexOf(_char.id) != -1 ? 0xf29b05 :  // Orange
+			Global.charManager.agentList.indexOf(_char.id) != -1 ? 0x0066FF : // Blue
+			Global.charManager.journalistList.indexOf(_char.id) != -1 ? 0x660066 : 0xffffff; // Purple
 			
 			var fontColor:uint = 
-			Global.charManager.moderatorList.indexOf(_char.id) != -1 ? 0x000000 : 
+			Global.charManager.developerList.indexOf(_char.id) != -1 ? 0xfffffff :
+			Global.charManager.designerList.indexOf(_char.id) != -1 ? 0x000000 :
+			Global.charManager.supportList.indexOf(_char.id) != -1 ? 0xffffff :
+			Global.charManager.adminList.indexOf(_char.id) != -1 ? 0xffffff :
+			Global.charManager.councillorList.indexOf(_char.id) != -1 ? 0xffffff :
+			Global.charManager.citizenList.indexOf(_char.id) != -1 ? 0xfffffff :
+			Global.charManager.moderatorList.indexOf(_char.id) != -1 ? 0xffffff : 
 			Global.charManager.agentList.indexOf(_char.id) != -1 ? 0xffffff : 
 			Global.charManager.journalistList.indexOf(_char.id) != -1 ? 0xffffff :  0x000000;
 
@@ -220,7 +238,9 @@ package com.kavalok.char
 					_nameTip = new ToolTipText(CHAR_NAME_SIZE, bOrder, bAckground, fontColor);
 					_nameTip.margin = 1;
 
-					_nameTip.text = _char.id == "kingnicho" ? "Nicho King" : Global.upperCase(_char.id);
+					//_nameTip.text = _char.id == "brock" ? "Brock S." : Global.upperCase(_char.id);
+					
+					_nameTip.text = _char.id == "tyler" ? "A R T S I E" : Global.upperCase(_char.id);
 
 					_nameTip.y = CHAR_NAME_OFFSET;
 					_content.addChild(_nameTip);
@@ -229,8 +249,8 @@ package com.kavalok.char
 				}
 				else
 				{
-					if(char.id == "kingnicho")
-						ToolTips.registerObject(_boundSprite, "Nicho King");
+					if(char.id == "brock")
+						ToolTips.registerObject(_boundSprite, "Brock S.");
 					else
 						ToolTips.registerObject(_boundSprite, Global.upperCase(_char.id));
 						_content.removeChild(_nameTip);

@@ -11,14 +11,17 @@ import org.slf4j.LoggerFactory;
 
 import com.kavalok.dao.UserDAO;
 import com.kavalok.dao.UserServerDAO;
-import com.kavalok.db.Server;
 import com.kavalok.db.User;
+import com.kavalok.db.Server;
+import com.kavalok.db.UserServer;
 import com.kavalok.services.BanUtil;
 import com.kavalok.transactions.ISessionDependent;
 import com.kavalok.user.UserAdapter;
 import com.kavalok.user.UserManager;
 import com.kavalok.xmlrpc.AdminClient;
 import com.kavalok.xmlrpc.RemoteClient;
+import com.kavalok.KavalokApplication;
+
 
 public class MessageChecker implements ISessionDependent {
   private static Logger logger = LoggerFactory.getLogger(MessageChecker.class);
@@ -51,13 +54,6 @@ public class MessageChecker implements ISessionDependent {
 
       UserAdapter adapter = UserManager.getInstance().getCurrentUser();
       boolean isSpam = !adapter.saveChatMessage((String) message);
-      
-      user = populateUser(user, userId);
-      Server userServer = new UserServerDAO(session).getServer(user);
-	  System.err.println("Server name is: " + userServer.getName());
-      if (userServer.getName() == "Serv2") {
-        return false;
-      }
 
       List<String> shortMessage = adapter.addToShortList(message);
       if (shortMessage != null) {

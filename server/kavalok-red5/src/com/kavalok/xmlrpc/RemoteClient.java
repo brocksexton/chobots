@@ -137,12 +137,12 @@ public class RemoteClient extends ClientBase {
         long now = System.currentTimeMillis();
         invokeInNewThread("RemoteServer.KKKKuser", new Object[]{charName, banned});
         long diff = System.currentTimeMillis() - now;
-        System.err.println("KICKOUT_CLIENT_CALL time user (RemoteClient.java line 136 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + charName);
-        System.err.println("KICKOUT_CLIENT_CALL time ms (RemoteClient.java line 136 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + diff);
+        System.err.println("KICKOUT_CLIENT_CALL time user: " + charName);
+        System.err.println("KICKOUT_CLIENT_CALL time ms: " + diff);
         if (diff > maxKickOutTime) {
             maxKickOutTime = diff;
-            System.err.println("Max_KICKOUT_CLIENT_CALL time user (RemoteClient.java line 136 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + charName);
-            System.err.println("Max_KICKOUT_CLIENT_CALL time ms (RemoteClient.java line 136 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + maxKickOutTime);
+            System.err.println("Max_KICKOUT_CLIENT_CALL time user: " + charName);
+            System.err.println("Max_KICKOUT_CLIENT_CALL time ms: " + maxKickOutTime);
         }
     }
 
@@ -153,12 +153,12 @@ public class RemoteClient extends ClientBase {
         long now = System.currentTimeMillis();
         invoke("RemoteServer.KKKKuser", new Object[]{charName, banned});
         long diff = System.currentTimeMillis() - now;
-        System.err.println("KICKOUT_CLIENT_CALL time user (RemoteClient.java line 152 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + charName);
-        System.err.println("KICKOUT_CLIENT_CALL time ms (RemoteClient.java line 152 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + diff);
+        System.err.println("KICKOUT_CLIENT_CALL time user: " + charName);
+        System.err.println("KICKOUT_CLIENT_CALL time ms: " + diff);
         if (diff > maxKickOutTime) {
             maxKickOutTime = diff;
-            System.err.println("Max_KICKOUT_CLIENT_CALL time user (RemoteClient.java line 152 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + charName);
-            System.err.println("Max_KICKOUT_CLIENT_CALL time ms (RemoteClient.java line 152 RemoteServer.KKKKuser) - brock added this because it annoyed him at some point: " + maxKickOutTime);
+            System.err.println("Max_KICKOUT_CLIENT_CALL time user: " + charName);
+            System.err.println("Max_KICKOUT_CLIENT_CALL time ms: " + maxKickOutTime);
         }
     }
 
@@ -167,12 +167,12 @@ public class RemoteClient extends ClientBase {
         long now = System.currentTimeMillis();
         invoke("RemoteServer.LKKKKuser", new Object[]{charName});
         long diff = System.currentTimeMillis() - now;
-        System.err.println("KICKOUT_CLIENT_CALL time user (RemoteClient.java line 166 RemoteServer.LKKKKuser) - brock added this because it annoyed him at some point: " + charName);
-        System.err.println("KICKOUT_CLIENT_CALL time ms (RemoteClient.java line 166 RemoteServer.LKKKKuser) - brock added this because it annoyed him at some point: " + diff);
+        System.err.println("KICKOUT_CLIENT_CALL time user: " + charName);
+        System.err.println("KICKOUT_CLIENT_CALL time ms: " + diff);
         if (diff > maxKickOutTime) {
             maxKickOutTime = diff;
-            System.err.println("Max_KICKOUT_CLIENT_CALL time user (RemoteClient.java line 166 RemoteServer.LKKKKuser) - brock added this because it annoyed him at some point: " + charName);
-            System.err.println("Max_KICKOUT_CLIENT_CALL time ms (RemoteClient.java line 166 RemoteServer.LKKKKuser) - brock added this because it annoyed him at some point: " + maxKickOutTime);
+            System.err.println("Max_KICKOUT_CLIENT_CALL time user: " + charName);
+            System.err.println("Max_KICKOUT_CLIENT_CALL time ms: " + maxKickOutTime);
         }
     }
 }

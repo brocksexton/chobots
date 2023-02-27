@@ -21,7 +21,7 @@ public class StuffTypeAdminTO {
     private String itemOfTheMonth;
     private int groupNum;
     private String name;
-    private byte[] otherInfo;
+    private String otherInfo;
 
 
     public StuffTypeAdminTO() {
@@ -197,11 +197,11 @@ public class StuffTypeAdminTO {
         this.name = name;
     }
 
-    public byte[] getOtherInfo() {
+    public String getOtherInfo() {
         return otherInfo;
     }
 
-    public void setOtherInfo(byte[] otherInfo)
+    public void setOtherInfo(String otherInfo)
     {
         this.otherInfo = otherInfo;
     }

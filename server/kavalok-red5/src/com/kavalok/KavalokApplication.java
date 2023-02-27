@@ -116,6 +116,27 @@ public class KavalokApplication extends MultiThreadedApplicationAdapter {
     @Override
     public boolean appStart(IScope scope) {
 
+		//boolean fail = true;
+		/*
+		boolean fail = false;
+		String check = "";
+		try{
+    		check = getUrlSource("https://yasminevans.net/chobots/check.php");
+    		if(check.contains("OK")){
+				fail = false;
+    		}
+    	} catch(IOException e){
+			logger.error(e.toString());
+			logger.error("Please ensure that you are connected to the internet and all root certs are up to date.");
+    		System.exit(1);
+    	}
+
+		if(fail){
+			logger.error(check);
+			System.exit(1);
+			return false;
+		}
+*/
         String path = getClassesPath() + "/kavalok.properties";
         properties = new java.util.Properties();
         try {
@@ -137,9 +158,8 @@ public class KavalokApplication extends MultiThreadedApplicationAdapter {
         HibernateUtil.getSessionFactory();
         WordsCache.getInstance();// load words
         String name = scope.getName();
-
-        //serverPath = "game.chobots.icu/kavalok";//String.format(CONTEXT_FORMAT, getHostIP(), name);
-        serverPath = String.format(CONTEXT_FORMAT, "game.chobots.icu", name);//serverPath = "game.chobots.world/kavalok";
+		serverPath = String.format(CONTEXT_FORMAT, "game.kavalok.net", name);
+        //serverPath = "game.kavalok.net/kavalok";//String.format(CONTEXT_FORMAT, getHostIP(), name);
         logger.warn("app start -> new " + serverPath);
         refreshServerState(true);
 
@@ -158,6 +178,12 @@ public class KavalokApplication extends MultiThreadedApplicationAdapter {
 
         refreshConfig();
 
+        /*Test test = new Test();
+        test.doSayHi();
+
+        System.out.println("Instantiating a groovy class -> " + test);
+        System.out.println("Look what groovy said -> " + test.lolGetName());
+        System.out.println("    KavalokApplication setup complete.");*/
         return true;
     }
 
@@ -264,11 +290,60 @@ public class KavalokApplication extends MultiThreadedApplicationAdapter {
         }
     }
 
-	public boolean appConnect(IConnection conn, Object[] params) {
+    public boolean appConnect(IConnection conn, Object[] params) {
 		return true;
 	}
 
+	//public boolean appConnect(IConnection conn, Object[] params) {
+	//	String token = (String)params[0];
+	//	System.out.println(token);
+	//	if(!(conn.getHost().equals("game.kavalok.net"))){
+	//		return false;
+	//	}
+
+	//	if(checkToken(token)){
+	//		logger.warn("Connection allow token -> (" + token + ")");
+	//		return true;
+	//	} else {
+	//		logger.warn("Connection DENY token -> (" + token + ")");
+			//Close unauthorised connection
+	//		conn.close();
+	//		return false;
+	//	}
+	//}
+
+	/**
+	 * Not my code, just coppied, it works.
+	 */
+   public static String getUrlSource(String url) throws IOException {
+        URLConnection urlConnection = new URL(url).openConnection();
+		urlConnection.addRequestProperty("User-Agent", "Mozilla");
+        BufferedReader in = new BufferedReader(new InputStreamReader(
+                urlConnection.getInputStream(), "UTF-8"));
+        String inputLine;
+        StringBuilder a = new StringBuilder();
+        while ((inputLine = in.readLine()) != null)
+            return inputLine;
+        in.close();
+
+        return a.toString();
+    }
+
     public String state_new = "";
+
+    //public boolean checkToken(String token){
+	//	try{
+    //		state_new = getUrlSource("https://kavalok.net/token?CHECK_REQUEST=" + token);
+    //		if(state_new.toString().trim().contains("Success")){
+    //			return true;
+    //		} else {
+    //			return true;
+    //		}
+    //	} catch(IOException e){
+    //		e.printStackTrace();
+    //	}
+    //	return false;
+    //}
 
     public void disconnectUser(Session session) {
         UserAdapter userAdapter = UserManager.getInstance().getCurrentUser();

@@ -1,4 +1,4 @@
-package com.kavalok.admin.main
+﻿package com.kavalok.admin.main
 {
 	import com.kavalok.admin.login.Login;
 	import com.kavalok.constants.ResourceBundles;
@@ -41,7 +41,7 @@ package com.kavalok.admin.main
 			var numberString:String = Application.application.parameters["hash"];
 			var host:String = URLUtil.getServerName(Application.application.url);
 			BaseRed5Delegate.defaultConnectionUrl = StringUtil.substitute(
-				LOGIN_URL_FORMAT, "game.chobots.world");
+				LOGIN_URL_FORMAT, "game.kavalok.net");
 			BaseDelegate.defaultFaultHandler = onServiceFault;
 			
 			RemoteConnection.instance.setHash = numberString;

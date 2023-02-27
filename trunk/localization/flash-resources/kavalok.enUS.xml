@@ -26,7 +26,7 @@
   <gameAsteroid>Asteroid</gameAsteroid>
   <idleTimeout>Connection lost. You have been idle for over 30 minutes.</idleTimeout>
   <back>Back</back>
-  <url_jake>http://blog.chobots.net</url_jake>
+  <url_jake>http://blog.chobots.ca</url_jake>
   <bag>Backpack</bag>
   <dayNight>Day/Night [coming soon]</dayNight>
    <warnUser>Send Warning</warnUser>
@@ -423,7 +423,7 @@ If you break these rules your chat will be disabled or you will be banned</rules
 <statusArt>Designer</statusArt>
 <statusStaff>Staff</statusStaff>
 <statusSupport>Support</statusSupport>
-<statusScout>Councillor</statusScout>
+<statusScout>Discord Booster</statusScout>
 <statusNinja>Ninja</statusNinja>
 <accessoryShop>Accessories</accessoryShop>
 <dual_accessories>Multicolor Accessories</dual_accessories>

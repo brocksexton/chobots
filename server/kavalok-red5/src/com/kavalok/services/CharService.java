@@ -110,19 +110,19 @@ public class CharService extends DataServiceBase {
         //if(dUser.isModerator())
           //  return "m";
 
-        //String lastBugsAwardDate = uei.getLastAwardBugsDate();
+        String lastBugsAwardDate = uei.getLastAwardBugsDate();
 
-        //int loginDays = uei.getContinuousDaysLoginCount();
+        int loginDays = uei.getContinuousDaysLoginCount();
 
-        //int addBugs = 1000 + (loginDays * 2);
+        int addBugs = 1000 + (loginDays * 2);
 
         Boolean status = false;
 
-       // if(lastBugsAwardDate == "" || lastBugsAwardDate == "NULL" || lastBugsAwardDate == null || lastBugsAwardDate == "0")
-       //     status = true;
+        if(lastBugsAwardDate == "" || lastBugsAwardDate == "NULL" || lastBugsAwardDate == null || lastBugsAwardDate == "0")
+            status = true;
 
-       // Long creationDate = dUser.getCreated().getTime() / 1000; // creationdate in seconds, not miliseconds
-        //Long currentDate = new Date().getTime() / 1000;
+        Long creationDate = dUser.getCreated().getTime() / 1000; // creationdate in seconds, not miliseconds
+        Long currentDate = new Date().getTime() / 1000;
 
       //  if(!dUser.isCitizen())
        // {
@@ -132,32 +132,32 @@ public class CharService extends DataServiceBase {
 
 
         // user might have been awarded bugs already
-        //if(status == false && currentDate > Long.parseLong(lastBugsAwardDate) + ONE_DAY_SECONDS ) {
+        if(status == false && currentDate > Long.parseLong(lastBugsAwardDate) + ONE_DAY_SECONDS ) {
            // System.out.println("been over a day since last award date.. awarding.. :  orig: " + Long.parseLong(lastBugsAwardDate)
            // + " new: "+ currentDate);
-        //    status = true;
-        //} 
+            status = true;
+        } 
 
-        //if(creationDate + ONE_DAY_SECONDS > currentDate){
-         //   status = false;
-        //    errMessage = "na";
+        if(creationDate + ONE_DAY_SECONDS > currentDate){
+            status = false;
+            errMessage = "na";
 
-        //    System.out.println(" creationDate = "+creationDate + "  currentDate = "+ currentDate);
-        //    return errMessage;
-        //}
+            System.out.println(" creationDate = "+creationDate + "  currentDate = "+ currentDate);
+            return errMessage;
+        }
 
-        //if(status) {
-        //    giveExtraBugs(addBugs);
-        //    uei.setLastAwardBugsDate(Long.toString(new Date().getTime() / 1000));
+        if(status) {
+            giveExtraBugs(addBugs);
+            uei.setLastAwardBugsDate(Long.toString(new Date().getTime() / 1000));
 			
-        //    if(uei.getContinuousDaysLoginCount() >= 50)
-        //    {
-        //        uei.setContinuousDaysLoginCount(1);
-        //    }
-		//	new UserUtil().addCrowns(getSession(), userAdmin.getUserId(), 5);
+            if(uei.getContinuousDaysLoginCount() >= 50)
+            {
+                uei.setContinuousDaysLoginCount(1);
+            }
+			new UserUtil().addCrowns(getSession(), userAdmin.getUserId(), 5);
             //sendUserTeamMessage("Congratulations! You've received " + addBugs + " bugs for logging in " + loginDays + " day(s) in a row! Login tomorrow for more!");
-		//	new RemoteClient(getSession(), dUser).sendCommand("DialogDailyCommand", Integer.toString(addBugs));
-        //}
+			new RemoteClient(getSession(), dUser).sendCommand("DialogDailyCommand", Integer.toString(addBugs));
+        }
 
         return (status) ? "s" : errMessage;
     }
@@ -255,17 +255,17 @@ public class CharService extends DataServiceBase {
         new RemoteClient(getSession(), user).sendCommand(command);
     }
 	
-    //private void giveExtraBugs(int bugs)
-    //{
-    //    UserDAO userDAO = new UserDAO(getSession());
-    //    User dUser = userDAO.findByLogin(userAdmin.getLogin());
-    //    UserExtraInfo uei = dUser.getUserExtraInfo();
+    private void giveExtraBugs(int bugs)
+    {
+        UserDAO userDAO = new UserDAO(getSession());
+        User dUser = userDAO.findByLogin(userAdmin.getLogin());
+        UserExtraInfo uei = dUser.getUserExtraInfo();
 
-    //    System.out.println("adding bugs " + bugs + " to user: "+ dUser.getLogin());
+        System.out.println("adding bugs " + bugs + " to user: "+ dUser.getLogin());
 
         // how do we add, do we directly interact with gamechar?
-    //    userAdmin.addMoney(getSession(), bugs, "Daily bug reward");
-    //}
+        userAdmin.addMoney(getSession(), bugs, "Daily bug reward");
+    }
 
     public Boolean isAuthorizedBody() {
         if (userAdmin.isBoughtBody()) {
@@ -297,9 +297,9 @@ public class CharService extends DataServiceBase {
         user.setAcceptRequests(acceptRequests);
         user.setAcceptNight(acceptNight);
 		if(acceptNight && (hour >= 21 || hour <= 5)) {
-			new RemoteClient(getSession(), user).sendCommand("NightMode", null);
+			new RemoteClient(getSession(), user).sendCommand("NightMode", "");
 		} else {
-			new RemoteClient(getSession(), user).sendCommand("NightOffMode", null);
+			new RemoteClient(getSession(), user).sendCommand("NightOffMode", "");
 		}
 		
         user.setShowTips(showTips);
@@ -318,23 +318,23 @@ public class CharService extends DataServiceBase {
     }
 	
 	public GameEnterTO refreshStuffs(String charName) {
-	GameEnterTO result = new GameEnterTO();
-	UserDAO userDAO = new UserDAO(getSession());
-	User user = userDAO.findByLogin(charName);
-    GameChar gameChar = user.getGameChar();
-    List<StuffItem> charClothesAndStuffs = getCharClothesAndStuffs(user, gameChar, !user.isCitizen(), false);
-    List<StuffItemLightTO> charStuffs = getCharStuffs(charClothesAndStuffs);
-    result.setStuffs(charStuffs);
-	return result;
+		GameEnterTO result = new GameEnterTO();
+		UserDAO userDAO = new UserDAO(getSession());
+		User user = userDAO.findByLogin(charName);
+		GameChar gameChar = user.getGameChar();
+		List<StuffItem> charClothesAndStuffs = getCharClothesAndStuffs(user, gameChar, !user.isCitizen(), false);
+		List<StuffItemLightTO> charStuffs = getCharStuffs(charClothesAndStuffs);
+		result.setStuffs(charStuffs);
+		return result;
 	}
 	
 	public GameEnterTO getCharBody() {
-	GameEnterTO result = new GameEnterTO();
-	UserDAO userDAO = new UserDAO(getSession());
-    User user = userDAO.findById(getAdapter().getUserId());
-	GameChar gameChar = user.getGameChar();
-	result.setBody(StringUtil.encodeB(notNull(gameChar.getBody())));
-	return result;
+		GameEnterTO result = new GameEnterTO();
+		UserDAO userDAO = new UserDAO(getSession());
+		User user = userDAO.findById(getAdapter().getUserId());
+		GameChar gameChar = user.getGameChar();
+		result.setBody(StringUtil.encodeB(notNull(gameChar.getBody())));
+		return result;
 	}
 	
 	
@@ -529,11 +529,9 @@ public class CharService extends DataServiceBase {
 		GameChar gameChar = user.getGameChar();
 		
 		if(gameChar.getEmeralds() >= 50) {
-            //if(user.getPermissions().indexOf("season1Pass;") == -1) {
-			if(user.getPermissions().indexOf("season2Pass;") == -1) {
+			if(user.getPermissions().indexOf("season1Pass;") == -1) {
 				getAdapter().addEmeralds(getSession(), -50, "stuff season pass");
-				user.setPermissions(user.getPermissions() + "season2Pass;");
-                //user.setPermissions(user.getPermissions() + "season1Pass;");
+				user.setPermissions(user.getPermissions() + "season1Pass;");
 				new RemoteClient(getSession(), user).sendCommand("DialogOKCommand", "Successfully bought the Season Pass!");
 				getAdapter().executeCommand("UpdatePermCommand", user.getPermissions());
 				new UserUtil().giveSeasonItems(getSession(), getAdapter().getUserId());
@@ -747,7 +745,7 @@ public class CharService extends DataServiceBase {
         StuffItemDAO itemDAO = new StuffItemDAO(getSession());
         long now = System.currentTimeMillis();
         List<StuffItem> items = itemDAO.findByTypes(gameChar, new String[]{StuffTypes.CLOTHES, StuffTypes.STUFF,
-                StuffTypes.COCKTAIL, StuffTypes.PET_ITEMS, StuffTypes.PLAYERCARD}, selectUsedOnly);
+                StuffTypes.COCKTAIL, StuffTypes.FISH, StuffTypes.PET_ITEMS, StuffTypes.PLAYERCARD}, selectUsedOnly);
         //System.err.println("itemDAO.findByTypes time: " + (System.currentTimeMillis() - now));
 
         if (disableCitizens) {

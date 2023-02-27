@@ -1,4 +1,4 @@
-package com.kavalok.gameplay.windows
+﻿package com.kavalok.gameplay.windows
 {
 	
 	import com.kavalok.Global;
@@ -82,17 +82,17 @@ package com.kavalok.gameplay.windows
 		private var _defaultWindowHeight:int;
 		
 		private var _refreshIt:EventSender = new EventSender();
-		private var _blackNames:Array = new Array("undefined", "space", "default", "lightcol", "light_show");
+		private var _blackNames:Array = new Array("brock", "boo", "default", "lightcol", "light_show");
 		
 		private var tween:Tween;
 		private var _tweenFinished:Boolean;
 		
 		private var _defaultPanelY:int;
 		private var _loading:LoadingSprite;
-		public static var charsURL:String = String("http://chobots.net/profile/panel.php?u=");
-		public static var journalistBlogURL:String = String("http://chobots.net/journalist?u=");
+		public static var charsURL:String = String("http://chobots.icu/profile/panel.php?u=");
+		public static var journalistBlogURL:String = String("http://chobots.icu/journalist?u=");
 		public static var twitterURL:String = String("http://twitter.com/");
-		public static var marketURL:String = String("http://chobots.net/market/outfit_search.php?userid=");
+		public static var marketURL:String = String("http://chobots.icu/market/outfit_search.php?userid=");
 		
 		McFaces;
 		
@@ -133,15 +133,15 @@ package com.kavalok.gameplay.windows
 				_content.y = 25;
 			}
 			
-			_content.nameField.text = _charId == "kingnicho" ? "Nicho King" : Global.upperCase(_charId); // Change kingnicho to Nicho King
+			_content.nameField.text = _charId == "brock" ? "Brock S." : Global.upperCase(_charId); // Change brock to Brock S.
 			
 			if(_charId == "slenderman") // Turn slenderman's name off
 			{
 				_content.nameField.text = "";
 			}
-			else if(_charId == "ninja") //Rename the Ninja
+			else if(_charId == "tyler") //Rename the Ninja
 			{
-				_content.nameField.text = "Ninja Master";
+				_content.nameField.text = "A R T S I E";
 			}
 			
 			
@@ -232,8 +232,14 @@ package com.kavalok.gameplay.windows
 			
 			_content.charContainer.ageField.text = Strings.substitute(Global.messages.charAge, isNaN(_char.age) ? '' : _char.age.toString());
 			
-			if(_charId == "slenderman")
-				_content.charContainer.ageField.text = "";
+			if(_charId == "brock")
+				_content.charContainer.ageField.text = "An Old Chobot";
+			
+			if(_charId == "tyler")
+				_content.charContainer.ageField.text = "An Old Chobot";
+			
+			if(_charId == "nathan")
+				_content.charContainer.ageField.text = "Age 420";
 			
 			if (Global.startupInfo.widget == KavalokConstants.WIDGET_CHAR)
 			{
@@ -315,7 +321,7 @@ package com.kavalok.gameplay.windows
 			var login:String = _char.id;
 			
 			//var pattern:String = '<object width="{0}" height="{1}">' + '<param name="FlashVars" value="login={3}&urlPrefix={4}">' + '<param name="movie" value="{2}"/>' + '<embed src="{2}" FlashVars="login={3}&urlPrefix={4}" width="{0}" height="{1}"/>' + '</embed></object>'
-			var pattern:String = '<iframe src="https://chobots.worls/char/{0}" style="width:235px;height:308px;border:none;" scrolling="no"></iframe>';	
+			var pattern:String = '<iframe src="https://chobots.icu/char/{0}" style="width:235px;height:308px;border:none;" scrolling="no"></iframe>';	
 
 
 			var result:String = Strings.substitute(pattern, login);
@@ -521,7 +527,7 @@ package com.kavalok.gameplay.windows
 			
 			if(!Global.startupInfo.widget){
 				ToolTips.registerObject(charContainer.forumSign, "Forum Legend");
-				ToolTips.registerObject(charContainer.scoutSign, "Council Member");
+				ToolTips.registerObject(charContainer.scoutSign, "Discord Booster");
 				ToolTips.registerObject(charContainer.ninjaSign, "Ninja");
 				//	ToolTips.registerObject(charContainer.levelSign, "ChoLevel " + _char.charLevel);
 				ToolTips.registerObject(charContainer.journalistSign, "Journalist - " + _char.blogTitle);
@@ -613,8 +619,8 @@ package com.kavalok.gameplay.windows
 			else if (_char.status == "") {doStatus();} 
 			else {_bundle.registerTextField(charContainer.statusField, _char.status);}
 			
-			//if(_char.isAgent)
-			//	new AdminService(badgeNumGot).getBadgeNum(_char.userId);
+			if(_char.isAgent)
+				new AdminService(badgeNumGot).getBadgeNum(_char.userId);
 
 			//if(isFriend)
 		//	new CharService(gotFriendStatus).isBestFriend(_char.userId);
@@ -695,7 +701,7 @@ package com.kavalok.gameplay.windows
 			var locationExists:Boolean = Global.locationManager.locationExists;
 			var panel:ButtonsPanel = _content.buttonsPanel;
 			var modList:Boolean = Global.charManager.moderatorList.indexOf(Global.charManager.charId) != -1;
-			panel.visible = !Global.startupInfo.widget && !_char.isDev && !(_charId == "slenderman") && !(_charId == "kingnicho");
+			panel.visible = !Global.startupInfo.widget && !_char.isDev && !(_charId == "slenderman") && !(_charId == "brock");
 			
 			if(isFriend)
 			new CharService(gotFriendStatus).isBestFriend(_char.userId);

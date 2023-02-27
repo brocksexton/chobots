@@ -15,7 +15,7 @@ public class StuffTypeTO extends StuffTOBase {
     private String placement;
     private Boolean enabled = true;
     private Boolean premium;
-    private byte[] otherInfo;
+    private String otherInfo;
     private ObjectMap<String, Object> robotInfo;
     private ObjectMap<String, Object> skuInfo;
 
@@ -87,11 +87,11 @@ public class StuffTypeTO extends StuffTOBase {
         this.placement = placement;
     }
 
-    public byte[] getOtherInfo() {
+    public String getOtherInfo() {
         return otherInfo;
     }
 
-    public void setOtherInfo(byte[] otherInfo) {
+    public void setOtherInfo(String otherInfo) {
         this.otherInfo = otherInfo;
     }
 

@@ -323,10 +323,6 @@ package com.kavalok.char
 			{
 				removeItem(item);
 			}
-			if(item.type == StuffTypes.FISH)
-			{
-				removeItem(item);
-			}
 		}
 		
 		public function setListWithLoaded(value:Array):void
@@ -360,11 +356,6 @@ package com.kavalok.char
 		{
 			_list = value;
 			_refreshEvent.sendEvent();
-		}
-		
-		public function getBagFish():Array
-		{
-			return getByType(StuffTypes.FISH)
 		}
 		
 		public function getBagStuffs():Array
@@ -441,26 +432,6 @@ package com.kavalok.char
 			return Arrays.getByRequirement(_list,
 				new PropertyCompareRequirement('type', stuffType)).length;
 		}
-		
-		/*public function getFishCount():int
-		{
-			var realResult:Array = [];
-			var fishBag = getByType(StuffTypes.FISH);
-			for each (var item:StuffItemLightTO in fishBag)
-			{
-				var checkAmount:Array = Arrays.getByRequirement(_list,
-					new PropertyCompareRequirement('fileName', item.fileName)).length;
-					
-				var showItem:Object = {};
-				showItem.i = item;
-				showItem.n = checkAmount;
-				realResult.push(showItem);
-			}
-				
-				
-			var result:Array = Arrays.getByRequirement(_list,
-				new PropertyCompareRequirement('fileName', fileName)).length;
-		}*/
 		
 		public function getById(id:int):StuffItemLightTO
 		{

@@ -1149,14 +1149,14 @@ public class UserUtil {
 		if(newTier > 20) {
 			newTier = 20;
 		}
-		new RemoteClient(session, user).sendCommand("NotificationCommand", "(UserUtil.java:1152) You tiered up! Check your messages for your rewards!");
+		new RemoteClient(session, user).sendCommand("NotificationCommand", "You tiered up! Check your messages for your rewards!");
 		while (oldTier != newTier) {
             oldTier = oldTier+1;
 			//SeasonItems seasonItems = seasonItemsDAO.findReward(oldTier);
 			List<SeasonItems> seasonItems = new SeasonItemsDAO(session).findReward(oldTier);
 
 			for (SeasonItems item : seasonItems) {
-				if(item.getSlot() == 1 || ((item.getSlot() == 2 || item.getSlot() == 3) && (user.getPermissions().indexOf("season2Pass;") != -1))) {
+				if(item.getSlot() == 1 || ((item.getSlot() == 2 || item.getSlot() == 3) && (user.getPermissions().indexOf("season1Pass;") != -1))) {
 					//System.out.println("Found Item! '" + item.getRewardType());
 					if(item.getRewardType().indexOf("citizen") != -1) {
 						UserUtil.addCitizenship(session, userId.intValue(), 0, Integer.parseInt(item.getReward()), "From season pass");
@@ -1199,7 +1199,7 @@ public class UserUtil {
             oldTier = oldTier+1;
 			List<SeasonItems> seasonItems = new SeasonItemsDAO(session).findReward(oldTier);
 			for (SeasonItems item : seasonItems) {
-				if((item.getSlot() == 2 || item.getSlot() == 3) && (user.getPermissions().indexOf("season2Pass;") != -1)) {
+				if((item.getSlot() == 2 || item.getSlot() == 3) && (user.getPermissions().indexOf("season1Pass;") != -1)) {
 					if(item.getRewardType().indexOf("citizen") != -1) {
 						UserUtil.addCitizenship(session, userId.intValue(), 0, Integer.parseInt(item.getReward()), "From season pass");
 					} else if(item.getRewardType().indexOf("emerald") != -1) {

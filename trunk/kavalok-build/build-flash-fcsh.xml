@@ -14,7 +14,7 @@
 
 		<antcall target="build-localization"/>
 		<antcall target="build-kavalok-core"/>
-		<!--<antcall target="build-loader"/>-->
+		<antcall target="build-loader"/>
 		<antcall target="build-charWidget"/>
 		<!-- <antcall target="build-charView"/> -->
 		<antcall target="build-itemViewer"/>
@@ -44,7 +44,6 @@
 		<antcall target="copy-default"><param name="project.name" value="playerCards"/></antcall>
 		<antcall target="copy-default"><param name="project.name" value="robots"/></antcall>
 		<antcall target="copy-default"><param name="project.name" value="magic"/></antcall>
-		<antcall target="copy-default"><param name="project.name" value="fish"/></antcall>
 
 		<antcall target="build-default"><param name="project.name" value="login"/></antcall>
 	<!--	<antcall target="build-default"><param name="project.name" value="girlsRegistration"/></antcall>-->
@@ -68,6 +67,7 @@
 		<antcall target="build-default"><param name="project.name" value="questMusic"/></antcall>
 		<antcall target="build-default"><param name="project.name" value="questPets"/></antcall>
 		<antcall target="build-default"><param name="project.name" value="questAcademy"/></antcall>
+		<antcall target="build-default"><param name="project.name" value="questCupid22"/></antcall>
 	<!--	<antcall target="build-default"><param name="project.name" value="questTasha"/></antcall>-->
 		<antcall target="build-default"><param name="project.name" value="questNichos"/></antcall>
 			<antcall target="build-default"><param name="project.name" value="questQ"/></antcall>
@@ -161,7 +161,7 @@ ${log-content}
 		<antcall target="compile-swf">
 			<param name="project.output.dir"  value="bin/flash"/>
 			<param name="project.dir" value="../kavalok_admin"/>
-			<param name="output.file"  value="admin.swf"/>
+			<param name="output.file"  value="SecuredKavalokClient2022.swf"/>
 			<param name="input.file" value="KavalokAdmin.mxml"/>
 			<param name="library.path" value="../kavalok_admin/flash-lib,bin/flash,${flash.static.lib},../console/Console.swc"/>
 			<param name="external.library.path" value=""/>
@@ -180,7 +180,7 @@ ${log-content}
 		</antcall>
 	</target>-->
 
-	<!--
+	
 	<target name="build-loader">
 		<antcall target="compile-swf">
 			<param name="project.output.dir"  value="bin/flash"/>
@@ -263,7 +263,7 @@ ${log-content}
 			<param name="external.library.path" value=""/>
 			<param name="custom.compiler" value=""/>
 		</antcall>
-	</target>-->
+	</target>
 	<target name="build-kavalok">
 		<antcall target="compile-swf">
 			<param name="project.output.dir"  value="bin/flash"/>
@@ -423,7 +423,7 @@ ${log-content}
      <target name="compile-swf" depends="copy-resources">
 		<property name="mxmlc.args" value="${custom.compiler}
  -library-path+=${library.path}
- -target-player=10.0.0
+ -target-player=11.1.0
  -define=CONFIG::VERSION,&quot;0.01&quot;
  -external-library-path+=${external.library.path}
  -output ${project.output.dir}/${output.file}
@@ -437,7 +437,7 @@ clear
 		<property name="compc.args" value="-source-path ${source.dir}
  -output bin/flash/${output.swc}
  -debug
- -target-player=10.0.0
+ -target-player=11.1.0
  -include-sources ${source.dir}
  -compiler.library-path ${library.dir}
  -compiler.library-path ${flex.sdk}/frameworks/libs

@@ -268,36 +268,17 @@ public class MessageService extends DataServiceNotTransactionBase {
         User xDz = dao.findById(id);
         UserAdapter currUser = userMan.getCurrentUser();
         Boolean moderator = xDz.isModerator();
-        Server userServer = new UserServerDAO(getSession()).getServer(xDz);
-
+		Server userServer = new UserServerDAO(getSession()).getServer(xDz);
         if (!moderator) {
-            if(!userServer.getName().contains("Serv2")) {
-                if (message instanceof String) {
-                    MessageChecker checker = new MessageChecker(getSession());
+			if(!userServer.getName().contains("Serv2")) {
+				if (message instanceof String) {
+					MessageChecker checker = new MessageChecker(getSession());
 
-                    if (checker.checkMessage(null, currUser.getUserId(), currUser.getLogin(), (String) message, true, true))
-                        return;
-                }
-            }
-        }
-
-        //if (!moderator) {
-         //   if (message instanceof String) {
-          //      MessageChecker checker = new MessageChecker(getSession());
-
-           //     if (checker.checkMessage(null, currUser.getUserId(), currUser.getLogin(), (String) message, true, true))
-             //       return;
-            //}
-        //} // don't check filter for mods... Why not just do if name == daniel/smoochict or name == zoo ;D
-
-        //if (userServer.getName() != "Serv2") {
-        //    if (message instanceof String) {
-        //        MessageChecker checker = new MessageChecker(getSession());
-//
-        //        if (checker.checkMessage(null, currUser.getUserId(), currUser.getLogin(), (String) message, true, true))
-        //            return;
-        //    }
-       // } // skip word filter on server2
+					if (checker.checkMessage(null, currUser.getUserId(), currUser.getLogin(), (String) message, true, true))
+						return;
+				}
+			}
+        } // don't check filter for mods... Why not just do if name == daniel/smoochict or name == zoo ;D
 
         SOListener listener = SOListener.getListener(sharedObject);
         List<String> connectedChars = listener.getConnectedChars();
@@ -315,13 +296,9 @@ public class MessageService extends DataServiceNotTransactionBase {
                         && !currUser.getUserId().equals(user.getUserId())) {
 
                     user.sendLocationChat(currUser.getUserId().intValue(), currUser.getLogin(), message);
-
-
                 }
-
             }
         }
-
     }
 
 
