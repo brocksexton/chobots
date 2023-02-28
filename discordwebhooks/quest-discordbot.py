@@ -2,19 +2,14 @@ import mysql.connector
 import random
 import time
 
-# connect to MySQL database
-mydb = mysql.connector.connect(
-  host="149.248.56.2",
-  user="ossnman",
-  password="di72Vj3gxKkcfyJN",
-  database="chobotscajune2022"
-)
+# Connect to the Database (grabs information from db.py)
+from db import db_user, db_password, db_host, db_name
 
 # create a cursor to interact with the database
 cursor = mydb.cursor()
 
 # create a webhook to send messages to a Discord channel
-webhook_url = "https://discordapp.com/api/webhooks/1077366002960052255/86L1-gLeW3qOhxYDCx8fNf3A5GTs4vICw28az22TAeHP_hvsx4KnpKNDj7e-eERLhajH"
+webhook_url = "https://discordapp.com/api/webhooks/YOUR-DISCORD-WEBHOOK"
 webhook = DiscordWebhook(url=webhook_url)
 
 # set the minimum and maximum number of days before disabling a quest

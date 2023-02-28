@@ -32,14 +32,11 @@ locationserver_mapping = {}
 for elem in root:
     locationserver_mapping[elem.tag] = elem.text
 
-# Replace with your database credentials
-db_user = "ossnman"
-db_password = "di72Vj3gxKkcfyJN"
-db_host = "149.248.56.2"
-db_name = "chobotscajune2022"
+# Connect to the Database (grabs information from db.py)
+from db import db_user, db_password, db_host, db_name
 
 # Replace with your Discord webhook URL
-webhook_url = "https://discordapp.com/api/webhooks/1077309084233109535/NkIF2SyfGMhYjesVMZAZvmYjoUI1KPs948C7GHxsQ9apaGxy7IJ4UvkbUtif1uGvk-DY"
+webhook_url = "https://discordapp.com/api/webhooks/YOUR-DISCORD-WEBHOOK"
 
 # Connect to the database
 cnx = mysql.connector.connect(user=db_user, password=db_password, host=db_host, database=db_name)

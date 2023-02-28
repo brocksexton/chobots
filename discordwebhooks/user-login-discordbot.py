@@ -3,15 +3,12 @@ import requests
 import time
 import json
 
-# Replace with your database credentials
-db_user = "ossnman"
-db_password = "di72Vj3gxKkcfyJN"
-db_host = "149.248.56.2"
-db_name = "chobotscajune2022"
+# Connect to the Database (grabs information from db.py)
+from db import db_user, db_password, db_host, db_name
 
 # Replace with your Discord API token and channel ID
-discord_token = "OTM0Njc4NDEzMzU1MTUxNDIw.G8kw8y.MIZKhGmdWvlO1MkAwEw6hgROl5M1netz16a5_I"
-channel_id = "1077309053849567263"
+discord_token = "your-bot-token"
+channel_id = "your-discord-channel-id"
 
 # Connect to the database
 cnx = mysql.connector.connect(user=db_user, password=db_password, host=db_host, database=db_name)

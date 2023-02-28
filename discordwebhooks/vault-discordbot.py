@@ -3,14 +3,11 @@ import requests
 import json
 import time
 
-# Replace with your database credentials
-db_user = "ossnman"
-db_password = "di72Vj3gxKkcfyJN"
-db_host = "149.248.56.2"
-db_name = "chobotscajune2022"
+# Connect to the Database (grabs information from db.py)
+from db import db_user, db_password, db_host, db_name
 
 # Replace with your Discord webhook URL
-webhook_url = "https://discordapp.com/api/webhooks/1078963632609693709/b1wIxK2-AxxqgTz5hCms9g3aVTv534U_2NpQqCRwM_4-NaqCMJkcZRl72VNNiofOb0uU"
+webhook_url = "https://discordapp.com/api/webhooks/YOUR-DISCORD-WEBHOOK"
 
 # Connect to the database
 cnx = mysql.connector.connect(user=db_user, password=db_password, host=db_host, database=db_name)

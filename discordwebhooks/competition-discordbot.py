@@ -19,15 +19,12 @@ for elem in root:
 # Print the competition names mapping
 #print(location_names)
 
-# Replace with your database credentials
-db_user = "ossnman"
-db_password = "di72Vj3gxKkcfyJN"
-db_host = "149.248.56.2"
-db_name = "chobotscajune2022"
+# Connect to the Database (grabs information from db.py)
+from db import db_user, db_password, db_host, db_name
 
 # Replace with your Discord API token and channel ID
-discord_token = "OTMzMTk2MTg2MjYzOTAwMTcw.GnA1ye.rXBhoLLZy4x-OQ56jANI7hBTxIa6qSHuFvcEiI"
-channel_id = "1077309053849567263"
+discord_token = "your-bot-token"
+channel_id = "your-discord-channel-id"
 
 # Replace with your log file path
 log_file_path = "competition_log.txt"
