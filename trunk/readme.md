@@ -1,5 +1,6 @@
-# Chobots.ca - Master Branch - Current Live Build
-## https://www.chobots.icu/ - https://www.chobots.wiki/
+# Chobots - Master Branch - Current Live Build
+![Chobots Logo](https://play.chobots.wiki/assets/images/logo.png)
+## https://play.chobots.wiki/ - https://www.kavalok.net/ - https://www.chobots.wiki/
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -37,8 +38,8 @@ Chobots was an online Flash browser massive multiplayer online game (MMO) set in
 - More emotes
 
 ## Important Information
-While this repo may be public, it isn't complete. It does require the server portion (which at the moment I am not releasing) - it is available, however over time any modifications I make to the source may not be guranteed to work with it.
-
 To proceed with building the source, simply use "ant" in the terminal and it'll begin building. A build should take no longer then 2-3 minutes.
 
 This Source is the work of dozens of talented individuals, and is based off of SheenieBoy's release.
+
+For more information about Chobots, please visit the main repository's [readme](https://github.com/ZeSquare/chobots/blob/main/README.md).
