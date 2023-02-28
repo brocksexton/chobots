@@ -1,0 +1,29 @@
+<messages>
+  <vbot>G-Bot</vbot>
+  <vbotHelmet1>Helm</vbotHelmet1>
+  <vbotHelmet2>Stahl Helm</vbotHelmet2>
+  <vbotHelmet3>Drachen Helm</vbotHelmet3>
+  <vbotArmor1>Stahl Rüstung</vbotArmor1>
+  <vbotArmor2>Gold Rüstung</vbotArmor2>
+  <vbotArmor3>Titan Rüstung</vbotArmor3>
+  <vbotChassis1>Mond Fahrwerk</vbotChassis1>
+  <vbotChassis2>Vollplatine Fahrwerk</vbotChassis2>
+  <vbotChassis3>Bulldozer Fahrwerk</vbotChassis3>
+  <vbotWeapon1>Holz Stock</vbotWeapon1>
+  <vbotWeapon2>Eisen Stock</vbotWeapon2>
+  <vbotWeapon3>Cho Material</vbotWeapon3>
+  <lighting>Blitz</lighting>
+  <rocket>Raketen Paket 10</rocket>
+  <rocket2>Stärkeres Raketen Paket</rocket2>
+  <defencePlus>Verteidigungs Verbesserung</defencePlus>
+  <attackPlus>Angriffs Verbesserung</attackPlus>
+  <allPlus>Geschicklichkeit Verbesserung</allPlus>
+  <energyRepair1>Leichtes Energie Reperatur Paket</energyRepair1>
+  <energyRepair2>Mittelstarkes Energie Reperatur Paket</energyRepair2>
+  <energyRepair3>Volles Energie Reperatur Paket</energyRepair3>
+  <attack1>Angriffs Verstärkung</attack1>
+  <defence1>Verteidigungs Verstärkung</defence1>
+  <accuracy1>Genauigkeits Verstärkung</accuracy1>
+  <mobility1>Beweglichkeits Verstärkung</mobility1>
+  <attackPlus2>Schnellangriff</attackPlus2>
+</messages>

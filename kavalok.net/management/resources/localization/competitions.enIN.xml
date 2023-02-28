@@ -1,0 +1,19 @@
+<messages>
+  <finishTime>End time {0}.{1}.{2} {3}:{4}</finishTime>
+  <noCompetitions>There are no competitions at the moment</noCompetitions>
+  <sweetBattle>Sweet Battle Contest</sweetBattle>
+  <asteroid>Asteroid Contest</asteroid>
+  <choboard>Choboard Contest</choboard>
+  <pinball>Pinball Contest</pinball>
+  <crab>Crab Game Contest</crab>
+  <robots>Robofactory Contest</robots>
+  <spaceRacing>Space Racing Contest</spaceRacing>
+  <garbageCollector>Garbage Collector Contest</garbageCollector>
+  <farm>Cow Mission Contest</farm>
+  <rope>Rope Contest</rope>
+  <coins>Coins Contest</coins>
+  <palm>Palm tree Contest</palm>
+  <checkers>Checkers Contest</checkers>
+  <chess>Chess Contest</chess>
+  <chopaj>Chopajev</chopaj>
+</messages>

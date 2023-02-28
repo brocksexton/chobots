@@ -1,0 +1,11 @@
+<messages>
+  <caption>Weihnachtsmann</caption>
+  <npcName>Weihnachtsmann</npcName>
+  <firstItem>Ho, ho, ho!
+  Hallo, kleiner Freund. Man nennt mich Weihnachtsmann - also genau wie der dicke bärtige Kerl vom Nordpol auf diesem blauen Planeten da. Nimm diese Mütze, damit Du dir in der eisigen Kälte hier keinen Schnupfen holst.</firstItem>
+  <questTask>Der Weihnachtsmann auf der Erde bringt den Leuten jedes Jahr Geschenke. Ich finde, wir sollten hier auch so eine tolle Tradition einführen. Also habe ich meinen Sack mit Geschenken vollgestopft und bin losgeflogen. Als ich endlich einen Platz zum Landen gefunden hatte, fiel mir eine Tasche hinunter und platzte auf. Genau drei Glocken sind hinausgepurzelt und an drei verschiedenen Stellen gelandet. Wenn Du sie für mich suchen und mir zurückbringen könntest, das wäre wirklich toll. Wenn Du das schaffst, bekommst Du ein tolles Weihnachtsgeschenk. Viel Glück und bis später!</questTask> 
+  <noItem>Ich glaube, alleine kann ich die Glocken nicht finden. Ich brauche wirklich Deine Hilfe. Bitte finde meine drei Glocken.</noItem>
+  <nextItem>Danke, mein Lieber. Aber es fehlen immer noch welche. Kannst Du mir alle drei Glocken bringen?</nextItem>
+  <questComplete>Toll gemacht! Das sind die Glocken, die ich verloren habe. Damit hast Du mir wirklich geholfen. Dafür schenke ich Dir diese Schuhe und einen Schal. Frohe Weihnachten!</questComplete>
+  <idleMessage>Danke für Deine tolle Hilfe. Ich hoffe, Dir gefallen meine Geschenke. Viel Spass damit!</idleMessage>
+</messages>

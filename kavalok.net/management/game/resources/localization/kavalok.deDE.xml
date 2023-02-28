@@ -1,0 +1,416 @@
+<messages>
+  <passwordWarning>"{0}" ist dein Kennwort. Es ist verboten, Dein Kennwort anderen Benutzern zu verraten! Falls Du betrogen wurdest, melde uns den Benutzer. Fallst Dein Kennwort ein allgemein gebräuchliches Wort ist, solltest Du es ändern!</passwordWarning>
+  <newsDialogNoteText>*Das Fenster soll automatisch auftauchen. Falls die Seite mit unserem Weblog nicht  geöffnet werden kann, kopiere die URL in dein Browserfenster</newsDialogNoteText>
+  <kickOutBanned>Der Moderator hat Dein Konto blockiert. Chobot {0} wird nicht mehr verfügbar sein</kickOutBanned>
+  <academy>Akademie</academy>
+  <locAcademy>Akademie Straße</locAcademy>
+  <accept>Akzeptieren</accept>
+  <tradeAccept>Akzeptieren</tradeAccept>
+  <acceptRequests>Alle eingegangenen Nachrichten akzeptieren</acceptRequests>
+  <tradeAccepted>Akzeptiert</tradeAccepted>
+  <addFriend>Freund hinzufügen</addFriend>
+  <buyStuff>Nach diesem Kauf wirst Du {0} Blech auf Deiner Rechnung haben. Möchtest Du es kaufen?</buyStuff>
+  <charAge>Alter {0}</charAge>
+  <statusAgent>Agent</statusAgent>
+  <membershipFinishedText>Dein ganzes Staatsbürgereigentum wird bleiben! Um es zu benutzen, musst Du wieder Staatsbürger werden. Du kannst Deine  Eltern bitten, deine Staatsbürgerschaft zu erneuen</membershipFinishedText>
+  <angry>Böse</angry>
+  <removeFriendsConf>Bist Du sicher, dass Du die ausgewählten Freunde entfernen möchtest?</removeFriendsConf>
+  <recycleWarning>Bist Du sicher, dass Du diesen Gegendstand entfernen möchtest, um dafür  {0} Blech zu bekommen?</recycleWarning>
+  <removeFriendConf>Bist Du sicher, dass Du {0} von deiner Freundesliste entfernen möchtest?</removeFriendConf>
+  <gameAsteroid>Asteroid</gameAsteroid>
+  <idleTimeout>Automatisches Abschalten! Dein Chobot hat sich für mehr als 30 Minuten nicht bewegt</idleTimeout>
+  <back>Zurück</back>
+  <bag>Tasche</bag>
+  <locBeach>Beach</locBeach>
+  <dayNight>Tag/Nacht</dayNight>
+  <blushing>Errötet</blushing>
+  <bugs>Blech</bugs>
+  <buyNow>Jetzt kaufen!</buyNow>
+  <buyPaidStuffCaption>Premium Anzug kaufen</buyPaidStuffCaption>
+  <buyAccountCaption>Staatsbürgerschafts-Status kaufen</buyAccountCaption>
+  <locCafe>Cafe</locCafe>
+  <choTime>Chobots Time</choTime>
+  <loc3>Cafestraße</loc3>
+  <neverShowThis>Tipps nicht mehr zeigen!</neverShowThis>
+  <cancel>Abbrechen</cancel>
+  <changePassword>Kennwort ändern</changePassword>
+  <charWindow>Personenfenster</charWindow>
+  <chatHistory>Chatstory</chatHistory>
+  <membershipFinishingText>Du kannst deine Staatsbürgertermine einfach durch anklicken der Statustaste überprüfen. Dein ganzes Vermögen bleibt Dir erhalten! Um es zu benutzen, musst Du Staatsbürger sein. Du kannst Deine  Eltern bitten, deine Staatsbürgerschaft zu erneuen</membershipFinishingText>
+  <checkAll>Alle aus/abwählen</checkAll>
+  <hilarious>Fröhlich</hilarious>
+  <locChlos/>
+  <gameChoboard>Choboard</gameChoboard>
+  <gameChodoard>Choboard</gameChodoard>
+  <chobot>Chobot</chobot>
+  <gameChobotsRacer>Chobots Autorennfahrer</gameChobotsRacer>
+  <chobotsTeam>Chobots Arbeitsgruppe</chobotsTeam>
+  <gameSafeModeOff>Die Chobotswelt funktioniert wieder im Vollmodus. Du kannst wieder den Vollchat benutzen und Graffitis malen.</gameSafeModeOff>
+  <gameSafeModeOn>In der Chobotswelt wird der Sicherheitsmodus eingeschaltet. Textchat und Graffiti werden für einige Stunden ausgeschaltet. Du kannst aber mit deinen Freunden weiterhin spielen und Spaß haben!</gameSafeModeOn>
+  <safeModeTextChat>Die Chobotswelt ist zur Zeit im Sicherheitsmodus. Du kannst weder Graffiti malen noch den Textchat benutzen.</safeModeTextChat>
+  <locationCinema>Chollywood</locationCinema>
+  <buyPaidStuffSMSChooseProviderText>Wähle deine Mobilfunkgesellschaft und klicke "Weiter"</buyPaidStuffSMSChooseProviderText>
+  <c_CHOOSE>Wähle...</c_CHOOSE>
+  <tradeTraiding>Auswahl...</tradeTraiding>
+  <gameChopixAdventure>Chopix Abenteuer</gameChopixAdventure>
+  <locCinema>Kino</locCinema>
+  <statusCitizen>Staatsbürger</statusCitizen>
+  <statusUpText>Staatsbürger von Chobots haben folgende Möglichkeiten:
+  -   Sonderkleidung kaufen
+  -   Haushalt verbessern
+  -   Haustiere kaufen
+  -   Vollversionen von Akademiespielen nuzen
+ Und das ist noch nicht alles! Werde bald zum Staatsbürger!</statusUpText>
+  <citizenshipMessageCaption>Staatsbürgerschaft</citizenshipMessageCaption>
+  <locAcademyRoom>Klassenraum</locAcademyRoom>
+  <clickHereToStartTheGame>Hier klicken um das Spiel zu starten!</clickHereToStartTheGame>
+  <tradeClickToTrade>Wenn Du eine Sache in die Austauschliste hinzufügen möchtest, musst Du sie anklicken</tradeClickToTrade>
+  <tradeClickToRemove>Wenn Du eine Sache von der Austauschliste entfernen möchtest, musst Du sie anklicken</tradeClickToRemove>
+  <close>Beenden</close>
+  <gameMoney>Münzenregen</gameMoney>
+  <charBody>Farbendusche</charBody>
+  <citizenFutureShop>Bald kommende Sachen!</citizenFutureShop>
+  <submit>Verfassen</submit>
+  <confirmPassword>Bestätige Dein Kennwort!</confirmPassword>
+  <embrassed>Verwirrt</embrassed>
+  <paidStuffBought>Ich gratuliere dir mit  diesem Verkauf! Jetzt bist du einer der besten chobots geworden!</paidStuffBought>
+  <itemOfTheMonthMessage>Glückwunsch! Du bist jetzt Staatsbürger! Hier ist dein Geschenk des Monats!</itemOfTheMonthMessage>
+  <membershipPresentDays>Glückwunsch! Du hast {5} Tage Staatsbürgerschaft für: {6} bekommen. Dein Status wird am: {0}-{1}-{2} {3}:{4} ablaufen</membershipPresentDays>
+  <membershipPresentMonths>Glückwünsche! Du hast {5} Monate Staatsbürgerschaft für: {6} bekommen. Dein Status wird  am: {0}-{1}-{2} {3}:{4} ablaufen</membershipPresentMonths>
+  <connecting>Verbinde....</connecting>
+  <connectionErrorRedirect>Verbindungsproblem. 
+  Du wirst in wenigen Sekunden zur Chobots Startseite umgeleitet</connectionErrorRedirect>
+  <continue>Fortsetzen</continue>
+  <buyAccountCountry>Land</buyAccountCountry>
+  <missionFarm>Kuh-Mission</missionFarm>
+  <gameCrab>Krabbenspiel</gameCrab>
+  <laughing>Lachend</laughing>
+  <dance>Tanzen!</dance>
+  <danceButton>Tanzen!</danceButton>
+  <deleteLast>Das letzte Bild löschen</deleteLast>
+  <citizenConfirmation>Möchtest Du die Staatsbürgerschaft erhalten?</citizenConfirmation>
+  <kickUserConfirmation>Möchtest Du wirklich diesen Benutzer hinauswerfen?</kickUserConfirmation>
+  <ignoreRemoved>Gemacht!</ignoreRemoved>
+  <ignoreAdded>Gemacht!</ignoreAdded>
+  <drawingDisabledByMod>Das Bild wurde von Chobots Moderatoren deaktiviert</drawingDisabledByMod>
+  <locEcoShop>Öko-Laden</locEcoShop>
+  <editDance>Tanz verändern!</editDance>
+  <emoIcons>Emoticons</emoIcons>
+  <insertName>Name eingeben</insertName>
+  <exchangeShop>Wechselstelle</exchangeShop>
+  <exit>Ausgang</exit>
+  <quit>Ausgang</quit>
+  <extendAccountCaption>Staatsbürgerschaft verlängern</extendAccountCaption>
+  <family>Familie</family>
+  <pleaseEnterLogin>Gib deine Benutzerkennung ein.</pleaseEnterLogin>
+  <btnMessageFilter>Filter</btnMessageFilter>
+  <newsDialogTopText>Die aktuellesten Neuigkeiten nur in unserem Blog!</newsDialogTopText>
+  <finish>Abschluß</finish>
+  <flirtatious>Kokett</flirtatious>
+  <petFoodCatalog>Futterkatalog</petFoodCatalog>
+  <friends>Freunde</friends>
+  <friendsOthers>Freunde in anderen Städten</friendsOthers>
+  <friendsOffline>Freunde offline</friendsOffline>
+  <friendsOnline>Freunde online</friendsOnline>
+  <fullChat>VollChat</fullChat>
+  <citizenFurnitureShop>Möbel hier!</citizenFurnitureShop>
+  <loc12>Futuristisch Cafestraße</loc12>
+  <loc13>Futuristisch Missionsstraße</loc13>
+  <gameMenu>Spielmenü</gameMenu>
+  <locGames>Spielplatz</locGames>
+  <locEmeralds>Geheimnis Smaragd Zimmer</locEmeralds>
+  <giftButton>Geschenk</giftButton>
+  <quality>Grafische Qualität</quality>
+  <happy>Glücklich</happy>
+  <help>Hilfe</help>
+  <locAgents>Versteckter Agentenort</locAgents>
+  <qualityHigh>Hohe Qualität</qualityHigh>
+  <locHome>Haus</locHome>
+  <home>Haus</home>
+  <citizenHousesShop>Häuser hier!</citizenHousesShop>
+  <ignore>Den Nutzer nicht mehr ignorieren</ignore>
+  <ignoreUser>Benutzer ignorieren!</ignoreUser>
+  <inLove>Verliebt</inLove>
+  <invitation>Einladung</invitation>
+  <invite>Einladen</invite>
+  <inviteFriendTitle>Einen Freund einladen</inviteFriendTitle>
+  <inviteFriend>Einen Freund einladen</inviteFriend>
+  <inviteToPlace>Hierher einladen</inviteToPlace>
+  <inviteFriendText1>Lade einen Freund ein und bekomme einen Blechbonus von 7%, von dem was Deine Freunde verdient haben! Je mehr Freunde Du einlädst, desto mehr Blech bekommst Du!</inviteFriendText1>
+  <statusJunior>Junior</statusJunior>
+  <kickUser>Hinauswerfen</kickUser>
+  <laboratory>Labor</laboratory>
+  <lang>Sprache</lang>
+  <onlineDate>Letztes mal online</onlineDate>
+  <newsDialogTitle>Neuigkeiten</newsDialogTitle>
+  <loading>Laden</loading>
+  <locEco>Öko-Ort</locEco>
+  <qualityLow>Schlechte Qualität</qualityLow>
+  <locMagicShop>Magie-Geschäft</locMagicShop>
+  <magicReady>Magie ist fertig zur Benutzung</magicReady>
+  <citizenMagicShop>Zauberladen für Staatsbürger</citizenMagicShop>
+  <locHomeShop>MachDeinEigenesHaus-Geschäft</locHomeShop>
+  <map>Karte</map>
+  <maskCatalog>Maskenkatalog für Staatsbürger</maskCatalog>
+  <me>Ich!</me>
+  <qualityMedium>Mittlere Qualität</qualityMedium>
+  <menu>Menü</menu>
+  <message>Nachricht</message>
+  <guestStartup>Nachricht von Administration# Lieber Gast,
+
+danke für deinen Besuch in der Chobots Welt! Gäste können mit anderen Benutzern spielen, aber wenn Du den VollChat benutzen, Geschenke bekommen und Freunde hinzufügen möchtest, musst Du Dich registrieren. 
+
+Mit freundlichen Grüßen, Dein Chobots-Team,</guestStartup>
+  <sent>Nachricht wurde erfolgreich verschickt</sent>
+  <messages>Nachrichten</messages>
+  <locMissions>Missionen-Agentur</locMissions>
+  <loc2>Missionsstraße</loc2>
+  <buyAccountProvider>Mobilfunkgesellschaft</buyAccountProvider>
+  <statusModerator>Moderator</statusModerator>
+  <money>Geld</money>
+  <financeReportText>Das verdiente Geld: {0} Blech
+Das ausgegebene Geld: {1} Blech
+Das Geld, dass von dir eingeladene Freunde verdient haben: {2} Blech
+Dein Bonus: {3} Blech</financeReportText>
+  <musicVolume>Musiklautstärke</musicVolume>
+  <robotsShop>Brauchst du einen Roboter?</robotsShop>
+  <paidStuffBuyPaypalNextButtonText>Es öffnet sich ein neues Bankeinzugsfenster, wo Du mit Deiner Kreditkarte oder PayPal Konto bezahlen kannst. Wenn das Fenster sich nicht geöffnet werden kann, vergewissere dich, dass Dein Browser die Pop-ups nicht blockiert.</paidStuffBuyPaypalNextButtonText>
+  <newPassword>Neues Kennwort</newPassword>
+  <news>Nachrichten</news>
+  <next>Weiter</next>
+  <locNichos8>Nicho Brücke</locNichos8>
+  <locNichos6>Nicho Kreuzung</locNichos6>
+  <locNichos3>Nicho Feuer</locNichos3>
+  <locNichos4>Nicho Insel</locNichos4>
+  <locNichos7>Nicho Regenbogen</locNichos7>
+  <locNichos>Nicho Start</locNichos>
+  <locNichos2>Nicho Streifen</locNichos2>
+  <locNichos1>Nicho Welt</locNichos1>
+  <locNichos5>Nicho Hof</locNichos5>
+  <locSpace>Space Station</locSpace>
+  <missionNichos>Nichos Königreich Mission</missionNichos>
+  <no>Nein</no>
+  <nothingToTrade>Du hast nichts zum Austauschen</nothingToTrade>
+  <tryMembershipMessage>Jetzt kannst Du die Vorteile der Staatsbürgerschaft ausprobieren. Der Status wird im Laufe von {5} Tagen aktiv. 
+Er wird am: {0}-{1}-{2} {3}:{4} ablaufen</tryMembershipMessage>
+  <monthMembershipBought12>Du besitzt jetzt den Staatsbürgerschafts-Status, der für 12 Monate gilt. Dein Status wird am: {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipBought12>
+  <monthMembershipBought3>Du besitzt jetzt den Staatsbürgerschafts-Status, der für 3 Monate gilt. Dein Status wird am: {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipBought3>
+  <monthMembershipBought6>Du besitzt jetzt den Staatsbürgerschafts-Status, der für 6 Monate gilt. Dein Status wird am: {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipBought6>
+  <monthMembershipBought>Du besitzt jetzt den Staatsbürgerschafts-Status, der für einen Monat gilt. Dein Status wird am: {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipBought>
+  <monthMembershipBought1>Du besitzt jetzt den Staatsbürgerschafts-Status, der für einen Monat gilt. Dein Status wird  am: {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipBought1>
+  <offline>Offline</offline>
+  <ok>Ok</ok>
+  <loc10>Alte Akademie</loc10>
+  <loc9>Alte Cafestraße</loc9>
+  <loc11>Alte Missionsstraße</loc11>
+  <online>Online</online>
+  <onlineServer>Online in einer anderen Stadt!</onlineServer>
+  <onlineNow>Jetzt online!</onlineNow>
+  <connectionError>Oooooops.. Wahrscheinlich hast du Probleme mit Deinem Internetanschluß!</connectionError>
+  <error>Etwas ist schiefgelaufen. Versuche, Deine Seite neuzuladen.</error>
+  <locPark>Park</locPark>
+  <locParty>Party-Area</locParty>
+  <locStaff>Party-Raum</locStaff>
+  <partyCatalog>Party Shop</partyCatalog>
+  <passwordChanged>Kennwort erfolgreich geändert</passwordChanged>
+  <magicPlayButton>Benutzen</magicPlayButton>
+  <magicAction>die Magie zeigen</magicAction>
+  <pets>Haustieren Bastler</pets>
+  <locPetsShop>Haustiergeschäft</locPetsShop>
+  <safeChat>Bilder Chat</safeChat>
+  <gamePinball>Pinball</gamePinball>
+  <play>Spielen</play>
+  <kavalok_play>Spielen</kavalok_play>
+  <petPlayCatalog>Spielkatalog</petPlayCatalog>
+  <replay>Wiederholen</replay>
+  <musicAction>Musik spielen!</musicAction>
+  <buyPaidStuffSMSNoProviderText>Bitte frage Deine Eltern, um einen Premium Anzug zu kaufen.
+Liebe Eltern, um den Anzug zu kaufen, klicken sie bitte "Weiter"</buyPaidStuffSMSNoProviderText>
+  <buyPaidStuffText>Bitte frage Deine Eltern, um einen Premium Anzug zu kaufen. 
+Liebe Eltern, um den Anzug zu kaufen, wählen Sie bitte Ihr Land und folgen den Bildschirmanweisungen.</buyPaidStuffText>
+  <paidStuffBuySendText>Du kannst Deine Eltern darum bitten, Dir einen Premium Anzug zu kaufen.
+Liebe Eltern, um den Anzug zu kaufen, schicken Sie bitte eine SMS an die Nummer {0}
+mit folgendem Text'{1}' (ohne Klammern).  Preis der SMS: {2}{3}</paidStuffBuySendText>
+  <pleaseEnterYourMessage>Deine Nachricht:</pleaseEnterYourMessage>
+  <prezent>Geschenk</prezent>
+  <priceBugs>Preis: {0} Blech</priceBugs>
+  <changeColorPrice>Preis: {0} Blech</changeColorPrice>
+  <privateChat>Privater Chat</privateChat>
+  <giftStuffPut>In die Tasche stecken</giftStuffPut>
+  <giftClothesUse>Anziehen</giftClothesUse>
+  <register>Anmeldung</register>
+  <removeFriend>Freund entfernen</removeFriend>
+  <reply>Antworten</reply>
+  <reportAnnoy>Über schlechtes Benehmen berichten</reportAnnoy>
+  <reportGetInfo>Über das Ausfragen von persönlichen Informationen berichten</reportGetInfo>
+  <reportReceived>Bericht wurde erfolgreich abgeschickt</reportReceived>
+  <reportScamming>Über einen Betrug berichten</reportScamming>
+  <reportSpam>Über Spam berichten</reportSpam>
+  <reportUser>Sich über einen Nutzer beschweren</reportUser>
+  <reportChat>Über Schimpfwörter berichten</reportChat>
+  <reportPutInfo>Über das Mitteilen von persönlichen Informationen berichten</reportPutInfo>
+  <addFriendSent>Anfrage abgeschickt</addFriendSent>
+  <petRestCatalog>Erholungskatalog</petRestCatalog>
+  <gameRobots>Roboterfabrik</gameRobots>
+  <robot>Roboter</robot>
+  <robotConfig>Roboter Konfigurator</robotConfig>
+  <robotStuffsShop>Roboter Waffen</robotStuffsShop>
+  <locRobots>Robots Arena</locRobots>
+  <teamList>Roboter Team</teamList>
+  <locMusic>Rockemall Straße</locMusic>
+  <locationRope>Tau-Straße</locationRope>
+  <c_RU>Russland</c_RU>
+  <sad>Traurig</sad>
+  <frightened>Erschrocken</frightened>
+  <locCitizen>Geheime Ort für die Staatsbürger</locCitizen>
+  <send>Schicken</send>
+  <sendMessage>Nachricht schicken</sendMessage>
+  <adminMsg>Nachricht an Administrator senden</adminMsg>
+  <teleportSend>Einladung abschicken?</teleportSend>
+  <chooseRecipient>Empfänger:</chooseRecipient>
+  <shock>Schockiert</shock>
+  <locAccShop>Geschäft</locAccShop>
+  <loc0>Einkaufsplatz</loc0>
+  <showTipsAtStartup>Akademietipps zeigen</showTipsAtStartup>
+  <showCharNames>Namen von Chobots zeigen</showCharNames>
+  <showIntro>Einleitung zeigen</showIntro>
+  <inviteFriendText2>Du kannst deine Freunde bitten, deinen Chobot Namen auf der Registrierungsseite einzugeben!</inviteFriendText2>
+  <loc6>Schneeland</loc6>
+  <loc7>Schneeland Park</loc7>
+  <locationFull>Tschuldigung, diese Stadt ist voll! Versuch dich in eine andere Stadt einzuloggen oder werde Staatsbürger, dadurch hast du die Möglichkeit dich in volle Städte einzuloggen.</locationFull>
+  <locationForCitizensOnly>Entschuldigen Sie bitte, aber dieses Zimmer ist nur für Staatsbürger. Entschuldigen Sie bitte, aber dieses Zimmer ist nur für Staatsbürger.</locationForCitizensOnly>
+  <soundVolume>Lautstärke</soundVolume>
+  <loc5>Raumfahrtzentrum-Platz</loc5>
+  <loc1>Raumallee</loc1>
+  <robotItemsShop>Spezielle Sachen</robotItemsShop>
+  <standOnTheTeleport>Stell Dich mit Deinen Freunden auf den Teleporter und drücke die "Start"-Taste</standOnTheTeleport>
+  <start>Start!</start>
+  <statusUpCaption>Statusänderung ist bald möglich!</statusUpCaption>
+  <status>Statusänderung</status>
+  <StuffCatalog>Warenkatalog</StuffCatalog>
+  <stuffCatalog>SachenKatalog</stuffCatalog>
+  <paidStuffCatalog>Anzugkataloge für Staatsbürger</paidStuffCatalog>
+  <surprised>Überrascht</surprised>
+  <robotTeam>Team erstellen</robotTeam>
+  <robotTeamStat>Team Statistik</robotTeamStat>
+  <telescop>Fernrohr</telescop>
+  <chatDisabled>Textchat wurde deaktiviert</chatDisabled>
+  <robotStat>Die besten Kämpfer</robotStat>
+  <locForest>Wald</locForest>
+  <paidStuffBuyPaypalText>Bankeinzugsystem wird geöffnet. Nachdem die Zahlung abgeschlossen ist,  wird Dein Anzug in  Kleiderschrank erscheinen</paidStuffBuyPaypalText>
+  <locGraphity>Untergrund</locGraphity>
+  <locGraphityA>Untergrund</locGraphityA>
+  <friendListFull>Freundesliste ist voll</friendListFull>
+  <buyPaidStuffSMSText>Der Anzug wurde gekauft</buyPaidStuffSMSText>
+  <actionForCitizens>Diese Handlung ist nur für Staatsbürger verfügbar</actionForCitizens>
+  <itemForCitizens>Diese Option ist nur für Staatsbürger verfügbar</itemForCitizens>
+  <loginExists>Diese Nutzerkennung existiert schon</loginExists>
+  <gameHunting>Wurfspiel</gameHunting>
+  <loc8>Zeit-Raum</loc8>
+  <all>An alle</all>
+  <monthMembershipBuyText>Um die Staatsbürgerschaft zu kaufen, musst Du eine SMS mit diesem Text abschicken:
+  '{1}' (ohne Klammern) an die Nummer {0}. Der Preis der SMS beträgt {2}{3}</monthMembershipBuyText>
+  <buyAccountText>Um die Staatsbürgerschaft zu kaufen, wähle Dein Land (und Mobilfunkgesellschaft, wenn nötig), dann klicke "Weiter"</buyAccountText>
+  <monthMembershipExtendText>Um Deine Staatsbürgerschaft für 1 Monat zu verlängern, musst Du eine SMS 
+ an die Nummer {0} mit dem Text schicken '{1}' (ohne Klammern). Der Preis der SMS beträgt {2}{3}</monthMembershipExtendText>
+  <registerPlease>Um mehr zu spielen und mit Freunden zu sprechen, registriere dich auf {0}</registerPlease>
+  <giftClothesPut>Zum Kleiderschrank</giftClothesPut>
+  <trade>Austausch</trade>
+  <tradeSuccessfull>Austausch erfolgreich abgeschlossen</tradeSuccessfull>
+  <tradeWith>Austauschen mit</tradeWith>
+  <c_US>USA/Weltweit</c_US>
+  <c_UA>Ukraine</c_UA>
+  <unignore>Nicht mehr ignorieren</unignore>
+  <unIgnoreUser>Den Nutzer nicht mehr ignorieren</unIgnoreUser>
+  <use>Benutzen</use>
+  <giftStuffUse>Benutzen</giftStuffUse>
+  <tradeWaiting>Warte, bis Dein Austauschpartner deine Auswahl akzeptiert</tradeWaiting>
+  <waitingForOtherPlayers>Auf Mitspieler warten</waitingForOtherPlayers>
+  <homeClothes>Schrank</homeClothes>
+  <rulesTitle>Eine Warnung des Chobots-Teams</rulesTitle>
+  <notActivatedStartup>Willkommen in der Chobotswelt!# Nun kannst du Spiele spielen, dich stylen und dein Haus dekorieren. Atemberaubende Sachen warten in deinem Kleiderschrank! Aber wenn Du den VollChat benutzen möchtest, musst Du dein Konto aktivieren und die richtige Option auswählen. Die E-Mail mit der Information, wie Du Dein Konto aktivieren kannst, wurde schon abgeschickt. Falls Du die E-Mail nicht bekommen hast, überprüfe mal Deinen Spam-Ordner oder versuche die E-Mail noch einmal zu schicken.
+
+
+
+  
+
+  Mit freundlichen Grüßen,  Dein Chobots-Team</notActivatedStartup>
+  <teleportText>Willkommen bei {0}</teleportText>
+  <flyShop>Hexe Shop</flyShop>
+  <magicPayedShop>die magische Sachen</magicPayedShop>
+  <englishAcademy>WörterTetris</englishAcademy>
+  <updateFlashPlayer>Möchtest Du, dass Chobots schneller wird? Installiere einfach die letzte Vesion des Flash Players. Diese findest Du hier {0}</updateFlashPlayer>
+  <ignoreUserConfirm>Möchtest du wirklich diesen Benutzer ignorieren?</ignoreUserConfirm>
+  <unIgnoreUserConfirm>Möchtest Du wirklich diesen Benutzer nicht mehr ignorieren?</unIgnoreUserConfirm>
+  <badEmail>Falsche E-Mail-Adresse</badEmail>
+  <badLogin>Falscher Nutzername</badLogin>
+  <badPassw>Falsches Kennwort</badPassw>
+  <stuffItemPresent>Hurra! Du hast einen Gegenstand vom Chobots Team bekommen für: {0}.</stuffItemPresent>
+  <bugsBought>Wow! Du bist reich geworden! Du bekommst {0} Blech</bugsBought>
+  <yes>Ja</yes>
+  <lostGame/>
+  <ignoreText>Du wurdest von {0} ignoriert</ignoreText>
+  <cannotDeletePaidItem>Du kannst diesen Gegenstand nicht löschen</cannotDeletePaidItem>
+  <rules>Du musst die Verhaltensregeln befolgen!!! 
+  
+&lt;b&gt;Den Chobots ist es verboten:&lt;/b&gt;
+&lt;li&gt;Privatinformation weiter zu geben,
+andere Chobots zu betrügen oder zu ärgern,
+Aussagen mit sexuellen und/oder gewalttätigen Inhalten zu tätigen, 
+sich im Spiel zu Dates zu verabreden,
+Links zu veröffentlichen (außer Links auf Weblog von Chobots) und
+anderen Benutzern Spam zu schicken&lt;/li&gt;
+  
+Für Verstöße gegen diese Regeln wird Dein Konto blockiert oder Dein Chat deaktiviert</rules>
+  <unignoreText>Du wirst nicht mehr von {0} ignoriert</unignoreText>
+  <badWordWithIntervalHours>Du hast geschimpft, deshalb ist Dein Vollchat ab jetzt für {1} Stunden gesperrt. {0} ist ein Schimpfwort!</badWordWithIntervalHours>
+  <badWordWithInterval>Du hast geschimpft, deshalb ist Dein Vollchat ab jetzt für {1} Minuten gesperrt. {0} ist ein Schimpfwort!</badWordWithInterval>
+  <badWord>Du hast geschimpft, deshalb ist Dein Vollchat ab jetzt gesperrt</badWord>
+  <skipWord>Du benutzt verbotene Wörter! {0} ist ein verbotenes Wort!</skipWord>
+  <youCanCloseThisIn>Du kannst das Fenster in {0} Sekunden schließen</youCanCloseThisIn>
+  <tradeCannotChangeItems>Du kannst keine Sachen hinzufügen oder entfernen, nachdem ein Austausch stattgefunden hat</tradeCannotChangeItems>
+  <tradeCannotChangeNotConnected>Ohne Deinen Austauschpartner kannst Du keine Sachen hinzufügen oder entfernen</tradeCannotChangeNotConnected>
+  <tradeCannotOpen2Windows>Du kannst nicht mehr als ein Austauschfenster auf einmal öffnen</tradeCannotOpen2Windows>
+  <noMoney>Du Hast nicht genug Geld, um das zu kaufen.</noMoney>
+  <monthMembershipSMSText>Du hast Status für 1 Monat gekauft</monthMembershipSMSText>
+  <magicNotReady>Du kannst Magie in {0} Minuten zeigen</magicNotReady>
+  <tradeItemsChanged>Du hast neue Sachen bekommen - Austauschfenster wird geschlossen</tradeItemsChanged>
+  <bagIsFull>Deine Tasche ist voll! Entschuldigung, aber Du kannst nichts mehr kaufen.</bagIsFull>
+  <adminBanDate>Dein Chat ist  zurzeit durch einen Chobots Moderator deaktiviert. Bitte wende Dich an uns um mehr Informationen zu bekommen</adminBanDate>
+  <chatDisabledByAdminHours>Dein Chat ist zurzeit durch einen Chobots Moderator deaktiviert. Du kannst den VollChat  in den nächsten {0} Stunden nicht benutzen. Bitte wende Dich an uns um mehr Informationen zu bekommen</chatDisabledByAdminHours>
+  <chatDisabledByAdmin>Dein Chat ist zurzeit durch einen Chobots Moderator deaktiviert. Du kannst den VollChat in den nächsten {0} Minuten nicht benutzen. Bitte wende Dich an uns um mehr Informationen zu bekommen</chatDisabledByAdmin>
+  <membershipFinishedCaption>Deine Staatsbürgerschaft ist abgelaufen</membershipFinishedCaption>
+  <membershipFinishingCaption>Deine Staatsbürgerschaft läuft bald ab</membershipFinishingCaption>
+  <stuffsAtHome>Deine Kleidung wurde in den Kleiderschrank geschickt</stuffsAtHome>
+  <currentPassword>Dein aktuelles Kennwort</currentPassword>
+  <invalidCurrentPassword>Kennwort ist falsch</invalidCurrentPassword>
+  <financeReport>Dein Finanzbericht</financeReport>
+  <friendsListFull>Deine Freundeliste ist voll</friendsListFull>
+  <yourNameHere>Dein Name</yourNameHere>
+  <monthMembershipExtendedSMSText>Dein Staatsbürgerschafts-Status  wurde für 1 Monat verlängert</monthMembershipExtendedSMSText>
+  <monthMembershipExtended1>Dein Staatsbürgerschafts-Status  wurde für 1 Monat verlängert. Dein Status wird am : {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipExtended1>
+  <monthMembershipExtended>Dein Staatsbürgerschafts-Status  wurde für 1 Monat verlängert. Dein Status wird am : {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipExtended>
+  <monthMembershipExtended12>Dein Staatsbürgerschafts-Status  wurde für 12 Monate verlängert. Dein Status wird am : {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipExtended12>
+  <monthMembershipExtended3>Dein Staatsbürgerschafts-Status  wurde für 3 Monate verlängert. Dein Status wird am : {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipExtended3>
+  <monthMembershipExtended6>Dein Staatsbürgerschafts-Status  wurde für 6 Monate verlängert. Dein Status wird am : {0}-{1}-{2} {3}:{4} ablaufen</monthMembershipExtended6>
+  <extendAccountText>Dein Status wird  auf: {0}-{1}-{2} {3}:{4} verlängert. Um deine Staatsbürgerschaft für 1 Monat zu verlängern, wähle dein Land (und Mobilfunkgesellschaft wenn gebraucht), dann klicke "Weiter"</extendAccountText>
+  <stuffExists>Dieses Teil hast Du schon. Möchtest Du noch eins haben?</stuffExists>
+  <kickOut>Du wurdest leider rausgeschmissen. Lade deine Seite neu und melde Dich noch einmal an.</kickOut>
+  <giftMessage>Du hast ein Geschenk bekommen!</giftMessage>
+  <friendAdded>Du hast einen neuen Freund {0}.</friendAdded>
+  <newsDialogBottomText>Und vergiss nicht einen Kommentar zu hinterlassen! :)</newsDialogBottomText>
+  <daysAgo>Vor {} Tagen</daysAgo>
+  <tradeLeft>hat den Austausch verlassen</tradeLeft>
+  <tradeOtherExit>hat den Austausch verlassen</tradeOtherExit>
+  <today>heute</today>
+  <yesterday>Gestern</yesterday>
+  <comboLoginItemMessage>Du hast sich bei Chobots  {0} Tage hintereinander angemeldet. Hier ist dein Geschenk!</comboLoginItemMessage>
+  <friendCanceled>{0} möchte nicht mehr dein Freund sein.</friendCanceled>
+  <teleportReceive>{0} lädt dich nach {1} ein</teleportReceive>
+  <friendRemoved>Du wurdest aus der Freundesliste von {0} entfernt.</friendRemoved>
+  <inviteText>{0} möchte Dein Freund sein.</inviteText>
+<statusDev>Developer</statusDev>
+<locMusicStage>Music Stage</locMusicStage>
+<locGirls>Girls' Hangout</locGirls>
+<citItemName>TV Head</citItemName>
+</messages>

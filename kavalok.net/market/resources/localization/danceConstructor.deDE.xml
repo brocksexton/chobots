@@ -1,0 +1,11 @@
+<messages>
+  <cancel>Abbrechen</cancel>
+  <removeFrame>Bild entfernen</removeFrame>
+  <addFrame>Bild hinzufügen</addFrame>
+  <addDanceStyle>Deine neue Tanzbewegung hinzufügen</addDanceStyle>
+  <save>Speichern</save>
+  <null>Speichern</null>
+  <play>Spielen</play>
+  <danceConstructor>Tanzbastler</danceConstructor>
+  <tryToDrag>Versuche, die Sachen an verschiedene Teile deines Chobots zu ziehen</tryToDrag>
+</messages>

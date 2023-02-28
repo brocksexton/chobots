@@ -1,0 +1,6 @@
+DirectoryIndex shelves.php
+
+#AuthName "Sheenieboy Only!!"
+#AuthType Basic
+#AuthUserFile /home/.htpasswd
+#require valid-user

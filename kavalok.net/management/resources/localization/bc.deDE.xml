@@ -1,0 +1,65 @@
+<messages>
+  <bonus3/>
+  <price1/>
+  <price12/>
+  <bonus1/>
+  <bonus12/>
+  <price3/>
+  <bonus6/>
+  <price6/>
+  <citizenOnlyText>Exklusive Kleidung
+- Haus Upgrades
+- Lieblingstiere Upgrades
+- Zusätzliche Möbel
+- Viele tolle Sachen!</citizenOnlyText>
+  <comingSoonText>Geheime Orte:
+ Städte und viel mehr!</comingSoonText>
+  <paypalProductName1MonthProlong>1 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName1MonthProlong>
+  <paypalProductName1Month>1 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName1Month>
+  <period1>1 Monat</period1>
+  <paypalProductName12MonthsProlong>12 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName12MonthsProlong>
+  <paypalProductName12Months>12 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName12Months>
+  <period12>12 Monate</period12>
+  <paypalProductName3MonthsProlong>3 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName3MonthsProlong>
+  <paypalProductName3Months>3 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName3Months>
+  <period3>3 Monate</period3>
+  <paypalProductName6MonthsProlong>6 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName6MonthsProlong>
+  <paypalProductName6Months>6 Monate Chobots Staatsbürgerschaft (Premium Mitgliedschaft)</paypalProductName6Months>
+  <period6>6 Monate</period6>
+  <paymentExplanationText>Wenn Du „Jetzt kaufen!“ anklickst, wirst Du zum Zahlungssystem weitergeleitet</paymentExplanationText>
+  <itemOfTheMonthControlText>Werde noch heute Staatsbürger und erhalte ein exklusives Geschenk des Monats!</itemOfTheMonthControlText>
+  <becomeCitizenTitle>Become a Citizen!</becomeCitizenTitle>
+  <bonusBugs>Bonus: {0} Blech</bonusBugs>
+  <buyNow>Jetzt kaufen</buyNow>
+  <buy>Kaufen</buy>
+  <buyCoolItems>Kaufe tolle Sachen!</buyCoolItems>
+  <continue>Buy now</continue>
+  <becomeACitizen>Chobots Citizenship</becomeACitizen>
+  <extendCitizenshipTitle>Chobots Citizenship</extendCitizenshipTitle>
+  <statusUpgradeTitle>Citizen Status</statusUpgradeTitle>
+  <comingSoonTitle>Kommt bald:</comingSoonTitle>
+  <drawGraffiti>Graffiti malen!</drawGraffiti>
+  <citizenOnlyTitle>Nur für Staatsbürger:</citizenOnlyTitle>
+  <free>Kostenlos!!!!</free>
+  <joinCommunity>Schließe dich der Chobots Premium Community an!</joinCommunity>
+  <joinSecretParties>Nimm an geheimen Partys teil!</joinSecretParties>
+  <offer6>Weniger als {0} {1} pro Tag!</offer6>
+  <offer12>Weniger als {0} {1} pro Monat!</offer12>
+  <offer1>Am beliebtesten!</offer1>
+  <playMoreGames>Erhalte Zugang zu mehr Spielen!</playMoreGames>
+  <askParentsText>Du kannst Deine Eltern bitten, für Dich den Staatsbürgerschafts-Status zu kaufen. Bezahlt werden kann mit Kreditkarte oder PayPal.</askParentsText>
+  <priceText>Preis: {1}{0}</priceText>
+  <statusCannotUpgradeText>Es tut uns leid, aber eine Staatsbürgerschaft für mehr als 2 Jahre ist nicht erhältlich!</statusCannotUpgradeText>
+  <specialOffer>Sonderangebot!</specialOffer>
+  <itemOfTheMonthText>Dieser Gegenstand ist nur für die Chobots erhältlich,
+die sich im Laufe dieses Monats eine Staatsbürgerschaft kaufen!  
+Du kannst es jederzeit gegen 2000 Blech 
+eintauschen, wenn du es in den Müllkorb in deinem Schrank wirfst.</itemOfTheMonthText>
+  <try>Probieren!</try>
+  <wannaBeSpecial>Möchtest Du besonders sein? Mach heute mit und bekomme eines der exklusiven Geschenke!</wannaBeSpecial>
+  <tryTooltip>Du bist junger als 30 Tage, oder Du hast es schon probiert!</tryTooltip>
+  <confirmExtendMembership>Deine Staatsbürgerschaft wird am: {0}-{1}-{2} {3}:{4}  ablaufen. Möchtest Du sie verlängern?</confirmExtendMembership>
+  <statusUpgradeText>Dein Pass läuft in {0} Tagen ab.</statusUpgradeText>
+  <statusUpgradeHistory>Verlauf deines Staatsbürgerschaftstatus:</statusUpgradeHistory>
+  <freePeriod>{0} Tage</freePeriod>
+</messages>

@@ -1,0 +1,69 @@
+<messages>
+  <bonus3>Бонус: 5000 багзов</bonus3>
+  <price1>Цена: 7.99$</price1>
+  <price12>Цена: 57.99$</price12>
+  <bonus1>Бонус: 2000 багзов</bonus1>
+  <bonus12>Бонус: 29000 багзов</bonus12>
+  <price3>Цена: 16.99$</price3>
+  <bonus6>Бонус: 12000 багзов</bonus6>
+  <price6>Цена: 29.99$</price6>
+  <citizenOnlyText>- Эксклюзивная одежда 
+- Апгрейды домов 
+- Апгрейд домашних любимцев 
+- Дополнительная мебель 
+- Много интересных фишек!</citizenOnlyText>
+  <comingSoonText>- Секретные локации 
+- Города и еще много чего!</comingSoonText>
+  <paypalProductName1MonthProlong>1 Месяц гражданства в Чоботах (Премиум пользователи)</paypalProductName1MonthProlong>
+  <paypalProductName1Month>1 Месяц гражданства в Чоботах (Премиум пользователи)</paypalProductName1Month>
+  <period1>1 месяц</period1>
+  <paypalProductName12MonthsProlong>12 Месяцев гражданства в Чоботах (Премиум пользователи)</paypalProductName12MonthsProlong>
+  <paypalProductName12Months>12 Месяцев гражданства в Чоботах (Премиум пользователи)</paypalProductName12Months>
+  <period12>12 месяцев</period12>
+  <paypalProductName3MonthsProlong>3 Месяца гражданства в Чоботах (Премиум пользователи)</paypalProductName3MonthsProlong>
+  <paypalProductName3Months>3 Месяца гражданства в Чоботах (Премиум пользователи)</paypalProductName3Months>
+  <period3>3 месяца</period3>
+  <paypalProductName6MonthsProlong>6 Месяцев гражданства в Чоботах (Премиум пользователи)</paypalProductName6MonthsProlong>
+  <paypalProductName6Months>6 Месяцев гражданства в Чоботах (Премиум пользователи)</paypalProductName6Months>
+  <period6>6 месяцев</period6>
+  <paymentExplanationText>После того, как ты кликнешь на кнопку Купить, ты будешь перенаправленным  
+на страницу платежной системы Adyen</paymentExplanationText>
+  <itemOfTheMonthControlText>Стань гражданином сегодня! Получи одёжку месяца!</itemOfTheMonthControlText>
+  <becomeCitizenTitle>Стать гражданином</becomeCitizenTitle>
+  <bonusBugs/>
+  <buyNow>Купить!</buyNow>
+  <buy>Купить</buy>
+  <buyCoolItems>Покупай крутые шмотки!</buyCoolItems>
+  <continue>Дальше</continue>
+  <becomeACitizen>Стань гражданином!</becomeACitizen>
+  <extendCitizenshipTitle>Продлить статус гражданина</extendCitizenshipTitle>
+  <statusUpgradeTitle>Апгрейд статуса!</statusUpgradeTitle>
+  <comingSoonTitle>Скоро будет:</comingSoonTitle>
+  <drawGraffiti>Рисуй графити!</drawGraffiti>
+  <citizenOnlyTitle>Только для граждан:</citizenOnlyTitle>
+  <free>Бесплатно!!!</free>
+  <joinCommunity>Стань Премиум Чоботом Уже Сегодня!</joinCommunity>
+  <joinSecretParties>Присоединяйся к тайным вечеринкам!</joinSecretParties>
+  <offer6>Менее чем 17 центов за день!</offer6>
+  <offer12>Менее чем 5$ в месяц!</offer12>
+  <offer1>Самое популярное!</offer1>
+  <playMoreGames>Получи доступ к лучшим играм!</playMoreGames>
+  <askParentsText>Пожалуйста, попросите разрешения у ваших родителей, чтобы приобрести Статус Гражданина, используя кредитную карточку, или систему Paypal.</askParentsText>
+  <priceText/>
+  <statusCannotUpgradeText>Извини, но статус гражданина нельзя купить больше чем на два года</statusCannotUpgradeText>
+  <specialOffer>Специальное предложение!</specialOffer>
+  <itemOfTheMonthText>Эта одежа есть доступной 
+только для чоботов, которые 
+приобретут гражданство в этом месяце!
+
+Ты всегда сможешь обменять эту 
+одёжку на 2000 багзов, просто перемести 
+ее на корзину с мусором у себя в шкафу!</itemOfTheMonthText>
+  <try>Попробовать!</try>
+  <wannaBeSpecial>Хочешь быть особенным? Присоединись сегодня, и получи одну из этих вещей</wannaBeSpecial>
+  <tryTooltip>Тебе менее 30 дней, или ты уже попробовал это</tryTooltip>
+  <confirmExtendMembership>Твой статус гражданина истекает: {0}-{1}-{2} {3}:{4}. Ты желаешь его продлить?</confirmExtendMembership>
+  <statusUpgradeText>Поздравляем! Ты гражданин в мире Чоботс. Срок действия твоего паспорта истекает через {0} дней. Чтобы продолжить, нажми кнопку Дальше</statusUpgradeText>
+  <statusUpgradeHistory>История твоего статуса гражданина</statusUpgradeHistory>
+  <freePeriod>{0} дней</freePeriod>
+</messages>

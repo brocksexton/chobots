@@ -1,0 +1,70 @@
+a{color: #333;text-decoration: none}
+h1{letter-spacing: -2px; font-size: 1.6em; font-weight: 400}
+body{
+	background: #E7EDEE;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	margin-bottom: 100px;
+}
+.container{
+	width: 700px;
+	margin: 10px auto;
+	padding: 10px 0;
+	background: white;
+	border: 2px solid #DBDBDB;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.upload input{
+	display: none;
+}
+
+.pure-button{
+	margin: 5px 0;
+}
+.upload{
+}
+
+img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.status{
+	display: none;
+	padding: 5px;
+	background: #F47063;
+	width: 100%;
+	color: white;
+	margin: 8px 0;
+}
+
+.progress {
+	position: relative;
+	width: 90%;
+	margin: 10px auto;
+	border: 1px solid #DDD;
+	padding: 5px;
+	border-radius: 3px;
+}
+.bar{
+	background: #008DE6;
+	height: 20px;
+	width: 0%;
+	/* transition animation */
+	-webkit-transition: width .3s;
+		-moz-transition: width .3s;
+			transition: width .3s;
+
+}
+.percent {
+	position: absolute;
+	display: inline-block;
+	top: 6px;
+	left: 48%;
+	color: #333;
+}

@@ -1,0 +1,17 @@
+<messages>
+  <caption>Chobots Launches!</caption>
+  <npcName>Space Dude</npcName>
+  <firstItem>Ho, ho, ho!
+
+  Hallo, kleiner Freund. Man nennt mich Weihnachtsmann - also genau wie der dicke bärtige Kerl vom Nordpol auf diesem blauen Planeten da. Nimm diese Mütze, damit Du dir in der eisigen Kälte hier keinen Schnupfen holst.</firstItem>
+  <questTask>Hey!
+Frohes neues Jahr für dich, Chobot. Heute Feiern wir nicht nur das Ende von vielen Dingen, sondern auch Anfänge. Wir sind fröhlich.
+Wir möchten Dir danken, dass du stets an unserer Seite warst in der harten Zeit, und dass du ein großartiger Helfer warst für das Personal.
+Nehme dieses Item als ein Dankeschön.
+
+Vielen Dank!!</questTask>
+  <noItem>Ich glaube, alleine kann ich die Glocken nicht finden. Ich brauche wirklich Deine Hilfe. Bitte finde meine drei Glocken.</noItem>
+  <nextItem>Danke, mein Lieber. Aber es fehlen immer noch welche. Kannst Du mir alle drei Glocken bringen?</nextItem>
+  <questComplete>Toll gemacht! Das sind die Glocken, die ich verloren habe. Damit hast Du mir wirklich geholfen. Dafür schenke ich Dir diese Schuhe und einen Schal. Frohe Weihnachten!</questComplete>
+  <idleMessage>Haha, du kannst nur eins von diesem Anzug bekommen zur Zeit! Habe ein schönes, neues Jahr :)</idleMessage>
+</messages>

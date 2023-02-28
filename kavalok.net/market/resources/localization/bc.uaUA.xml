@@ -1,0 +1,60 @@
+<messages>
+  <bonus3>Бонус: 5000 Багзів</bonus3>
+  <price1>Ціна: 7.99$</price1>
+  <price12>Ціна: 57.99$</price12>
+  <bonus1>Бонус: 2000 Багзів</bonus1>
+  <bonus12>Бонус: 29000 Багзів</bonus12>
+  <price3>Ціна: 16.99$</price3>
+  <bonus6>Бонус: 12000 Багзів</bonus6>
+  <price6>Ціна: 29.99$</price6>
+  <citizenOnlyText>- 3xclu5iv3 cl07h1ng- h0u53 upgr4d3s- p3t5 upgr4d3s - 4dd1ti0n4l furn1tur3- l0t5 0f c00l f34tur3s!</citizenOnlyText>
+  <comingSoonText>- Секретні локації
+- Міста і ще багато чого!</comingSoonText>
+  <paypalProductName1MonthProlong>1 Місяць Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName1MonthProlong>
+  <paypalProductName1Month>1 Місяць Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName1Month>
+  <period1>1 місяць</period1>
+  <paypalProductName12MonthsProlong>12 Місяців Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName12MonthsProlong>
+  <paypalProductName12Months>12 Місяців Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName12Months>
+  <period12>12 місяців</period12>
+  <paypalProductName3MonthsProlong>3 Місяця Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName3MonthsProlong>
+  <paypalProductName3Months>3 Місяця Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName3Months>
+  <period3>3 місяця</period3>
+  <paypalProductName6MonthsProlong>6 Місяців Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName6MonthsProlong>
+  <paypalProductName6Months>6 Місяців Громадянства В Чоботах (Привілегійовані користувачі)</paypalProductName6Months>
+  <period6>6 місяців</period6>
+  <paymentExplanationText>Після того, як ти клікнеш на кнопку Придбати, ти будеш перенаправленим 
+на сторінку платіжної системи Adyen</paymentExplanationText>
+  <itemOfTheMonthControlText>Стань громадянином сьогодні!Отримай одежину місяця!</itemOfTheMonthControlText>
+  <becomeCitizenTitle>B3c0m3 4 C171z3n</becomeCitizenTitle>
+  <bonusBugs>B0nu5: {0} bug5</bonusBugs>
+  <buyNow>Buy N0w!</buyNow>
+  <buy>Buy N0w!</buy>
+  <buyCoolItems>Buy c00l 1t3m5!</buyCoolItems>
+  <continue>Buy!!</continue>
+  <becomeACitizen>B3c0m3 4 C171z3n</becomeACitizen>
+  <extendCitizenshipTitle>Подовжити твій статус громадянина</extendCitizenshipTitle>
+  <statusUpgradeTitle>Апгрейд статусу!</statusUpgradeTitle>
+  <comingSoonTitle>Скоро буде:</comingSoonTitle>
+  <drawGraffiti>Твори графіті!</drawGraffiti>
+  <citizenOnlyTitle>Тільки для громадян:</citizenOnlyTitle>
+  <free>Безплатно!!!</free>
+  <joinCommunity>Стань Одним з Преміум Чоботів Вже Сьогодні!</joinCommunity>
+  <joinSecretParties>Приєднуйся до секретних вечірок!</joinSecretParties>
+  <offer6>Менш ніж 17 центів за день!</offer6>
+  <offer12>Менш ніж 5$ на місяць!</offer12>
+  <offer1>Найбільш популярне!</offer1>
+  <playMoreGames>Отримай доступ до кращих ігор!</playMoreGames>
+  <askParentsText>Будь ласка, попросіть дозволу у ваших батьків, щоб придбати Статус Громадянина, використовуючи кредитну карточку або систему PayPal</askParentsText>
+  <priceText/>
+  <statusCannotUpgradeText>Вибач, але не можна купити статус громадянина більше чим на два роки</statusCannotUpgradeText>
+  <specialOffer>Спеціальна пропозиція!</specialOffer>
+  <itemOfTheMonthText>Ця одежина є доступною тіки длячоботів, які придбають громадянствоцього місяця!  Ти завжди зможеш обміняти цю одежинуна 2000 багзів, просто перемісти їїна кошик з сміттям у себе в шафі!</itemOfTheMonthText>
+  <try>Спробувати!</try>
+  <wannaBeSpecial>Хочеш бути особливим? 
+Приєднайся сьогодні, і отримай одну з цих речей</wannaBeSpecial>
+  <tryTooltip>Тобі менше 30 днів, або ти вже спробував це</tryTooltip>
+  <confirmExtendMembership>Твій статус громадянина закінчиться: {0}-{1}-{2} {3}:{4}. Ти бажаєш подовжити його?</confirmExtendMembership>
+  <statusUpgradeText>Вітаємо! Ти є громадянином у світі Чоботів. Твій паспорт втрачає силу через {0} днів. Щоб продовжити, натисни кнопку Далі</statusUpgradeText>
+  <statusUpgradeHistory>Історія твого статусу громадянина:</statusUpgradeHistory>
+  <freePeriod>{0} днів</freePeriod>
+</messages>

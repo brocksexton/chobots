@@ -1,0 +1,142 @@
+﻿<levels>
+
+	<level nextLevel="7" caption="Einfache Sätze">
+		<word>a pen - der Stift</word>
+		<word>take - nehmen; nimmt, nehme</word>
+		<word>a book - das Buch</word>
+		<word>a pencil - der Bleistift </word>
+		<word>and - und</word>
+		<word>give - gib, gibt, geben</word>
+		<word>me - mir</word>
+		<word> Nick - Hans (Name eines Jungen) </word>
+		<phrase>Take a pen</phrase>
+		<phrase>Take a book</phrase>
+		<phrase>Take a pencil</phrase>
+		<phrase>Take a pen and a book</phrase>
+		<phrase>Take a book and a pencil</phrase>
+		<phrase>Take a book and a pen</phrase>
+		<phrase>Take a pencil and a book</phrase>
+		<phrase>Take a pencil and a pen</phrase>
+		<phrase>Take a pen and a pencil</phrase>
+		<phrase>Take a pen Nick</phrase>
+		<phrase>Take a book Nick</phrase>
+		<phrase>Take a pencil Nick</phrase>
+		<phrase>Take a pen and a pencil Nick</phrase>
+		<phrase>Take a pen and a book Nick</phrase>
+		<phrase>Take a book and a pencil Nick</phrase>
+		<phrase>Take a book and a pen Nick</phrase>
+		<phrase>Take a pencil and a book Nick</phrase>
+		<phrase>Take a pencil and a pen Nick</phrase>
+		<phrase>Give me a pen</phrase>
+		<phrase>Give me a book</phrase>
+		<phrase>Give me a pencil</phrase>
+		<phrase>Give me a pen and a pencil</phrase>
+		<phrase>Give me a pen and a book</phrase>
+		<phrase>Give me a book and a pencil</phrase>
+		<phrase>Give me a book and a pen</phrase>
+		<phrase>Give me a pencil and a book</phrase>
+		<phrase>Give me a pencil and a pen</phrase>
+		<phrase>Give me a pen Nick</phrase>
+		<phrase>Give me a book Nick</phrase>
+		<phrase>Give me a pencil Nick</phrase>
+		<phrase>Give me a pen and a pencil Nick</phrase>
+		<phrase>Give me a pen and a book Nick</phrase>
+		<phrase>Give me a book and a pencil Nick</phrase>
+		<phrase>Give me a book and a pen Nick</phrase>
+		<phrase>Give me a pencil and a book Nick</phrase>
+		<phrase>Give me a pencil and a pen Nick</phrase>
+		<phrase>Nick Take a pen</phrase>
+		<phrase>Nick Take a book</phrase>
+		<phrase>Nick Take a pencil</phrase>
+		<phrase>Nick Take a pen and a pencil</phrase>
+		<phrase>Nick Take a pen and a book</phrase>
+		<phrase>Nick Take a book and a pencil</phrase>
+		<phrase>Nick Take a book and a pen</phrase>
+		<phrase>Nick Take a pencil and a book</phrase>
+		<phrase>Nick Take a pencil and a pen</phrase>
+		<phrase>Nick Give me a pen</phrase>
+		<phrase>Nick Give me a book</phrase>
+		<phrase>Nick Give me a pencil</phrase>
+		<phrase>Nick Give me a pen and a pencil</phrase>
+		<phrase>Nick Give me a pen and a book</phrase>
+		<phrase>Nick Give me a book and a pencil</phrase>
+		<phrase>Nick Give me a book and a pen</phrase>
+		<phrase>Nick Give me a pencil and a book</phrase>
+		<phrase>Nick Give me a pencil and a pen</phrase>
+	</level>
+	<level nextLevel="7" caption="Sätze mit Farben">
+		<word>a - ein (ein Buch, ein gelbes Buch)</word>
+		<word>is - ist</word>
+		<word>this - dieser</word>
+		<word>that - jener</word>
+		<word>give - gib, gibt, geben</word>
+		<word>me - mir</word>
+		<word>book - Buch</word>
+		<word>red - rot</word>
+		<word>yellow - gelb</word>
+		<word>green - grün</word>
+		<word>blue - blau</word>
+		<word>pink - rosa</word>
+		<word>black - schwarz</word>
+		<word>white - weiß</word>
+		<phrase>This is me</phrase>
+		<phrase>That is me</phrase>
+		<phrase>Give me a book</phrase>
+		<phrase>This book is red</phrase>
+		<phrase>This book is yellow</phrase>
+		<phrase>This book is green</phrase>
+		<phrase>This book is pink</phrase>
+		<phrase>This book is black</phrase>
+		<phrase>This book is white</phrase>
+		<phrase>This book is blue</phrase>
+		<phrase>That book is red</phrase>
+		<phrase>That book is yellow</phrase>
+		<phrase>That book is green</phrase>
+		<phrase>That book is pink</phrase>
+		<phrase>That book is black</phrase>
+		<phrase>That book is white</phrase>
+		<phrase>That book is blue</phrase>
+		<phrase>Give me this book</phrase>
+		<phrase>Give me that book</phrase>
+		<phrase>Take this book</phrase>
+		<phrase>Take that book</phrase>
+		<phrase>This is a book</phrase>
+		<phrase>That is a book</phrase>
+		<phrase>This is a red book</phrase>
+		<phrase>This is a yellow book</phrase>
+		<phrase>This is a green book</phrase>
+		<phrase>This is a pink book</phrase>
+		<phrase>This is a black book</phrase>
+		<phrase>This is a white book</phrase>
+		<phrase>This is a blue book</phrase>
+		<phrase>That is a red book</phrase>
+		<phrase>That is a yellow book</phrase>
+		<phrase>That is a green book</phrase>
+		<phrase>That is a pink book</phrase>
+		<phrase>That is a black book</phrase>
+		<phrase>That is a white book</phrase>
+		<phrase>That is a blue book</phrase>
+		<phrase>Give me a red book</phrase>
+		<phrase>Give me a green book</phrase>
+		<phrase>Give me a pink book</phrase>
+		<phrase>Give me a black book</phrase>
+		<phrase>Give me a white book</phrase>
+		<phrase>Give me a blue book</phrase>
+		<phrase>Give me a yellow book</phrase>
+		<phrase>Give me this red book</phrase>
+		<phrase>Give me this yellow book</phrase>
+		<phrase>Give me this green book</phrase>
+		<phrase>Give me this pink book</phrase>
+		<phrase>Give me this black book</phrase>
+		<phrase>Give me this white book</phrase>
+		<phrase>Give me this blue book</phrase>
+		<phrase>Give me that red book</phrase>
+		<phrase>Give me that yellow book</phrase>
+		<phrase>Give me that green book</phrase>
+		<phrase>Give me that pink book</phrase>
+		<phrase>Give me that black book</phrase>
+		<phrase>Give me that white book</phrase>
+		<phrase>Give me that blue book</phrase>
+	</level>
+
+</levels>

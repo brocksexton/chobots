@@ -1,0 +1,10 @@
+<messages>
+  <caption>Chopix</caption>
+  <npcName>Chopix</npcName>
+  <initial>Hallo! Ich bin Chopix  und ich habe eine sehr wichtige Mission für Dich. Nimm diese Farbenbrille. Du wirst sie brauchen, um  diese Misiion zu erfüllen.</initial>
+  <hasTask>Du hast den Quest bereits bekommen. Nun geh auf die Suche nach den Spionen</hasTask>
+  <hasItem>Ich habe gehört, dass Nichos fünf Roboter-Spione in die Stadt geschickt haben. Chobots können Sie aber nicht sehen. Wenn Du die Farbenbrille trägst, die Du bekommen hast, werden sie für Dich sichtbar. Du musst die Roboter finden und sie mir bringen. Dafür bekommst Du eine Belohnung: 50 Blech für jeden einzelnen und 1000, wenn Du alle findest. Viel Glück! Bis dann!</hasItem>
+  <hasTarget>Vielen Dank für Deine Hilfe. Aber es sind noch einige Spione übrig. Finde alle Spione!</hasTarget>
+  <hasLastTarget>Gut gemacht! Du hast alle Roboter-Spione gefunden. Du hast mir so sehr geholfen! Unsere Stadt ist wieder sicher!</hasLastTarget>
+  <questComplete>Danke für Deine Hilfe. Ich hoffe, Du genießt Deine Belohnung! Viel Spaß!</questComplete>
+</messages>

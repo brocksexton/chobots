@@ -1,0 +1,33 @@
+<messages>
+  <petPrice>Pet's Price</petPrice>
+  <buyPet>Buy a Pet</buyPet>
+  <petConstructor>Pet Constructor</petConstructor>
+  <petAtHome>Your pet is waiting for you at your home. Hurry up!</petAtHome>
+  <petExists>Oops, you already have a pet...</petExists>
+  <takePet>Take your pet on a stroll</takePet>
+  <leavePet>Leave your pet at home</leavePet>
+  <disposePet>Kick out your pet</disposePet>
+  <toFeed>Feed</toFeed>
+  <toPlay>Play</toPlay>
+  <sitPet>Don't move!</sitPet>
+  <unsitPet>Ok, you can move again</unsitPet>
+  <toRest>Rest</toRest>
+  <health>Health</health>
+  <food>Food</food>
+  <loyality>Loyalty</loyality>
+  <disposeQuastion>Are you sure you want to kick your pet out forever?</disposeQuastion>
+  <petRules>Pet rules</petRules>
+  <petName>Zorbos</petName>
+  <petDisposedText>Dear master, you had been disrespectful to me, so I ran away. 
+Better be nice to your future pet 
+  Your Pet</petDisposedText>
+  <bodyButton>Hello! I am Doctor Alan Chogreen. Do you want to have your own pet ? If you do, you are at the right place. I will help you to build it. Select a shape and a color for your pet</bodyButton>
+  <faceButton>Select your pet’s face</faceButton>
+  <topButton>Looking for some ears? Here they are</topButton>
+  <sideButton>Any paws or wings for your pet ? Use your imagination and don't forget to color them</sideButton>
+  <bottomButton>And the last – legs. Congrats! Name your pet then click Buy a Pet button and let me continue my experiments… See ya!</bottomButton>
+  <inputName>Please, name your pet</inputName>
+  <badName>Bad name. Please, try another one</badName>
+  <maskCatalog>Mask's catalogue</maskCatalog>
+  <petIsHungry>Dear master, I am hungry! Please come back to me and give me something to eat! Or else I will run away</petIsHungry>
+</messages>

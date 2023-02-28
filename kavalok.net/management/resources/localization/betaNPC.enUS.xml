@@ -1,0 +1,18 @@
+<messages>
+  <caption>Goodbye Beta!</caption>
+  <npcName>Space Dude</npcName>
+  <firstItem>Ho, ho, ho!
+
+My dear fellow, my name's Santa - same as one man's from the North Pole which is on that Blue planet. Take this hat not to catch a cold at this snowed up location.</firstItem>
+  <questTask>Hey!!
+Happy New Year to you, Chobot. Today we celebrate not only the end of many things, but also the beginning. We are happy 
+We want to thank you for standing by our side during all the rough times, and for being a great help to the staff.
+Take this item as a token of our appreciation.
+
+Thank you!! 
+	</questTask>
+  <noItem>I don't think I'll manage to find the bells myself. I really need your help. Please find three bells.</noItem>
+  <nextItem>Thank you for helping me. But some bells are still missing. Could you bring me three of them, my dear?</nextItem>
+  <questComplete>Good job! These are the bells I lost. You helped me out! These shoes and scarf are your Christmas presents! Merry Christmas.</questComplete>
+  <idleMessage>Haha, you can only get one suit at a time! Have a happy new year :)</idleMessage>
+</messages>

@@ -1,0 +1,10 @@
+<messages>
+  <caption>Дед Мороз</caption>
+  <npcName>Дед Мороз</npcName>
+  <firstItem>Бррр, холодно!</firstItem>
+  <questTask>Ho Ho Ho!Weihnachten ist auf dem Weg, und Herr Weihnachtsmann and Ich haben uns entschlossen für die nächsten 12 Tage freie Geschenke zu verteilen. Habe einen schönen Dezember und viel spaß in Chobots! Ich habe gehört dort sind viele Überraschungen im Lager!</questTask>
+  <noItem>Я не смогу найти колокольчики сам. Мне действительно нужна твоя помощь. Найди три колокольчика.</noItem>
+  <nextItem>Спасибо за помощь мне. Но некоторые колокольчики все еще затеряны. Принеси мне пожалуйста остальные.</nextItem>
+  <questComplete>Прекрасно! Это то, что я искал! За это я тебе дам ботиночки и шарф. Счастливого Рождества!</questComplete>
+  <idleMessage>Дякую за допомогу. Я сподіваюсь, тобі сподобались мої подарунки. Розважайся!</idleMessage>
+</messages>

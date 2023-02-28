@@ -1,0 +1,141 @@
+<messages>
+  <entrancePic1>Enjoy the holiday season with Chobots!
+Lots of parties and presents!</entrancePic1>
+  <entrancePic2>Play Collaborative Casual Games Designed for the Whole Family!
+100% Free!</entrancePic2>
+  <entrancePic3>Join the biggest Kid's Community of Earth Researchers!
+Chat and Make Friends!</entrancePic3>
+  <entrancePic4>Create and Design!
+Graffiti Art, Your Style, Your House and even Your Pet!</entrancePic4>
+  <entrancePic5>24/7 Live Moderation combined with innovative technological solutions!</entrancePic5>
+
+  <pleaseEnterLogin>A username is necessary to play the game! Please fill in the field 'Name'</pleaseEnterLogin>
+  <activateYourAccount>Activate your account</activateYourAccount>
+  <activationSend>Activation email has been sent</activationSend>
+  <invalidActivationUrl>Activation key is not valid</invalidActivationUrl>
+  <saveLogin>Ahtung! Login has been saved!</saveLogin>
+  <activationText>An activation email was sent. Just click on the link in that email to activate your account.
+If the email address is wrong, create a new account!</activationText>
+  <rules2>Any expression implying sexual or violent content is not permitted</rules2>
+  <rule2>Any expression implying sexual or violent content is not permitted</rule2>
+  <parentsReviewAgreement>Ask your parent to review the {0} if you are under 13</parentsReviewAgreement>
+  <back>Back</back>
+  <rules4>Bear in mind that you are a little Chobot. Therefore, any other expressions or behavior not appropriate for children is not permitted</rules4>
+  <rule4>Bear in mind that you are a little Chobot. Therefore, any other expressions or behavior not appropriate for children is not permitted</rule4>
+  <becomeAChobot>Become a Chobot</becomeAChobot>
+  <behaviorCode>Chat and behavior code</behaviorCode>
+  <rules>Chat and behavior code</rules>
+  <child>Child</child>
+  <chooseColor>Choose a color</chooseColor>
+  <favoriteColor>Choose your favorite color</favoriteColor>
+  <citizenship>Citizenship!</citizenship>
+  <confirmPassw>Confirm password</confirmPassw>
+  <yourAccountIsActivated>Congratulations!
+ Your account is successfully activated. Have fun playing Chobots!</yourAccountIsActivated>
+  <register>Create a new account</register>
+  
+  <dontUseRealName>Do not use your real name</dontUseRealName>
+  <insertParentsEmail>E-mail</insertParentsEmail>
+  <insertEmail>Email</insertEmail>
+  <enterChobotsShort>Enter Chobots</enterChobotsShort>
+  <enterChobots>Enter the world of Chobots</enterChobots>
+  <parentsEmailDescription>Enter your parent's email address if you are under 13.</parentsEmailDescription>
+  <fillInInformation>Fill in your account information</fillInInformation>
+  <fullChat>Full chat</fullChat>
+  <fullChatDescription>Full chat allows your  child to communicate freely</fullChatDescription>
+  <howToActivate>How do I activate my account?</howToActivate>
+  <howOldAreYou>How old are you?</howOldAreYou>
+  <agreeRules>I agree</agreeRules>
+  <agreeTermsParent>I agree to</agreeTermsParent>
+  <agreeTerms>I agree to Terms and Conditions</agreeTerms>
+  <agreeToFollow>I agree to follow these rules</agreeToFollow>
+  <agreeWithAgreement>I agree with license agreement described above</agreeWithAgreement>
+  <invitedBy>I'm invited by</invitedBy>
+  <newAccountText>If the indicated e-mail is wrong, register a new account</newAccountText>
+  <dontHaveAccount>If you don't have an account yet</dontHaveAccount>
+  <whyActivateDescription>If you want to have full chat, send messages, make friends, give and receive presents and use many other features you need to activate your account</whyActivateDescription>
+  
+  <entranceCaption>Welcome to the World of Chobots!</entranceCaption>
+  <keepPlaying>Keep playing</keepPlaying>
+  <licenseAgreement>License Agreement</licenseAgreement>
+  <rules0>Like any other society, Chobots world has its own laws that have been drawn up to keep this virtual playground safe and joyful for you. Please be aware of the following chat and behavior code when you play Chobots:</rules0>
+  <looksNice>Looks nice!</looksNice>
+  <agreeTermsChild>My parents and I agree to</agreeTermsChild>
+  <insertName>Name</insertName>
+  <newAccount>New account</newAccount>
+  <next>Next</next>
+  <entranceDescription>Where you can chat and party with friends, play collaborative games, collect over 1400 different items and much more Chobots magic you can't find anywhere else</entranceDescription>
+<!--><entranceDescription>We have ended public testing for the new UI. Thank you for helping us test, have fun!</entranceDescription> -->
+  <parent>Parent</parent>
+  <childRegistration>Parents have to activate your account by clicking on the link in the email. Until your Chobot is activated, you will be able to login to play, but with limited possibilities</childRegistration>
+  <locPark>Park</locPark>
+  <insertPassw>Password</insertPassw>
+  <passwordSent>Password has been sent</passwordSent>
+  
+  <guestTitle>Play as a guest</guestTitle>
+  <asGuest>Play as a guest</asGuest>
+  <playNow>Play now!</playNow>
+  <guestText>Playing as a Guest is good to check out Chobots.com, but if you want to have full access to all the amazing features of our virtual world, you have to register!</guestText>
+  <rules1>Please do not ask or mention your personal information, such as real name, phone number, and home address. For example you can say “I live in New York”, but no other details such as your street address
+
+Any expression implying sexual or violent content is not permitted.</rules1>
+  <rule1>Please do not ask or mention your personal information, such as real name, phone number, and home address. For example you can say “I live in New York”, but no other details such as your street address. 
+
+Any expression implying sexual or violent content is not permitted. Keep your actions family-friendly and appropriate.</rule1>
+  <emailDescription>Please fill in your email address so that we are able to contact you</emailDescription>
+  <reviewAgreement>Please review the {0}</reviewAgreement>
+  <pleaseSelectChatMode>Please select chat mode</pleaseSelectChatMode>
+  <passwordRestored>Please, check your email for your password</passwordRestored>
+  <restorePasswordDescription>No problem!
+If you don't know what your password is, please enter the e-mail address which the account is registered on in the field below.
+
+Once you press send, you will receive a mail shortly with a list of accounts and passwords registered to the e-mail.</restorePasswordDescription>
+  <regDisabled>Registration is disabled on Chobots</regDisabled>
+  <rememberLogin>Remember me</rememberLogin>
+  <rememberPassw>Remember my password</rememberPassw>
+  <resendActivation>Resend activation email</resendActivation>
+  <forgotPassw> Restore it</forgotPassw>
+  <restorePassword>Restore password</restorePassword>
+  <safeChat>Safe chat</safeChat>
+  <safeChatDescription>Safe chat limits your kid’s  ability  to share  private information</safeChatDescription>
+  <sendActivation>Send an activation</sendActivation>
+  <sendPassword>Send password</sendPassword>
+  <rules3>Teasing other users with conversation or actions is not permitted</rules3>
+  <rule3>Teasing other users with conversation or actions is not permitted. Chobots is a fun and friendly environment for everyone, and bullying will result in disciplinary actions. 
+
+Bear in mind that you are a little Chobot. Any expressions or behavior not appropriate for children is not permitted.</rule3>
+  <termsAndConditions>Terms and Conditions</termsAndConditions>
+  <badEmail>The email address is not entered correctly. Please try again!</badEmail>
+  <familyIsFull>The family registered on your e-mail has 7 registered accounts already</familyIsFull>
+  <pleaseEnterPassw>The password is too short, it must be at least 6 characters. Use from 6 to 20 characters</pleaseEnterPassw>
+  <badConfirmPassw>The two passwords do not match. Please try again</badConfirmPassw>
+  <outdatedSwf>The version of Chobots in your computer is outdated. You need to clear out your browser cache.</outdatedSwf>
+  <restoreWrongEmail>There are no registered accounts on the mentioned email address</restoreWrongEmail>
+  <emailExists>This email already exists</emailExists>
+  <emailNotFount>This email isn't found</emailNotFount>
+  <leaveThisEmpty>This field can be empty</leaveThisEmpty>
+  <loginExists>You can't choose this username - it has already been taken.</loginExists>
+  <unknown>Unknown error. You might need to clear out your browser cache.</unknown>
+  <loginOrPasswordInvalidChars>Use only english letters and numbers in the login</loginOrPasswordInvalidChars>
+  <pleaseEnterEmail>A valid email address is necessary. Please enter your email!</pleaseEnterEmail>
+  <savePassword>Warning! Your password will be saved. Anyone who uses this computer will have access to your Chobot!</savePassword>
+  <welcome>Welcome,</welcome>
+<boyOrGirl>Are you a boy or a girl?</boyOrGirl>
+  <whyActivate>Why do I need to activate my account?</whyActivate>
+  <badLogin>User not found</badLogin>
+  <badPassw>You have entered an incorrect password</badPassw>
+  <localConnectionExists>You are already playing Chobots. Check other browser tabs.</localConnectionExists>
+  <parentRegistration>You are successfully registered. Check your email for the activation link</parentRegistration>
+  <youMustAgree>You have to agree to "Terms and Conditions" and rules first!</youMustAgree>
+  <parentAhtung>You have to be of age. Proceed?</parentAhtung>
+  <youShouldHaveAccount>You should have a registered account</youShouldHaveAccount>
+  <mustContain>You should use from 6 to 20 characters</mustContain>
+  <ipBanned>Sorry, your IP address has been banned from playing Chobots.</ipBanned>
+  <loginBanned>Your account has been banned by a Chobots moderator.</loginBanned>
+  <notAllowed>Sorry, you cannot register with this email address.</notAllowed>
+  <loginTempBanned>Your account has been temporarily banned. Contact support to find out when you will be unbanned.</loginTempBanned>
+  <loginDisabled>Your account has been disabled.</loginDisabled>
+  <loginNotActive>Your account is not yet activated</loginNotActive>
+  <passwordSameAsLogin>Your password can not be the same as your login. It's not safe. 
+Please choose another password</passwordSameAsLogin>
+</messages>

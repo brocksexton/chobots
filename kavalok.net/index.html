@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chobots - Play Now</title>
+	<meta name="keywords" content="play, game, virtual world, chobots, chobots.ca, play now" />
+	<meta name="author" content="Chobots">
+	<meta charset="utf-8">
+	
+	<link href="assets/stylesheets/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/images/councilor.png" rel="icon" type="image/png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+     	<div class="topContainer">
+		<div class="navBg">
+			<div class="nav">
+				<ul>
+					<li><a href="https://play.chobots.wiki/home.html">Home</a></li>
+                    <li><a href="/management" target="_blank">Management</a></li>
+					<li><a href="/market" target="_blank">Market</a></li>
+					<li><a href="http://kavalok.net/blog">Blog</a></li>
+					<li><a href="https://discord.kavalok.net">Discord</a></li>
+                    <li><a href="/staff.html">Staff</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+                  <div class="stone">
+          <img src="assets/images/asteroidsmall.png" width="80" height="76">
+</div>
+<div class="gameContainerBig">
+	<object data="https://kavalok.net/game/client.swf" type="application/x-shockwave-flash" width="100%" height="100%">
+	  <param name="movie" value="https://kavalok.net/game/client.swf">
+	  <embed src="https://kavalok.net/game/client.swf" type="application/x-shockwave-flash" width="100%" height="100%" style="border: 2px solid #fff; border-radius: 5px;">
+	  </embed>
+	</object>
+  </div>
+  
+<script>
+	const toggleSizeButton = document.getElementById("toggleSize");
+const gameContainer = document.querySelector(".gameContainer");
+
+toggleSizeButton.addEventListener("click", () => {
+  gameContainer.classList.toggle("gameContainerBig");
+});
+
+</script>
+ 
+	<div class="footerContainer">
+		<div class="footer">
+           <!--<a href="http://blog.chobots.ca/p/contact.html"><img src="assets/images/support.png" width="117" height="49" align="left"></a> 
+           <a href="http://blog.chobots.ca/p/about.html"><img src="assets/images/about.png" width="117" height="49" align="right"></a>--> 
+				Copyright &copy; 2023 - Kavalok.net&trade; <br>
+			Copyright &copy; 2007-2011 - Chobots&trade; by Vayersoft LLC<br>
+			All rights reserved - <a href="https://play.chobots.wiki/terms_and_conditions.html">Terms and Conditions</a> - <a href="https://play.chobots.wiki/privacy_policy.html">Privacy Policy</a> 
+		</div>
+	</div>
+	
+	<script>
+		if (!(navigator.plugins && navigator.plugins['Shockwave Flash'])) {
+		  window.location.replace("https://kavalok.net/download.html");
+		}
+	  </script>	  
+
+</body>
+</html>

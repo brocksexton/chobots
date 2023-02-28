@@ -1,0 +1,12 @@
+<messages>
+  <caption>The Missing Presents</caption>
+  <npcName>Elf</npcName>
+  <firstItem></firstItem>
+<questTask>Greetings!
+
+I was out and about, helping Santa deliver the presents for the holidays, but I lost some on the way over here from the workshop. Please can you help me find the 10 presents that fell out of my sack? If you find them all I'll give you something special to remember this Christmas!</questTask>
+  <noItem>Uhh… where's the presents you're supposed to give me? Hurry up!</noItem>
+  <nextItem>Thanks for finding one of the presents! Can you please still try to find the others?</nextItem>
+  <questComplete>Whoa, I can't believe you found them all. You're a true hero! You saved all of the Chobots from having a bad Christmas!! Here, take this reward Santa made especially for Chobots who are spectacular, and have a Merry Christmas!</questComplete>
+  <idleMessage>Merry Christmas!</idleMessage>
+</messages>

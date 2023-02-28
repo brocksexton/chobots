@@ -1,0 +1,16 @@
+<messages>
+  <caption>Sharonda the Soul Swallower</caption>
+  <npcName>Sharonda</npcName>
+  <firstItem></firstItem>
+  <questTask>Ugh, a chobot. What do you want?! Get OUT of here before I swallow your soul...
+
+Sorry, that's a bit mean. I'm just angry because a couple of my bats flew away and I can't find them anywhere... Hey, I'll give a basket I stole from a Chobot if you bring me my bats. Bring one at a time.</questTask>
+  <noItem>I told you to find my bats!!! Where are they? Go, before I get angry. And trust me, you don't wanna see me when I'm angry.</noItem>
+  <nextItem>BATTY! I missed you so much. I promise I'll feed you next time...
+
+You, Chobot, find me my other {0} bats. Quickly, before the sun rises.</nextItem>
+  <questComplete>You are a lifesaver! I guess you want your prize now...? Eh, brb, toilet.
+
+*While Sharonda the Soul Swallower is away, you steal a backpack and some of her candy and run away*</questComplete>
+  <idleMessage>Hmm, thanks for your help. I can't find my candy though. Now I'll never be able to feed my bats! *cries*</idleMessage>
+</messages>

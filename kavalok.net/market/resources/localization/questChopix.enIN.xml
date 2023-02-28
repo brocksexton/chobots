@@ -1,0 +1,10 @@
+<messages>
+  <caption>Chopix</caption>
+  <npcName>Chopix</npcName>
+  <initial>Hello! I am Chopix and I have an important mission for you. Take these special goggles. You'll need them to accomplish this mission.</initial>
+  <hasTask>You’ve already got the quest, go and find those spies</hasTask>
+  <hasItem>I hear that Nichos have scattered 5 spy robots over the city. The spies are invisible for Chobots. But if you wear the special goggles, you received, you'll be able to see them. You must find and bring them to me one by one. You'll receive a reward: 50 bugs for each and 1000 bugs when you've found all of the robots. Good luck. See you!</hasItem>
+  <hasTarget>Thank you for helping me. But some spies are still out there. Let's find all of them?</hasTarget>
+  <hasLastTarget>Good job! You've found all the spy robots. You've really helped me out! Our city is safe again.</hasLastTarget>
+  <questComplete>Thank you for your help. I hope you like your reward. Have fun!</questComplete>
+</messages>

@@ -1,0 +1,13 @@
+<messages>
+  <caption>Where are the candy canes??</caption>
+  <npcName>Frosty</npcName>
+  <firstItem></firstItem>
+<questTask>Hey Chobot!
+
+Glad you're here. I went to get some candy canes for my kids for the holidays and I lost a few of them on the way home! Can you please help me find the 5 candy canes that I lost? I'll give you a nice reward for your help!
+</questTask>
+  <noItem>Um okay… you need to give me the candy canes if you want a reward. Go look for them quickly!</noItem>
+  <nextItem>Hmm thanks for finding one of these candy canes. There's still more missing, but I'm sure you can find them!</nextItem>
+  <questComplete>Thank you very much!! My children will be so happy that you found our missing candy canes. Enjoy this small token of my appreciation.</questComplete>
+  <idleMessage>Dude, I already gave you your reward. Don't be greedy now ;)</idleMessage>
+</messages>

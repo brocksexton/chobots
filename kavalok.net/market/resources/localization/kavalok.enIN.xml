@@ -1,0 +1,398 @@
+<messages>
+  <passwordWarning>"{0}" is your password. Giving your password out is not allowed! If you are scammed report that user. If your password is the commonly used word, please, change it</passwordWarning>
+  <newsDialogNoteText>* New Pop Up Window will open. If it doesn't, just copy-paste the link in your browser</newsDialogNoteText>
+  <kickOutBanned>A moderator has banned your account. Chobot {0} won't be available anymore</kickOutBanned>
+  <academy>Academy</academy>
+  <locAcademy>Academy Street</locAcademy>
+  <accept>Accept</accept>
+  <tradeAccept>Accept</tradeAccept>
+  <acceptRequests>Accept all incoming messages.</acceptRequests>
+  <tradeAccepted>Accepted</tradeAccepted>
+  <addFriend>Add a friend</addFriend>
+  <buyStuff>After this purchase you’ll have {0} bugs. Continue purchase?</buyStuff>
+  <charAge>Age {0}</charAge>
+  <statusAgent>Agent</statusAgent>
+  <membershipFinishedText>All of your citizen belongings will stay with you! However, you will not be able to use them until you become a citizen again. Please ask your parents to renew your citizenship status</membershipFinishedText>
+  <angry>Angry</angry>
+  <removeFriendsConf>Are you sure you want to remove the selected friends?</removeFriendsConf>
+  <recycleWarning>Are you sure you want to remove this item and get {0} bugs?</recycleWarning>
+  <removeFriendConf>Are you sure you want to remove {0} from friends?</removeFriendConf>
+  <gameAsteroid>Asteroid</gameAsteroid>
+  <idleTimeout>Auto Disconnect, your chobot has been idle over 30 minutes</idleTimeout>
+  <back>Back</back>
+  <bag>Backpack</bag>
+  <locBeach/>
+  <blushing>Blushing</blushing>
+  <bugs>Bugs</bugs>
+  <buyNow>Buy Now!</buyNow>
+  <buyPaidStuffCaption>Buy the Premium Suit!</buyPaidStuffCaption>
+  <buyAccountCaption>Buy the ‘Citizen’ status</buyAccountCaption>
+  <locCafe>Cafe</locCafe>
+  <loc3>Cafe Street</loc3>
+  <neverShowThis>Can figure it out myself</neverShowThis>
+  <cancel>Cancel</cancel>
+  <changePassword>Change your password</changePassword>
+  <charWindow>Char Window</charWindow>
+  <chatHistory>Chat history</chatHistory>
+  <membershipFinishingText>Check Citizenship expiration simply by clicking on the status button. All of your citizen stuff will stay with you! However, you will not be able to use them until you become a citizen again. Please ask your parents to prolong your citizenship status</membershipFinishingText>
+  <checkAll>Check/ Uncheck all</checkAll>
+  <hilarious>Cheerful</hilarious>
+  <locChlos/>
+  <gameChoboard>Choboard</gameChoboard>
+  <gameChodoard>Choboard</gameChodoard>
+  <chobot>Chobot</chobot>
+  <gameChobotsRacer>Chobots Racer</gameChobotsRacer>
+  <chobotsTeam>Chobots Team</chobotsTeam>
+  <gameSafeModeOff>Chobots world goes into a full mode. You can use full chat and graffity.</gameSafeModeOff>
+  <gameSafeModeOn>Chobots world goes into a safe mode. Text chat and graffity will not be available for couple of hours. You can play games and have fun with friends.</gameSafeModeOn>
+  <safeModeTextChat>Chobots world is in a safe mode at the moment. You are not able to use the text chat and the graffiti.</safeModeTextChat>
+  <locationCinema>Chollywood</locationCinema>
+  <buyPaidStuffSMSChooseProviderText>Choose your mobile operator and press 'Next' button</buyPaidStuffSMSChooseProviderText>
+  <c_CHOOSE>Choose...</c_CHOOSE>
+  <tradeTraiding>Choosing...</tradeTraiding>
+  <gameChopixAdventure>Chopix Adventure</gameChopixAdventure>
+  <locCinema>Cinema</locCinema>
+  <statusCitizen>Citizen</statusCitizen>
+  <statusUpText>Citizens of Chobots world will have permission to:
+  -   buy special clothing
+  -   upgrade a house
+  -   buy pets
+  -   play full versions of academy games
+ And this is not all, folks! Become a citizen soon!</statusUpText>
+  <citizenshipMessageCaption>Citizenship</citizenshipMessageCaption>
+  <locAcademyRoom>Classroom</locAcademyRoom>
+  <clickHereToStartTheGame>Click here to start the game</clickHereToStartTheGame>
+  <tradeClickToTrade>Click on an item to add it to the trade list</tradeClickToTrade>
+  <tradeClickToRemove>Click on an item to remove it from the trade list</tradeClickToRemove>
+  <close>Close</close>
+  <gameMoney>Coin Rain</gameMoney>
+  <charBody>Color shower</charBody>
+  <citizenFutureShop>Coming soon items!</citizenFutureShop>
+  <submit>Compose</submit>
+  <confirmPassword>Confirm password</confirmPassword>
+  <embrassed>Confused</embrassed>
+  <paidStuffBought>Congrats with an awesome item bought! Now you are one of the coolest chobots.</paidStuffBought>
+  <itemOfTheMonthMessage>Congratulations for becoming citizen. Here is your item of the month!</itemOfTheMonthMessage>
+  <membershipPresentDays>Congratulations! You have got {5} days of ‘Citizen’ status for: {6}. Your status will expire on: {0}-{1}-{2} {3}:{4}</membershipPresentDays>
+  <membershipPresentMonths>Congratulations! You have got {5} months of ‘Citizen’ status for: {6}. Your status will expire on: {0}-{1}-{2} {3}:{4}</membershipPresentMonths>
+  <connecting>Connecting...</connecting>
+  <connectionErrorRedirect>Connection error. 
+You will be redirected to Chobots homepage in a few seconds</connectionErrorRedirect>
+  <continue>Continue</continue>
+  <buyAccountCountry>Country</buyAccountCountry>
+  <missionFarm>Cow mission</missionFarm>
+  <gameCrab>Crab Game</gameCrab>
+  <laughing>Cracking up</laughing>
+  <dance>Dance!</dance>
+  <danceButton>Dance!</danceButton>
+  <deleteLast>Delete last icon</deleteLast>
+  <citizenConfirmation>Do you want to become a citizen?</citizenConfirmation>
+  <kickUserConfirmation>Do you want to kick out this user?</kickUserConfirmation>
+  <ignoreRemoved>Done</ignoreRemoved>
+  <ignoreAdded>Done</ignoreAdded>
+  <drawingDisabledByMod>Drawing was disabled by Chobots moderators</drawingDisabledByMod>
+  <locEcoShop>Eco Shop</locEcoShop>
+  <editDance>Edit your dance</editDance>
+  <emoIcons>Emote!</emoIcons>
+  <insertName>Enter your name</insertName>
+  <exchangeShop>Exchange</exchangeShop>
+  <exit>Exit</exit>
+  <quit>Exit</quit>
+  <extendAccountCaption>Extend 'Citizen' status</extendAccountCaption>
+  <family>Family</family>
+  <pleaseEnterLogin>Fill in your name if you want to play</pleaseEnterLogin>
+  <btnMessageFilter>Filter</btnMessageFilter>
+  <newsDialogTopText>Find the latest Chobots News and Updates at our Official Blog!</newsDialogTopText>
+  <finish>Finish</finish>
+  <flirtatious>Flirtatious</flirtatious>
+  <petFoodCatalog>Food Catalog</petFoodCatalog>
+  <friends>Friends</friends>
+  <friendsOthers>Friends in all cities</friendsOthers>
+  <friendsOffline>All friends</friendsOffline>
+  <friendsOnline>Friends in your city</friendsOnline>
+  <fullChat>Full chat</fullChat>
+  <citizenFurnitureShop>Furniture here!</citizenFurnitureShop>
+  <loc12/>
+  <loc13/>
+  <gameMenu>Game Menu</gameMenu>
+  <locGames>Gamezone</locGames>
+  <giftButton>Gift</giftButton>
+  <quality>Graphics quality</quality>
+  <happy>Happy</happy>
+  <help>Help</help>
+  <locAgents>Hidden agents location</locAgents>
+  <qualityHigh>High quality</qualityHigh>
+  <locHome>Home</locHome>
+  <home>Home</home>
+  <citizenHousesShop>Houses here!</citizenHousesShop>
+  <ignore>Ignore</ignore>
+  <ignoreUser>Ignore user</ignoreUser>
+  <inLove>In love</inLove>
+  <invitation>Invitation</invitation>
+  <invite>Invite</invite>
+  <inviteFriendTitle>Invite a friend</inviteFriendTitle>
+  <inviteFriend>Invite a friend</inviteFriend>
+  <inviteToPlace>Invite here</inviteToPlace>
+  <inviteFriendText1>Invite your friend and get bonus bugs – 7% from all bugs that your friend has earned! The more friends you invite, the more extra bugs you will gain!</inviteFriendText1>
+  <statusJunior>Junior</statusJunior>
+  <kickUser>Kick out</kickUser>
+  <laboratory>Laboratory</laboratory>
+  <lang>Language</lang>
+  <onlineDate>Last visit:</onlineDate>
+  <newsDialogTitle>Chobots news!</newsDialogTitle>
+  <loading>Loading</loading>
+  <locEco>Location Eco</locEco>
+  <qualityLow>Low quality</qualityLow>
+  <locMagicShop>Magic Shop</locMagicShop>
+  <magicReady>Magic is ready to use</magicReady>
+  <citizenMagicShop>Magic shop for citizens</citizenMagicShop>
+  <locHomeShop>MakeYourOwnHouse Shop</locHomeShop>
+  <map>Map</map>
+  <maskCatalog>Masks catalog for citizens</maskCatalog>
+  <me>Me!</me>
+  <qualityMedium>Medium quality</qualityMedium>
+  <menu>Menu</menu>
+  <message>Message</message>
+  <guestStartup>Message from administration# Dear guest,
+
+Thanks for visiting Chobots world! Guests can play with other chobots, but if you want to use full chat, receive presents and add friends, you should register. 
+
+Yours faithfully, the Chobots Team</guestStartup>
+  <sent>Message has been successfully sent</sent>
+  <messages>Messages</messages>
+  <locMissions>Mission Agency</locMissions>
+  <loc2>Mission Street</loc2>
+  <buyAccountProvider>Mobile Operator</buyAccountProvider>
+  <statusModerator>Moderator</statusModerator>
+  <money>Money</money>
+  <financeReportText>Money you earned: {0} Bugs
+Money you spent: {1} BugsMoney your invitees earned: {2} BugsYour bonus: {3} Bugs</financeReportText>
+  <musicVolume>Music volume</musicVolume>
+  <robotsShop>Need a Robot?</robotsShop>
+  <paidStuffBuyPaypalNextButtonText>New PayPal Window should open where you can pay with your credit card or PayPal account. If the window is not opened, make sure that your browser doesn't block pop-ups or go back and repeat the procedure</paidStuffBuyPaypalNextButtonText>
+  <newPassword>New password</newPassword>
+  <news>News</news>
+  <next>Next</next>
+  <locNichos8/>
+  <locNichos6/>
+  <locNichos3/>
+  <locNichos4/>
+  <locNichos7/>
+  <locNichos/>
+  <locNichos2/>
+  <locNichos1/>
+  <locNichos5/>
+  <missionNichos>Nichos kingdom mission</missionNichos>
+  <no>No</no>
+  <nothingToTrade>Nothing to trade</nothingToTrade>
+  <tryMembershipMessage>Now you can check benefits of ‘Citizen’ status. This status will be active within {5} days. 
+It will expire on: {0}-{1}-{2} {3}:{4}</tryMembershipMessage>
+  <monthMembershipBought12>Now you have the status ‘Citizen’, that will be active within 12 months. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipBought12>
+  <monthMembershipBought3>Now you have the status ‘Citizen’, that will be active within 3 months. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipBought3>
+  <monthMembershipBought6>Now you have the status ‘Citizen’, that will be active within 6 months. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipBought6>
+  <monthMembershipBought>Now you have the status ‘Citizen’, that will be active within a month. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipBought>
+  <monthMembershipBought1>Now you have the status ‘Citizen’, that will be active within a month. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipBought1>
+  <offline>Offline</offline>
+  <ok>Ok</ok>
+  <loc10/>
+  <loc9/>
+  <loc11/>
+  <online>Online</online>
+  <onlineServer>Online in another city</onlineServer>
+  <onlineNow>Online now!</onlineNow>
+  <connectionError>Oops, check internet connection!</connectionError>
+  <error>Oops, try refreshing the page</error>
+  <locPark>Park</locPark>
+  <locParty/>
+  <locStaff/>
+  <publicspaceshop/>Space Equipment!</publicspaceshop>
+  <passwordChanged>Password successfully changed</passwordChanged>
+  <magicPlayButton>Perform</magicPlayButton>
+  <magicAction>Perform Magic</magicAction>
+  <pets>Pets Constructor</pets>
+  <locPetsShop>Pets Shop</locPetsShop>
+  <safeChat>Pictured chat</safeChat>
+  <gamePinball>Pinball</gamePinball>
+  <play>Play</play>
+  <kavalok_play>Play</kavalok_play>
+  <petPlayCatalog>Play Catalog</petPlayCatalog>
+  <replay>Play again</replay>
+  <musicAction>Play music!</musicAction>
+  <buyPaidStuffSMSNoProviderText>Please ask your parent to buy a premium suit for you
+  Dear parent, to get the suit press 'Next' button</buyPaidStuffSMSNoProviderText>
+  <buyPaidStuffText>Please ask your parent to buy a premium suit for you! 
+  Dear parent, to buy the suit, choose your country and follow further instructions</buyPaidStuffText>
+  <paidStuffBuySendText>Please ask your parents to buy a premium suit for you! 
+  Dear parents, to buy the suit, you should send the SMS with the following text 
+  '{1}' (without inverted commas) to the number {0}. The cost of  SMS is {2}{3}.s</paidStuffBuySendText>
+  <pleaseEnterYourMessage>Please, enter your message</pleaseEnterYourMessage>
+  <prezent>Present</prezent>
+  <priceBugs/>
+  <changeColorPrice>Price: {0} bugs</changeColorPrice>
+  <privateChat>Private Chat</privateChat>
+  <giftStuffPut>Put in pack</giftStuffPut>
+  <giftClothesUse>Put on</giftClothesUse>
+  <register>Register</register>
+  <removeFriend>Remove Friend</removeFriend>
+  <reply>Reply</reply>
+  <reportAnnoy>Report annoying</reportAnnoy>
+  <reportGetInfo>Report getting personal info</reportGetInfo>
+  <reportReceived>Report has been successfully sent</reportReceived>
+  <reportScamming>Report scam</reportScamming>
+  <reportSpam>Report spam</reportSpam>
+  <reportUser>Report user</reportUser>
+  <reportChat>Report using bad words</reportChat>
+  <reportPutInfo>Report writing personal info</reportPutInfo>
+  <addFriendSent>Request sent</addFriendSent>
+  <petRestCatalog>Rest Catalog</petRestCatalog>
+  <gameRobots>Robofactory</gameRobots>
+  <robot>Robot</robot>
+  <robotConfig>Robot Configurator</robotConfig>
+  <robotStuffsShop>Robot Weapons</robotStuffsShop>
+  <locRobots>Robots Arena</locRobots>
+  <teamList/>
+  <locMusic>Rockemall street</locMusic>
+  <locationRope>Rope Street</locationRope>
+  <c_RU>Russia</c_RU>
+  <sad>Sad</sad>
+  <frightened>Scared</frightened>
+  <locCitizen>Secret location. For citizens only!</locCitizen>
+  <send>Send</send>
+  <sendMessage>Send a Message</sendMessage>
+  <adminMsg>Send a message to administration</adminMsg>
+  <teleportSend>Send an invitation?</teleportSend>
+  <chooseRecipient>Send to</chooseRecipient>
+  <shock>Shocked</shock>
+  <locAccShop>Shop</locAccShop>
+  <loc0>Shop Square</loc0>
+  <showTipsAtStartup>Show Academy tips at startup</showTipsAtStartup>
+  <showCharNames>Show chobots names</showCharNames>
+  <showIntro>Show the intro</showIntro>
+  <inviteFriendText2>Simply ask your friend to put your chobot’s name on registration page!</inviteFriendText2>
+  <loc6/>
+  <loc7/>
+  <locationFull/>
+  <locationForCitizensOnly>Sorry, this location is for citizens only. Become a member to be able to enter.</locationForCitizensOnly>
+  <soundVolume>Sound volume</soundVolume>
+  <loc5>Space Port Square</loc5>
+  <loc1>Space Quay</loc1>
+  <robotItemsShop>Special Items</robotItemsShop>
+  <standOnTheTeleport>Stand with your friends on the teleport 
+then press this button to start the game</standOnTheTeleport>
+  <start>Start!</start>
+  <statusUpCaption>Status Upgrade Coming Soon!</statusUpCaption>
+  <status>Status upgrade!</status>
+  <StuffCatalog>Stuff Catalog</StuffCatalog>
+  <stuffCatalog>Stuff Catalog</stuffCatalog>
+  <paidStuffCatalog>Suits catalog for citizens</paidStuffCatalog>
+  <surprised>Surprised</surprised>
+  <robotTeam/>
+  <robotTeamStat/>
+  <telescop>Telescope</telescop>
+  <chatDisabled>Text chat is disabled</chatDisabled>
+  <robotStat>The Best Warriors</robotStat>
+  <locForest/>
+  <paidStuffBuyPaypalText>The PayPal payment system web site will open. After payment is finished, your suit will appear in your wardrobe</paidStuffBuyPaypalText>
+  <locGraphity>The Underground</locGraphity>
+  <locGraphityA>The Underground</locGraphityA>
+  <friendListFull>The friend list is full</friendListFull>
+  <buyPaidStuffSMSText>The suit was bought</buyPaidStuffSMSText>
+  <actionForCitizens>This action is available only for citizens</actionForCitizens>
+  <itemForCitizens>This action is available only for citizens</itemForCitizens>
+  <loginExists>This login isn't available</loginExists>
+  <gameHunting>Throw game</gameHunting>
+  <loc8/>
+  <all>To all</all>
+  <monthMembershipBuyText>To buy the status ‘Citizen’, you should send the SMS with the following text 
+  '{1}' (without inverted commas) to the number {0}. The cost of  SMS is {2}{3}</monthMembershipBuyText>
+  <buyAccountText>To buy the ‘Citizen’ status, choose your country (and mobile operator  if  necessary) than press Next button</buyAccountText>
+  <monthMembershipExtendText>To extend your status Citizen for 1 month, you should send the SMS with the following text 
+  '{1}' (without inverted commas) to the number {0}. The cost of SMS is {2}{3}</monthMembershipExtendText>
+  <registerPlease>To play more games and chat with friends register at {0}</registerPlease>
+  <giftClothesPut>To wardrobe</giftClothesPut>
+  <trade>Trade</trade>
+  <tradeSuccessfull>Trade completed successfully</tradeSuccessfull>
+  <tradeWith>Trade with</tradeWith>
+  <c_US>USA/Worldwide</c_US>
+  <c_UA>Ukraine</c_UA>
+  <unignore>Unignore</unignore>
+  <unIgnoreUser>Unignore user</unIgnoreUser>
+  <use>Use</use>
+  <giftStuffUse>Use this</giftStuffUse>
+  <tradeWaiting>Waiting for acceptance...</tradeWaiting>
+  <waitingForOtherPlayers>Waiting for the rest of the players</waitingForOtherPlayers>
+  <homeClothes>Wardrobe</homeClothes>
+  <rulesTitle>Warning from Chobots Support</rulesTitle>
+  <notActivatedStartup>Welcome to Chobots world!# Now, you can play games, dress up and decorate your house. Amazing items are waiting for you in your wardrobe! But, if you want to use full chat, you should activate your account, and choose the proper option. The mail with information how to activate your account has been sent to you. If you haven’t received the mail – try to check your spam-box or to resend the mail. Yours faithfully, the Chobots Team</notActivatedStartup>
+  <teleportText>Welcome to {0}</teleportText>
+  <flyShop/>
+  <magicPayedShop>Wizard items</magicPayedShop>
+  <englishAcademy>Wordfall</englishAcademy>
+  <updateFlashPlayer>Would you like Chobots to run it faster?Just install the latest flash player by going to {0}</updateFlashPlayer>
+  <ignoreUserConfirm>Would you like to add this user to your ignore list?</ignoreUserConfirm>
+  <unIgnoreUserConfirm>Would you like to remove this user from your ignore list?</unIgnoreUserConfirm>
+  <badEmail>Wrong email address</badEmail>
+  <badLogin>Wrong login</badLogin>
+  <badPassw>Wrong password</badPassw>
+  <stuffItemPresent>Yay! You have got an item from Chobots Team for: {0}.</stuffItemPresent>
+  <bugsBought>Yay! You have grown rich. You get {0} bugs.</bugsBought>
+  <yes>Yes</yes>
+  <lostGame/>
+  <ignoreText>You are added to {0} ignore list</ignoreText>
+  <cannotDeletePaidItem/>
+  <rules>You are obliged to comply with Chobots Behavior Code!!!
+&lt;b&gt;DO NOT:&lt;/b&gt;
+&lt;li&gt;share or ask for private information
+use any expressions with sexual or violent content
+date online on Chobots
+scam or tease other users with conversation or actions
+share links unless it is for a Chobots blog
+spam other users&lt;/li&gt;  If you break these rules you will be banned or your chat will be disabled</rules>
+  <unignoreText>You are removed from {0} ignore list</unignoreText>
+  <badWordWithIntervalHours>You are using bad words! You can't use the full chat for {1} hours. "{0}" is a bad word!</badWordWithIntervalHours>
+  <badWordWithInterval>You are using bad words! You can't use the full chat for {1} minutes. "{0}" is a bad word!</badWordWithInterval>
+  <badWord>You are using bad words! You can't use the full chat from now on.</badWord>
+  <skipWord>You are using not allowed words! {0} is not allowed word!</skipWord>
+  <youCanCloseThisIn>You can close this window in {0} seconds</youCanCloseThisIn>
+  <tradeCannotChangeItems>You cannot add or remove items after the trade was accepted</tradeCannotChangeItems>
+  <tradeCannotChangeNotConnected>You cannot add or remove items without your trade partner</tradeCannotChangeNotConnected>
+  <tradeCannotOpen2Windows>You cannot open more than one trade window at once</tradeCannotOpen2Windows>
+  <noMoney>You don’t have enough money to buy this</noMoney>
+  <monthMembershipSMSText>You have bought the status for 1 month</monthMembershipSMSText>
+  <magicNotReady>You will be able to perform a magic in {0} minutes</magicNotReady>
+  <tradeItemsChanged>You've got the new items  - trade session will be closed</tradeItemsChanged>
+  <bagIsFull>Your backpack is full! Sorry, but you can’t buy this.</bagIsFull>
+  <adminBanDate>Your chat is currently disabled by chobots moderator. Please, contact support for more information</adminBanDate>
+  <chatDisabledByAdminHours>Your chat was disabled by Chobots moderator. You can't use the full chat for {0} hours. Please, contact support for more information.</chatDisabledByAdminHours>
+  <chatDisabledByAdmin>Your chat was disabled by Chobots moderator. You can't use the full chat for {0} minutes. Please, contact support for more information.</chatDisabledByAdmin>
+  <membershipFinishedCaption>Your citizen status has expired</membershipFinishedCaption>
+  <membershipFinishingCaption>Your citizenship is about to expire</membershipFinishingCaption>
+  <stuffsAtHome>Your clothes have been sent to your wardrobe</stuffsAtHome>
+  <currentPassword>Your current password</currentPassword>
+  <invalidCurrentPassword>Your current password is wrong</invalidCurrentPassword>
+  <financeReport>Your finance report</financeReport>
+  <friendsListFull>Your friend list is full</friendsListFull>
+  <yourNameHere>Your name</yourNameHere>
+  <monthMembershipExtendedSMSText>Your status 'Citizen' was extended for 1 month</monthMembershipExtendedSMSText>
+  <monthMembershipExtended1>Your status 'Citizen' was extended for 1 month. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipExtended1>
+  <monthMembershipExtended>Your status 'Citizen' was extended for 1 month. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipExtended>
+  <monthMembershipExtended12>Your status 'Citizen' was extended for 12 months. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipExtended12>
+  <monthMembershipExtended3>Your status 'Citizen' was extended for 3 months. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipExtended3>
+  <monthMembershipExtended6>Your status 'Citizen' was extended for 6 months. Your status will expire on: {0}-{1}-{2} {3}:{4}</monthMembershipExtended6>
+  <extendAccountText>Your status will expire on: {0}-{1}-{2} {3}:{4}. To extend your 'Citizen' status for 1 month, choose your country (and mobile operator if necessary) than press Next button</extendAccountText>
+  <stuffExists>You’ve already got this. Want to buy the same?</stuffExists>
+  <kickOut>You’ve been kicked out. Try refreshing the page</kickOut>
+  <giftMessage>You’ve got a gift!</giftMessage>
+  <friendAdded>You’ve got a new friend {0}</friendAdded>
+  <newsDialogBottomText>and don't forget to leave your comments! :)</newsDialogBottomText>
+  <daysAgo>days ago</daysAgo>
+  <tradeLeft>has left the trade session</tradeLeft>
+  <tradeOtherExit>has left the trade session</tradeOtherExit>
+  <today>today</today>
+  <yesterday>yesterday</yesterday>
+  <comboLoginItemMessage>you have logged in chobots {0} days in a row. Here is your gift!</comboLoginItemMessage>
+  <friendCanceled>{0} don't want to be you friend</friendCanceled>
+  <teleportReceive>{0} invites you to {1}</teleportReceive>
+  <friendRemoved>{0} removed you from the friend list</friendRemoved>
+  <inviteText>{0} wants to be your friend</inviteText>
+</messages>

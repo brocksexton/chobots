@@ -1,0 +1,72 @@
+<messages>
+  <bonus3/>
+  <price1/>
+  <price12/>
+  <bonus1/>
+  <bonus12/>
+  <price3/>
+  <bonus6/>
+  <price6/>
+  <citizenOnlyText>- Exclusive clothing
+- House Upgrades
+- Pets Upgrades
+- Additional Furniture
+- Lots of cool features!</citizenOnlyText>
+  <comingSoonText>- Secret Locations 
+- Cities and many other things!</comingSoonText>
+  <paypalProductName1MonthProlong>1 Month Chobots Citizenship (Premium Membership)</paypalProductName1MonthProlong>
+  <paypalProductName1Month>1 Month Chobots Citizenship (Premium Membership)</paypalProductName1Month>
+  <period1>1 month</period1>
+  <paypalProductName12MonthsProlong>6 months Chobots Citizenship (Premium Membership)</paypalProductName12MonthsProlong>
+  <paypalProductName12Months>6 months Chobots Citizenship (Premium Membership)</paypalProductName12Months>
+  <period12>12 months</period12>
+  <paypalProductName3MonthsProlong>3 Months Chobots Citizenship (Premium Membership)</paypalProductName3MonthsProlong>
+  <paypalProductName3Months>3 Months Chobots Citizenship (Premium Membership)</paypalProductName3Months>
+  <period3>3 months</period3>
+  <paypalProductName6MonthsProlong>6 Months Chobots Citizenship (Premium Membership)</paypalProductName6MonthsProlong>
+  <paypalProductName6Months>6 Months Chobots Citizenship (Premium Membership)</paypalProductName6Months>
+  <period6>6 months</period6>
+  <paymentExplanationText>After you click а Buy Now button, you will be redirected 
+to payment system</paymentExplanationText>
+  <itemOfTheMonthControlText>Become a Citizen today!
+Get the exclusive item of the month!</itemOfTheMonthControlText>
+  <becomeCitizenTitle>Become a Citizen!</becomeCitizenTitle>
+  <bonusBugs>Bonus: {0} Bugs</bonusBugs>
+  <buyNow>Buy Now!</buyNow>
+  <buy>Buy Now!</buy>
+  <buyCoolItems>Buy cool items!</buyCoolItems>
+  <continue>Extend</continue>
+  <becomeACitizen>Chobots Citizenship</becomeACitizen>
+  <extendCitizenshipTitle>Chobots Citizenship</extendCitizenshipTitle>
+  <statusUpgradeTitle>Your Chobots Citizenship</statusUpgradeTitle>
+  <comingSoonTitle>Coming Soon:</comingSoonTitle>
+  <drawGraffiti>Draw graffiti!</drawGraffiti>
+  <citizenOnlyTitle>For citizens only:</citizenOnlyTitle>
+  <free>Free!!!</free>
+  <joinCommunity>Join the Chobots Premium Community today!</joinCommunity>
+  <joinSecretParties>Join secret parties!</joinSecretParties>
+  <offer6>Less than {0} {1} a day!</offer6>
+  <offer12>Less than {0} {1} per month!</offer12>
+  <offer1>Most Popular!</offer1>
+  <playMoreGames>Play more games!</playMoreGames>
+  <askParentsText>Please ask your parents to buy Chobots Citizenship with  a credit card or PayPal</askParentsText>
+  <priceText>Price: {1}{0}</priceText>
+  <statusCannotUpgradeText>Sorry, a citizenship for more than 2 years could not be bought</statusCannotUpgradeText>
+  <specialOffer>Special offer!</specialOffer>
+  <itemOfTheMonthText>This item is available only
+for Chobots who will buy
+the citizenship during this month!
+  
+You can always exchange it
+for 2000 Bugs by putting this item 
+to garbage can in your wardrobe!</itemOfTheMonthText>
+  <try>Try Now!</try>
+  <wannaBeSpecial>Wanna be special? Join today and get one of these exclusive items</wannaBeSpecial>
+  <tryTooltip>You are under 30 days or you have already tried this</tryTooltip>
+  <confirmExtendMembership>Your Citizenship will expire on: {0}-{1}-{2} {3}:{4}. Do you wish to extend it?</confirmExtendMembership>
+  <statusUpgradeText>Congratulations! You are an exclusive Chobots citizen.
+
+Your citizen passport will expire in {0} days.</statusUpgradeText>
+  <statusUpgradeHistory>Your citizenship status history:</statusUpgradeHistory>
+  <freePeriod>{0} days</freePeriod>
+</messages>

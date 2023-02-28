@@ -1,0 +1,486 @@
+body{
+    padding:0px;
+    margin:0px;
+    font: 15px arial,helvetica,clean,sans-serif;
+      color: #575757;
+      background-image: url(../images/space_bg_new.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+  }
+  
+  img{
+    border: 0px;
+  }
+  
+  div.wrapper {
+    margin: 0px auto;
+    width: 1135px;
+    padding:0px 30px;
+  overflow: hidden;
+  }
+  div#skyscraper-banner{
+      float:left; 
+      padding-right: 15px;
+      }
+  div#skyscraper-banner span{
+      color:#FFFFFF;
+      display:block;
+      font-family:tahoma;
+      font-size:19px;
+      margin-bottom:11px;
+      margin-top:5px;
+      text-align:center;
+      width:135px;
+      }
+  div.primary-banner{background-color:#9A31CE;clear:both;width: 100%; height: 43px;}
+  div.primary-banner div{width: 1135px; margin: auto;}
+  div.primary-banner div h1{color:#FFFFFF;display:inline-block;font-size:16px !important;margin-bottom:5px;margin-top:11px;text-align:right;vertical-align:top;width:150px;}
+  div.text {
+    float: left;
+    padding-left:20px;
+    padding-right:20px;
+    width: 537px;
+  /*  height: 620px;*/
+    background-color:#FFF;
+  }
+  
+  div.header {
+    float: left;
+    width: 320px;
+    height: 620px;
+    padding-right:20px;
+  }
+  
+  div.buttons {
+    float: right;
+      width: 185px;
+      margin-left: 25px;
+      margin-bottom:20px
+  }
+  
+  div.buttons a {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+  div.footer {
+      position: relative;
+      clear: both;
+      color: #dfdfdf;
+      padding: 35px 20px;
+      font-size: 12px;
+  }
+  
+  h1.title {
+      font-size: 20px;
+      color: #d2441b;
+  }
+  
+  div.logo {
+      text-align: center;
+      margin: 10px 0;
+  }
+  
+  div.menu ul {
+      list-style-type: none;
+      margin: 0;
+      margin-bottom: 40px;
+      padding-left: 40;
+      padding: 0;
+      overflow: hidden;
+  }
+  
+  div.menu li {
+      float: left;
+  }
+  
+  div.menu li a {
+      display: block;
+      text-decoration: none;
+      font-size: 17px;
+      color: #1684dc;
+  }
+  
+  
+  div.menu li a span {
+      display: block;
+  }
+  
+  div.menu li a span span {
+      padding: 16px;
+      cursor: pointer;
+  }
+  
+  div.menu li a:hover {
+      background: url("static/web/20110629121441im_/http_/www.chobots.com/images/menu/menu_hover_bg.gif") repeat-x bottom left #ddedfa;
+  }
+  
+  div.menu li.current a {
+      background: url("static/web/20110629121521im_/http_/www.chobots.com/images/menu/menu_bg.gif") repeat-x bottom left #91c5ee;
+      color: #fff;
+  }
+  
+  div.menu li.current a span {
+      background: url("static/web/20110629121504im_/http_/www.chobots.com/images/menu/corner_lb.gif") no-repeat bottom left;
+  }
+  
+  div.menu li.current a span span {
+      background: url("static/web/20110629121411im_/http_/www.chobots.com/images/menu/corner_rb.gif") no-repeat bottom right;
+  }
+  
+  div.menu li a:hover span {
+      background: url("static/web/20110629121455im_/http_/www.chobots.com/images/menu/corner_h_lb.gif") no-repeat bottom left;
+  }
+  
+  div.menu li a:hover span span {
+      background: url("static/web/20110629121512im_/http_/www.chobots.com/images/menu/corner_h_rb.gif") no-repeat bottom right;
+  }
+  
+  /* white */
+  div.onblue div.menu li a:hover {
+      background: url("static/web/20110629121508im_/http_/www.chobots.com/images/menu/blue_menu_hover_bg.gif") repeat-x bottom left #41aaec;
+  }
+  
+  div.onblue div.menu li.current a {
+      background: url("static/web/20110629121445im_/http_/www.chobots.com/images/menu/blue_menu_bg.gif") repeat-x bottom left #01a9f2 ;
+      color: #fff;
+  }
+  
+  div.onblue div.menu li.current a span, div.onblue div.menu li.current a:hover span {
+      background: url("static/web/20110629121415im_/http_/www.chobots.com/images/menu/blue_corner_lb.gif") no-repeat bottom left;
+  }
+  
+  div.onblue div.menu li.current a span span, div.onblue div.menu li.current a:hover span span {
+      background: url("static/web/20110629121420im_/http_/www.chobots.com/images/menu/blue_corner_rb.gif") no-repeat bottom right;
+  }
+  
+  div.onblue div.menu li a:hover span {
+      background: url("static/web/20110629121431im_/http_/www.chobots.com/images/menu/blue_corner_h_lb.gif") no-repeat bottom left;
+  }
+  
+  div.onblue div.menu li a:hover span span {
+      background: url("static/web/20110629121459im_/http_/www.chobots.com/images/menu/blue_corner_h_rb.gif") no-repeat bottom right;
+  }
+  
+  div.onblue div.menu ul {
+      margin-left: 20px;
+  }
+  
+  div.onblue div.menu li a {
+      color: #fff;
+  }
+  
+  /**/
+  div.menu li.play a, div.menu li.play a:hover {
+      margin-top: 10px;
+      width: 99px;
+      height: 33px;
+      background: url("static/web/20110629121355im_/http_/www.chobots.com/images/menu/play.gif") no-repeat bottom right;
+  }
+  
+  div.onblue div.menu li.play a {
+      background: url("static/web/20110629121407im_/http_/www.chobots.com/images/menu/blue_play.gif") no-repeat bottom right;
+  }
+  
+  div.text div.inner {
+      overflow: hidden;
+      padding: 0;
+      padding-right: 0px;
+  }
+  
+  div.text div.inner h1.title {
+      margin-top: 0;
+  }
+  
+  div.footer a {
+      margin-left: 10px;
+      font-size: 10px;
+      color: #666;
+  }
+  
+  div.footer .copyright {
+      margin-right: 35px;
+  }
+  
+  div.decor {
+      background-repeat: none;
+      font-size: 1px;
+      height: 11px;
+      float: left;
+  }
+  
+  div.decor.left-side {
+      background-image: url("static/web/20110629121538im_/http_/www.chobots.com/images/left_col_bottom.png");
+      width: 577px;
+  }
+  
+  div.content {
+      position: relative;
+      overflow: hidden !important;
+  }
+  
+  .general .text {width:869px; padding-left:35px; padding-right:35px}
+  .general .text .inner { overflow:visible; padding-right:60px}
+  .general .logo { float:right; margin:-83px 25px 20px 50px}
+  .general h1 { color:#00b3ed}
+  .general p { line-height:23px; font-size:16px}
+  .general .inner ul {list-style-image:url(static/web/20110629121533im_/http_/www.chobots.com/images/list-bg.gif); line-height:24px; padding-left:30px; font-size:16px}
+  .general .inner ul li { padding-left:7px; padding-bottom:10px}
+  
+  .inner p.small { font-family:Arial, Helvetica, sans-serif; font-size:11px; padding:0 17px 15px; line-height:18px}
+  .general h2 { color:#00b3ed; font-size:17px; margin-top:45px }
+  .contactForm { float:left; width:550px; padding-bottom:30px}
+  .contactForm p label { color:#575757; padding-left:5px; font-size:15px}
+  .contactForm p {margin:5px 0}
+  .contactForm .iText { width:187px; display:table; float:left; margin-top:12px}
+  .contactForm .iText label { font-size:15px; color:#5a5a5a; font-weight:bold}
+  .contactForm .iText input { border:0; height:26px; padding:7px 5px 0; width:148px; background: url("static/web/20110629121403im_/http_/www.chobots.com/images/contact_input_bg.gif") no-repeat; color:#575757; font-size:15px}
+  
+  .contactForm .iText textarea {border:0; height:139px; padding:7px 5px; width:523px; background: url("static/web/20110629121426im_/http_/www.chobots.com/images/contact_textarea_bg.gif") no-repeat 0 0;  color:#575757; font-size:15px}
+  .contactForm .buttSend { clear:both; margin:10px 0 0 220px}
+  
+  .blockInfo { float:right; width:255px; padding:0; margin:-10px -30px 0 0}
+  .blockInfo h2 { font-size:16px; padding-top:17px; margin:0}
+  .general .inner .blockInfo ul { list-style:none; padding:0; margin:8px 0 10px 0; font-size:15px; display:table; left:20px; color:#1e1e1e}
+  .general .inner .blockInfo ul li { width:100%; float:left; padding:0}
+  .general .inner .blockInfo ul li.iSkype { padding-bottom:10px}
+  .general .inner .blockInfo ul li.iSkype span { padding-left:85px; width:42px }
+  .general .inner .blockInfo ul li span { display:block; float:left; width:50px}
+  .general .inner .blockInfo ul.iBig li span { width:75px}
+  .general .inner .blockInfo ul li b { float:left; padding-top:1px}
+  .general .inner .blockInfo ul li img { vertical-align: middle; margin-right:15px}
+  .general .inner .blockInfo ul li a { color:#00b2ec; text-decoration: none; border-bottom:1px dotted #00b2ec; font-weight:bold}
+  .general .inner .blockInfo div { font-size:12px; color:#999; margin:0px 0 12px; padding-left:2px}
+  
+  .general .inner .blockInfo ul.iBig li { margin-bottom:10px}
+  .general .inner .blockInfo ul.iBig li p {background: url("static/web/20110629121449im_/http_/www.chobots.com/images/location_bg.gif") no-repeat; font-size:15px; height:23px; width:167px; padding:0 0 0 10px; float:left; margin:0; position:relative}
+  .general .inner .blockInfo ul.iBig li p a { position:absolute; display:block; width:6px; height:5px; border:0; right:7px; top:2px}
+  .general .inner .blockInfo ul.iBig li p a.down { top:13px}
+  
+  div.gallery-wrapper {
+      clear: both;
+      margin: 20px 0;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  div.gallery-wrapper div.preview div.controls {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 20px;	
+      top: 180px;
+      z-index: 1000;	
+  }
+  
+  div.gallery-wrapper div.preview {
+      height: 230px;
+      overflow:hidden;
+  }
+  
+  
+  /* inner */
+  div.decor.all {
+      background-image: url("static/web/20110629121526im_/http_/www.chobots.com/images/all_bottom.png");
+      width: 939px;
+  }
+  
+  /* ingame */
+  .ingame div.logo {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+  }
+  
+  .ingame {
+      width: 929px;
+      height: 60px;
+  }
+  
+  div.overlap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 530px;
+      height: 230px;
+      background: url("static/web/20110629115606im_/http_/www.chobots.com/images/overlap.png") no-repeat;
+      z-index: 100;
+  }
+  
+  div.galleria_container img {
+      height: 228px;
+  }
+  
+  div.galleria_container {
+      height: 229px;
+  }
+  
+  /* index styles */
+  
+  div.character {
+    float: left;
+    background-image: url("static/web/20110629121435im_/http_/www.chobots.com/images/chobot_big_char.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    width: 400px;
+    height: 650px;
+  }
+  
+  div.index div.inner p { line-height:20px}
+  a.lang {
+      display:none;
+      position: absolute;
+      top:35px;
+      right: 100px;
+  }
+  
+  div.index h1.title {
+      color: #3abfee;
+  }
+  
+  ul.gallery {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 7px;
+      margin-top: 10px;
+  }
+  
+  ul.gallery li {
+      display: inline;
+      margin-right: 10px;
+  }
+  
+  ul.gallery li img {
+      cursor: pointer;
+  }
+  
+  div.arrow {
+      width: 30px;
+      height: 115px;
+      background: url("static/web/20110630015109im_/http_/www.chobots.com/images/arrow.png") no-repeat;
+      position: absolute;
+      top: 278px;
+      left: 0;
+  }
+  
+  div.gallery-wrapper div.caption {
+      position: relative;
+      border: 1px solid #fff;
+      height: 61px;
+  }
+  
+  div.gallery-wrapper div.caption p {
+      margin: 10px 0;
+      padding: 0;
+      color: #4a4a4a;
+      padding-left: 67px;
+      line-height:22px
+  }
+  
+  div.gallery-wrapper div.caption span.number {
+      font-size: 54px;
+      color: #00b3ed;
+      position: absolute;
+      display: block;
+      width: 60px;
+      text-align: center;
+      top: 0;
+  }
+  
+  
+  /* de */
+  body.de {
+      background:#E8F1FB url(static/web/20110629121359im_/http_/www.chobots.com/images/body_bg.gif) repeat-x scroll left 56px;
+  }
+  
+  body.de .ingame {
+      width: 929px;
+      height: 56px;
+  }
+  
+  body.de div.character {
+    float: left;
+    background-image: url("static/web/20110202233303im_/http_/www.chobots.com/images/chobot_big_char_de.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    width: 400px;
+    height: 650px;
+  }
+  
+  body.de div.logo {
+      display: none;
+  }
+  
+  div.onblue div.menu li.play_de a {
+      background: url("static/web/20110202233410im_/http_/www.chobots.com/images/menu/blue_play_de.gif") no-repeat bottom right;
+  }
+  
+  div.menu li.play_de a, div.menu li.play_de a:hover {
+      margin-top: 10px;
+      width: 99px;
+      height: 33px;
+      background: url("static/web/20110817063951im_/http_/www.chobots.com/images/menu/play-de-small.gif") no-repeat bottom right;
+  }
+  
+  body.de div.affiliate_header {
+      height: 133px;
+      background: transparent url(static/web/20110202233354im_/http_/www.chobots.com/images/affiliate/spielffe_header_bg.gif) repeat scroll 0% 0%;
+  }
+  
+  
+  
+  /* girls registration */
+  body.girls {
+      background:#E8F1FB url(static/web/20110202233240im_/http_/www.chobots.com/images/body_bg_pink.gif) repeat-x scroll left 0px;
+  }
+  
+  body.de .ingame {
+      width: 929px;
+      height: 56px;
+  }
+  
+  body.girls div.character {
+    float: left;
+    background-image: url("static/web/20110202233206im_/http_/www.chobots.com/images/dress_up_reg_right.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    width: 400px;
+    height: 650px;
+  }
+  
+  body.girls div.characterleft {
+    float: left;
+    background-image: url("static/web/20110202233343im_/http_/www.chobots.com/images/dress_up_reg_left.png");
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    position: relative;
+    width: 146px;
+    height: 670px;
+  }
+  
+  body.girls div.wrapper {
+    margin: 0px auto;
+    width: 1150px;
+    padding:0px 30px;
+  overflow: hidden;
+  }
+  
+  body.girls div.footer {
+      position: relative;
+      clear: both;
+      color: #666;
+      padding: 35px 166px;
+      font-size: 12px;
+  }
+  
+  
+  body.girls div.logo {
+      display: none;
+  }

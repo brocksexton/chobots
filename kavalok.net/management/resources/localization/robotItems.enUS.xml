@@ -1,0 +1,29 @@
+<messages>
+  <vbot>G-Bot</vbot>
+  <vbotHelmet1>Helmet</vbotHelmet1>
+  <vbotHelmet2>Steel Helmet</vbotHelmet2>
+  <vbotHelmet3>Dragon Helmet</vbotHelmet3>
+  <vbotArmor1>Steel Armor</vbotArmor1>
+  <vbotArmor2>Gold Armor</vbotArmor2>
+  <vbotArmor3>Titanium Armor</vbotArmor3>
+  <vbotChassis1>Moon Chassis</vbotChassis1>
+  <vbotChassis2>Full-Plate Chassis</vbotChassis2>
+  <vbotChassis3>Bulldozer Chassis</vbotChassis3>
+  <vbotWeapon1>Wooden Stick</vbotWeapon1>
+  <vbotWeapon2>Iron Stick</vbotWeapon2>
+  <vbotWeapon3>Cho Staff</vbotWeapon3>
+  <lighting>Lightning</lighting>
+  <rocket>Rocket Pack 10</rocket>
+  <rocket2>Power Rocket Pack</rocket2>
+  <defencePlus>Defence Upgrade</defencePlus>
+  <attackPlus>Attack Upgrade</attackPlus>
+  <allPlus>Skills Upgrade</allPlus>
+  <energyRepair1>Light Energy Repair Pack</energyRepair1>
+  <energyRepair2>Medium Energy Repair Pack</energyRepair2>
+  <energyRepair3>Full Energy Repair Pack</energyRepair3>
+  <attack1>Attack Intensification</attack1>
+  <defence1>Defence Intensification</defence1>
+  <accuracy1>Accuracy Intensification</accuracy1>
+  <mobility1>Mobility Intensification</mobility1>
+  <attackPlus2>Rush Attack</attackPlus2>
+</messages>

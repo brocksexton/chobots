@@ -1,0 +1,384 @@
+<messages>
+<afterBuyWarning>After this purchase your chobot will have {0} bugs left. Are you sure you want to buy it?</afterBuyWarning> 
+<bagIsFull>Your backpack is full! Use some of your magic to make more room!</bagIsFull> <buy>Buy</buy>  <buyEmeralds>Buy</buyEmeralds> 
+<comingSoon>Coming soon</comingSoon> 
+<magicBalls>Having balloons is fun. Having a ball to play with is much more fun.</magicBalls> <magicBevel>Do you want to feel power of cho?</magicBevel>
+<magicBlend>Spy mode is on!</magicBlend> 
+<magicBlur>Wanna feel what it’s like to be a ghost? Take a bite of this candy and you are gone, into thin air. Helloooooo? Where are you? Can’t see ya.</magicBlur>
+<magicBottle>One drop of this elixir and you are in the limelight. Isn’t it something you’ve been dreaming of?</magicBottle> 
+<magicBubble>It’s high time to have a holiday. WOOHOO!!! Try this one and a balloon will pop up in your hands to get your holiday off to a good start.</magicBubble> 
+<magicBubbleBlue>Two balloons are better than one, right? What are you waiting for then? Wolf it down!!!</magicBubbleBlue> 
+<magicBubbleYellow>Three balloons are better than two!</magicBubbleYellow> <magicCharly>Have you ever seen Charlie Chaplin’s films? Yeah, that black and white fun!</magicCharly> 
+<magicFlame>Carefully, you can hurt yourself with this sweet!</magicFlame> 
+<magicGhost>One shadow left.</magicGhost> 
+<magicHue>Disco 80s? Yeah, keep rolling!</magicHue> 
+<magicInvert>Black hole – what is it?</magicInvert> 
+<magicLarge>Tell me most popular giant! Yep, that’s right – Gulliver! Want to try?</magicLarge> <magicNearest>Spread the magic</magicNearest> 
+<magicPromotion>Congratulations, you have been promoted!</magicPromotion> 
+<magicScale>Get an ant’s perspective of the world!</magicScale> 
+<magicSpeed>Wanna run at lightning speed? Eat this candy. Come on! Shovel it down!</magicSpeed> 
+<magicStar>As you might already be in the limelight, why not get a star above your head?</magicStar> 
+<magicTeleport>Teleport</magicTeleport> 
+<magicToxic>OMG, have you ever visited Chernobyl before?</magicToxic> 
+<magicUmnik>Hey, wanna feel big brains in your head?</magicUmnik> 
+<magicZhurdyai>100 hamburgers inside!</magicZhurdyai> 
+<magic_buben>Real Rain</magic_buben> 
+<magic_lightning>Lightning</magic_lightning> 
+<magic_rainbow>Rainbow</magic_rainbow> 
+<magic_snow>Snow</magic_snow> 
+<moonWalk>MoonWalk</moonWalk> 
+<notEnoughMoney>Your Chobot doesn't have enough bugs to buy this item!</notEnoughMoney> 
+<wings_summer>Summer Wings</wings_summer> 
+<clothes_vilt>Ninja Vilt</clothes_vilt> 
+<cymbals>Cymbals</cymbals> 
+<wings_firecracker>Firecracker Wings</wings_firecracker> 
+<shirt_splat>Orange Splat Shirt</shirt_splat> 
+<travel_hat>Time Travel Hat</travel_hat> 
+<vilt_avatar>Avatar Suit</vilt_avatar> 
+<hat_popcorn>Popcorn Hat</hat_popcorn> 
+<shirt_jump>Jumpman Shirt</shirt_jump> 
+<grey_jacket>Grey Jacket</grey_jacket> 
+<card24_honeycomb>Beehive Background</card24_honeycomb> 
+<card23_sweet>Glow Background</card23_sweet> 
+<card22_dots>Bubble Background</card22_dots> 
+<shirt_lightbulb>Think Shirt</shirt_lightbulb> 
+<color_firefeet>Fire shoes</color_firefeet> 
+<dress_holzi>Paperbag Dress</dress_holzi> 
+<potion>Potion</potion> 
+<top_nano>Slayer Shirt</top_nano> 
+<hazmat>Nuclear Suit</hazmat> 
+<plant>House Plant</plant> 
+<bg_rock>Rock Background</bg_rock> 
+<top_orange>Crystal Shirt</top_orange> 
+<wings_purple>Hydra Wings</wings_purple> 
+<dress_25>Maiden Dress</dress_25> 
+<fluffy_red>Carnival Shirt</fluffy_red> 
+<collar>Collar</collar> 
+<wrestler_sumo>Sumo Wrestler</wrestler_sumo> 
+<pickaxe>Pickaxe</pickaxe> 
+<head_flower>Flower Face</head_flower> 
+<paint_usa>USA Paint</paint_usa> 
+<mane_lion>Lion Mane</mane_lion> 
+<heart_hoodie>Heart Sweater</heart_hoodie> 
+<dress_22>Casual Dress</dress_22> 
+<hair_girl_emo>Emo Hair</hair_girl_emo> 
+<pot2>Bowl</pot2> 
+<shirt_shark>Shark Shirt</shirt_shark> 
+<head_ribbon>Hair Bow</head_ribbon> 
+<midhelm>Viking Helmet</midhelm> 
+<cho_hoodie>Chobots Hoddie</cho_hoodie> 
+<tattoo_gia>Body Tattoo</tattoo_gia> 
+<mask_gas>Gas Mask</mask_gas> 
+<shirt_flower>Blue Flower Shirt</shirt_flower> 
+<mask_fail>Anonymous Mask</mask_fail> 
+<Violen>Violen</Violen> 
+<rose_hat>Rose Hat</rose_hat> 
+<shirt_spot>Paint Shirt</shirt_spot> 
+<monocle>Monocle</monocle> 
+<hat_mohawk>Knight Helmet</hat_mohawk> 
+<stick_hockey>Hockey Stick</stick_hockey> 
+<hand_bow>Bow</hand_bow> 
+<gun_water>Water gun</gun_water>
+<boys_spikey>Spikey Hair</boys_spikey>
+<suit_chopixx>Chopix Suit</suit_chopixx>
+<warrior_xaolin>Sensei Jakcet</warrior_xaolin>
+<green_helmet>Halo Helmet</green_helmet>
+<peruka_spiked>Messy Hair</peruka_spiked> 
+<instrument_guitar>Bass Guitar</instrument_guitar> 
+<hat_builder>Mine Hat</hat_builder> 
+<wings_freeze>Ice Wings</wings_freeze> 
+<butterfly_net>Butterfly Net</butterfly_net> 
+<hat_newyear_1>Reindeer Mask</hat_newyear_1> 
+<headband>Sweatband</headband> 
+<black_vest>Goth Vest</black_vest>
+<coat_gold>Gold Jacket</coat_gold>
+<warning_strip>Warning Sash</warning_strip>
+<crazy_gia>Crazy Hair</crazy_gia>
+<basket_shorts>Basketball Shorts</basket_shorts>
+<bandana>Bandana</bandana>
+<hat_ash>Ash Hat</hat_ash>
+<hat_sun>Sun Face</hat_sun>
+<board_beachies2>Beach on a Board</board_beachies2>
+<jester1>Jester Suit</jester1>
+<magic_patric>Shamrock Magic</magic_patric>
+<irish>Irish Suit</irish>
+<cutepet3>Alien Pet</cutepet3>
+<magic_heart>Heart Magic</magic_heart>
+<air_board_love>Cupids Board</air_board_love>
+<kostumy_angelFIXED>Angel Suit</kostumy_angelFIXED>
+<suit_moon>Space Suit</suit_moon>
+<mask_goat>Capricorn Mask</mask_goat>
+<gehavan_warior>Warrior Suit</gehavan_warior>
+<magic_santa1>Santa Magic</magic_santa1>
+<snowgirl>Santa’s Helper Suit</snowgirl>
+<flag_emerald>Emerald Flag</flag_emerald>
+<hat_TV>TV Head</hat_TV>
+<mask_clown>Clown Mask</mask_clown>
+<santa>Santa Suit</santa>
+<plane2>Plane</plane2>
+<suit_recycle>Glass Suit</suit_recycle>
+<lobster>Lobster Suit</lobster>
+<wings_spring>Spring Wings</wings_spring>
+<magic_spider>Spider Magic</magic_spider>
+<air_board_frog>Froggy Board</air_board_frog>
+<suit_metal>Power Ranger Suit</suit_metal>
+<suit_battle>Villan Suit</suit_battle>
+<nicho_bot>Nicho Bot</nicho_bot>
+<nicho_bot>Ufo Hat</nicho_bot>
+<shirt_boom>Boom Shirt</shirt_boom>
+<suit_director>Director Shirt</suit_director>
+<doctor_who>Doctor Suit</doctor_who>
+<spidercho>SpiderCho</spidercho>
+<jacket_racer>Racer Jacket</jacket_racer>
+<jacket_grey>Grey Jersey</jacket_grey>
+<ostrich>Ollie The Ostrich</ostrich>
+<ninja_2>Grey Ninja</ninja_2>
+<hat_husky>Husky Hat</hat_husky>
+<camouflage>Camo Suit</camouflage>
+<orbit_glasses>Tape Glasses</orbit_glasses>
+<guardian_suit>Martain Suit</guardian_suit>
+<suit_giga2>Droid Suit</suit_giga2>
+<costume_black>Spy Suit</costume_black>
+<bag_arrows>Bow and Arrows</bag_arrows>
+<costume_robot>Gold Guy</costume_robot>
+<costume_fox>Fox Suit</costume_fox>
+<toy_bear2>Teddy Bear</toy_bear2>
+<jet_pack2>Hero Jetpack</jet_pack2>
+<heart_dress>Heart Dress</heart_dress>
+<suit_love_boy>Boy’s Love Suit</suit_love_boy>
+<suit_love_girl>Girl’s Love Suit</suit_love_girl>
+<magic_heart_wing>Magic Heart Wings</magic_heart_wing>
+<magic_heart_bubble>Cupid Magic</magic_heart_bubble>
+<heart_pillow>Heart Pillow</heart_pillow>
+<heart_mecha>Heart Space Suit</heart_mecha>
+<heart_ball_basket2>Heart Ballon</heart_ball_basket2>
+<heart_bag>Heart Backpack</heart_bag>
+<rose>Rose</rose>
+<flag_heart>Heart Flag</flag_heart>
+<hat_gem>Crystal Hat</hat_gem>
+<mustache>Mustache</mustache>
+<head_jewels>Jewel Crown</head_jewels>
+<hands_water>Water Hands</hands_water>
+<floaties>Floaties</floaties>
+<wings_blue>Big Blue Wings</wings_blue>
+<hand_torch>Fire Torch</hand_torch>
+<flag_usa>USA Flag</flag_usa>
+<flag_happy>Epic Flag</flag_happy>
+<flag_chobo>Chobo Flag</flag_chobo>
+<wings_bat>Bat Wings</wings_bat>
+<hat_origami>Sailor Hat</hat_origami>
+<fishing>Fishing Rod</fishing>
+<wings_2>Pretty Wings</wings_2>
+<hat_hair>Spikey Hat</hat_hair>
+<fan_hand>Fan Hand</fan_hand>
+<cane>Cane</cane>
+<cylinder2>Top Hat</cylinder2>
+<one_hand_bag>Hand Bag</one_hand_bag>
+<shapkaglass>Funky Hair and Glasses</shapkaglass>
+<hat_apple>Apple Head</hat_apple>
+<hat_victory>Peace Hat</hat_victory>
+<lapka>Turkey Leg</lapka>
+<hat_winter_5>Winter Hair Girls’</hat_winter_5>
+<flag_pumpkin>Pumpkin Flag</flag_pumpkin>
+<hat_boy_111>Boys’ Winter Hat</hat_boy_111>
+<hat_winter_2>Girls’ Winter Hat</hat_winter_2>
+<easter_bag>Easter Eggs’ Backpack</easter_bag>
+<hat_panamka>Shady Hat</hat_panamka>
+<flag_peace>Peace Flag</flag_peace>
+<winter_hat3>Winter Hat</winter_hat3>
+<winter_hat1>Tall Winter Hat</winter_hat1>
+<deer>Reindeer Ears</deer>
+<flag_sun>Sun Flag</flag_sun>
+<vinok>Flower Hair</vinok>
+<hat>Stylish Hat</hat>
+<vantus>Plunger Hat</vantus>
+<pypka>Pacifier</pypka>
+<pidzhak>Groovy Jacket</pidzhak>
+<kravatka>Tie</kravatka>
+<kombi>Baby Top</kombi>
+<headPhones>Head Phones</headPhones>
+<bracelet_colorful>Colorful Bracelets</bracelet_colorful>
+<panda_hat>Panda Hat</panda_hat>
+<neck_jewel>Shiny Necklace</neck_jewel>
+<head_crown>Fancy Crown</head_crown>
+<chobots_toy>Mini Teddie</chobots_toy>
+<scarf>Scarf</scarf>
+<hat_dragon>Dragon Hat!</hat_dragon>
+<bag_roll>Gingerbread Man Bag</bag_roll>
+<bag_pencil>Pencil Bag</bag_pencil>
+<mask_icecream>Ice Cream Head</mask_icecream>
+<ice_wings2>Blue Flame Wings</ice_wings2>
+<hand_present_christmas>Magic Bag</hand_present_christmas>
+<lightning_flag>Lightning Flag</lightning_flag>
+<hand_pokemon_ball>Pokemon Ball</hand_pokemon_ball>
+<beads>Necklace</beads>
+<water_pistol>Water Pistol</water_pistol>
+<hair_6>Epic Hair and Glasses</hair_6>
+<hat_feather>Reporters Hat</hat_feather>
+<bag_snowflake>Snowflake Bag</bag_snowflake>
+<octopus2>Octopus Head</octopus2>
+<ravlik>Snail Bag</ravlik>
+<rosegrey_hat>Winter Girls’ Hat</rosegrey_hat>
+<sunglass>Party Glasses</sunglass>
+<zont>Cool Hat</zont>
+<hat_umbrella>Umbrella Hat</hat_umbrella>
+<hat_hrobak>Apple Worm Hat</hat_hrobak>
+<bath_set>Bath time Suit</bath_set>
+<hat_kryshka>Table Cloth Hat</hat_kryshka>
+<toothbrush>ToothBrush</toothbrush>
+<hat_boy_thanks_day>Top Hat With Hair!</hat_boy_thanks_day>
+<turkey_head>Turkey Head</turkey_head>
+<hat_girl_111>Girls’ Messy Winter Hair</hat_girl_111>
+<bag_sun>Sun Bag</bag_sun>
+<hat_cake1>Cake Hat</hat_cake1>
+<bag_butterfly>Butterfly Bag</bag_butterfly>
+<bag_snowman>Snowman Bag</bag_snowman>
+<bag_cake>Cake Bag</bag_cake>
+<hat_boy_winter_1>Stylish Winter Boys’ Hair</hat_boy_winter_1>
+<hat_winter_11>Girls’ Winter Hat and Hair</hat_winter_11>
+<flag_football>Football Flag</flag_football>
+<bag_lion>Lion Bag</bag_lion>
+<mask_faraon>Egypt Hair</mask_faraon>
+<glasses_3d>Movie Set</glasses_3d>
+<hat_indians_1>Indian Hat</hat_indians_1>
+<bag_bear>Bear Bag</bag_bear>
+<hat_boy_2>Fancy Boy Hair</hat_boy_2>
+<bag_cat>Cat Bag</bag_cat>
+<hat_stile>Fancy Top Hat</hat_stile>
+<hat_ananas>Fruit Hat</hat_ananas>
+<easter_bunny>Bunny Backpack</easter_bunny>
+<sunflower>Sunflower</sunflower>
+<winter_phones>Earmuffs</winter_phones>
+<winter_hat4>Winter Hat</winter_hat4>
+<present_sock>Present Sock Bag</present_sock>
+<tnt>Tnt Bag</tnt>
+<ice_cream>Ice Cream Bag</ice_cream>
+<golden_wings>Gold Shiny Wings</golden_wings>
+<strawberries>Strawberry Bag</strawberries>
+<banana>Banana Bag</banana>
+<hat_china>China Hat</hat_china>
+<zhurdai>Babies Bib</zhurdai>
+<lampochka>Light Bulb</lampochka>
+<klipsi>Earings</klipsi>
+<card_elves_3>Summer Background</card_elves_3>
+<flag_usa>USA Flag</flag_usa>
+<flag_india>Indian Flag</flag_india>
+<handbag>Green Bag</handbag>
+<flag_comingsoon>Coming Soon Flag</flag_comingsoon>
+<flag_smoochict>Smoochict Flag</flag_smoochict>
+<flag_robots_team>Robots Flag</flag_robots_team>
+<flag_robots>Robots Flag</flag_robots>
+<flag_deutsche>German Flag</flag_deutsche>
+<flag_StGeorges>English Flag</flag_StGeorges>
+<umbrella>Umbrella</umbrella>
+<flag>Blank Flag</flag>
+<flag_chobots>Chobots Flag</flag_chobots>
+<flag_ruby>Ruby Flag</flag_ruby>
+<flag_zoo>Zoo Flag</flag_zoo>
+<flag_sapphire>Sapphire Flag</flag_sapphire>
+<flag_objc>Objc Flag</flag_objc>
+<flag_daniel>Daniel Flag</flag_daniel>
+<bag_umbrella>Umbrella Bag</bag_umbrella>
+<flag_smile>Smiley Flag</flag_smile>
+<flag_mimo_logo>Mimo Flag</flag_mimo_logo>
+<agent>Agent Boy Suit</agent>
+<agent_girl>Agent girl Suit</agent_girl>
+<flag_agent>Agent Flag</flag_agent>
+<hat_agent>Agent Hat</hat_agent>
+<fireboots>Agent Fire Boots</fireboots>
+<air_board_newyear>New Rocket Boots</air_board_newyear>
+<air_board_bug>Bug Board</air_board_bug>
+<rocket_board>Rocket Board</rocket_board>
+<pencil_board>Pencil Board</pencil_board>
+<fly_air_shoes>Old Rocket boots</fly_air_shoes>
+<air_board_color>Colorful Board</air_board_color>
+<air_board_cloud>Cloud Board</air_board_cloud>
+<tnt_board>Tnt Board</tnt_board>
+<t_rex>TRex Board</t_rex>
+<air_board_winter>Winter Board</air_board_winter>
+<air_board10>Mini Board</air_board10>
+<air_board9>Small Board</air_board9>
+<air_board8>Medium Board</air_board8>
+<air_board7>Flame board</air_board7>
+<air_board6>Stylish Board</air_board6>
+<air_board5>C-Board</air_board5>
+<air_board4>Circly Board</air_board4>
+<air_board3>Superman Board</air_board3>
+<air_board2>Board with lights</air_board2>
+<air_board1>Long Board</air_board1>
+<fly_magnet_shoes>Big Rocket boots</fly_magnet_shoes>
+<fly_fire_shoes>Purple Rocket boots</fly_fire_shoes>
+<fly_fire_ruka>Shoulder Pads</fly_fire_ruka>
+<fly_fire_kaska>Helmet and Glasses</fly_fire_kaska>
+<fly_fire_complect>Hero Suit</fly_fire_complect>
+<fly_air_poyas>Hero Belt</fly_air_poyas>
+<fly_air_glass>Protection Glasses</fly_air_glass>
+<fly_air_complect>Orange Hero Suit</fly_air_complect>
+<air_board_flower>Flower Board</air_board_flower>
+<air_board_cd>CD Board</air_board_cd>
+<air_board_clock>Clock Board</air_board_clock>
+<air_board_pizza>Pizza Board</air_board_pizza>
+<white_board>White Flame Boots</white_board>
+<board_purple>Purple Flame Boots</board_purple>
+<board_green>Green Flame Boots</board_green>
+<Cleaner_board>Shamrock Board</Cleaner_board>
+<helicopter>Helicopter</helicopter>
+<air_board_shark>Shark Board</air_board_shark>
+<bicycle>Bike</bicycle>
+<air_board_dragonfly2>Dragonfly Board</air_board_dragonfly2>
+<air_board_jet>Sweep Board</air_board_jet>
+<air_board_broom>Broom Board</air_board_broom>
+<air_board_devilfish>Devilfish Board</air_board_devilfish>
+<board>Original Flame Boots</board>
+<fireboots>Fire Boots</fireboots>
+<air_board_maple_tree_apples>Maple Tree Board</air_board_maple_tree_apples>
+<ice_board>Blue Flame Boots</ice_board>
+<air_board_peacock>Peacock Board</air_board_peacock>
+<air_board_medusa>Jellyfish Board</air_board_medusa>
+<air_board_beach_stuff>Beach Towel Board</air_board_beach_stuff>
+<air_board1_surf>Surf Board</air_board1_surf>
+<air_board_ball>Beach Ball Board</air_board_ball>
+<plane>Original Plane</plane>
+<bicycle_One_wheel>Unicycle</bicycle_One_wheel>
+<submarine>Submarine</submarine>
+<t_rex2>T-rex</t_rex2>
+<jumper_grasshopper>Grasshopper</jumper_grasshopper>
+<bicycle>Bike</bicycle>
+<pterodactyl>Pterodactyl</pterodactyl>
+<Segway>Granny Scooter</Segway>
+<heart_ball_basket3>Heart Ballon</heart_ball_basket3>
+<heart_ball_basket2>Heart Ballon</heart_ball_basket2>
+<air_board_mitla>Broom Board</air_board_mitla>
+<air_board_maple2>Leaf Board</air_board_maple2>
+<fish_tail2>King Neptune Tail</fish_tail2>
+<fish_tail>Neptune Tail</fish_tail>
+<roller>Roller Skates</roller>
+<air_board_flower2>Flower Board</air_board_flower2>
+<air_board_palm>Palm Board</air_board_palm>
+<air_board_candy>Candy Board</air_board_candy>
+<air_board_carpet>Magic Carpet</air_board_carpet>
+<air_board_racket>Racket Board</air_board_racket>
+<sandhat_s>Sandcastle Hat</sandhat_s>
+<suit_bee>Bee Suit</suit_bee>
+<captain_cho>Captain Cho</captain_cho>
+<dress_electric>Electric Dress</dress_electric>
+<grass_top>Grass Shirt</grass_top>
+<red_rope>Rope Suit</red_rope>
+<square_wings>Diamond Wings</square_wings>
+<giraffe_hat_s>Giraffe Hat</giraffe_hat_s>
+<helmet_s>Scuba-Diver Mask</helmet_s>
+<kakashi_hair_s>Kakashi Mask</kakashi_hair_s>
+<scarf_s>Scarf</scarf_s>
+<side_plait_s>Braided Hair</side_plait_s>
+<snorkel_s>Snorkel Mask</snorkel_s>
+<spy_goggles_s>Spy Gear</spy_goggles_s>
+<steampunk_goggles_s>Metal Eye</steampunk_goggles_s>
+<surfboard_s>Summer Surfboard</surfboard_s>
+<suit_chopixx>Chopix Suit</suit_chopixx>
+<flag_ethan>Ethan Flag</flag_ethan>
+<flash_J>Mr. Flash</flash_J>
+<goodSide_J>Good Side Suit</goodSide_J>
+<iron_man_J>Iron Man Suit</iron_man_J>
+
+
+</messages>

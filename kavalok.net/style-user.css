@@ -1,0 +1,21 @@
+@font-face {
+font-family: "BurbankSmall-Bold";
+src: url("https://yoursite.com/css/fonts/BurbankSmall-Bold.eot");
+src: url("https://yoursite.com/css/fonts/BurbankSmall-Bold.woff") format("woff"),
+url("https://yoursite.com/css/fonts/BurbankSmall-Bold.otf") format("opentype"),
+url("https://yoursite.com/css/fonts/BurbankSmall-Bold.svg#filename") format("svg");
+}
+
+h1 {
+font-family: 'BurbankSmall-Bold', Arial, sans-serif;
+font-weight:bold;
+font-style:normal;
+filter: drop-shadow(1px 1px 1px #000003);
+}
+
+h3 {
+    font-family: 'BurbankSmall-Bold', Arial, sans-serif;
+    font-weight:bold;
+    font-style:normal;
+    filter: drop-shadow(1px 1px 1px #000003);
+    }

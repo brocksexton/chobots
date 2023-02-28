@@ -1,0 +1,121 @@
+body {
+    background-image: url('../images/space_bg_new.webp');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../images/space_bg_new.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav a {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  header .play-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  header .play-button:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .image-slider {
+    width: 980px;
+    height: 560px;
+    margin: 20px auto;
+    background-color: #333;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  footer .about-us {
+    width: 30%;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  footer .contact-us {
+    width: 30%;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  footer .contact-us a {
+    margin: 10px 0;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  footer .buttons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  footer .buttons button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  footer .buttons button:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  footer p {
+    font-size: 14px;
+    text-align: center;
+  }

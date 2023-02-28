@@ -1,0 +1,53 @@
+body {
+    background-image: url(../images/space_bg_new.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    width: 651px;
+    height: 391px;
+  }
+  
+  .enter-button {
+    position: absolute;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 40px;
+    background: linear-gradient(180deg, #ffcc00 0%, #ffe47a 52%, #ffd842 100%);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 248, 107);
+    box-shadow: 0 2px 53px -21px #000000;
+    transition: all 0.2s ease;
+    font-family: poppins-semibold, poppins, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7a6d38;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .enter-button:hover {
+    background: linear-gradient(180deg, #ffdf5f 0%, #ffe98f 52%, #ffe378 100%);
+  }
+  
+  @media (max-width: 500px) {
+    .logo {
+      width: 90%;
+      height: auto;
+    }
+  
+    .enter-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  

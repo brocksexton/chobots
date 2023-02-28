@@ -1,0 +1,31 @@
+<messages>
+  <petPrice>Preis des Haustiers</petPrice>
+  <buyPet>Haustier kaufen!</buyPet>
+  <petConstructor>Haustier-Bastler</petConstructor>
+  <petAtHome>Dein Haustier wartet zu Hause auf Dich! Beeil dich!</petAtHome>
+  <petExists>Du hast bereits ein Haustier!</petExists>
+  <takePet>Haustier mit auf einen Spaziergang nehmen</takePet>
+  <leavePet>Haustier zu Hause lassen</leavePet>
+  <disposePet>Dein Haustier wegjagen</disposePet>
+  <toFeed>Füttern</toFeed>
+  <toPlay>Spielen</toPlay>
+  <toRest>Erholung</toRest>
+  <health>Gesundheit</health>
+  <food>Essen</food>
+  <loyality>Treue</loyality>
+  <disposeQuastion>Bist Du sicher, dass Du dein Haustier wegjagen möchtest?</disposeQuastion>
+  <petRules>Regeln</petRules>
+  <petName>Zorbos</petName>
+  <petDisposedText>Lieber Besitzer, du hast dich respektlos benommen, so dass ich weglaufen musste. 
+Sei netter zu deinem nächsten Haustier. 
+Dein Ex-Haustier</petDisposedText>
+  <bodyButton>Hallo! Ich bin Doktor Alan Chogreen. Möchtest Du Dein  eigenes Haustier haben? Wenn ja, dann bist Du hier richtig. Ich möchte Dir helfen, es zu basteln. Wähle Körperteil und Farbe von Deinem Haustier</bodyButton>
+  <faceButton>Wähle das Gesicht von Deinem Haustier</faceButton>
+  <topButton>Suchst Du nach seinen Ohren? Hier sind sie!</topButton>
+  <sideButton>Wähle Pfoten oder sogar Flügel für Dein Haustier und vergiss nicht, sie zu färben</sideButton>
+  <bottomButton>Zu guter Letzt – die Beine. Glückwunsch! Gib Deinem Haustier einen Namen und klicke die Taste "Haustier kaufen" an. Und lass mich weiter meine Experimente durchführen!</bottomButton>
+  <inputName>Bitte, gib Deinem Haustier einen Namen</inputName>
+  <badName>Schlechter Name. Bitte, versuche es noch einmal!</badName>
+  <maskCatalog>Maskenkatalog</maskCatalog>
+  <petIsHungry>Lieber Besitzer, ich habe Hunger! Bitte komm nach Hause und gib mir etwas zum Essen! Sonst muss ich weglaufen!</petIsHungry>
+</messages>

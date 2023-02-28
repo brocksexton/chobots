@@ -1,0 +1,10 @@
+<messages>
+  <caption>Samantha</caption>
+  <npcName>Samantha</npcName>
+  <firstItem>Hey there! I'm Samantha! I love music so much! Who doesn't?? Hehe! But I need your help! A minute ago, Iwas playing one of my favorite songs on my new guitar! I went to get some water, and a group of Nichos ran by and stole all my guitar picks! I have no idea where they are! Can you please help me find them? If you find all three guitar picks, you will get a cool prize!</firstItem>
+  <questTask>Hey there! I'm Samantha! I love music so much! Who doesn't?? Hehe! But I need your help! A minute ago, Iwas playing one of my favorite songs on my new guitar! I went to get some water, and a group of Nichos ran by and stole all my guitar picks! I have no idea where they are! Can you please help me find them? If you find all three guitar picks, you will get a cool prize!</questTask>
+  <noItem>I don't think I'll manage to find the picks myself. I really need your help. Please find three picks</noItem>
+  <nextItem>Thank you for helping me. But some picks are still missing. Could you bring me three of them, my dear?</nextItem>
+  <questComplete>Good job! These are the picks I lost. You helped me out! This Elf costume is your Christmas presents! Merry Christmas.</questComplete>
+  <idleMessage>Thank you for your help. I hope you like your presents. Have fun!</idleMessage>
+</messages>

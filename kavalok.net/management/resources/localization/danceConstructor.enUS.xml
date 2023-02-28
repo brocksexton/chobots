@@ -1,0 +1,11 @@
+<messages>
+  <cancel>Cancel</cancel>
+  <removeFrame>Remove frame</removeFrame>
+  <addFrame>Add frame</addFrame>
+  <addDanceStyle>Add your new dance style</addDanceStyle>
+  <save>Save</save>
+  <null/>
+  <play>Play</play>
+  <danceConstructor>Dance Constructor</danceConstructor>
+  <tryToDrag>Try to drag different parts of your chobot!</tryToDrag>
+</messages>

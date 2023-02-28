@@ -1,0 +1,9 @@
+<messages>
+  <caption>Leprechaun</caption>
+  <firstItem>Hey there! I'm Leprechaun! The feast is coming and I've lost all of my golden coins! Can you help me to find them? Here is my pot. When you find 10 coins, come back for your reward!</firstItem>
+  <idleMessage>Thanks a lot! St. Patrick will be really happy!</idleMessage>
+  <noItem>You have to find {0} more coins</noItem>
+  <npcName>Leprechaun</npcName>
+  <questComplete>Thank you so much! You saved the feast! Here is your reward!</questComplete>
+  <questTask>Now you can go and collect the coins!</questTask>
+</messages>

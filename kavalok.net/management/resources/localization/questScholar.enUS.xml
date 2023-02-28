@@ -1,0 +1,12 @@
+<messages>
+  <caption>Jones</caption>
+  <npcName>Jones</npcName>
+  <firstItem>Hey there!
+
+My dear fellow, my name's Santa - same as one man's from the North Pole which is on that Blue planet. Take this hat not to catch a cold at this snowed up location.</firstItem>
+  <questTask>Hey! Can you help me? I lost my graduation cap and graduation is in 15 minutes! I don't know what to do because I still need to practice my speech. Can you help me find my cap?</questTask>
+  <noItem>Come on! The cap won't find itself and I need it now! Go go go! My graduation starts in 15 minutes.</noItem>
+  <nextItem>Thanks so much for finding a cap! Now do you think you can find the others...? I'm being as patient as I can!</nextItem>
+  <questComplete>Wow, you managed to find my cap! I'm so thankful... but next time try being faster!! Anyway, take this as a thank you.</questComplete>
+  <idleMessage>Thank you for your help, but I've got a graduation to get too!</idleMessage>
+</messages>

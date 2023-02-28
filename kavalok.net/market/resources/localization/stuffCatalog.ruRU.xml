@@ -1,0 +1,36 @@
+<messages>
+  <afterBuyWarning>После этой покупки на твоем счету останется {0} багзов. Ты точно хочешь это купить?</afterBuyWarning>
+  <bagIsFull>Твоя сумка переполнена! Извини, но ты не можешь это купить.</bagIsFull>
+  <buy>Купить</buy>
+  <comingSoon>Вскоре в продаже</comingSoon>
+  <magicBalls>Погоняем мяч?</magicBalls>
+  <magicBevel>Ты хочешь почувствовать энергию чо?</magicBevel>
+  <magicBlend>Стелс режим активирован.</magicBlend>
+  <magicBlur>Хочешь почувствовать себя привидением? Съешь эту конфету и сразу же растворишься в воздухе.</magicBlur>
+  <magicBottle>Не хватает внимания? Чего же ты ждешь? Одна капля эликсира – и ты суперстар.</magicBottle>
+  <magicBubble>Почему бы не сделать себе праздник? Ничто не создаст так быстро праздничное настроение, как воздушный шарик у тебя вруках.</magicBubble>
+  <magicBubbleBlue>Один шарик – это хорошо, но два - лучше.</magicBubbleBlue>
+  <magicBubbleYellow>Два шарика – это хорошо, но три - лучше!</magicBubbleYellow>
+  <magicCharly>Ты когда-нибудь видел фильмы Чарли Чаплина? Да да, тот черно-белый юмор!</magicCharly>
+  <magicFlame>Осторожно, ты можешь пораниться конфетой!</magicFlame>
+  <magicGhost>И только тень останется.</magicGhost>
+  <magicHue>Диско 80х? Да, отрываемся!</magicHue>
+  <magicInvert>Черная дыра – что это такое?</magicInvert>
+  <magicLarge>Ану назови мне самого популярного великана? Да, правильно - Гуливер. Хочешь попробовать?</magicLarge>
+  <magicNearest>Расширить действие магии</magicNearest>
+  <magicPromotion>Акция</magicPromotion>
+  <magicScale>Съешь эту конфету и станешь Гулливером в стране великанов – махоньким, как мурашка.</magicScale>
+  <magicSpeed>Эта конфета поможет тебе бегать, как торпеда.</magicSpeed>
+  <magicStar>Поскольку ты у нас суперстар, тебе нужно звезду над головой.</magicStar>
+  <magicTeleport>Телепорт</magicTeleport>
+  <magicToxic>Ты был в Чернобыле?</magicToxic>
+  <magicUmnik>Ей, хочешь почувствовать большой мозг в своей голове?</magicUmnik>
+  <magicZhurdyai>100 гамбургеров внутри!</magicZhurdyai>
+  <magic_buben>Дождь</magic_buben>
+  <magic_lightning>Молния</magic_lightning>
+  <magic_rainbow>Радуга</magic_rainbow>
+  <magic_snow>Снег</magic_snow>
+  <moonWalk>Лунная Походка</moonWalk>
+  <notEnoughMoney>У тебя недостаточно денег, чтобы купить это.</notEnoughMoney>
+  <null/>
+</messages>

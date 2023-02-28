@@ -1,0 +1,152 @@
+/* Chobots.ca Stylesheet by Cameron D.*/
+
+/* 1. Set up */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height:100%;
+}
+
+body {
+	background-image: url(../images/space_bg_new.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;  
+    background-color: #fff;
+	width:100%;
+	height:100%;
+}
+/* 2. Top Container */
+
+.topContainer{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height:150px;
+}
+.news {
+margin-top: -50px;
+margin-left: 1150px;
+	width: 300px; /* 957px; */
+	height: 30px;
+}
+.stone {
+margin-top: -50px;
+margin-left: 20px;
+	width: 300px; /* 957px; */
+	height: 30px;
+}
+
+.logo {
+	float: left;
+	padding: 10px 10px;
+	margin-top: -10px;
+}
+
+
+.nav{
+	background:linear-gradient(#198ECE,#1976AA);
+	border-style:solid;
+	border-color:#186E9E;
+	width:750px;
+	height:62px;
+	border-radius:10px;
+	box-shadow:inset 0 3px 0px #59AEDC;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: -10px;
+	
+	}
+	.nav>ul{
+	display:inline-block;
+	list-style-type:none;
+	position:absolute;
+	margin-top:25px;
+	margin-left:70px;
+		}
+	.magic{
+	margin-left:1150px;
+	margin-top: 50px;
+	position:absolute;
+			}
+	.nav>ul>li{
+	display:inline-block;
+	}
+	.nav a{
+	font-family:Roboto;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px;
+	text-shadow:0px 1px 1px #000;
+	}
+	.nav a:hover,.nav a:active{
+	background-color:#3099D3;
+	border:0px;
+	border-radius:5px;
+	padding:10px;
+	}
+	.nav a:link{
+		text-decoration:none;
+		}
+/* 3. Game Container */
+
+.gameContainer{
+	width:922px;
+	height:537px;
+	display:block;
+	border:4px solid rgba(255,255,255,1);
+	border-radius:3px;
+	margin-top: -10px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	}
+
+/* 4. Bottom/Footer Container */
+
+.footerContainer {
+	width: 1100px;
+	height: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+.footer {
+	background: rgba(90, 90, 90, 0.2);
+	color: #EDEDED;
+	font-family: 'Open Sans', sans-serif;
+	width: 1100px;
+	height: 55px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+.footer a {
+	color: #428BCA;
+}
+
+.footer a:link {
+	text-decoration: none;
+}
+
+.footer a:hover, .footer a:active {
+	color: #2A6496;
+}
+
+.txt {
+font-weight: bold;
+font-family: 'Open Sans', sans-serif;
+color: #999;
+}

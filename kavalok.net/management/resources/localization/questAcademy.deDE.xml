@@ -1,0 +1,134 @@
+<messages>
+  <caption>ChoProf</caption>
+  <npcName>ChoProf</npcName>
+  <wellcome>Hallo! 
+Ich bin Professor und ich habe dir etwas zu erzählen. Schon seit Langem untersuchen wir die Erde und haben einige interessante Fakten über sie gesammelt.
+Ich bin da, um Dir ein paar Fragen zu stellen, um zu sehen, ob du die Fakten schon kennst oder nicht.</wellcome>
+  <win>Du hast gewonnen! Das ist jetzt deins!</win>
+  <lost>Es tut mir Leid, aber Du musst es noch einmal versuchen!</lost>
+  <questComplete>Du hast gerade diesen Test gemacht.</questComplete>
+  <questions>Welche sind die höchsten Bäume:
+Geldbäume
+#Gigantische Sequoias
+Weihnachtsbäume
+Die höchsten Sequoias sind bis zu:
+100 Meter breit
+!233*40/0.003 + sin60 – arctg2
+#100 Meter hoch
+Was ist das Hellste am Himmel:
+ein Flugzeug
+#die Sonne
+Der Mond
+Was ist die Sonne:
+elektrische Glühlampe
+bewohnter Planet
+#kleiner Stern
+Gigantische Sequoias werden höher als:
+#60 erwachsene Menschen 
+2 Kreuzfahrtschiffe
+der Eiffelturm
+Welcher Vogel kann rückwärts fliegen?
+#der Kolibri
+Vögel können nicht rückwärts fliegen
+Nur Drachen konnten rückwärts fliegen, aber die gab es ja in Wirklichkeit gar nicht
+Wo wachsen die Blumen mit den größten Blüten?
+Auf dem Mars
+#in den Tropen
+im Blumentopf
+Welches Tier wird am ältesten?
+Micky Maus
+#Schildkröten
+Katzen
+Welches Tier hat die größten Augen?
+Erschrockene Maus
+#Tintenfisch
+Eule
+Welcher Vogel ist der Schnellste?
+#Falke
+weißer Papagei
+roter Papagei
+Wieviele Kontinente gibt es auf der Erde?
+Die Erde hat keine Kontinente
+#6
+20
+Was bedeutet das griechische Wort Pangaea?
+#Ganze Erde
+Viel Glück
+Herzlichen Glückwunsch
+Wie wird der Erdensatellit noch genannt?
+Sonne
+Chobot
+#Mond
+Warum hat der Mond soviele Krater?
+#Durch Meteoreinschläge
+Das waren Astronauten
+Chobots haben sie gebuddelt
+Was ist das einzige Objekt im Weltall, das schon ein Mensch betreten hat?
+#Mond
+Milchstrasse
+Mars
+Auf dem Mond gibt es unzählige Seen, die
+voll mit Sirup sind
+#kein Wasser haben
+aus Käse bestehen
+Umkreist der Mond die Erde?
+Nein, die Erde umkreist den Mond
+Nein, weil der Mond aus Käse besteht
+#Ja, er umkreist die Erde
+In welcher Himmelsrichtung steht der Polarstern?
+Im Osten
+#Im Norden
+Im Westen
+Um wieviel ist der Polarstern größer als die Sonne?
+#50 mal
+100 mal
+201 mal
+Warum war der Polarstern füher ein wichtiger Wegweiser für Reisende und Abenteurer?
+#Weil er immer an der gleichen Position steht
+Weil er der einzige Stern am Himmel ist
+Weil er schön aussieht
+Wovon ernährt sich die Venusfliegenfalle?
+#Insekten und Spinnen
+Anderen Pflanzen
+Elefanten
+Gibt es Pflanzen, die Insekten verdauen können?
+Nein, sie können nur Elefanten verdauen
+Ja, aber nur wenn gerade keine Elefanten da sind
+#Ja, die Venusfliegenfalle
+Wo finden wir fliegende Fische?
+Im Märchen
+In unseren Träumen
+#In allen großen Ozeanen
+Warum können fliegende Fische kurzzeitig wirklich fliegen?
+#Um Feinden zu entkommen
+Um die Sonne zu sehen
+Um vielleicht später mal Astronaut zu werden
+Wann schließen fleischfressende Pflanzen ihre Fallen?
+Wenn sie ins Bett gehen
+#Wenn ein Insekt mit den feinen Härchen auf den Blättern in Berührung kommt
+Wenn sie keinen Hunger mehr haben
+Fliegende Fische können:
+Pfannkuchen machen
+#Für kurze Zeit über der Wasseroberfläche in der Luft gleiten
+tanzen
+Der menschliche Körper besteht zu 65% aus:
+#Wasser
+Keksen
+Knochen
+Wessen Körper hat einen höheren Wasseranteil:
+der eines Busfahrers
+der eines alten Mannes
+#der eines Babys
+Es ist lebenswichtig, dass der Mensch Zugang hat zu:
+#frischem, sauberem Wasser
+Süßigkeiten
+Chobots
+Welches Tier ist mit bis zu 115 km/h das schnellste Landtier der Erde?
+So schnell kann kein Tier rennen
+#der Gepard
+eine flüchtende Schildkröte
+Wann kann der Wanderfalke über 400 km/h schnell werden?
+beim Spazierengehen
+#im Sturzflug
+im Flugzeug</questions>
+</messages>

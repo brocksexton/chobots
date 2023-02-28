@@ -1,0 +1,24 @@
+<head>
+<title>Chobots.ca - PlayerCard</title>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("movie.swf");
+    });
+</script>
+<script src="./ruffle.js"></script>
+<script>
+    player.load({
+        url: "https://www.chobots.icu/game/profile.swf", // A string, indicating the SWF file to load (e.g. "movie.swf").
+        parameters: "login=agent1&urlPrefix=http://chobots.ca/", // Also known as "flashvars", this is a string indicating values that may be passed to and loaded by the movie (e.g. "key1=value1&key2=value2").
+        allowScriptAccess: true, // A boolean indicating whether the file is allowed to interact with the page through JavaScript.
+    });
+    </script>
+</head>
+<body>
+    <iframe src="https://chobots.icu/char/agent1" style="width:235px;height:308px;border:none;" scrolling="no"></iframe> 
+</body>

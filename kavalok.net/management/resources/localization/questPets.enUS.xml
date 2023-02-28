@@ -1,0 +1,11 @@
+<messages>
+  <caption>Dr Alan Chogreen</caption>
+  <firstItem>G'day mate!
+	Welcome to the Chlos Laboratory. I've been working for many months on growing these chlos creatures into pets, and it worked! I am ready to bring my equipment and pets to the Eco Shop, but I can't seem to find a few. Take this handbag and look for pet body parts.</firstItem>
+  <idleMessage>Woohoo! I'm glad you like your pet.</idleMessage>
+  <noItem>Thank you for those you brought, but you still need to bring me {0}</noItem>
+  <npcName>Dr Alan Chogreen</npcName>
+  <questComplete>Thanks so much. Take this refreshing ChoSoda for your hard work... Oh I have an idea! Because you helped me I will let you create a pet right now! I wonder what your pet will look like... </questComplete>
+  <questTask>Go look for the pet parts now. When you found 10 of them, come back to me. I can't promise a reward... I only have a few bugs with me. You can come back by asking Cowboy Alex at the Farm.</questTask>
+<questPetShop>Welcome back. I guess you want to use the Pet Constructor again. Go ahead, don't be shy little Chobot!</questPetShop>
+</messages>

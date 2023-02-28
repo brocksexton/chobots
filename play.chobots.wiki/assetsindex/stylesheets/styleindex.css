@@ -1,0 +1,182 @@
+/* Chobots.eu Stylesheet by Cameron D. & Thomas C.*/
+
+/* 1. Set up */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+        background-image: url("../../assets/images/space_bg_new.webp");
+		background-size: cover;
+		background-repeat: no-repeat;
+    background-position: center center;  
+        background-color: #fff;
+}
+
+/* 2. Top Container */
+	.video{
+	margin-left:750px;
+	margin-top: 308px;
+	position:absolute;
+			}
+.topContainer{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height: 500px;
+}
+.news {
+margin-top: -50px;
+margin-left: 1150px;
+	width: 300px; /* 957px; */
+	height: 30px;
+}
+.stone {
+margin-top: -50px;
+margin-left: 20px;
+	width: 300px; /* 957px; */
+	height: 30px;
+}
+.logo {
+	float: left;
+	padding: 10px 10px;
+	margin-top: 5px;
+}
+.myButton {
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.nav{
+	background:linear-gradient(#198ECE,#1976AA);
+	border-style:solid;
+	border-color:#186E9E;
+	width:1000px;
+	height:62px;
+	border-radius:10px;
+	box-shadow:inset 0 3px 0px #59AEDC;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: -10px;
+	
+	}
+	.nav>ul{
+	display:inline-block;
+	list-style-type:none;
+	position:absolute;
+	margin-top:10px;
+	margin-left:-15px;
+		}
+	.nav>ul>li{
+	display:inline-block;
+	}
+	.nav a{
+	font-family:Roboto;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px;
+	text-shadow:0px 1px 1px #000;
+	}
+	.nav a:hover,.nav a:active{
+	background-color:#3099D3;
+	border:0px;
+	border-radius:5px;
+	padding:10px;
+	}
+	.nav a:link{
+		text-decoration:none;
+		}
+
+/* 3. Game Container */
+
+.gameContainer {
+	background-color: #2C8ACF;
+	width: 1000px; /* 1019 */
+	height: 1000px; /* 607 */
+	position: relative;
+	display: block;
+	border-radius: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -435px;
+}
+
+/* 4. Bottom/Footer Container */
+
+.footerContainer {
+	width: 1100px;
+	height: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+.footer {
+	background: rgba(90, 90, 90, 0.2);
+	color: #EDEDED;
+	font-family: 'Open Sans', sans-serif;
+	width: 1100px;
+	height: 55px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+.footer a {
+	color: #428BCA;
+}
+
+.footer a:link {
+	text-decoration: none;
+}
+
+.footer a:hover, .footer a:active {
+	color: #2A6496;
+}
+
+.txt {
+font-weight: bold;
+font-family: 'Open Sans', sans-serif;
+color: #999;
+}
+	

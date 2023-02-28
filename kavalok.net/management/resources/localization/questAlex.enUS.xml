@@ -1,0 +1,13 @@
+<messages>
+  <caption>Alex The Cowboy</caption>
+  <npcName>Cowboy Alex</npcName>
+  <firstItem>Ho, ho, ho!
+
+My dear fellow, my name's Santa - same as one man's from the North Pole which is on that Blue planet. Take this hat not to catch a cold at this snowed up location.</firstItem>
+  <questTask>Psst, dude. I need a little bit of help: this dude asked me to carry a very important teleportation device for him.. but I think I dropped it somewhere. Look for it??</questTask>
+  <noItem>Hahaha! No, really, I need you to find me the device. It's very important.</noItem>
+  <nextItem>Thanks so much for helping me, but I'm still missing some of the picks. Do you think you can find them?</nextItem>
+  <questComplete>WHEW! I thought you'd never find it. You know what? As a "thank you", I'll let you use the teleportation device. See where it takes you!</questComplete>
+  <idleMessage>I am sorry, but you must be a citizen to continue the quest.</idleMessage>
+<questTeleport>You wanna go there again? Sure! Tell Dr Alan and the pets I said 'Hi'...</questTeleport>
+</messages>

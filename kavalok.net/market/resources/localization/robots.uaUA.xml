@@ -1,0 +1,66 @@
+<messages>
+  <accuracy>Accuracy</accuracy>
+  <activate>Activate a robot</activate>
+  <active>Active</active>
+  <removeFromTeamConfirm>Ти впевнений, що хочеш видалити {0} з команди?</removeFromTeamConfirm>
+  <attack>Attack</attack>
+  <attackMiddle>Attack body</attackMiddle>
+  <attackTop>Attack head</attackTop>
+  <attackBottom>Attack legs</attackBottom>
+  <baseItems>Basic Items</baseItems>
+  <total>Total</total>
+  <resultBlock>Blocked!</resultBlock>
+  <challenge>Challenge!</challenge>
+  <onBuyRobotMessage>Check the Robot Configurator!</onBuyRobotMessage>
+  <mustBeSameServer>Combat is impossible. User locates in the other city</mustBeSameServer>
+  <createTeam>Створити команду</createTeam>
+  <daysLeft>Days left</daysLeft>
+  <defence>Defence</defence>
+  <energy>Energy</energy>
+  <experience>Experience</experience>
+  <expDate>Expires on</expDate>
+  <teamHelp>хелп</teamHelp>
+  <inactive>Inactive</inactive>
+  <inviteToTeam>Запросити в команду</inviteToTeam>
+  <level>Level</level>
+  <resultMiss>Missed!</resultMiss>
+  <mobility>Mobility</mobility>
+  <name>Name</name>
+  <opponentDisconnect>Opponent disconnected</opponentDisconnect>
+  <prise>Prize for reaching Top {0} !!!</prise>
+  <rate>Rate</rate>
+  <timeLeft>Remaining time</timeLeft>
+  <remains>Remains</remains>
+  <removeFromTeam>Видалити з команди</removeFromTeam>
+  <repair>Repair</repair>
+  <repairMessage>Reparation price:{0} bugs. Continue?</repairMessage>
+  <teamRequestSent>Запрошення відправлено</teamRequestSent>
+  <noEnergy>Robot has no energy</noEnergy>
+  <combatRequest>Send a combat request?</combatRequest>
+  <specialItems>Special Items</specialItems>
+  <teamName>Команда</teamName>
+  <teamColor>Колір команди</teamColor>
+  <teamMessageCaption>Повідомлення команді</teamMessageCaption>
+  <teamCreated>Команда створена успішно</teamCreated>
+  <teamLimit>В команді немає місць</teamLimit>
+  <levelLimit>Телепорт працює для власників роботів з рівнем не більшим за {0}</levelLimit>
+  <artifacts>Artifacts</artifacts>
+  <useCount>Usage quantity</useCount>
+  <lifeTime>Usage time (days)</lifeTime>
+  <waitingForOpponent>Waiting for opponent...</waitingForOpponent>
+  <win>Wins</win>
+  <combatNotAllowed>Ти не можеш нападати на робота з твоєї команди</combatNotAllowed>
+  <haveNotRobot>You don't have a robot</haveNotRobot>
+  <teamExistsWarning>Ти збираєшся розпустити свою команду. Продовжити?</teamExistsWarning>
+  <payedRobotItemBought>You have bought a new robot item. Check the Robot Configurator</payedRobotItemBought>
+  <reachedLevel>You have gained {0} level!</reachedLevel>
+  <youLose>You lost!</youLose>
+  <youWon>You won!</youWon>
+  <combatRespondMessage>{0} (level {1}) accepts a combat. Start now?</combatRespondMessage>
+  <combatRequestMessage>{0} (level {1}) challenges you for a robot combat</combatRequestMessage>
+  <teamOwnerIsFull>{0} вже має команду і не може приєднатися до твоєї</teamOwnerIsFull>
+  <teamRequest>{0} запрошує приєднатися до його команди. Прийняти запрошення?</teamRequest>
+  <teamMemberAdded>{0} приєднався до твоєї команди</teamMemberAdded>
+  <removedFromTeamMsg>{0} видалив тебе з команди</removedFromTeamMsg>
+  <teamNameFormat>Команда  {0}</teamNameFormat>
+</messages>

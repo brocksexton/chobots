@@ -1,0 +1,6 @@
+<messages>
+  <citizenPopup>You have to be a citizen to be able to draw</citizenPopup>
+  <drawingDisabled>Drawing is disabled</drawingDisabled>
+  <notAvailableForJuniors>Only Citizens, Agents and Moderators are alowed draw on the wall</notAvailableForJuniors>
+  <gameSafeMode>Chobots world is in a safe mode at the moment. You are not alowed to use the text chat and drawing.</gameSafeMode>
+</messages>

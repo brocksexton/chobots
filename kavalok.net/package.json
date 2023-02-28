@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ruffle-rs/ruffle": "^0.1.0-nightly.2023.2.25"
+  }
+}

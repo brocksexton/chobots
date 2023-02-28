@@ -1,0 +1,17 @@
+<messages>
+  <caption>Happy Easter</caption>
+  <npcName>Chugs Bunny</npcName>
+  <firstItem>Ho, ho, ho!
+
+My dear fellow, my name's Santa - same as one man's from the North Pole which is on that Blue planet. Take this hat not to catch a cold at this snowed up location.</firstItem>
+  <questTask>Hey hey hey!!
+
+Chobots world looks amazing this time of year, don't ya think? I hopped all this way from Itty Bitty Rabbits Burrow to give you this cute costume. Now you can look like one of us. What do you think?
+
+Happy Easter!! 
+	</questTask>
+  <noItem>I don't think I'll manage to find the bells myself. I really need your help. Please find three bells.</noItem>
+  <nextItem>Thank you for helping me. But some bells are still missing. Could you bring me three of them, my dear?</nextItem>
+  <questComplete>Good job! These are the bells I lost. You helped me out! These shoes and scarf are your Christmas presents! Merry Christmas.</questComplete>
+  <idleMessage>HAAAAAPPPPPPYYYYYYY EEEAAASSSSTTTTTEEERRRRRRRR!!!!</idleMessage>
+</messages>

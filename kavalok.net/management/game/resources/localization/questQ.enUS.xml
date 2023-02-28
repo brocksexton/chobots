@@ -1,0 +1,12 @@
+<messages>
+  <caption>Agent Q's Mission</caption>
+  <npcName>Q</npcName>
+  <firstItem></firstItem>
+  <questTask>Are you ready? Where are your tools? Why aren't you wearing your mask?? Did you even prepare for the mission?
+
+Oh, sorry, wrong chobot. My name is Q. I'm a scientist at the Chobots Agency. We're working on space exploration at the moment! We are busy testing the communication systems, and I need you to do me a small favor. There are 5 satellite dishes spread around the city... can you turn them on? They are under an invisible cloak, and I can't find them myself! Come back when you've enabled all 5.</questTask>
+  <noItem>OK, did you enable them all? No? Then hurry up! Remember, they are invisible so you need to look everywhere.</noItem>
+  <nextItem>Nice job so far. We are not quite there yet - you still need to enable some of them!</nextItem>
+  <questComplete>Bravo, Chobot! The communication system is up and ready to go! Now we just need to build the actual satellites... this might take a while!</questComplete>
+  <idleMessage>No, we're not ready yet, but thanks for your help! See you in space one day.</idleMessage>
+</messages>

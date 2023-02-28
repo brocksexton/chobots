@@ -1,0 +1,66 @@
+<messages>
+  <accuracy>Accuracy</accuracy>
+  <activate>Activate a robot</activate>
+  <active>Active</active>
+  <removeFromTeamConfirm>Are you sure you want to remove {0} from the team?</removeFromTeamConfirm>
+  <attack>Attack</attack>
+  <attackMiddle>Attack body</attackMiddle>
+  <attackTop>Attack head</attackTop>
+  <attackBottom>Attack legs</attackBottom>
+  <baseItems>Basic Items</baseItems>
+  <total>Battles</total>
+  <resultBlock>Blocked!</resultBlock>
+  <challenge>Challenge!</challenge>
+  <onBuyRobotMessage>Check the Robot Configurator!</onBuyRobotMessage>
+  <mustBeSameServer>Combat is impossible. User locates in the other city</mustBeSameServer>
+  <createTeam>Create a team</createTeam>
+  <daysLeft>Days left</daysLeft>
+  <defence>Defence</defence>
+  <energy>Energy</energy>
+  <experience>Experience</experience>
+  <expDate>Expires on</expDate>
+  <teamHelp>Follow the next steps to creat a Team:1. select a color of your future team and press OK2. invite your friends to join your team3. be a strong warrior to keep your team on the top!</teamHelp>
+  <inactive>Inactive</inactive>
+  <inviteToTeam>Invite into the team</inviteToTeam>
+  <level>Level</level>
+  <resultMiss>Missed!</resultMiss>
+  <mobility>Mobility</mobility>
+  <name>Name</name>
+  <opponentDisconnect>Opponent disconnected</opponentDisconnect>
+  <prise>Prize for reaching Top {0} !!!</prise>
+  <rate>Rate</rate>
+  <timeLeft>Remaining time</timeLeft>
+  <remains>Remains</remains>
+  <removeFromTeam>Remove from the team</removeFromTeam>
+  <repair>Repair</repair>
+  <repairMessage>Reparation price:{0} bugs. Continue?</repairMessage>
+  <teamRequestSent>Request has been sent</teamRequestSent>
+  <noEnergy>Robot has no energy</noEnergy>
+  <combatRequest>Send a combat request?</combatRequest>
+  <specialItems>Special Items</specialItems>
+  <teamName>Team</teamName>
+  <teamColor>Team color</teamColor>
+  <teamMessageCaption>Team message</teamMessageCaption>
+  <teamCreated>The team has been created successfully</teamCreated>
+  <teamLimit>There is no place in your Team</teamLimit>
+  <levelLimit>This teleport works for robot owners with a level not higher than {0}</levelLimit>
+  <artifacts>Upgrades</artifacts>
+  <useCount>Usage quantity</useCount>
+  <lifeTime>Usage time (days)</lifeTime>
+  <waitingForOpponent>Waiting for opponent...</waitingForOpponent>
+  <win>Wins</win>
+  <combatNotAllowed>You cannot combat with teammate</combatNotAllowed>
+  <haveNotRobot>You don't have a robot</haveNotRobot>
+  <teamExistsWarning>You going to dismiss your current team. Continue?</teamExistsWarning>
+  <payedRobotItemBought>You have bought a new robot item. Check the Robot Configurator</payedRobotItemBought>
+  <reachedLevel>You have gained {0} level!</reachedLevel>
+  <youLose>You lost!</youLose>
+  <youWon>You won!</youWon>
+  <combatRespondMessage>{0} (level {1}) accepts a combat. Start now?</combatRespondMessage>
+  <combatRequestMessage>{0} (level {1}) challenges you for a robot combat</combatRequestMessage>
+  <teamOwnerIsFull>{0} has іt's own team and is not able to join yours</teamOwnerIsFull>
+  <teamRequest>{0} invites you to join a team. Accept invitation?</teamRequest>
+  <teamMemberAdded>{0} joined your team</teamMemberAdded>
+  <removedFromTeamMsg>{0} removed you from the team</removedFromTeamMsg>
+  <teamNameFormat>{0}'s team</teamNameFormat>
+</messages>

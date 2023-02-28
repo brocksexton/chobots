@@ -1,0 +1,11 @@
+<messages>
+  <cancel>Отменить</cancel>
+  <removeFrame>Забрать кадр</removeFrame>
+  <addFrame>Добавить кадр</addFrame>
+  <addDanceStyle>Добавить твой новый танец</addDanceStyle>
+  <save>Сохранить</save>
+  <null/>
+  <play>Пуск</play>
+  <danceConstructor>Конструктор танцев</danceConstructor>
+  <tryToDrag>Попробуй потянуть мышкой своего чобота!</tryToDrag>
+</messages>

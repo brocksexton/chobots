@@ -1,0 +1,216 @@
+/* Chobots.ca Stylesheet by Cameron D.*/
+
+/* 1. Set up */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width:100%;
+		height:100%;
+}
+
+body {
+		background-image: url(../images/space_bg_new.webp);
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-attachment: fixed;
+    	height: 100vh;  
+        background-color: #fff;
+		width:100%;
+		height:100%;
+}
+
+/* 2. Top Container */
+	.video{
+	margin-left:750px;
+	margin-top: 308px;
+	position:absolute;
+			}
+.topContainer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px; /* 957px; */
+	height: 50px;
+}
+
+.topContainer2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px; /* 957px; */
+	height: 50px;
+}
+
+.eu	{ 
+	left: 1120px;
+	top: 150px;
+	height: 30px;
+	width: 30px; 
+  }
+  
+	   
+  .magic { position: absolute;
+
+	   left: 100px;
+	   bottom: 0550px;
+       height: 50px;
+       width: 50px; 
+	   }
+
+.play {
+	 position: absolute;
+     left: 1416px;
+	 top: 535px;
+	   bottom: 0390px;
+       height: 50px;
+       width: 50px; 
+	   }
+
+.logo {
+	 position: absolute;
+     left: 1335px;
+	 top: -25px;
+	   bottom: 0390px;
+       height: 50px;
+       width: 50px; 
+	   }
+	   
+.become {	
+    position: absolute;
+    left: 1154px;
+    top: 522px;
+    bottom: 0390px;
+    height: 50px;
+    width: 50px; 
+	   }
+
+.char {	
+    position: absolute;
+    left: 1398px;
+    top: 0px;
+    bottom: 0390px;
+    height: 50px;
+    width: 50px; 
+	   }
+	   
+.logo {
+	float: right;
+	padding: 10px 10px;	
+}
+
+/*.navBg {
+	background: linear-gradient(#f6f7f7, #acb1b5);
+	width: 500px;
+	height: 72px;
+	border: 2px solid #000;
+	border-radius: 3px;
+	float: right;
+	margin-top: -5px;
+}
+No need for this (Background of the NAV)
+*/
+
+.nav {
+	position: relative;
+	width: 500;
+	height: 60px;
+	/* border: 1px solid #000; */
+	border-radius: 0px;
+	/*box-shadow: inset 0 3px 0px #59AEDC;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+}
+
+.nav > ul {
+	display: inline-block;
+	list-style-type: none;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: auto;
+}
+
+.nav > ul > li {
+	display: inline-block;
+}
+
+.nav a {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #009BCB;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	maring-left: -10px;
+}
+
+.nav a:hover, .nav a:active {
+	background-color: #F8F8F8;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.nav a:link {
+	text-decoration: none;
+}
+
+/* 3. Game Container */
+
+.gameContainer {
+	background-color: #FFFFFF;
+	width: 500px; /* 1019 */
+	height: 630px; /* 607 */
+	display: block;
+	border: 2px solid rgba(255,255,255,0.81);
+	border-radius: 10px;
+	margin-left: 400px;
+	margin-right: auto;
+	margin-top: -60px;
+}
+
+/* 4. Bottom/Footer Container */
+
+.footerContainer {
+	width: 1100px;
+	height: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+.footer {
+	background: rgba(90, 90, 90, 0.2);
+	color: #EDEDED;
+	font-family: 'Open Sans', sans-serif;
+	width: 1100px;
+	height: 55px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+.footer a {
+	color: #428BCA;
+}
+
+.footer a:link {
+	text-decoration: none;
+}
+
+.footer a:hover, .footer a:active {
+	color: #2A6496;
+}
+
+.txt {
+font-weight: bold;
+font-family: 'Open Sans', sans-serif;
+color: #999;
+}
+	

@@ -1,0 +1,9 @@
+<messages>
+  <caption>Chistochob</caption>
+  <firstItem>Hallo! Ich bin Chistochob! Chopix hat mir um Hilfe gebeten, unsere Stadt sauber zu machen. Die bösen Nichos haben Müll von Ihren Raumfahrtschiffen ausgeschüttet und ich brauche jetzt Deine Hilfe, um Müll zu sammeln. Hier ist ein Staubsauger, wenn Du 10 Elemente findest, komm für Deine Belohnung!</firstItem>
+  <idleMessage>Vielen Dank! Ich wünschte, die Erde sei so sauber, wie unsere Stadt</idleMessage>
+  <noItem>Du sollst noch {0} Elemente finden</noItem>
+  <npcName>Chistochob</npcName>
+  <questComplete>Glückwünsche! Gut gemacht. Hier ist Deine Belohnung!</questComplete>
+  <questTask>Jetzt kannst Du gehen und Müll suchen!</questTask>
+</messages>
