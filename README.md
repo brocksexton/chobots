@@ -55,5 +55,7 @@ To build the source code, simply run `ant` in the terminal inside the trunk & se
 ## Resources
 
 For more information about Chobots, please visit [Chobots.wiki](https://www.chobots.wiki/).
+
 For more development information about Chobots, please visit [dev.Chobots.wiki](https://dev.chobots.wiki/).
+
 Join our Discord! [Discord](https://discord.gg/ewnWbAbqtk).
