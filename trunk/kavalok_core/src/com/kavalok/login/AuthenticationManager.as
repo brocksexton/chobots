@@ -1,4 +1,4 @@
-package com.kavalok.login
+﻿package com.kavalok.login
 {
 	import com.kavalok.Global;
 	import com.kavalok.dto.login.LoginResultTO;
@@ -66,7 +66,7 @@ package com.kavalok.login
 			//if (Global.startupInfo.url.indexOf('chobots.net') == 0)
 			//	return true;
 			
-			var connectionName:String = 'chobots.world|' + Global.startupInfo.url;
+			var connectionName:String = 'kavalok.net|' + Global.startupInfo.url;
 			_localConnection = new LocalConnection();
 			_localConnection.client = this;
 			

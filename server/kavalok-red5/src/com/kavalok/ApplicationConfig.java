@@ -29,9 +29,9 @@ public class ApplicationConfig {
 
   private RobotsBillingGateway robotsBillingGateway;
 
-  private String emailsenderName = "Chobots.world";
+  private String emailsenderName = "Kavalok.net";
 
-  private String emailsenderAddress = "noreply@chobots.world";
+  private String emailsenderAddress = "noreply@kavalok.net";
 
   private int maxPaymentsSumPerMonth = 100;
 
@@ -43,9 +43,9 @@ public class ApplicationConfig {
     this.petHelpURL = this.applicationProperties.getProperty("instance.petHelpURL");
     this.termsAndConditionsURL = this.applicationProperties.getProperty("instance.termsAndConditionsURL");
     this.blogURL = this.applicationProperties.getProperty("instance.blogURL");
-    this.emailsenderName = this.applicationProperties.getProperty("instance.emailsender.name", "Chobots.world Team");
+    this.emailsenderName = this.applicationProperties.getProperty("instance.emailsender.name", "Chobots Team");
     this.emailsenderAddress = this.applicationProperties.getProperty("instance.emailsender.address",
-        "noreply@chobotsuniverse.com");
+        "noreply@kavalok.net");
     try {
       this.maxPaymentsSumPerMonth = Integer.parseInt(this.applicationProperties
           .getProperty("instance.max_payments_sum_per_month"));
