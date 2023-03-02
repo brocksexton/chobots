@@ -10,7 +10,7 @@
  	
  	String chatType = chatEnabled?"full":"safe";
 	boolean activated = false;
-	String redirectUrl = "http://www.chobots.net/";
+	String redirectUrl = "https://kavalok.net/";
 
   DefaultTransactionStrategy dts = new DefaultTransactionStrategy();
   try {
@@ -37,20 +37,20 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Chobots.net - Your Family Game!</title>
+  <title>kavalok.net - Your Family Game!</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="keywords" content="family virtual world, kids and parents, kids education, learn by playing, fun online games for children, fun games for children, online games for kids, games on line for kids, children online games, online games for children, online games for preschool, online games for preschoolers, online games for preschool children, educational online games for children, free online games for young children, online games for small children" />
-  <meta name="description" content="Chobots.net is an entertaining virtual world, a family game aimed at creating an interesting, safe and learning environment for your kids." />
+  <meta name="description" content="kavalok.net is an entertaining virtual world, a family game aimed at creating an interesting, safe and learning environment for your kids." />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="-1" />
-	<link rel="stylesheet" href="http://www.chobots.net/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="http://kavalok.net/stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 
 	<!--[if IE]><link rel="stylesheet" href="http://www.chobots.com/stylesheets/ie.css" type="text/css" media="screen" title="no title" charset="utf-8" /><![endif]-->
 	<script>
 	  var ch_locale = 'enUS';
 	  var ch_language = 'en';
 	</script>
-  <script src="http://www.chobots.net/javascripts/game.js" type="text/javascript"></script> 
+  <script src="http://kavalok.net/javascripts/game.js" type="text/javascript"></script> 
 	
 <style>
   div.ingame div.logo {

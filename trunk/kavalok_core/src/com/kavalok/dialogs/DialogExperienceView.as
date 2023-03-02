@@ -1,4 +1,4 @@
-package com.kavalok.dialogs
+﻿package com.kavalok.dialogs
 {
 	import com.kavalok.Global;
 	
@@ -34,7 +34,7 @@ package com.kavalok.dialogs
 		public var twitButton : SimpleButton;
 		public var nextField : TextField;
 		public var titleField : TextField;
-		private var namess:Array = ["Xecho", "Nichorex", "Yocho", "Dicho", "Choxo", "Qexocho", "Chogex", "Texcho", "Gergox", "Skelecho", "Jake"];
+		private var namess:Array = ["Xecho", "Nichorex", "Yocho", "Dicho", "Choxo", "Qexocho", "Chogex", "Texcho", "Gergox", "Skelecho", "Jake", "Brock"];
 		public var expBar : Sprite;
 		public var progressBar : Sprite;
 		public var _stuff : ResourceSprite;
@@ -132,7 +132,7 @@ package com.kavalok.dialogs
 
         private function onHelpClick(event : MouseEvent) : void
         {
-        	navigateToURL(new URLRequest("http://blog.chobots.net/p/cho-help.html"), "_blank");
+        	navigateToURL(new URLRequest("http://www.chobots.wiki/wiki/cho-help.html"), "_blank");
         }
 
 	}

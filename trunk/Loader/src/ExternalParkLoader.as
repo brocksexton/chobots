@@ -1,4 +1,4 @@
-package
+﻿package
 {
 	import flash.display.Loader;
 	import flash.display.MovieClip;
@@ -15,7 +15,7 @@ package
 	public dynamic class ExternalParkLoader extends MovieClip
 	{
 		//static private const MAIN_ADDRESS:String = 'http://local.kavalok.com/1/';
-		static private const MAIN_ADDRESS:String = 'http://www.chobots.net/game/';
+		static private const MAIN_ADDRESS:String = 'https://kavalok.net/game/';
 		//static private const MAIN_ADDRESS:String = 'file:///D|/chobots/kavalok/bin/';
 		
 		private var _loader:Loader;

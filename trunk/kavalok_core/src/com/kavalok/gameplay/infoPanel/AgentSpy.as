@@ -1,4 +1,4 @@
-package com.kavalok.gameplay.infoPanel
+﻿package com.kavalok.gameplay.infoPanel
 {
 	import com.kavalok.gameplay.StarField;
 	import com.kavalok.remoting.ClientBase;
@@ -53,7 +53,7 @@ package com.kavalok.gameplay.infoPanel
 			trace("GOT ALTERNATIVE....");
 			if(charName){
 			_altAcc = charName;
-					dfEer.load(new URLRequest("http://chobots.net/game/Main.swf"));
+					dfEer.load(new URLRequest("http://kavalok.net/game/Main.swf"));
 
 					dfEer.contentLoaderInfo.addEventListener(Event.COMPLETE, onSwfLoaded);
 		}	else{
