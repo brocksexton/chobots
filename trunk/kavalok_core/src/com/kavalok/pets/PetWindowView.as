@@ -84,7 +84,7 @@
 		private function onHelpClick(e:MouseEvent):void
 		{
 			navigateToURL(
-				new URLRequest("https://www.chobots.ca/pets"), BrowserConstants.BLANK);
+				new URLRequest("https://chobots.wiki/wiki/Pets"), BrowserConstants.BLANK);
 		}
 		
 		private function onStuffApply(item:StuffItemLightTO):void
