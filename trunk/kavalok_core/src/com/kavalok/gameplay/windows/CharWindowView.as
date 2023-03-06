@@ -143,6 +143,10 @@
 			{
 				_content.nameField.text = "A R T S I E";
 			}
+			else if(_charId == "mrhoolagan") //Rename Zach
+			{
+				_content.nameField.text = "Hoolagan";
+			}
 			
 			
 			_content.buttonsPanel.visible = false;
@@ -237,6 +241,9 @@
 			
 			if(_charId == "artsie")
 				_content.charContainer.ageField.text = "Ù̷̧̢͉̥̻͉̜͇̘̌̋͗͒́̄̍͜͝͝ͅS̴͚̻̬͆̊Ȩ̷͍̲̱̮̩̹̺͎̪̻̏Ṙ̴̩̒́͗̋̐̄͠ͅ";
+			
+			if(_charId == "mrhoolagan")
+				_content.charContainer.ageField.text = "9̷̰̹̲̰̫͚͚̣̘͕̤̟͖̐̉͒̏̎̏̅́͜͝9̶̠̗͎̫̩̲̗̙͈͔̓̿̈̈́͂̽̕͘9̶̡͍̲͍̣͚̮̯̲̯̭̺̑͐̊̈́́̂͒̒́͒̍́͒͘͜ͅ";
 			
 			if(_charId == "mark")
 				_content.charContainer.ageField.text = "Age 999";
@@ -532,7 +539,7 @@
 				ToolTips.registerObject(charContainer.levelSign, "ChoLevel " + _char.charLevel);
 				ToolTips.registerObject(charContainer.journalistSign, "Journalist - " + _char.blogTitle);
 				ToolTips.registerObject(charContainer.eliteJournalistSign, "Elite Journalist");
-				ToolTips.registerObject(charContainer.levelSign, "Level: ")
+				//ToolTips.registerObject(charContainer.levelSign, "Level: ")
 			}
 			
 			if (_char.charLevel < 4)
