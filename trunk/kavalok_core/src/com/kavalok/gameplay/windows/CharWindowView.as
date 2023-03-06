@@ -89,10 +89,10 @@
 		
 		private var _defaultPanelY:int;
 		private var _loading:LoadingSprite;
-		public static var charsURL:String = String("http://chobots.icu/profile/panel.php?u=");
-		public static var journalistBlogURL:String = String("http://chobots.icu/journalist?u=");
+		public static var charsURL:String = String("http://kavalok.net/profile/panel.php?u=");
+		public static var journalistBlogURL:String = String("http://kavalok.net/journalist?u=");
 		public static var twitterURL:String = String("http://twitter.com/");
-		public static var marketURL:String = String("http://chobots.icu/market/outfit_search.php?userid=");
+		public static var marketURL:String = String("http://kavalok.net/market/outfit_search.php?userid=");
 		
 		McFaces;
 		
@@ -133,13 +133,13 @@
 				_content.y = 25;
 			}
 			
-			_content.nameField.text = _charId == "brock" ? "Brock S." : Global.upperCase(_charId); // Change brock to Brock S.
+			_content.nameField.text = _charId == "brock" ? "Brock#0001" : Global.upperCase(_charId); // Change brock to Brock S.
 			
 			if(_charId == "slenderman") // Turn slenderman's name off
 			{
 				_content.nameField.text = "";
 			}
-			else if(_charId == "tyler") //Rename the Ninja
+			else if(_charId == "artsie") //Rename the Ninja
 			{
 				_content.nameField.text = "A R T S I E";
 			}
@@ -235,11 +235,11 @@
 			if(_charId == "brock")
 				_content.charContainer.ageField.text = "An Old Chobot";
 			
-			if(_charId == "tyler")
-				_content.charContainer.ageField.text = "An Old Chobot";
+			if(_charId == "artsie")
+				_content.charContainer.ageField.text = "Ù̷̧̢͉̥̻͉̜͇̘̌̋͗͒́̄̍͜͝͝ͅS̴͚̻̬͆̊Ȩ̷͍̲̱̮̩̹̺͎̪̻̏Ṙ̴̩̒́͗̋̐̄͠ͅ";
 			
-			if(_charId == "nathan")
-				_content.charContainer.ageField.text = "Age 420";
+			if(_charId == "mark")
+				_content.charContainer.ageField.text = "Age 999";
 			
 			if (Global.startupInfo.widget == KavalokConstants.WIDGET_CHAR)
 			{
@@ -321,7 +321,7 @@
 			var login:String = _char.id;
 			
 			//var pattern:String = '<object width="{0}" height="{1}">' + '<param name="FlashVars" value="login={3}&urlPrefix={4}">' + '<param name="movie" value="{2}"/>' + '<embed src="{2}" FlashVars="login={3}&urlPrefix={4}" width="{0}" height="{1}"/>' + '</embed></object>'
-			var pattern:String = '<iframe src="https://chobots.icu/char/{0}" style="width:235px;height:308px;border:none;" scrolling="no"></iframe>';	
+			var pattern:String = '<iframe src="https://kavalok.net/char/{0}" style="width:235px;height:308px;border:none;" scrolling="no"></iframe>';	
 
 
 			var result:String = Strings.substitute(pattern, login);
@@ -528,11 +528,11 @@
 			if(!Global.startupInfo.widget){
 				ToolTips.registerObject(charContainer.forumSign, "Forum Legend");
 				ToolTips.registerObject(charContainer.scoutSign, "Discord Booster");
-				ToolTips.registerObject(charContainer.ninjaSign, "Ninja");
-				//	ToolTips.registerObject(charContainer.levelSign, "ChoLevel " + _char.charLevel);
+				//	ToolTips.registerObject(charContainer.ninjaSign, "Ninja");
+				ToolTips.registerObject(charContainer.levelSign, "ChoLevel " + _char.charLevel);
 				ToolTips.registerObject(charContainer.journalistSign, "Journalist - " + _char.blogTitle);
 				ToolTips.registerObject(charContainer.eliteJournalistSign, "Elite Journalist");
-				//	ToolTips.registerObject(charCotainer.levelSign, "Level: ")
+				ToolTips.registerObject(charCotainer.levelSign, "Level: ")
 			}
 			
 			if (_char.charLevel < 4)
@@ -654,8 +654,8 @@
 				_bundle.registerTextField(charContainer.statusField, 'statusSupport');
 			else if (_char.isStaff)
 				_bundle.registerTextField(charContainer.statusField, 'statusStaff');
-			else if (_char.isNinja)
-				_bundle.registerTextField(charContainer.statusField, 'statusNinja');
+			//else if (_char.isNinja)
+				//_bundle.registerTextField(charContainer.statusField, 'statusNinja');
 			else if (_char.isModerator)
 				_bundle.registerTextField(charContainer.statusField, 'statusModerator');
 			else if (_char.isAgent)
