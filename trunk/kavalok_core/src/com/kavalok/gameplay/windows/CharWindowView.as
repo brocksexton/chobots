@@ -191,7 +191,7 @@
 			else 
 				_content.background.gotoAndStop("chobot");
 			
-			_content.nameField.textColor = (_blackNames.indexOf(_char.team) != -1) ? 0x000000 : (_char.team == "space2") ? 0x306EFF : 0xFFFFFF;
+			//_content.nameField.textColor = (_blackNames.indexOf(_char.team) != -1) ? 0x000000 : (_char.team == "space2") ? 0x306EFF : 0xFFFFFF;
 
 		}
 		
@@ -568,7 +568,7 @@
 			else
 				charContainer.levelSign.starClip.gotoAndStop(7);
 			
-			charContainer.levelSign.visible = false;
+			charContainer.levelSign.visible = true;
 			
 			if (_char.isModerator){
 				charContainer.agentSign.visible = false;
@@ -576,7 +576,8 @@
 
 			if (_char.isStaff){
 				charContainer.agentSign.visible = false;
-				charContainer.moderatorSign.visible = false;
+				charContainer.staffSign.visible = false;
+				charContainer.moderatorSign.visible = true;
 			}
 			
 			if (_char.isSupport){
