@@ -532,7 +532,7 @@
 				ToolTips.registerObject(charContainer.levelSign, "ChoLevel " + _char.charLevel);
 				ToolTips.registerObject(charContainer.journalistSign, "Journalist - " + _char.blogTitle);
 				ToolTips.registerObject(charContainer.eliteJournalistSign, "Elite Journalist");
-				ToolTips.registerObject(charCotainer.levelSign, "Level: ")
+				ToolTips.registerObject(charContainer.levelSign, "Level: ")
 			}
 			
 			if (_char.charLevel < 4)
