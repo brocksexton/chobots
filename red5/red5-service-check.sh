@@ -19,7 +19,7 @@ if pgrep -f red5.jar > /dev/null; then
     if [[ $uptime -gt $max_uptime ]]; then
         echo "Red5 server has been running for longer than 12 hours... Time for a restart!"
         curl -H "Content-Type: application/json" -d "{\"content\": \"The game server will be restarting and it'll take up to 60 seconds. Please stand by...\"}" "$discord_webhook_url"
-        killall -9 red5.jar
+        killall -9 java
         /home/localhost/red5/red5.sh &
         sleep 60
         curl -H "Content-Type: application/json" -d "{\"content\": \"The game server is now back online. Thank you for your patience!\"}" "$discord_webhook_url"
