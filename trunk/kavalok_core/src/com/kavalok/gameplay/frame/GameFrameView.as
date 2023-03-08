@@ -971,7 +971,7 @@
 		
 		public function openCitizenshipPage():void 
 		{
-			navigateToURL(new URLRequest("/management/citizenship"), "_blank");
+			navigateToURL(new URLRequest("/management"), "_blank");
 		}
 
 		 private function onLvlClick(e:MouseEvent) : void
