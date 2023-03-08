@@ -38,6 +38,9 @@ from db import db_user, db_password, db_host, db_name
 # Replace with your Discord webhook URL
 webhook_url = "https://discordapp.com/api/webhooks/YOUR-DISCORD-WEBHOOK"
 
+# Replace with the Discord webhook URL for Vanilla server
+webhook_url_vanilla = "https://discordapp.com/api/webhooks/YOUR-DISCORD-WEBHOOK-FOR-VANILLA"
+
 # Connect to the database
 cnx = mysql.connector.connect(user=db_user, password=db_password, host=db_host, database=db_name)
 cursor = cnx.cursor()
@@ -94,12 +97,12 @@ while True:
             elif agent == 1:
                 username = f"<:newagentbadgechobots:981764495728840704> {username}"
 
-
-
-
         # Send a message to the Discord channel
         message = f"**[{created.strftime('%b %d, %Y %I:%M %p')}] [{location_name}] [{server_name}]** *{username}*: {message}"
-        requests.post(webhook_url, json={"content": message})
+        if server_name == "Vanilla":
+            requests.post(webhook_url_vanilla, json={"content": message})
+        else:
+            requests.post(webhook_url, json={"content": message})
 
         # Print the message to the console
         print(message)
