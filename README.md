@@ -60,3 +60,6 @@ For more information about Chobots, please visit [Chobots.wiki](https://www.chob
 For more development information about Chobots, please visit [dev.Chobots.wiki](https://dev.chobots.wiki/).
 
 Join our Discord! [Discord](https://discord.gg/ewnWbAbqtk).
+
+## Important
+This repository contains the work of dozens of developers over the course of 2007 up until 2023 (and may continue to be updated with Pull Requests or if I ever personally continue to have the time) - Chobots has left a large impact on the hearts of many and I'm hoping a repository with documentation and information can help it continue to live. Please refer to the Wiki linked above to learn more.
