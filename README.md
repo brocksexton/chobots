@@ -1,5 +1,5 @@
 # Chobots - Master Branch
-![Chobots Logo](https://play.chobots.wiki/assets/images/logo.png)
+![Chobots Logo](https://web.archive.org/web/20230331122118/https://play.chobots.wiki/assets/images/logo.png)
 
 Welcome to the Chobots repository! This repository contains the complete source code for the online multiplayer game Chobots - The Virtual World. In this repository, you will find all the files and folders necessary to build the game, as well as additional tools and resources to enhance your experience. (This Repository was made public on September 10, 2023)
 
