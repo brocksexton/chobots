@@ -54,8 +54,8 @@
 		
 		private function getServerNameFromURL(url:String):String
 		{
-			if (this.loaderInfo.url.indexOf("kavalok.net") != -1)
-				return "game.kavalok.net";
+			if (this.loaderInfo.url.indexOf("chobots.us") != -1)
+				return "game.chobots.us";
 			else 
 				return "127.0.0.1";
 			}
